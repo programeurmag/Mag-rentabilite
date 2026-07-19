@@ -1,0 +1,21 @@
+# Secrets et identifiants — jamais commités
+.env
+.env.*
+!.env.example
+nouveau_refresh_token.txt
+
+# Données Jobber (contiennent des infos clients réelles : noms, courriels, téléphones)
+data/*.csv
+data/*.xlsx
+!data/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Sorties générées (rapports Excel envoyés chaque semaine)
+outputs/
+*.log

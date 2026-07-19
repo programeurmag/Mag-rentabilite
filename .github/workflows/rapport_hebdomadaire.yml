@@ -1,0 +1,41 @@
+name: Rapport de rentabilité hebdomadaire
+
+on:
+  schedule:
+    # 5h00 AM heure de Montréal en hiver (EST, UTC-5) -> 6h00 AM en été (EDT, UTC-4).
+    # Cron GitHub Actions ne gère pas le changement d'heure automatiquement (voir spec 1.8) :
+    # ajuster cette valeur (ou en ajouter une deuxième) si le décalage d'une heure en été dérange.
+    - cron: "0 10 * * 1"
+  workflow_dispatch: {} # permet de lancer le rapport manuellement depuis l'onglet Actions
+
+jobs:
+  rapport:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installer les dépendances
+        run: python -m pip install -r requirements.txt
+
+      - name: Générer et envoyer le rapport
+        working-directory: .
+        env:
+          JOBBER_CLIENT_ID: ${{ secrets.JOBBER_CLIENT_ID }}
+          JOBBER_CLIENT_SECRET: ${{ secrets.JOBBER_CLIENT_SECRET }}
+          JOBBER_REFRESH_TOKEN: ${{ secrets.JOBBER_REFRESH_TOKEN }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python src/generer_rapport.py
+
+      - name: Conserver l'Excel généré
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapport-excel
+          path: outputs/*.xlsx
+          retention-days: 90

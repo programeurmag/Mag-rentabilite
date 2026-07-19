@@ -1,0 +1,30 @@
+# Configuration de l'agent de rentabilité MAG — jamais commité avec un vrai token
+# (les secrets vont dans .env, pas ici)
+
+taux_horaires: # $/h par employé — fournis par Justin (juillet 2026)
+  "Kevin Bierry": 24
+  "Paul": 24
+  "Theo Hennebert": 24
+  "Matis Rodrigue": 25
+  "Gabriel Paquet": 26
+  "Michael": 24 # attention: nom avec espace final dans Jobber ("Michael ")
+  "Rafael": 24
+  "Charly Pearson": 23
+  "Zach Plessis Belair": 23
+  "Adam Menard": 23
+  "Hansley Gauthier Minuty": 23
+  "Jerome Pare": 23
+  "Mathis Lavallée": 23
+  "Kevin Mailhot": 24
+  "Victor Delisle": 23
+  "Justin Boivin": 0 # vendeur (payé autrement) — heures terrain comptent dans les heures du job, pas dans le coût MO
+  "Pascal": 0 # ex-employé (renvoyé) — garder à 0 pour les données historiques
+
+facteur_charges: 1.125 # 12,5% — fourni par Justin (juillet 2026)
+seuil_alerte_dollars_heure: 80 # en bas de ça = alerte rouge
+seuil_timer_oublie: 12 # heures
+
+roles_vente: ["Charly Pearson", "Justin Boivin"] # heures non attribuées = normal
+ex_employes: ["Pascal"] # ignorer dans les alertes (ex. "0% punch sur visites")
+
+compte_compagnie: "MAG Lavage À Pression" # à ignorer, ce n'est pas un employé

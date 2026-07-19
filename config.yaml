@@ -69,6 +69,14 @@ url_form: "https://docs.google.com/forms/d/e/1FAIpQLSe6aDXS1xIOdzYk2ocGuZwz5WO6E
 heure_rappel_matin: "08:30"     # heure de Montréal, 7 jours sur 7
 google_sheet_id_chantier: "1oxkEZGu41pG8l8SIg7fYXEidqE4TxNyeQq6NgRcn_78"
 
+# Module 4 (Dashboard Looker Studio) — ID du Sheets "MAG_Dashboard_Data", voir
+# SPEC_module_dashboard_MAG.md section 1 et 3. À REMPLIR par Justin après avoir
+# créé le Sheets et l'avoir partagé en Éditeur avec le compte de service
+# (GOOGLE_SERVICE_ACCOUNT_JSON) — voir le guide fourni par l'agent. Si vide,
+# la publication du dashboard est ignorée (dégradation gracieuse), le reste du
+# rapport part normalement.
+google_sheet_id_dashboard: "1BKl80lMlnEZij2WV-Va6O0Hq445HsjyoDqLbiPrzqxM"
+
 # Équipe habituelle de chaque camion — sert UNIQUEMENT à deviner quel camion a
 # oublié un rapport de chantier quand il n'y a AUCUNE soumission Form pour un
 # job fermé (Jobber ne connaît pas la notion de "camion", seulement les gars

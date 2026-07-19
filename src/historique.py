@@ -49,3 +49,16 @@ def charger_semaines_precedentes(
             break
 
     return list(reversed(candidats))
+
+
+def charger_toutes_semaines(dossier: Path = DOSSIER_HISTORIQUE) -> list[dict]:
+    """
+    Charge TOUS les résumés de semaine du dossier, triés du plus ancien au plus
+    récent (Module 4 : le dashboard reconstruit ses onglets historiques —
+    jobs/attribution/ventes/hebdo — à partir de cet historique complet à
+    chaque run, plutôt que d'accumuler un état séparé).
+    """
+    if not dossier.exists():
+        return []
+    fichiers = sorted(dossier.glob("semaine_*.json"))
+    return [json.loads(f.read_text(encoding="utf-8")) for f in fichiers]

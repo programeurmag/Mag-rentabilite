@@ -36,6 +36,7 @@ class LigneAttributionChantier:
     employe: str
     date_entree: date
     heures: float
+    truck: str = ""  # Module 4 (dashboard) : onglet attribution a besoin du camion
     source: str = SOURCE_CHANTIER
     anomalie: bool = False
 
@@ -216,6 +217,7 @@ def calculer_chantier(
                         employe=gars,
                         date_entree=s.date_jour,
                         heures=duree,
+                        truck=s.truck,
                     )
                 )
                 heures_personnes += duree

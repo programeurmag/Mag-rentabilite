@@ -17,10 +17,11 @@ import yaml
 from dotenv import dotenv_values
 
 from analyse_claude import analyser_semaine, construire_payload
+from dashboard_sheets import lignes_attribution_semaine, lignes_quotidien_semaine, lignes_ventes_semaine, publier_dashboard
 from env_utils import CHEMIN_ENV, maj_env
 from excel_report import generer_excel
 from form_chantier_source import obtenir_soumissions_avec_degradation
-from historique import charger_semaines_precedentes, sauvegarder_semaine
+from historique import charger_semaines_precedentes, charger_toutes_semaines, sauvegarder_semaine
 from jobber_client import ClientJobber
 from jobber_source import jobs_fermes_dans_fenetre, obtenir_jobs_semaine, obtenir_timesheets_semaine
 from rapport import construire_rapport
@@ -114,9 +115,17 @@ def main():
     # Dégradation gracieuse : sans clé (ou en cas d'échec), analyse=None et
     # le reste du rapport part normalement, juste sans cette section.
     payload_semaine = construire_payload(rapport)
+    # Module 4 (dashboard) : lignes de la semaine pour les onglets attribution/
+    # quotidien, ajoutées au même payload que l'historique Phase 2 (voir
+    # dashboard_sheets.py — la sauvegarde est différée après le calcul des
+    # ventes ci-dessous pour inclure aussi l'onglet ventes dans ce payload).
+    dollars_heure_par_job = {l.numero: l.dollars_heure for l in rapport.jobs_fermes}
+    payload_semaine["attribution"] = lignes_attribution_semaine(
+        rapport.resultat, rapport.resultat_chantier, config, dollars_heure_par_job
+    )
+    payload_semaine["quotidien"] = lignes_quotidien_semaine(soumissions_chantier, jobs, config, debut, fin)
     semaines_precedentes = charger_semaines_precedentes(debut)
     analyse = analyser_semaine(env.get("ANTHROPIC_API_KEY"), payload_semaine, semaines_precedentes)
-    sauvegarder_semaine(payload_semaine)
 
     message_slack = construire_message_slack(rapport, analyse)
     envoyer_slack(env["SLACK_WEBHOOK_URL"], message_slack)
@@ -129,10 +138,22 @@ def main():
 
     rapport_ventes = construire_rapport_ventes(soumissions, config, debut, fin)
     print(f"  {len(rapport_ventes.alertes)} alerte(s) ventes générée(s).")
+    payload_semaine["ventes"] = lignes_ventes_semaine(rapport_ventes)
+    # Projection du mois (pacing jours ouvrés) : stockée telle que calculée cette
+    # semaine-là — Looker Studio n'a pas cette logique, voir dashboard_sheets._ligne_hebdo.
+    payload_semaine["projection_ventes"] = {
+        "projection_fin_mois": round(rapport_ventes.projection_fin_mois, 2),
+        "mois_precedent_total": round(rapport_ventes.mois_precedent_total, 2),
+    }
+    sauvegarder_semaine(payload_semaine)
 
     message_slack_ventes = construire_message_slack_ventes(rapport_ventes)
     envoyer_slack(env["SLACK_WEBHOOK_URL"], message_slack_ventes)
     print("Message Slack (ventes) envoyé.")
+
+    print("Publication du dashboard (module 4)...")
+    historique_complet = charger_toutes_semaines()
+    publier_dashboard(env, config, rapport.jobs_en_cours, jobs, historique_complet)
 
     dossier_sortie = RACINE / "outputs"
     dossier_sortie.mkdir(exist_ok=True)

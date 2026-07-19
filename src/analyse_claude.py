@@ -62,14 +62,19 @@ def construire_payload(rapport: RapportSemaine) -> dict:
             {
                 "numero": l.numero,
                 "client": l.client,
+                "ville": l.ville,
                 "etape": l.etape,
+                "date_debut": l.date_debut.isoformat() if l.date_debut else None,
+                "date_fin": l.date_fermeture.isoformat() if l.date_fermeture else None,
                 "revenu": round(l.revenu, 2),
                 "heures": round(l.heures_attribuees, 2),
+                "cout_mo": round(l.cout_mo, 2),
                 "dollars_heure": round(l.dollars_heure, 2),
                 "materiaux": round(l.materiaux, 2),
                 "overhead": round(l.overhead, 2),
                 "marge_avant_overhead": round(l.marge_avant_overhead, 2),
                 "marge": round(l.marge, 2),  # après overhead
+                "marge_pct": round(l.marge_pct, 4),
                 "source_heures": l.source_heures,
             }
             for l in rapport.jobs_fermes

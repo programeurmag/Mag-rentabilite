@@ -27,6 +27,7 @@ class LigneJob:
     client: str
     ville: str
     etape: str
+    date_debut: date | None
     date_fermeture: date | None
     revenu: float
     materiaux: float
@@ -133,6 +134,7 @@ def construire_rapport(
                 client=job.client,
                 ville=job.ville,
                 etape=deduire_etape(job.line_items),
+                date_debut=job.date_debut_cedulee,
                 date_fermeture=job.date_fermeture,
                 revenu=job.revenu_total,
                 materiaux=materiaux,

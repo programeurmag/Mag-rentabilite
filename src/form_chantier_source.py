@@ -24,7 +24,12 @@ from dateutil import parser as dateutil_parser
 
 from parseur import normaliser_compagnie, normaliser_nom
 
-SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
+# Lecture-écriture (pas .readonly) : requis depuis le Module 4 (dashboard_sheets.py),
+# qui réutilise ce même compte de service pour écrire dans MAG_Dashboard_Data. La
+# protection en écriture du Sheets de réponses du Form reste le partage Google Drive
+# (le compte de service y est en Lecteur, pas en Éditeur) — voir SPEC_module_dashboard_MAG.md
+# section 1.
+SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 
 STATUT_TERMINE = "Terminé"
 STATUT_ON_REVIENT = "On revient"

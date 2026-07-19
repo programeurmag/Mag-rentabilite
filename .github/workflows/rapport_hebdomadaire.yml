@@ -36,6 +36,11 @@ jobs:
           # Phase 2, optionnel : si absente/invalide, le rapport part quand même,
           # juste sans la section analyse IA (voir src/analyse_claude.py).
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Module 3 (rapport de chantier) + Module 4 (dashboard) — manquait ici
+          # jusqu'ici (présent seulement dans rappel_matin.yml), ce qui faisait
+          # tourner le rapport hebdo SANS ces deux sections en prod (dégradation
+          # gracieuse silencieuse, voir form_chantier_source.py / dashboard_sheets.py).
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
         run: python src/generer_rapport.py
 
       - name: Conserver l'Excel généré

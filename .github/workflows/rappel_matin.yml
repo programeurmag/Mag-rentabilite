@@ -1,0 +1,36 @@
+name: Rappel matinal — rapport de chantier
+
+on:
+  schedule:
+    # 8h30 AM heure de Montréal en été (EDT, UTC-4) -> 7h30 AM en hiver (EST, UTC-5).
+    # Cron GitHub Actions ne gère pas le changement d'heure automatiquement (voir
+    # rapport_hebdomadaire.yml) : ajuster cette valeur si le décalage d'une heure
+    # en hiver dérange, ou synchroniser avec config.yaml -> heure_rappel_matin.
+    - cron: "30 12 * * *" # tous les jours, 7 jours sur 7 (spec 5b)
+  workflow_dispatch: {} # permet de lancer le rappel manuellement depuis l'onglet Actions
+
+jobs:
+  rappel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installer les dépendances
+        run: python -m pip install -r requirements.txt
+
+      - name: Envoyer le rappel matinal
+        working-directory: .
+        env:
+          JOBBER_CLIENT_ID: ${{ secrets.JOBBER_CLIENT_ID }}
+          JOBBER_CLIENT_SECRET: ${{ secrets.JOBBER_CLIENT_SECRET }}
+          JOBBER_REFRESH_TOKEN: ${{ secrets.JOBBER_REFRESH_TOKEN }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL_PRODUCTION: ${{ secrets.SLACK_WEBHOOK_URL_PRODUCTION }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: python src/generer_rappel_matin.py

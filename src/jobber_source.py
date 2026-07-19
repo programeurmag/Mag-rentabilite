@@ -62,6 +62,7 @@ _CHAMPS_JOB = """
       lineItems(first: 10) { nodes { name } }
       visits(first: 10) {
         nodes {
+          startAt
           assignedUsers(first: 10) { nodes { name { full } } }
         }
       }
@@ -133,6 +134,9 @@ def _noeud_vers_job(n: dict) -> Job:
         for v in n["visits"]["nodes"]
         for u in v["assignedUsers"]["nodes"]
     }
+    dates_visites = [
+        d for v in n["visits"]["nodes"] if (d := _vers_date_locale(v.get("startAt"))) is not None
+    ]
     return Job(
         numero=n["jobNumber"],
         client=n["client"]["name"] if n["client"] else "",
@@ -144,6 +148,7 @@ def _noeud_vers_job(n: dict) -> Job:
         date_fermeture=_vers_date_locale(n["completedAt"]),
         revenu_total=n["total"] or 0.0,
         employes_assignes=list(employes),
+        dates_visites=dates_visites,
         # Seuls les jobs FERMÉS sont candidats à la répartition des heures
         # "General" (voir _trouver_candidats dans attribution.py), pour rester
         # fidèle à la logique validée à l'étape 1 sur les CSV. Un job encore

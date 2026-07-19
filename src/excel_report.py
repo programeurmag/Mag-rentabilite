@@ -27,7 +27,6 @@ BLEU_INPUT = Font(name=POLICE, color="0000FF")
 NOIR_FORMULE = Font(name=POLICE, color="000000")
 GRAS = Font(name=POLICE, bold=True)
 GRAS_BLANC = Font(name=POLICE, bold=True, color="FFFFFF")
-REMPLISSAGE_JAUNE = PatternFill(start_color="FFFF00", end_color="FFFF00", fill_type="solid")
 REMPLISSAGE_ENTETE = PatternFill(start_color="1F3864", end_color="1F3864", fill_type="solid")
 
 FORMAT_ARGENT = '#,##0.00 $;(#,##0.00 $);"-" $'
@@ -73,9 +72,13 @@ def _feuille_lisez_moi(wb, debut: date, fin: date):
         "",
         "QUALITÉ DES DONNÉES",
         "• Les entrées marquées « ⚠ timer? » (>12h, ou chronomètre encore actif) sont incluses dans les calculs mais doivent être corrigées manuellement dans Jobber si c'est une erreur.",
-        "• Colonne Matériaux ($) de l'onglet Jobs : à remplir manuellement pour une vraie marge (surtout le sable polymère).",
         "",
-        "LÉGENDE : bleu = modifiable (Taux), jaune = à remplir (Matériaux), noir = formule (ne pas toucher).",
+        "MODULE 3 — RAPPORT DE CHANTIER (Form rempli par les chauffeurs)",
+        "• Onglet Jobs, colonne « Source heures » : « Rapport chantier » = heures/matériaux/overhead viennent du Form (source primaire). « Ancienne logique (Form manquant) » = aucun rapport pour ce job, l'agent retombe sur les punchs Jobber (comme avant le Module 3) — corrigez en rappelant au chauffeur de remplir le Form.",
+        "• Pour un job « Rapport chantier », les colonnes Matériaux/Heures/Coût MO/Overhead sont des VALEURS calculées (pas des formules Excel) : un job peut accumuler des soumissions sur plusieurs semaines, ce que cette feuille (une semaine) ne peut pas recalculer en direct. Les colonnes Marge (avant/après overhead), $/heure et Marge % restent des formules qui référencent ces valeurs dans la même ligne.",
+        "• Onglet Chantier : les soumissions brutes du Form reçues cette semaine (pour audit). Onglet Jobs en cours : les jobs multi-jours pas encore terminés, avec leur % de coûts déjà dépensés vs la valeur du job.",
+        "",
+        "LÉGENDE : bleu = modifiable (Taux), noir = formule (ne pas toucher), italique = info (Source heures).",
     ]
     for i, texte in enumerate(lignes, start=1):
         c = ws.cell(row=i, column=1, value=texte)
@@ -92,6 +95,7 @@ def _feuille_taux(wb, config: dict) -> int:
     facteur = config.get("facteur_charges", 1.0)
     roles_vente = set(config.get("roles_vente", []))
     ex_employes = set(config.get("ex_employes", []))
+    employes_hors_jobber = config.get("employes_hors_jobber", {}) or {}
 
     ligne = 2
     for employe, taux in taux_horaires.items():
@@ -105,6 +109,19 @@ def _feuille_taux(wb, config: dict) -> int:
         c_cout.number_format = FORMAT_ARGENT
         role = "Vente" if employe in roles_vente else ("Ex-employé" if employe in ex_employes else None)
         ws.cell(row=ligne, column=5, value=role).font = Font(name=POLICE)
+        ligne += 1
+
+    # Gars sans licence Jobber (Module 3 — rapportés seulement via le Form de chantier).
+    for employe, taux in employes_hors_jobber.items():
+        ws.cell(row=ligne, column=1, value=employe).font = Font(name=POLICE)
+        c_taux = ws.cell(row=ligne, column=2, value=taux)
+        c_taux.font = BLEU_INPUT
+        c_facteur = ws.cell(row=ligne, column=3, value=facteur)
+        c_facteur.font = BLEU_INPUT
+        c_cout = ws.cell(row=ligne, column=4, value=f"=B{ligne}*C{ligne}")
+        c_cout.font = NOIR_FORMULE
+        c_cout.number_format = FORMAT_ARGENT
+        ws.cell(row=ligne, column=5, value="Hors Jobber").font = Font(name=POLICE)
         ligne += 1
 
     return ligne - 1  # dernière ligne de données
@@ -132,17 +149,23 @@ def _feuille_heures(wb, entrees: list):
     return ligne - 1
 
 
-def _feuille_attribution(wb, resultat: ResultatAttribution) -> int:
+def _feuille_attribution(wb, resultat: ResultatAttribution, lignes_chantier: list | None = None) -> int:
     ws = wb.create_sheet("Attribution")
     _entete(ws, 1, ["Job #", "Employé", "Date", "Heures", "Source", "Anomalie", "Coût MO chargé ($)", "Revenu généré ($)"])
     _largeurs(ws, [8, 24, 12, 9, 16, 10, 18, 18])
 
-    lignes_triees = sorted(resultat.lignes, key=lambda l: (l.job_num, l.date_entree, l.employe))
+    # Les lignes issues du Rapport de chantier (Module 3, source primaire quand
+    # elle existe) sont ajoutées ici pour l'audit trail, mais l'onglet Jobs ne
+    # les agrège PAS via ce SUMIF pour les jobs concernés (voir _feuille_jobs) :
+    # elles peuvent couvrir plusieurs semaines, ce que cet onglet (une semaine)
+    # ne peut pas représenter fidèlement en formule.
+    toutes_lignes = list(resultat.lignes) + list(lignes_chantier or [])
+    lignes_triees = sorted(toutes_lignes, key=lambda l: (l.job_num, l.date_entree or date.min, l.employe))
     ligne = 2
     for l in lignes_triees:
         ws.cell(row=ligne, column=1, value=l.job_num)
         ws.cell(row=ligne, column=2, value=l.employe)
-        ws.cell(row=ligne, column=3, value=l.date_entree.isoformat())
+        ws.cell(row=ligne, column=3, value=l.date_entree.isoformat() if l.date_entree else "")
         ws.cell(row=ligne, column=4, value=round(l.heures, 4)).number_format = FORMAT_HEURES
         ws.cell(row=ligne, column=5, value=l.source)
         ws.cell(row=ligne, column=6, value="⚠ timer?" if l.anomalie else "")
@@ -153,11 +176,11 @@ def _feuille_attribution(wb, resultat: ResultatAttribution) -> int:
             value=f'=IFERROR(D{ligne}*INDEX(Taux!$D:$D,MATCH(B{ligne},Taux!$A:$A,0)),0)',
         )
         c_cout.number_format = FORMAT_ARGENT
-        # Revenu généré = heures x $/h du job (onglet Jobs) ; 0 si job pas dans l'onglet Jobs (encore ouvert)
+        # Revenu généré = heures x $/h du job (onglet Jobs, colonne M) ; 0 si job pas dans l'onglet Jobs (encore ouvert)
         c_rev = ws.cell(
             row=ligne,
             column=8,
-            value=f'=IFERROR(D{ligne}*INDEX(Jobs!$K:$K,MATCH(A{ligne},Jobs!$A:$A,0)),0)',
+            value=f'=IFERROR(D{ligne}*INDEX(Jobs!$M:$M,MATCH(A{ligne},Jobs!$A:$A,0)),0)',
         )
         c_rev.number_format = FORMAT_ARGENT
         for col in (1, 2, 3, 5, 6):
@@ -167,40 +190,70 @@ def _feuille_attribution(wb, resultat: ResultatAttribution) -> int:
     return ligne - 1
 
 
-def _feuille_jobs(wb, jobs_fermes: dict, derniere_ligne_attribution: int) -> int:
+def _feuille_jobs(wb, jobs_fermes: dict, derniere_ligne_attribution: int, jobs_chantier: dict | None = None) -> int:
+    """
+    Colonnes G-J (Matériaux, Heures, Coût MO, Overhead) : pour un job avec un
+    Rapport de chantier (Module 3), ce sont des VALEURS calculées côté Python
+    (calculer_chantier), pas des formules — un job multi-jours peut accumuler
+    des soumissions sur plusieurs semaines, ce qu'une formule limitée à
+    l'onglet Attribution de CETTE semaine ne peut pas capturer. Pour un job
+    sans Rapport de chantier (ancienne logique), Heures/Coût MO restent des
+    formules SUMIF live sur Attribution, comme avant, et Matériaux/Overhead
+    valent 0 (aucune donnée matériaux sans Form, spec section 4).
+    Colonnes K-N (marges, $/h, %) restent des formules qui référencent F-J
+    dans la même ligne : éditer une valeur en amont recalcule la marge.
+    """
+    jobs_chantier = jobs_chantier or {}
     ws = wb.create_sheet("Jobs")
     _entete(
         ws, 1,
         ["Job #", "Client", "Ville", "Étape", "Date fermé", "Revenu ($)", "Matériaux ($)",
-         "Heures attribuées", "Coût MO ($)", "Marge ($)", "$ / heure", "Marge %"],
+         "Heures attribuées", "Coût MO ($)", "Overhead ($)", "Marge avant overhead ($)",
+         "Marge après overhead ($)", "$ / heure", "Marge %", "Source heures"],
     )
-    _largeurs(ws, [8, 30, 20, 16, 12, 12, 12, 14, 12, 12, 10, 10])
+    _largeurs(ws, [8, 30, 20, 16, 12, 12, 12, 14, 12, 12, 18, 18, 10, 10, 26])
 
     plage_job = _plage("Attribution", "A", derniere_ligne_attribution)
     plage_heures = _plage("Attribution", "D", derniere_ligne_attribution)
     plage_cout = _plage("Attribution", "G", derniere_ligne_attribution)
     ligne = 2
     for numero, job in sorted(jobs_fermes.items(), key=lambda kv: kv[1].date_fermeture or date.min):
+        jc = jobs_chantier.get(numero)
+
         ws.cell(row=ligne, column=1, value=numero)
         ws.cell(row=ligne, column=2, value=job.client)
         ws.cell(row=ligne, column=3, value=job.ville)
         ws.cell(row=ligne, column=4, value=deduire_etape(job.line_items))
         ws.cell(row=ligne, column=5, value=job.date_fermeture.isoformat() if job.date_fermeture else "")
         ws.cell(row=ligne, column=6, value=job.revenu_total).number_format = FORMAT_ARGENT
-        c_mat = ws.cell(row=ligne, column=7, value=0)
-        c_mat.number_format = FORMAT_ARGENT
-        c_mat.fill = REMPLISSAGE_JAUNE  # à remplir manuellement
 
-        c_h = ws.cell(row=ligne, column=8, value=f"=SUMIF({plage_job},A{ligne},{plage_heures})")
+        if jc is not None:
+            c_mat = ws.cell(row=ligne, column=7, value=round(jc.materiaux, 2))
+            c_h = ws.cell(row=ligne, column=8, value=round(jc.heures_personnes, 4))
+            c_c = ws.cell(row=ligne, column=9, value=round(jc.cout_mo, 2))
+            c_over = ws.cell(row=ligne, column=10, value=round(jc.overhead, 2))
+            source = "Rapport chantier"
+        else:
+            c_mat = ws.cell(row=ligne, column=7, value=0)
+            c_h = ws.cell(row=ligne, column=8, value=f"=SUMIF({plage_job},A{ligne},{plage_heures})")
+            c_c = ws.cell(row=ligne, column=9, value=f"=SUMIF({plage_job},A{ligne},{plage_cout})")
+            c_over = ws.cell(row=ligne, column=10, value=0)
+            source = "Ancienne logique (Form manquant)"
+        c_mat.number_format = FORMAT_ARGENT
         c_h.number_format = FORMAT_HEURES
-        c_c = ws.cell(row=ligne, column=9, value=f"=SUMIF({plage_job},A{ligne},{plage_cout})")
         c_c.number_format = FORMAT_ARGENT
-        c_m = ws.cell(row=ligne, column=10, value=f"=F{ligne}-I{ligne}-G{ligne}")
-        c_m.number_format = FORMAT_ARGENT
-        c_dh = ws.cell(row=ligne, column=11, value=f"=IFERROR(F{ligne}/H{ligne},0)")
+        c_over.number_format = FORMAT_ARGENT
+
+        c_marge_avant = ws.cell(row=ligne, column=11, value=f"=F{ligne}-I{ligne}-G{ligne}")
+        c_marge_avant.number_format = FORMAT_ARGENT
+        c_marge_apres = ws.cell(row=ligne, column=12, value=f"=K{ligne}-J{ligne}")
+        c_marge_apres.number_format = FORMAT_ARGENT
+        c_dh = ws.cell(row=ligne, column=13, value=f"=IFERROR(F{ligne}/H{ligne},0)")
         c_dh.number_format = FORMAT_ARGENT
-        c_pct = ws.cell(row=ligne, column=12, value=f"=IFERROR(J{ligne}/F{ligne},0)")
+        c_pct = ws.cell(row=ligne, column=14, value=f"=IFERROR(L{ligne}/F{ligne},0)")
         c_pct.number_format = FORMAT_PCT
+        ws.cell(row=ligne, column=15, value=source).font = Font(name=POLICE, italic=True)
+
         for col in (1, 2, 3, 4, 5):
             ws.cell(row=ligne, column=col).font = Font(name=POLICE)
         ligne += 1
@@ -285,6 +338,80 @@ def _feuille_dashboard(wb, debut: date, fin: date, derniere_ligne_jobs: int, der
         c_dh.number_format = FORMAT_ARGENT
 
 
+def _feuille_chantier(wb, soumissions_semaine: list) -> int:
+    """Soumissions Form brutes de LA SEMAINE du rapport (module 3), pour audit — valeurs, pas formules."""
+    ws = wb.create_sheet("Chantier")
+    _entete(
+        ws, 1,
+        ["Date", "Truck / Chef d'équipe", "Job #", "Client / adresse (Form)", "Gars présents", "Arrivée", "Départ",
+         "Heures", "Nb gars", "Sacs polymère", "Litres scellant", "Bacs poussière pierre",
+         "Autres matériaux", "Statut", "Notes"],
+    )
+    _largeurs(ws, [12, 20, 8, 26, 34, 9, 9, 9, 8, 12, 12, 16, 24, 12, 30])
+
+    lignes_triees = sorted(soumissions_semaine, key=lambda s: (s.date_jour or date.min, s.truck))
+    ligne = 2
+    for s in lignes_triees:
+        ws.cell(row=ligne, column=1, value=s.date_jour.isoformat() if s.date_jour else "")
+        ws.cell(row=ligne, column=2, value=s.truck)
+        ws.cell(row=ligne, column=3, value=s.job_num)
+        ws.cell(row=ligne, column=4, value=s.client_adresse)
+        ws.cell(row=ligne, column=5, value=", ".join(s.gars_presents))
+        ws.cell(row=ligne, column=6, value=s.heure_arrivee.strftime("%H:%M") if s.heure_arrivee else "")
+        ws.cell(row=ligne, column=7, value=s.heure_depart.strftime("%H:%M") if s.heure_depart else "")
+        ws.cell(row=ligne, column=8, value=round(s.duree_heures, 2)).number_format = FORMAT_HEURES
+        ws.cell(row=ligne, column=9, value=len(s.gars_presents))
+        ws.cell(row=ligne, column=10, value=s.sacs_polymere)
+        ws.cell(row=ligne, column=11, value=s.litres_scellant)
+        ws.cell(row=ligne, column=12, value=s.bacs_poussiere_pierre)
+        ws.cell(row=ligne, column=13, value=s.autres_materiaux)
+        ws.cell(row=ligne, column=14, value=s.statut)
+        ws.cell(row=ligne, column=15, value=s.notes)
+        for col in range(1, 16):
+            ws.cell(row=ligne, column=col).font = Font(name=POLICE)
+        ligne += 1
+
+    if not lignes_triees:
+        ws.cell(row=2, column=1, value="Aucune soumission de rapport de chantier cette semaine.").font = Font(
+            name=POLICE, italic=True
+        )
+
+    return ligne - 1
+
+
+def _feuille_jobs_en_cours(wb, jobs_en_cours: list):
+    """Jobs multi-jours pas encore complétés : coûts accumulés à date vs valeur du job (spec 4c)."""
+    ws = wb.create_sheet("Jobs en cours")
+    _entete(
+        ws, 1,
+        ["Job #", "Client", "Truck(s)", "Valeur du job ($)", "Coûts accumulés ($)", "% Burn",
+         "Dernier statut Form", "Dernière soumission", "Alerte burn"],
+    )
+    _largeurs(ws, [8, 30, 20, 16, 18, 10, 18, 18, 12])
+
+    ligne = 2
+    for jc in jobs_en_cours:
+        ws.cell(row=ligne, column=1, value=jc.job_num).font = Font(name=POLICE)
+        ws.cell(row=ligne, column=2, value=jc.client).font = Font(name=POLICE)
+        ws.cell(row=ligne, column=3, value=", ".join(jc.trucks)).font = Font(name=POLICE)
+        ws.cell(row=ligne, column=4, value=round(jc.valeur, 2)).number_format = FORMAT_ARGENT
+        ws.cell(row=ligne, column=5, value=round(jc.couts_accumules, 2)).number_format = FORMAT_ARGENT
+        ws.cell(row=ligne, column=6, value=jc.pct_burn).number_format = FORMAT_PCT
+        ws.cell(row=ligne, column=7, value=jc.statut_form_dernier or "?").font = Font(name=POLICE)
+        ws.cell(
+            row=ligne, column=8,
+            value=jc.date_derniere_soumission.isoformat() if jc.date_derniere_soumission else "",
+        ).font = Font(name=POLICE)
+        c_alerte = ws.cell(row=ligne, column=9, value="🔴 oui" if jc.alerte_burn else "")
+        c_alerte.font = Font(name=POLICE)
+        ligne += 1
+
+    if not jobs_en_cours:
+        ws.cell(row=2, column=1, value="Aucun job en cours (multi-jours) actuellement.").font = Font(
+            name=POLICE, italic=True
+        )
+
+
 def _feuille_alertes(wb, alertes: list):
     ws = wb.create_sheet("Alertes")
     _entete(ws, 1, ["Type", "Message"])
@@ -296,6 +423,15 @@ def _feuille_alertes(wb, alertes: list):
         "zero_punch_visite": "0% de punch sur visite",
         "job_zero_heure": "Job fermé à 0h",
         "non_attribue_eleve": "% non attribué élevé",
+        "chantier_rapport_manquant": "Rapport de chantier manquant",
+        "chantier_job_introuvable": "No de job introuvable",
+        "chantier_ecart_heures": "Écart heures Form / Jobber",
+        "chantier_double_truck": "Employé sur 2 trucks",
+        "chantier_on_revient_sans_visite": "\"On revient\" sans visite cédulée",
+        "chantier_burn_eleve": "Job en cours : burn élevé",
+        "chantier_contradiction_statut": "Contradiction statut Form / Jobber",
+        "chantier_materiaux_a_verifier": "Matériaux \"Autres\" à vérifier",
+        "chantier_nom_non_reconnu": "Nom non reconnu (taux par défaut appliqué)",
     }
     ligne = 2
     for a in alertes:
@@ -351,16 +487,30 @@ def generer_excel(
     fin: date,
     alertes: list | None = None,
     analyse: dict | None = None,
+    resultat_chantier=None,  # rapport_chantier.ResultatChantier | None (Module 3)
+    jobs_en_cours: list | None = None,
+    soumissions_chantier: list | None = None,  # liste brute complète (matchées + orphelines)
 ):
     """Génère le fichier Excel complet et le sauvegarde à chemin_sortie."""
     wb = Workbook()
     wb.remove(wb.active)
 
+    jobs_chantier = resultat_chantier.jobs if resultat_chantier else {}
+    lignes_chantier = resultat_chantier.lignes_attribution if resultat_chantier else []
+    # La feuille "Chantier" (audit brut) inclut TOUTES les soumissions de la
+    # semaine, y compris celles dont le no de job n'a pas matché (orphelines) :
+    # c'est justement là que Justin peut repérer une faute de frappe.
+    soumissions_semaine = [
+        s for s in (soumissions_chantier or []) if s.date_jour and debut <= s.date_jour <= fin
+    ]
+
     _feuille_lisez_moi(wb, debut, fin)
     derniere_taux = _feuille_taux(wb, config)
     derniere_heures = _feuille_heures(wb, entrees)
-    derniere_attribution = _feuille_attribution(wb, resultat)
-    derniere_jobs = _feuille_jobs(wb, jobs_fermes, derniere_attribution)
+    derniere_attribution = _feuille_attribution(wb, resultat, lignes_chantier)
+    derniere_jobs = _feuille_jobs(wb, jobs_fermes, derniere_attribution, jobs_chantier)
+    _feuille_chantier(wb, soumissions_semaine)
+    _feuille_jobs_en_cours(wb, jobs_en_cours or [])
     _feuille_dashboard(wb, debut, fin, derniere_jobs, derniere_heures, derniere_attribution, derniere_taux)
     _feuille_alertes(wb, alertes or [])
     _feuille_analyse(wb, analyse)

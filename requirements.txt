@@ -4,3 +4,6 @@ pandas
 requests
 python-dotenv
 anthropic
+gspread
+google-auth
+python-dateutil

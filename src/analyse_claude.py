@@ -66,9 +66,24 @@ def construire_payload(rapport: RapportSemaine) -> dict:
                 "revenu": round(l.revenu, 2),
                 "heures": round(l.heures_attribuees, 2),
                 "dollars_heure": round(l.dollars_heure, 2),
-                "marge": round(l.marge, 2),
+                "materiaux": round(l.materiaux, 2),
+                "overhead": round(l.overhead, 2),
+                "marge_avant_overhead": round(l.marge_avant_overhead, 2),
+                "marge": round(l.marge, 2),  # après overhead
+                "source_heures": l.source_heures,
             }
             for l in rapport.jobs_fermes
+        ],
+        "jobs_en_cours": [
+            {
+                "numero": jc.job_num,
+                "client": jc.client,
+                "valeur": round(jc.valeur, 2),
+                "couts_accumules": round(jc.couts_accumules, 2),
+                "pct_burn": round(jc.pct_burn, 4),
+                "dernier_statut": jc.statut_form_dernier,
+            }
+            for jc in rapport.jobs_en_cours
         ],
         "alertes": [{"type": a.type, "message": a.message} for a in rapport.alertes],
     }

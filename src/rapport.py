@@ -14,6 +14,11 @@ from datetime import date
 
 from attribution import ResultatAttribution, calculer_attribution, cout_mo_par_job, heures_par_job
 from parseur import EntreeTimesheet, Job, deduire_etape, normaliser_compagnie
+from rapport_chantier import (
+    alertes_jobs_sans_rapport,
+    calculer_chantier,
+    jobs_en_cours as _jobs_en_cours_chantier,
+)
 
 
 @dataclass
@@ -27,9 +32,12 @@ class LigneJob:
     materiaux: float
     heures_attribuees: float
     cout_mo: float
-    marge: float
+    marge: float  # marge APRÈS overhead (bottom-line réel, spec 4b)
     dollars_heure: float
     marge_pct: float
+    overhead: float = 0.0
+    marge_avant_overhead: float = 0.0
+    source_heures: str = "Ancienne logique"  # "Rapport chantier" ou "Ancienne logique (Form manquant)"
 
 
 @dataclass
@@ -54,6 +62,8 @@ class RapportSemaine:
     dollars_heure_global: float
     heures_par_employe: dict  # employe -> heures totales punchées (toutes, y compris non attribuées)
     alertes: list = field(default_factory=list)  # list[Alerte]
+    jobs_en_cours: list = field(default_factory=list)  # list[JobChantier] pas encore complétés (spec 4c)
+    resultat_chantier: object = None  # rapport_chantier.ResultatChantier (Module 3, pour l'Excel)
 
 
 def _heures_totales_par_employe(entrees: list[EntreeTimesheet]) -> dict:
@@ -78,6 +88,7 @@ def construire_rapport(
     config: dict,
     debut: date,
     fin: date,
+    soumissions_chantier: list | None = None,
 ) -> RapportSemaine:
     compte_compagnie = config.get("compte_compagnie", "MAG Lavage À Pression")
     seuil_timer = config.get("seuil_timer_oublie", 12)
@@ -91,14 +102,31 @@ def construire_rapport(
     totaux_heures = heures_par_job(resultat)
     totaux_cout = cout_mo_par_job(resultat, taux_horaires, facteur_charges)
 
+    # Module 3 : le Rapport de chantier (Form) est la source primaire des heures
+    # et matériaux quand il existe pour un job ; sinon on retombe sur
+    # l'attribution ci-dessus (punchs Jobber), inchangée (spec section 4).
+    resultat_chantier = calculer_chantier(soumissions_chantier or [], jobs, entrees, config)
+
     lignes_jobs = []
     for numero, job in jobs_fermes_fenetre.items():
-        heures = totaux_heures.get(numero, 0.0)
-        cout_mo = totaux_cout.get(numero, 0.0)
-        materiaux = 0.0  # à remplir manuellement dans l'Excel (colonne jaune, voir spec 1.4)
-        marge = job.revenu_total - cout_mo - materiaux
+        jc = resultat_chantier.jobs.get(numero)
+        if jc is not None:
+            heures = jc.heures_personnes
+            cout_mo = jc.cout_mo
+            materiaux = jc.materiaux
+            overhead = jc.overhead
+            source_heures = "Rapport chantier"
+        else:
+            heures = totaux_heures.get(numero, 0.0)
+            cout_mo = totaux_cout.get(numero, 0.0)
+            materiaux = 0.0
+            overhead = 0.0
+            source_heures = "Ancienne logique (Form manquant)"
+
+        marge_avant_overhead = job.revenu_total - cout_mo - materiaux
+        marge_apres_overhead = marge_avant_overhead - overhead
         dollars_heure = job.revenu_total / heures if heures else 0.0
-        marge_pct = marge / job.revenu_total if job.revenu_total else 0.0
+        marge_pct = marge_apres_overhead / job.revenu_total if job.revenu_total else 0.0
         lignes_jobs.append(
             LigneJob(
                 numero=numero,
@@ -110,9 +138,12 @@ def construire_rapport(
                 materiaux=materiaux,
                 heures_attribuees=heures,
                 cout_mo=cout_mo,
-                marge=marge,
+                marge=marge_apres_overhead,
                 dollars_heure=dollars_heure,
                 marge_pct=marge_pct,
+                overhead=overhead,
+                marge_avant_overhead=marge_avant_overhead,
+                source_heures=source_heures,
             )
         )
     lignes_jobs.sort(key=lambda l: l.dollars_heure)  # pire $/h en premier
@@ -202,6 +233,14 @@ def construire_rapport(
             )
         )
 
+    # 6. Alertes du module Rapport de chantier (spec section 5 : écart heures,
+    #    job introuvable, double truck, contradiction statut, burn élevé,
+    #    on-revient sans visite) + jobs fermés sans aucun rapport (par truck).
+    for type_alerte, message in resultat_chantier.alertes:
+        alertes.append(Alerte(type_alerte, message))
+    for type_alerte, message in alertes_jobs_sans_rapport(jobs_fermes_fenetre, resultat_chantier, config):
+        alertes.append(Alerte(type_alerte, message))
+
     return RapportSemaine(
         debut=debut,
         fin=fin,
@@ -217,4 +256,6 @@ def construire_rapport(
         dollars_heure_global=dollars_heure_global,
         heures_par_employe=heures_employe,
         alertes=alertes,
+        jobs_en_cours=_jobs_en_cours_chantier(resultat_chantier),
+        resultat_chantier=resultat_chantier,
     )

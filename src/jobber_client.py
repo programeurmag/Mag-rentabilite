@@ -25,12 +25,17 @@ class ClientJobber:
     """
     Enveloppe l'API GraphQL de Jobber avec gestion automatique du token.
 
-    IMPORTANT — rotation des refresh tokens (confirmée active sur l'app MAG) :
-    chaque rafraîchissement invalide IMMÉDIATEMENT l'ancien refresh_token et en
-    émet un nouveau. Comme le constructeur rafraîchit toujours une fois, un
-    NOUVEAU refresh_token est généré à CHAQUE instanciation de ClientJobber.
-    Le paramètre sur_nouveau_refresh_token doit être fourni pour le sauvegarder
-    (sinon l'exécution suivante échouera avec un refresh_token invalide).
+    Rotation des refresh tokens : DÉSACTIVÉE sur l'app MAG, confirmé
+    empiriquement le 19 juillet 2026 (deux appels successifs à
+    /oauth/token avec le même refresh_token d'origine renvoient chacun
+    un access_token valide et le MÊME refresh_token, pas un nouveau).
+    Un commentaire précédent affirmait le contraire ("rotation confirmée
+    active") — c'était erroné ; voir README.md, qui a toujours dit
+    "rotation désactivée côté Jobber — token stable".
+
+    sur_nouveau_refresh_token reste géré par précaution (si Jobber active un
+    jour la rotation, ou pour un autre compte où elle le serait) : dans le cas
+    normal actuel, il ne sera simplement jamais appelé.
     """
 
     def __init__(

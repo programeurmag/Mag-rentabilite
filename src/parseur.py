@@ -77,6 +77,7 @@ class Job:
     temps_tracke_jobber: float = 0.0  # colonne "Time tracked", pour référence seulement
     employes_assignes: list = field(default_factory=list)
     dans_rapport: bool = True  # False = job vu seulement via les timesheets (job encore ouvert)
+    dates_visites: list = field(default_factory=list)  # dates cédulées des visites (Module 3, source API seulement)
 
     def actif_le(self, jour: date) -> bool:
         """

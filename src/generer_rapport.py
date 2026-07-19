@@ -19,13 +19,22 @@ from dotenv import dotenv_values
 from analyse_claude import analyser_semaine, construire_payload
 from env_utils import CHEMIN_ENV, maj_env
 from excel_report import generer_excel
+from form_chantier_source import obtenir_soumissions_avec_degradation
 from historique import charger_semaines_precedentes, sauvegarder_semaine
 from jobber_client import ClientJobber
 from jobber_source import jobs_fermes_dans_fenetre, obtenir_jobs_semaine, obtenir_timesheets_semaine
 from rapport import construire_rapport
+from rapport_ventes import construire_rapport_ventes
 from slack_message import construire_message_slack, envoyer_slack
+from slack_message_ventes import construire_message_slack_ventes
+from ventes_source import obtenir_quotes_creees
 
 RACINE = Path(__file__).resolve().parent.parent
+
+# Fenêtre d'extraction des soumissions : 8 semaines complètes se terminant à la
+# fin de la semaine du rapport (voir valider_etape1_ventes.py — approche validée
+# sur les données réelles du compte en juillet 2026).
+N_SEMAINES_VENTES = 8
 
 
 def fenetre_semaine_precedente(aujourdhui: date | None = None) -> tuple[date, date]:
@@ -44,12 +53,20 @@ def fenetre_semaine_precedente(aujourdhui: date | None = None) -> tuple[date, da
 
 def _sauvegarder_refresh_token_partout(nouveau_token: str):
     """
-    Persiste le nouveau refresh_token (rotation active sur l'app Jobber).
+    Filet de sécurité si Jobber active un jour la rotation des refresh tokens
+    (actuellement DÉSACTIVÉE sur l'app MAG, confirmé empiriquement le 19
+    juillet 2026 — voir le docstring de ClientJobber._rafraichir dans
+    jobber_client.py) : ClientJobber n'appelle cette fonction que si l'API
+    retourne un refresh_token différent de celui utilisé, ce qui n'arrive
+    jamais dans l'état actuel.
 
-    En local : dans .env. Sur GitHub Actions : .env n'existe pas (les secrets
-    viennent des variables d'environnement), donc on écrit le nouveau token
-    dans un fichier que le workflow lit ensuite pour mettre à jour le secret
-    GitHub via l'API (voir .github/workflows/rapport_hebdomadaire.yml).
+    En local : écrit dans .env. Sur GitHub Actions : .env n'existe pas (les
+    secrets viennent des variables d'environnement), donc écrit le nouveau
+    token dans nouveau_refresh_token.txt — mais AUCUNE étape du workflow ne
+    lit ce fichier pour mettre à jour le secret GitHub JOBBER_REFRESH_TOKEN.
+    Si la rotation devient active un jour, il faudra ajouter cette étape à
+    .github/workflows/rapport_hebdomadaire.yml (et rappel_matin.yml), sinon
+    l'exécution suivante échouera avec un refresh_token invalide.
     """
     if CHEMIN_ENV.exists():
         maj_env("JOBBER_REFRESH_TOKEN", nouveau_token)
@@ -85,7 +102,10 @@ def main():
     jobs_fermes = jobs_fermes_dans_fenetre(jobs, debut, fin)
     print(f"  {len(jobs_fermes)} jobs fermés dans la fenêtre.")
 
-    rapport = construire_rapport(jobs, jobs_fermes, entrees, config, debut, fin)
+    print("Récupération des rapports de chantier (module 3)...")
+    soumissions_chantier = obtenir_soumissions_avec_degradation(env, config)
+
+    rapport = construire_rapport(jobs, jobs_fermes, entrees, config, debut, fin, soumissions_chantier)
 
     print(f"$/h global : {rapport.dollars_heure_global:.2f}")
     print(f"{len(rapport.alertes)} alerte(s) générée(s).")
@@ -100,13 +120,36 @@ def main():
 
     message_slack = construire_message_slack(rapport, analyse)
     envoyer_slack(env["SLACK_WEBHOOK_URL"], message_slack)
-    print("Message Slack envoyé.")
+    print("Message Slack (rentabilité) envoyé.")
+
+    print("Récupération des soumissions (module Ventes)...")
+    debut_extraction_ventes = fin - timedelta(days=7 * N_SEMAINES_VENTES - 1)
+    soumissions = obtenir_quotes_creees(client, debut_extraction_ventes, fin)
+    print(f"  {len(soumissions)} soumissions récupérées.")
+
+    rapport_ventes = construire_rapport_ventes(soumissions, config, debut, fin)
+    print(f"  {len(rapport_ventes.alertes)} alerte(s) ventes générée(s).")
+
+    message_slack_ventes = construire_message_slack_ventes(rapport_ventes)
+    envoyer_slack(env["SLACK_WEBHOOK_URL"], message_slack_ventes)
+    print("Message Slack (ventes) envoyé.")
 
     dossier_sortie = RACINE / "outputs"
     dossier_sortie.mkdir(exist_ok=True)
     chemin_xlsx = dossier_sortie / f"rentabilite_{debut.isoformat()}_au_{fin.isoformat()}.xlsx"
     generer_excel(
-        str(chemin_xlsx), jobs_fermes, entrees, rapport.resultat, config, debut, fin, rapport.alertes, analyse
+        str(chemin_xlsx),
+        jobs_fermes,
+        entrees,
+        rapport.resultat,
+        config,
+        debut,
+        fin,
+        rapport.alertes,
+        analyse,
+        rapport.resultat_chantier,
+        rapport.jobs_en_cours,
+        soumissions_chantier,
     )
     print(f"Excel généré : {chemin_xlsx}")
 

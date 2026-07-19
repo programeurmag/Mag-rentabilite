@@ -28,3 +28,53 @@ roles_vente: ["Charly Pearson", "Justin Boivin"] # heures non attribuées = norm
 ex_employes: ["Pascal"] # ignorer dans les alertes (ex. "0% punch sur visites")
 
 compte_compagnie: "MAG Lavage À Pression" # à ignorer, ce n'est pas un employé
+
+# Module Ventes — noms vérifiés via l'API Jobber (query users), juillet 2026
+vendeurs: ["Jeremy Dagenais", "MAG Lavage À Pression", "Justin Boivin"]
+objectif_mensuel: 0        # $ — 0 = comparer seulement au mois précédent
+seuil_closing: 0.30
+seuil_chute_ventes: 0.25
+jours_relance_soumission: 14
+
+# Module Rapport de chantier (Module 3) — voir SPEC_module_rapport_chantier_MAG.md
+couts_materiaux:
+  sac_polymere: 28       # $ / sac (fourni par Justin, juillet 2026)
+  scellant_litre: 0      # $ / litre — service qu'on n'offre plus (Justin, juillet 2026), laissé à 0 volontairement
+  poussiere_pierre: 3    # $ / sac ou bac — fourni par Justin ; pas encore un champ dédié du Form
+                          # (arrive pour l'instant dans "Autres matériaux", voir alerte chantier_materiaux_a_verifier)
+employes_hors_jobber:     # gars sans licence Jobber — noms EXACTEMENT comme dans le Form (liste Justin, juillet 2026)
+  "Henri": 23
+  "Benjamin": 23
+  "Julien L": 23
+  "Alex": 23
+  "Theo B": 23
+taux_horaire_defaut_hors_jobber: 23  # gars présent sur un rapport mais absent de employes_hors_jobber (ex. option "Autre" du Form)
+# Le Form utilise des prénoms/surnoms courts pour "Gars présents", pas les noms
+# complets de Jobber (ex. "Matis" au lieu de "Matis Rodrigue") : sans cette
+# table, ces gars sont traités comme hors Jobber au taux par défaut au lieu de
+# leur vrai taux Jobber. Repéré lors du test réel du 19 juillet 2026 (job #201) —
+# À COMPLÉTER PAR JUSTIN pour tous les noms courts utilisés dans le Form.
+alias_noms_form:
+  "Matis": "Matis Rodrigue"
+  "Mathis L": "Mathis Lavallée"
+  "Adam": "Adam Menard"
+seuil_ecart_heures: 0.15   # écart Form vs punchs Jobber qui déclenche une alerte (15%)
+overhead_quotidien_total: 1340   # $ / jour, tous camions confondus
+nb_camions: 5                    # 2 lavage + 3 sable → 268 $/camion/jour
+seuil_burn_job_en_cours: 0.60    # alerte si coûts accumulés > 60% de la valeur avant complétion
+
+url_form: "https://docs.google.com/forms/d/e/1FAIpQLSe6aDXS1xIOdzYk2ocGuZwz5WO6EX6U7lmz0g2KEVN-LWMH8A/viewform?usp=header"
+# webhook_slack_production : PAS ICI — c'est un secret (comme SLACK_WEBHOOK_URL).
+# Va dans .env / secret GitHub SLACK_WEBHOOK_URL_PRODUCTION (voir .env.example).
+heure_rappel_matin: "08:30"     # heure de Montréal, 7 jours sur 7
+google_sheet_id_chantier: "1oxkEZGu41pG8l8SIg7fYXEidqE4TxNyeQq6NgRcn_78"
+
+# Équipe habituelle de chaque camion — sert UNIQUEMENT à deviner quel camion a
+# oublié un rapport de chantier quand il n'y a AUCUNE soumission Form pour un
+# job fermé (Jobber ne connaît pas la notion de "camion", seulement les gars
+# assignés). Si l'équipe d'un job ne matche clairement qu'un seul camion, on
+# l'utilise pour l'alerte matinale "par truck" ; sinon le camion reste
+# "non identifié" plutôt que de risquer un mauvais camion. — À REMPLIR
+camions_equipes: {}
+  # "Truck Lavage 1": ["Prénom Nom", "Prénom Nom"]
+  # "Truck Sable 1": ["Prénom Nom"]

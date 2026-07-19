@@ -1,0 +1,241 @@
+{
+  "debut": "2026-07-06",
+  "fin": "2026-07-12",
+  "revenu_ferme_total": 41012.38,
+  "heures_fermes_total": 371.56,
+  "dollars_heure_global": 110.38,
+  "cout_mo_ferme_total": 9660.29,
+  "pct_main_doeuvre": 0.2355,
+  "heures_punchees_total": 639.86,
+  "heures_non_attribuees_total": 57.63,
+  "jobs_fermes": [
+    {
+      "numero": 256,
+      "client": "Loic Beauchemin",
+      "etape": "Redressement",
+      "revenu": 500.0,
+      "heures": 0.0,
+      "dollars_heure": 0.0,
+      "marge": 500.0
+    },
+    {
+      "numero": 258,
+      "client": "Cours du Moulin Saint Eustache",
+      "etape": "Nettoyage",
+      "revenu": 150.0,
+      "heures": 0.0,
+      "dollars_heure": 0.0,
+      "marge": 150.0
+    },
+    {
+      "numero": 255,
+      "client": "Loic Beauchemin",
+      "etape": "Redressement",
+      "revenu": 1250.0,
+      "heures": 0.0,
+      "dollars_heure": 0.0,
+      "marge": 1250.0
+    },
+    {
+      "numero": 185,
+      "client": "Maxime Gagnon",
+      "etape": "Redressement",
+      "revenu": 1600.0,
+      "heures": 0.0,
+      "dollars_heure": 0.0,
+      "marge": 1600.0
+    },
+    {
+      "numero": 146,
+      "client": "Manon Ferrand",
+      "etape": "Autre",
+      "revenu": 2350.0,
+      "heures": 57.74,
+      "dollars_heure": 40.7,
+      "marge": 819.66
+    },
+    {
+      "numero": 198,
+      "client": "9139-0880 Québec inc.",
+      "etape": "Redressement",
+      "revenu": 8638.0,
+      "heures": 147.28,
+      "dollars_heure": 58.65,
+      "marge": 4724.14
+    },
+    {
+      "numero": 151,
+      "client": "Mr. Pîer-Emile Jomphe",
+      "etape": "Redressement",
+      "revenu": 3500.0,
+      "heures": 42.64,
+      "dollars_heure": 82.09,
+      "marge": 2279.43
+    },
+    {
+      "numero": 169,
+      "client": "Christophe Boutron",
+      "etape": "Redressement",
+      "revenu": 1100.0,
+      "heures": 12.14,
+      "dollars_heure": 90.61,
+      "marge": 779.97
+    },
+    {
+      "numero": 163,
+      "client": "Fadwa Aziz",
+      "etape": "Redressement",
+      "revenu": 1450.0,
+      "heures": 15.28,
+      "dollars_heure": 94.86,
+      "marge": 1043.82
+    },
+    {
+      "numero": 81,
+      "client": "Joseph Rene",
+      "etape": "Redressement",
+      "revenu": 2000.0,
+      "heures": 18.48,
+      "dollars_heure": 108.2,
+      "marge": 1519.41
+    },
+    {
+      "numero": 167,
+      "client": "Isabel Freitas",
+      "etape": "Redressement",
+      "revenu": 2000.0,
+      "heures": 14.27,
+      "dollars_heure": 140.16,
+      "marge": 1598.68
+    },
+    {
+      "numero": 215,
+      "client": "Simon Laflamme",
+      "etape": "Redressement",
+      "revenu": 2300.0,
+      "heures": 16.41,
+      "dollars_heure": 140.17,
+      "marge": 1866.46
+    },
+    {
+      "numero": 181,
+      "client": "Michel Tetreault",
+      "etape": "Autre",
+      "revenu": 1900.0,
+      "heures": 10.83,
+      "dollars_heure": 175.52,
+      "marge": 1607.72
+    },
+    {
+      "numero": 214,
+      "client": "Denis Masse",
+      "etape": "Réfection dalles",
+      "revenu": 3000.0,
+      "heures": 11.79,
+      "dollars_heure": 254.36,
+      "marge": 3000.0
+    },
+    {
+      "numero": 216,
+      "client": "Cours du Moulin Saint Eustache",
+      "etape": "Nettoyage",
+      "revenu": 3000.0,
+      "heures": 11.08,
+      "dollars_heure": 270.75,
+      "marge": 2705.95
+    },
+    {
+      "numero": 103,
+      "client": "Patrick Roy",
+      "etape": "Redressement",
+      "revenu": 1900.0,
+      "heures": 5.14,
+      "dollars_heure": 369.9,
+      "marge": 1759.63
+    },
+    {
+      "numero": 252,
+      "client": "Loic Beauchemin",
+      "etape": "Redressement",
+      "revenu": 2874.38,
+      "heures": 6.62,
+      "dollars_heure": 434.32,
+      "marge": 2695.69
+    },
+    {
+      "numero": 212,
+      "client": "Stephane Dumont",
+      "etape": "Redressement",
+      "revenu": 1500.0,
+      "heures": 1.86,
+      "dollars_heure": 805.06,
+      "marge": 1451.53
+    }
+  ],
+  "alertes": [
+    {
+      "type": "dollars_heure_bas",
+      "message": "Job #146 (Manon Ferrand) : 41 $/h (sous le seuil de 80 $/h)"
+    },
+    {
+      "type": "dollars_heure_bas",
+      "message": "Job #198 (9139-0880 Québec inc.) : 59 $/h (sous le seuil de 80 $/h)"
+    },
+    {
+      "type": "timer_oublie",
+      "message": "⚠ Matis Rodrigue, 06 Jul — job #237"
+    },
+    {
+      "type": "timer_oublie",
+      "message": "⚠ Victor Delisle, 08 Jul — job #153"
+    },
+    {
+      "type": "timer_oublie",
+      "message": "⚠ Rafael, 08 Jul — job #153"
+    },
+    {
+      "type": "timer_oublie",
+      "message": "⚠ Adam Menard, 10 Jul — job #198"
+    },
+    {
+      "type": "timer_oublie",
+      "message": "⚠ Adam Menard, 11 Jul — job #198"
+    },
+    {
+      "type": "timer_oublie",
+      "message": "⚠ Mathis Lavallée, 12 Jul — job #146"
+    },
+    {
+      "type": "zero_punch_visite",
+      "message": "Hansley Gauthier Minuty : 0% de punches sur visites cette semaine (30.0 h, toutes en General) — problème d'assignation ou de téléphone?"
+    },
+    {
+      "type": "zero_punch_visite",
+      "message": "Jerome Pare : 0% de punches sur visites cette semaine (35.7 h, toutes en General) — problème d'assignation ou de téléphone?"
+    },
+    {
+      "type": "zero_punch_visite",
+      "message": "Gabriel Paquet : 0% de punches sur visites cette semaine (38.6 h, toutes en General) — problème d'assignation ou de téléphone?"
+    },
+    {
+      "type": "zero_punch_visite",
+      "message": "Adam Menard : 0% de punches sur visites cette semaine (45.1 h, toutes en General) — problème d'assignation ou de téléphone?"
+    },
+    {
+      "type": "job_zero_heure",
+      "message": "Job #256 (Loic Beauchemin) : fermé, 0 heure attribuée"
+    },
+    {
+      "type": "job_zero_heure",
+      "message": "Job #258 (Cours du Moulin Saint Eustache) : fermé, 0 heure attribuée"
+    },
+    {
+      "type": "job_zero_heure",
+      "message": "Job #255 (Loic Beauchemin) : fermé, 0 heure attribuée"
+    },
+    {
+      "type": "job_zero_heure",
+      "message": "Job #185 (Maxime Gagnon) : fermé, 0 heure attribuée"
+    }
+  ]
+}

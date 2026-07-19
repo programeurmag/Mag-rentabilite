@@ -95,7 +95,7 @@ def main():
     dossier_sortie = RACINE / "outputs"
     dossier_sortie.mkdir(exist_ok=True)
     chemin_xlsx = dossier_sortie / f"rentabilite_{debut.isoformat()}_au_{fin.isoformat()}.xlsx"
-    generer_excel(str(chemin_xlsx), jobs_fermes, entrees, rapport.resultat, config, debut, fin)
+    generer_excel(str(chemin_xlsx), jobs_fermes, entrees, rapport.resultat, config, debut, fin, rapport.alertes)
     print(f"Excel généré : {chemin_xlsx}")
 
 

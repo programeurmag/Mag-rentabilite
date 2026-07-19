@@ -55,6 +55,7 @@ def main():
         config,
         DEBUT,
         FIN,
+        rapport.alertes,
     )
     print(f"\nExcel généré : {CHEMIN_SORTIE_XLSX}")
 

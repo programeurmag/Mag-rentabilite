@@ -285,6 +285,28 @@ def _feuille_dashboard(wb, debut: date, fin: date, derniere_ligne_jobs: int, der
         c_dh.number_format = FORMAT_ARGENT
 
 
+def _feuille_alertes(wb, alertes: list):
+    ws = wb.create_sheet("Alertes")
+    _entete(ws, 1, ["Type", "Message"])
+    _largeurs(ws, [24, 90])
+
+    libelles = {
+        "dollars_heure_bas": "$/h sous le seuil",
+        "timer_oublie": "Timer oublié",
+        "zero_punch_visite": "0% de punch sur visite",
+        "job_zero_heure": "Job fermé à 0h",
+        "non_attribue_eleve": "% non attribué élevé",
+    }
+    ligne = 2
+    for a in alertes:
+        ws.cell(row=ligne, column=1, value=libelles.get(a.type, a.type)).font = Font(name=POLICE)
+        ws.cell(row=ligne, column=2, value=a.message).font = Font(name=POLICE)
+        ligne += 1
+    if not alertes:
+        c = ws.cell(row=2, column=1, value="✅ Aucune alerte cette semaine.")
+        c.font = Font(name=POLICE)
+
+
 def generer_excel(
     chemin_sortie: str,
     jobs_fermes: dict,
@@ -293,6 +315,7 @@ def generer_excel(
     config: dict,
     debut: date,
     fin: date,
+    alertes: list | None = None,
 ):
     """Génère le fichier Excel complet et le sauvegarde à chemin_sortie."""
     wb = Workbook()
@@ -304,5 +327,6 @@ def generer_excel(
     derniere_attribution = _feuille_attribution(wb, resultat)
     derniere_jobs = _feuille_jobs(wb, jobs_fermes, derniere_attribution)
     _feuille_dashboard(wb, debut, fin, derniere_jobs, derniere_heures, derniere_attribution, derniere_taux)
+    _feuille_alertes(wb, alertes or [])
 
     wb.save(chemin_sortie)

@@ -7,12 +7,16 @@ Usage : python3 src/valider_etape3.py
 """
 
 import json
+import os
 from datetime import date
 from pathlib import Path
 
 import yaml
+from dotenv import dotenv_values
 
+from analyse_claude import analyser_semaine, construire_payload
 from excel_report import generer_excel
+from historique import charger_semaines_precedentes
 from parseur import parser_jobs, parser_timesheets
 from rapport import construire_rapport
 from slack_message import construire_message_slack
@@ -42,9 +46,17 @@ def main():
     for a in rapport.alertes:
         print(f"  [{a.type}] {a.message}")
 
-    payload = construire_message_slack(rapport)
+    # Phase 2 : dégradation gracieuse testée ici sans clé (ou clé invalide) —
+    # analyse doit rester None et le reste du script continuer normalement.
+    env = {**dotenv_values(RACINE / ".env"), **os.environ}
+    payload_semaine = construire_payload(rapport)
+    semaines_precedentes = charger_semaines_precedentes(DEBUT)
+    analyse = analyser_semaine(env.get("ANTHROPIC_API_KEY"), payload_semaine, semaines_precedentes)
+    print(f"\n=== Analyse IA : {'disponible' if analyse else 'absente (attendu sans clé valide)'} ===")
+
+    message_slack = construire_message_slack(rapport, analyse)
     print("\n=== Aperçu message Slack (JSON) ===")
-    print(json.dumps(payload, indent=2, ensure_ascii=False))
+    print(json.dumps(message_slack, indent=2, ensure_ascii=False))
 
     CHEMIN_SORTIE_XLSX.parent.mkdir(exist_ok=True)
     generer_excel(
@@ -56,6 +68,7 @@ def main():
         DEBUT,
         FIN,
         rapport.alertes,
+        analyse,
     )
     print(f"\nExcel généré : {CHEMIN_SORTIE_XLSX}")
 

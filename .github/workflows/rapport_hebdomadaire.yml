@@ -8,6 +8,9 @@ on:
     - cron: "0 10 * * 1"
   workflow_dispatch: {} # permet de lancer le rapport manuellement depuis l'onglet Actions
 
+permissions:
+  contents: write # nécessaire pour committer l'historique (Phase 2, voir dernière étape)
+
 jobs:
   rapport:
     runs-on: ubuntu-latest
@@ -30,6 +33,9 @@ jobs:
           JOBBER_CLIENT_SECRET: ${{ secrets.JOBBER_CLIENT_SECRET }}
           JOBBER_REFRESH_TOKEN: ${{ secrets.JOBBER_REFRESH_TOKEN }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          # Phase 2, optionnel : si absente/invalide, le rapport part quand même,
+          # juste sans la section analyse IA (voir src/analyse_claude.py).
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python src/generer_rapport.py
 
       - name: Conserver l'Excel généré
@@ -39,3 +45,13 @@ jobs:
           name: rapport-excel
           path: outputs/*.xlsx
           retention-days: 90
+
+      - name: Committer l'historique de la semaine (Phase 2)
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p historique
+          git add -A historique
+          git diff --cached --quiet || git commit -m "Historique semaine du $(date +%F)"
+          git push

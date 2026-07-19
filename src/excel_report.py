@@ -307,6 +307,40 @@ def _feuille_alertes(wb, alertes: list):
         c.font = Font(name=POLICE)
 
 
+def _feuille_analyse(wb, analyse: dict | None):
+    ws = wb.create_sheet("Analyse")
+    ws.sheet_view.showGridLines = False
+    _largeurs(ws, [100])
+
+    if not analyse:
+        c = ws.cell(
+            row=1, column=1,
+            value="Analyse IA non disponible cette semaine (clé Anthropic absente ou erreur temporaire).",
+        )
+        c.font = Font(name=POLICE, italic=True)
+        return
+
+    ligne = 1
+    c = ws.cell(row=ligne, column=1, value="CONSTATS")
+    c.font = GRAS
+    ligne += 1
+    for constat in analyse.get("constats", []):
+        c = ws.cell(row=ligne, column=1, value=f"• {constat}")
+        c.font = Font(name=POLICE)
+        c.alignment = Alignment(wrap_text=True, vertical="top")
+        ligne += 1
+
+    ligne += 1
+    c = ws.cell(row=ligne, column=1, value="RECOMMANDATIONS")
+    c.font = GRAS
+    ligne += 1
+    for reco in analyse.get("recommandations", []):
+        c = ws.cell(row=ligne, column=1, value=f"• {reco}")
+        c.font = Font(name=POLICE)
+        c.alignment = Alignment(wrap_text=True, vertical="top")
+        ligne += 1
+
+
 def generer_excel(
     chemin_sortie: str,
     jobs_fermes: dict,
@@ -316,6 +350,7 @@ def generer_excel(
     debut: date,
     fin: date,
     alertes: list | None = None,
+    analyse: dict | None = None,
 ):
     """Génère le fichier Excel complet et le sauvegarde à chemin_sortie."""
     wb = Workbook()
@@ -328,5 +363,6 @@ def generer_excel(
     derniere_jobs = _feuille_jobs(wb, jobs_fermes, derniere_attribution)
     _feuille_dashboard(wb, debut, fin, derniere_jobs, derniere_heures, derniere_attribution, derniere_taux)
     _feuille_alertes(wb, alertes or [])
+    _feuille_analyse(wb, analyse)
 
     wb.save(chemin_sortie)

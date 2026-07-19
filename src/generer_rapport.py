@@ -16,8 +16,10 @@ from pathlib import Path
 import yaml
 from dotenv import dotenv_values
 
+from analyse_claude import analyser_semaine, construire_payload
 from env_utils import CHEMIN_ENV, maj_env
 from excel_report import generer_excel
+from historique import charger_semaines_precedentes, sauvegarder_semaine
 from jobber_client import ClientJobber
 from jobber_source import jobs_fermes_dans_fenetre, obtenir_jobs_semaine, obtenir_timesheets_semaine
 from rapport import construire_rapport
@@ -88,14 +90,24 @@ def main():
     print(f"$/h global : {rapport.dollars_heure_global:.2f}")
     print(f"{len(rapport.alertes)} alerte(s) générée(s).")
 
-    payload = construire_message_slack(rapport)
-    envoyer_slack(env["SLACK_WEBHOOK_URL"], payload)
+    # Phase 2 : analyse Claude, en comparant aux ~4 semaines précédentes.
+    # Dégradation gracieuse : sans clé (ou en cas d'échec), analyse=None et
+    # le reste du rapport part normalement, juste sans cette section.
+    payload_semaine = construire_payload(rapport)
+    semaines_precedentes = charger_semaines_precedentes(debut)
+    analyse = analyser_semaine(env.get("ANTHROPIC_API_KEY"), payload_semaine, semaines_precedentes)
+    sauvegarder_semaine(payload_semaine)
+
+    message_slack = construire_message_slack(rapport, analyse)
+    envoyer_slack(env["SLACK_WEBHOOK_URL"], message_slack)
     print("Message Slack envoyé.")
 
     dossier_sortie = RACINE / "outputs"
     dossier_sortie.mkdir(exist_ok=True)
     chemin_xlsx = dossier_sortie / f"rentabilite_{debut.isoformat()}_au_{fin.isoformat()}.xlsx"
-    generer_excel(str(chemin_xlsx), jobs_fermes, entrees, rapport.resultat, config, debut, fin, rapport.alertes)
+    generer_excel(
+        str(chemin_xlsx), jobs_fermes, entrees, rapport.resultat, config, debut, fin, rapport.alertes, analyse
+    )
     print(f"Excel généré : {chemin_xlsx}")
 
 

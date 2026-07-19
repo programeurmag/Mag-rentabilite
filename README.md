@@ -47,6 +47,21 @@ chaque lundi matin. Secrets requis dans Settings → Secrets and variables → A
 - `JOBBER_CLIENT_SECRET`
 - `JOBBER_REFRESH_TOKEN` (rotation désactivée côté Jobber — token stable)
 - `SLACK_WEBHOOK_URL`
+- `ANTHROPIC_API_KEY` (Phase 2, optionnel — voir ci-dessous)
+
+Le workflow committe aussi automatiquement l'historique de la semaine (`historique/*.json`),
+d'où le `permissions: contents: write` dans le fichier YAML.
+
+## Phase 2 — Analyse Claude (optionnelle)
+
+Si `ANTHROPIC_API_KEY` est configurée (secret GitHub ou `.env` local), chaque rapport inclut
+3-5 constats + des recommandations générés par Claude (modèle `claude-opus-4-8`), en comparant
+la semaine actuelle aux ~4 semaines précédentes (`historique/`). Résumé court dans Slack, détail
+complet dans l'onglet Analyse de l'Excel.
+
+**Dégradation gracieuse** : si la clé est absente, invalide, ou que l'appel échoue pour
+n'importe quelle raison, le rapport part quand même normalement — juste sans cette section
+(voir `src/analyse_claude.py`).
 
 ## Structure
 
@@ -55,4 +70,5 @@ chaque lundi matin. Secrets requis dans Settings → Secrets and variables → A
 - `src/attribution.py` — logique d'attribution des heures aux jobs (spec section 1.3).
 - `src/rapport.py` — agrégats et alertes automatiques.
 - `src/slack_message.py` / `src/excel_report.py` — génération des sorties.
+- `src/analyse_claude.py` / `src/historique.py` — analyse IA (Phase 2) et sa mémoire de semaines.
 - `src/generer_rapport.py` — script principal (celui exécuté par le GitHub Action).

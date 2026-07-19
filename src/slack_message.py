@@ -11,8 +11,15 @@ import requests
 from rapport import RapportSemaine
 
 
-def construire_message_slack(rapport: RapportSemaine) -> dict:
-    """Construit le payload JSON (Block Kit) pour le webhook Slack entrant."""
+MAX_CONSTATS_SLACK = 3  # section courte : le détail complet (avec recommandations) est dans l'Excel
+
+
+def construire_message_slack(rapport: RapportSemaine, analyse: dict | None = None) -> dict:
+    """Construit le payload JSON (Block Kit) pour le webhook Slack entrant.
+
+    `analyse` (optionnel, Phase 2) : {"constats": [...], "recommandations": [...]}
+    produit par analyse_claude.analyser_semaine(). Absent si pas de clé API ou échec.
+    """
     periode = f"{rapport.debut.strftime('%d %b')} au {rapport.fin.strftime('%d %b %Y')}"
 
     blocks = [
@@ -28,11 +35,21 @@ def construire_message_slack(rapport: RapportSemaine) -> dict:
                 {"type": "mrkdwn", "text": f"*% main d'œuvre*\n{rapport.pct_main_doeuvre:.0%}"},
             ],
         },
+    ]
+
+    if analyse and analyse.get("constats"):
+        constats = analyse["constats"][:MAX_CONSTATS_SLACK]
+        texte_constats = "\n".join(f"• {c}" for c in constats)
+        blocks.append(
+            {"type": "section", "text": {"type": "mrkdwn", "text": f"*Constats*\n{texte_constats}"}}
+        )
+
+    blocks.append(
         {
             "type": "context",
-            "elements": [{"type": "mrkdwn", "text": "Détail complet (jobs, alertes) : voir l'Excel joint."}],
-        },
-    ]
+            "elements": [{"type": "mrkdwn", "text": "Détail complet (jobs, alertes, analyse) : voir l'Excel joint."}],
+        }
+    )
 
     texte_repli = f"Rentabilité MAG {periode} : {rapport.dollars_heure_global:.0f} $/h global"
     return {"text": texte_repli, "blocks": blocks}

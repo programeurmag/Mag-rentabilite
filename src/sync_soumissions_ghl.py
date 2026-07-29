@@ -39,13 +39,14 @@ Usage :
 from __future__ import annotations
 
 import argparse
+import os
 import time
 from datetime import date, datetime, timedelta, timezone
 
 import requests
 from dotenv import dotenv_values
 
-from env_utils import CHEMIN_ENV, maj_env
+from env_utils import CHEMIN_ENV, RACINE, maj_env
 from etat_sync_soumissions import lire_dernier_run, sauvegarder_dernier_run
 from jobber_client import ClientJobber
 from valider_etape1_sync_soumissions import (
@@ -83,16 +84,28 @@ def parse_args():
     return p.parse_args()
 
 
+def _sur_nouveau_refresh_token(nouveau_token: str):
+    """En local : écrit dans .env. Sur GitHub Actions (.env absent, secrets via
+    l'environnement) : écrit dans nouveau_refresh_token.txt — même limitation
+    documentée dans generer_rapport.py (rotation désactivée sur l'app MAG en
+    pratique, donc ce chemin n'est jamais emprunté aujourd'hui)."""
+    if CHEMIN_ENV.exists():
+        maj_env("JOBBER_REFRESH_TOKEN", nouveau_token)
+    (RACINE / "nouveau_refresh_token.txt").write_text(nouveau_token, encoding="utf-8")
+
+
 def main():
     args = parse_args()
     mode_live = args.live
 
-    config = dotenv_values(CHEMIN_ENV)
+    # En local : .env. Sur GitHub Actions : variables d'environnement (secrets) —
+    # même pattern que generer_rapport.py, dotenv_values() seul retourne {} en CI.
+    config = {**dotenv_values(CHEMIN_ENV), **os.environ} if CHEMIN_ENV.exists() else os.environ
     client_jobber = ClientJobber(
         config["JOBBER_CLIENT_ID"],
         config["JOBBER_CLIENT_SECRET"],
         config["JOBBER_REFRESH_TOKEN"],
-        sur_nouveau_refresh_token=lambda t: maj_env("JOBBER_REFRESH_TOKEN", t),
+        sur_nouveau_refresh_token=_sur_nouveau_refresh_token,
     )
 
     debut_run = datetime.now(timezone.utc)  # capturé avant la lecture, pour ne rien manquer pendant le run

@@ -142,6 +142,31 @@ def simuler_ecriture(opp: dict, sous_total: float) -> dict:
     }
 
 
+STATUTS_OPP_FINAUX = {"won", "lost", "abandoned"}
+
+
+def simuler_passage_won(opp: dict, statut_quote_canonique: str) -> dict:
+    """
+    Règle ajoutée le 2026-07-30 (demande Justin), distincte des garde-fous
+    d'origine du spec : quand la soumission canonique de l'opportunité (même
+    sélection que simuler_ecriture — cascade + règle multi-soumissions) est
+    approuvée ou convertie côté Jobber, faire passer l'opportunité GHL à
+    status "won" — SAUF si elle est déjà dans un statut final (won, lost,
+    abandoned), pour ne jamais écraser une décision déjà prise côté GHL.
+
+    Ne touche jamais monetaryValue ni pipelineStageId ici (simuler_ecriture
+    s'en occupe séparément, sur l'état de l'opportunité en début de run) —
+    et ne fait plus partie de la garantie "le statut n'est jamais modifié"
+    documentée ailleurs dans ce module pour tout le reste (nom, owner, tags) :
+    seule cette transition précise vers "won" est autorisée.
+    """
+    if statut_quote_canonique not in STATUTS_APPROUVES:
+        return {"action_statut": "aucun changement (soumission pas approuvée/convertie)", "corps_put": {}}
+    if opp["status"] in STATUTS_OPP_FINAUX:
+        return {"action_statut": f"aucun changement (déjà {opp['status']})", "corps_put": {}}
+    return {"action_statut": f"{opp['status']} -> won", "corps_put": {"status": "won"}}
+
+
 def main():
     config = dotenv_values(CHEMIN_ENV)
     client_jobber = ClientJobber(

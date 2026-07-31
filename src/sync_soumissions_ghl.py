@@ -16,9 +16,13 @@ Sécurité : DRY-RUN PAR DÉFAUT (voir spec, section "Modes d'exécution" —
 Endpoint d'écriture vérifié contre la doc officielle HighLevel :
   PUT https://services.leadconnectorhq.com/opportunities/:id
   Header requis : Version: v3. Corps JSON PARTIEL (seuls les champs présents
-  sont modifiés) — on n'envoie donc jamais `name`, `status`, `assignedTo` ni
-  `tags`, conformément à la règle du spec ("Ne jamais modifier : le nom de
-  l'opportunité, l'owner assigné, le statut, les tags").
+  sont modifiés) — on n'envoie donc jamais `name`, `assignedTo` ni `tags`,
+  conformément à la règle du spec ("Ne jamais modifier : le nom de
+  l'opportunité, l'owner assigné, les tags"). EXCEPTION au "jamais le statut"
+  d'origine, ajoutée le 2026-07-30 (demande Justin) : `status` passe à "won"
+  quand la soumission canonique est approuvée/convertie ET que l'opportunité
+  n'est pas déjà dans un statut final (won/lost/abandoned) — voir
+  simuler_passage_won() dans valider_etape3_sync_soumissions.py.
 
 Mode incrémental (sans --since, pour le cron) : lit le timestamp du dernier
 run dans etat_sync_soumissions.json (voir spec, Flow point 1) et récupère les
@@ -61,6 +65,7 @@ from valider_etape3_sync_soumissions import (
     construire_index,
     matcher,
     simuler_ecriture,
+    simuler_passage_won,
 )
 
 DELAI_ENTRE_ECRITURES = 0.15  # ~6-7 req/s, largement sous la limite GHL (100 / 10s)
@@ -80,7 +85,9 @@ def parse_args():
     p.add_argument("--live", action="store_true", help="Effectue les écritures réelles dans GHL (défaut : dry-run)")
     p.add_argument("--dry-run", action="store_true", help="Explicite, sans effet (comportement par défaut)")
     p.add_argument("--since", type=str, default=None, help="Date de début (YYYY-MM-DD), remplace les 30 derniers jours")
+    p.add_argument("--until", type=str, default=None, help="Date de fin (YYYY-MM-DD), avec --since seulement (défaut : aujourd'hui) — pour le backfill par tranches")
     p.add_argument("--limit", type=int, default=None, help="Limite le nombre de soumissions traitées (test)")
+    p.add_argument("--exclude", type=str, default=None, help="Numéros de soumission à exclure, séparés par virgule (ex: 516,203)")
     return p.parse_args()
 
 
@@ -111,9 +118,10 @@ def main():
     debut_run = datetime.now(timezone.utc)  # capturé avant la lecture, pour ne rien manquer pendant le run
 
     if args.since:
-        debut, fin = datetime.strptime(args.since, "%Y-%m-%d").date(), date.today()
+        debut = datetime.strptime(args.since, "%Y-%m-%d").date()
+        fin = datetime.strptime(args.until, "%Y-%m-%d").date() if args.until else date.today()
         quotes = obtenir_quotes_envoyees(client_jobber, debut, fin)
-        fenetre_affichee = f"{debut} au {fin} (--since)"
+        fenetre_affichee = f"{debut} au {fin} (--since{'/--until' if args.until else ''})"
         mode_incremental = False
     else:
         dernier_run = lire_dernier_run()
@@ -125,6 +133,10 @@ def main():
             quotes = obtenir_quotes_maj_depuis(client_jobber, dernier_run)
             fenetre_affichee = f"depuis {dernier_run.isoformat()} (incrémental)"
         mode_incremental = True
+
+    if args.exclude:
+        exclus = {n.strip() for n in args.exclude.split(",")}
+        quotes = [q for q in quotes if q["quoteNumber"] not in exclus]
 
     if args.limit:
         quotes = quotes[: args.limit]
@@ -153,6 +165,7 @@ def main():
     ignorees_deja_a_jour = []
     diminutions = []
     erreurs = []
+    passages_won = []
 
     for opp_id, quotes_groupe in groupes.items():
         opp = opportunites_par_id[opp_id]
@@ -165,32 +178,46 @@ def main():
 
         q_canonique = choisir_soumission_canonique(quotes_groupe)
         sous_total = q_canonique["amounts"]["subtotal"] or 0.0
-        simulation = simuler_ecriture(opp, sous_total)
         numero = q_canonique["quoteNumber"]
+        c_canonique = q_canonique.get("client") or {}
+        nom_client = f"{c_canonique.get('firstName', '')} {c_canonique.get('lastName', '')}".strip()
+
+        simulation = simuler_ecriture(opp, sous_total)
+        simulation_won = simuler_passage_won(opp, q_canonique["quoteStatus"])
+        corps_put = {**simulation["corps_put"], **simulation_won["corps_put"]}
 
         if simulation["valeur_diminuee"]:
             diminutions.append((numero, opp["name"], simulation["action_valeur"]))
 
-        if not simulation["corps_put"]:
+        if not corps_put:
             ignorees_deja_a_jour.append(numero)
             continue
 
         if mode_live:
             try:
-                ecrire_opportunite(config, opp_id, simulation["corps_put"])
+                ecrire_opportunite(config, opp_id, corps_put)
                 time.sleep(DELAI_ENTRE_ECRITURES)
             except requests.HTTPError as e:
                 erreurs.append((numero, opp["name"], str(e)))
                 continue
 
-        ecrites.append((numero, opp["name"], simulation["action_valeur"], simulation["action_stage"]))
+        # Loggué seulement une fois l'écriture confirmée réussie (ou en dry-run,
+        # où "confirmée" veut dire "aurait réussi") — jamais avant, sinon une
+        # écriture en erreur se retrouverait quand même comptée comme passage à Won.
+        if simulation_won["corps_put"]:
+            passages_won.append((numero, nom_client))
+
+        ecrites.append(
+            (numero, opp["name"], simulation["action_valeur"], simulation["action_stage"], simulation_won["action_statut"])
+        )
 
     print("=" * 100)
     print(f"SYNC SOUMISSIONS {'(LIVE)' if mode_live else '(DRY-RUN)'} — {fenetre_affichee}")
     print("=" * 100)
 
-    for numero, nom, action_valeur, action_stage in ecrites:
-        print(f"  #{numero:<6} {nom:<25} valeur: {action_valeur:<26} stage: {action_stage}")
+    for numero, nom, action_valeur, action_stage, action_statut in ecrites:
+        suffixe_statut = f"  statut: {action_statut}" if action_statut.endswith("won") else ""
+        print(f"  #{numero:<6} {nom:<25} valeur: {action_valeur:<26} stage: {action_stage}{suffixe_statut}")
 
     n_traitees = len(quotes)
     n_matchees = len(ecrites) + len(ignorees_deja_a_jour) + len(erreurs)
@@ -202,6 +229,12 @@ def main():
         f"  {'Écrites' if mode_live else 'À écrire'} : {len(ecrites)}  |  "
         f"Déjà à jour (ignorées) : {len(ignorees_deja_a_jour)}  |  Erreurs GHL : {len(erreurs)}"
     )
+
+    verbe_won = "passée(s)" if mode_live else "à passer"
+    print(f"  Opportunités {verbe_won} à Won : {len(passages_won)}")
+    if passages_won:
+        for numero, nom_client in passages_won:
+            print(f"    - #{numero} — {nom_client}")
 
     if non_matchees:
         print("\nNon matchées :")

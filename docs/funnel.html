@@ -1,27 +1,11 @@
-"""
-Shells HTML statiques — Centre de contrôle Ventes GHL (6 pages, 2026-08-01).
-Aucune logique de rendu ici : juste le squelette de chaque page (nav commune +
-conteneurs) qui charge commun.js puis le JS propre à la page. Tout le calcul
-et le rendu se font en JS à partir de docs/stats_ventes_ghl.json (voir
-commun.js pour le chargement des données et dashboard_ventes_ghl.py pour ce
-qui est déjà pré-calculé côté serveur).
-
-Régénérées à chaque run (contenu statique, pas de coût réel — git ne voit
-aucune différence si rien n'a changé).
-"""
-
-from __future__ import annotations
-
-PAGES = [
-    ("index.html", "Accueil", "dashboard"),
-    ("activite.html", "Activité", "activite"),
-    ("funnel.html", "Funnel", "funnel"),
-    ("pipeline.html", "Pipeline", "pipeline"),
-    ("sources.html", "Sources", "sources"),
-    ("temporel.html", "Temporel", "temporel"),
-]
-
-CSS = """
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="600">
+<title>Funnel — Dashboard Ventes MAG</title>
+<style>
   :root { color-scheme: light; }
   * { box-sizing: border-box; }
   body {
@@ -115,119 +99,19 @@ CSS = """
     nav.principale a { color: #9aa0a6; }
     .funnel-barre-fond { background: #24252a; }
   }
-"""
-
-
-def _nav(page_active: str) -> str:
-    liens = "".join(
-        f'<a href="{fichier}" class="{"actif" if cle == page_active else ""}">{label}</a>'
-        for fichier, label, cle in PAGES
-    )
-    return f'<nav class="principale">{liens}</nav>'
-
-
-def _shell(titre: str, page_active: str, corps: str, script_page: str) -> str:
-    return f"""<!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="refresh" content="600">
-<title>{titre} — Dashboard Ventes MAG</title>
-<style>{CSS}</style>
+</style>
 </head>
 <body>
 <header>
   <div class="entete-haut">
     <div>
-      <h1>{titre} — MAG</h1>
+      <h1>Funnel — MAG</h1>
       <div class="meta" id="meta">Chargement…</div>
     </div>
   </div>
-  {_nav(page_active)}
+  <nav class="principale"><a href="index.html" class="">Accueil</a><a href="activite.html" class="">Activité</a><a href="funnel.html" class="actif">Funnel</a><a href="pipeline.html" class="">Pipeline</a><a href="sources.html" class="">Sources</a><a href="temporel.html" class="">Temporel</a></nav>
 </header>
-{corps}
-<script src="commun.js"></script>
-<script src="{script_page}.js"></script>
-</body>
-</html>
-"""
 
-
-def _page_index() -> str:
-    corps = """
-<div class="entete-haut" style="margin-bottom:16px">
-  <div class="presets" id="presets">
-    <button data-preset="7">7 jours</button>
-    <button data-preset="30" class="actif">30 jours</button>
-    <button data-preset="90">90 jours</button>
-    <button data-preset="mois">Ce mois</button>
-  </div>
-</div>
-
-<section class="panneau" id="section-podium">
-  <h2>Podium du mois — taux de closing</h2>
-  <div id="podium"></div>
-</section>
-
-<section class="bandeau-equipe" id="bandeau-equipe"></section>
-
-<section class="grille-vendeurs" id="grille-vendeurs"></section>
-
-<section class="panneau">
-  <h2>Tendance par semaine</h2>
-  <div class="grille-graphiques" id="graphiques-tendance"></div>
-</section>
-
-<section class="panneau">
-  <h2>Répartition par source de lead</h2>
-  <div id="tableau-source"></div>
-</section>
-
-<section class="panneau">
-  <h2>Classement des vendeurs</h2>
-  <div id="leaderboard"></div>
-</section>
-
-<section class="panneau">
-  <h2>Détail</h2>
-  <div class="tabs" id="tabs-detail">
-    <button data-tab="leads" class="actif">Leads</button>
-    <button data-tab="soumissions">Soumissions</button>
-  </div>
-  <input type="search" id="recherche" placeholder="Rechercher un nom...">
-  <div class="table-scroll" id="tableau-detail"></div>
-</section>
-"""
-    return _shell("Dashboard Ventes", "dashboard", corps, "dashboard")
-
-
-def _page_activite() -> str:
-    corps = """
-<div class="entete-haut" style="margin-bottom:16px">
-  <div class="presets" id="presets">
-    <button data-preset="7">7 jours</button>
-    <button data-preset="30" class="actif">30 jours</button>
-    <button data-preset="90">90 jours</button>
-    <button data-preset="mois">Ce mois</button>
-  </div>
-</div>
-
-<section class="panneau">
-  <h2>Volume d'activité par vendeur</h2>
-  <div id="tableau-activite"></div>
-</section>
-
-<section class="panneau">
-  <h2>Tendance par semaine</h2>
-  <div class="grille-graphiques" id="graphiques-activite"></div>
-</section>
-"""
-    return _shell("Activité", "activite", corps, "activite")
-
-
-def _page_funnel() -> str:
-    corps = """
 <div class="entete-haut" style="margin-bottom:16px">
   <div class="presets" id="presets">
     <button data-preset="7">7 jours</button>
@@ -243,86 +127,8 @@ def _page_funnel() -> str:
 </section>
 
 <section class="grille-vendeurs" id="funnel-vendeurs"></section>
-"""
-    return _shell("Funnel", "funnel", corps, "funnel")
 
-
-def _page_pipeline() -> str:
-    corps = """
-<section class="panneau">
-  <h2>Valeur ouverte par stage</h2>
-  <div id="valeur-par-stage"></div>
-</section>
-
-<section class="panneau">
-  <h2>Âge moyen des opportunités ouvertes par stage</h2>
-  <div id="age-par-stage"></div>
-</section>
-
-<section class="panneau">
-  <h2>Leads jamais contactés</h2>
-  <div class="table-scroll" id="jamais-contactes"></div>
-</section>
-
-<section class="panneau">
-  <h2>Soumissions sans réponse depuis 7+ jours</h2>
-  <div class="table-scroll" id="soumissions-dormantes"></div>
-</section>
-
-<section class="panneau">
-  <h2>Opportunités sans activité depuis 14+ jours</h2>
-  <div class="table-scroll" id="opportunites-dormantes"></div>
-</section>
-"""
-    return _shell("Pipeline", "pipeline", corps, "pipeline")
-
-
-def _page_sources() -> str:
-    corps = """
-<div class="entete-haut" style="margin-bottom:16px">
-  <div class="presets" id="presets">
-    <button data-preset="7">7 jours</button>
-    <button data-preset="30" class="actif">30 jours</button>
-    <button data-preset="90">90 jours</button>
-    <button data-preset="mois">Ce mois</button>
-  </div>
-</div>
-
-<section class="panneau">
-  <h2>Performance par source de lead</h2>
-  <div class="table-scroll" id="tableau-sources"></div>
-</section>
-"""
-    return _shell("Sources", "sources", corps, "sources")
-
-
-def _page_temporel() -> str:
-    corps = """
-<div class="entete-haut" style="margin-bottom:16px">
-  <div class="presets" id="presets">
-    <button data-preset="7">7 jours</button>
-    <button data-preset="30" class="actif">30 jours</button>
-    <button data-preset="90">90 jours</button>
-    <button data-preset="mois">Ce mois</button>
-  </div>
-</div>
-
-<section class="panneau">
-  <h2>Leads entrants — jour x heure</h2>
-  <div id="heatmap"></div>
-</section>
-
-<section class="bandeau-equipe" id="bandeau-delais"></section>
-"""
-    return _shell("Temporel", "temporel", corps, "temporel")
-
-
-def generer_pages() -> dict[str, str]:
-    return {
-        "index.html": _page_index(),
-        "activite.html": _page_activite(),
-        "funnel.html": _page_funnel(),
-        "pipeline.html": _page_pipeline(),
-        "sources.html": _page_sources(),
-        "temporel.html": _page_temporel(),
-    }
+<script src="commun.js"></script>
+<script src="funnel.js"></script>
+</body>
+</html>

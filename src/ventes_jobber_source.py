@@ -1,20 +1,21 @@
 """
-Source de données Jobber — Module Dashboard Ventes GHL, métriques "closing" et
-"valeur moyenne won" (métriques 4 et 5). Décision de Justin (2026-08-01) : ces
-deux métriques (et le compte de soumissions envoyées qui leur sert de base)
-doivent venir de Jobber, la vraie source des soumissions chiffrées — le
-passage en pipeline GHL CLOSING (utilisé au départ comme proxy) ne veut pas
-dire qu'un prix a été envoyé (RDV À VENIR / SUIVI À FAIRE sans soumission
-réelle), ce qui gonflait le dénominateur et écrasait artificiellement le taux
-de closing. Les métriques 1-3 (contact même jour, visite bookée, rappel 48h)
-restent basées sur GHL (voir ventes_ghl_source.py) — pas touchées ici.
+Source de données Jobber — Module Dashboard Ventes GHL. Deux usages :
+  1. Métriques 4-5 (closing, valeur moyenne won) — vendeur = champ salesperson
+     de Jobber directement (décision de Justin, 2026-08-01), pas de crossref
+     GHL nécessaire pour ça.
+  2. Délais lead->soumission / soumission->won (pages Sources et Temporel,
+     extension du 2026-08-01) — nécessite de relier chaque soumission à son
+     opportunité GHL d'origine (pour connaître la date de création du LEAD, pas
+     seulement de la soumission). Réutilise la cascade de matching email/
+     téléphone déjà validée dans valider_etape3_sync_soumissions.py (même
+     limite acceptée : ~85-95% de taux de match, voir sync_soumissions_ghl.py).
+     Les soumissions non matchées gardent delai_lead_soumission=None plutôt
+     qu'une valeur inventée (voir dashboard_ventes_ghl.py -> "données
+     insuffisantes").
 
-Vendeur : directement le champ `salesperson` de Jobber, sans crossref vers GHL
-(Justin a validé que les rapports Jobber suffisent tels quels). Un alias reste
-nécessaire pour un seul cas connu : les soumissions de Justin Blaquiere
-apparaissent sous le nom du compte compagnie "MAG Lavage À Pression" dans
-Jobber, pas son nom personnel (voir SPEC_module_ventes_MAG.md et
-config.yaml -> ghl_vendeurs_alias_jobber).
+Vendeur (métriques 4-5) : alias nécessaire pour un seul cas connu — les
+soumissions de Justin Blaquiere apparaissent sous le nom du compte compagnie
+"MAG Lavage À Pression" dans Jobber (voir config.yaml -> ghl_vendeurs_alias_jobber).
 """
 
 from __future__ import annotations
@@ -25,6 +26,7 @@ from zoneinfo import ZoneInfo
 
 from jobber_client import ClientJobber
 from rapport_ventes import STATUTS_VENDUS
+from valider_etape2_sync_soumissions import normaliser_email, normaliser_telephone
 from valider_etape3_sync_soumissions import choisir_soumission_canonique
 
 FUSEAU_MAG = ZoneInfo("America/Montreal")
@@ -37,9 +39,16 @@ query QuotesEnvoyeesVentesGHL($debut: ISO8601DateTime!, $fin: ISO8601DateTime!, 
       quoteStatus
       sentAt
       updatedAt
+      lastTransitioned { approvedAt convertedAt }
       amounts { subtotal }
       salesperson { name { full } }
-      client { id firstName lastName }
+      client {
+        id
+        firstName
+        lastName
+        emails { address primary }
+        phones { number normalizedPhoneNumber primary }
+      }
     }
     pageInfo { hasNextPage endCursor }
   }
@@ -57,6 +66,15 @@ def _vers_local(iso_datetime: str | None) -> datetime | None:
     if not iso_datetime:
         return None
     return datetime.fromisoformat(iso_datetime.replace("Z", "+00:00")).astimezone(FUSEAU_MAG)
+
+
+def _valeur_primaire(items: list[dict], cle: str) -> str:
+    if not items:
+        return ""
+    for item in items:
+        if item.get("primary"):
+            return item.get(cle, "") or ""
+    return items[0].get(cle, "") or ""
 
 
 def _paginer(client: ClientJobber, requete: str, variables: dict) -> list[dict]:
@@ -77,52 +95,123 @@ class SoumissionJobber:
     client: str
     vendeur: str
     montant: float
+    statut: str  # quoteStatus brut Jobber (draft/awaiting_response/approved/converted/archived/changes_requested)
     won: bool
     date_envoi: datetime
+    date_gagnee: datetime | None  # approvedAt ou convertedAt, la première des deux non nulle
+    delai_lead_soumission_heures: float | None  # None si non matchée à une opportunité GHL
+    delai_soumission_won_heures: float | None  # None si non gagnée ou non matchée
+    delai_lead_won_heures: float | None  # None si non gagnée ou non matchée (lead->won direct)
+    source_lead: str | None  # source GHL du lead matché (ex. Facebook) — None si non matchée
 
 
-def obtenir_soumissions_jobber(
-    client_jobber: ClientJobber, alias_vendeurs: dict, debut: date, fin: date
-) -> list[SoumissionJobber]:
-    """Soumissions dont le sentAt tombe dans [debut, fin] (bornes incluses, jours
-    locaux MAG) — même contournement que obtenir_quotes_envoyees (le filtre
-    `sentAt` de l'API Jobber est cassé côté serveur, voir
-    valider_etape1_sync_soumissions.py) : filtre server-side sur `updatedAt`,
-    puis `sentAt` côté client.
-
-    Règle multi-soumissions (même client, plusieurs révisions/renvois dans la
-    fenêtre — vu en vrai le 2026-08-01, ex. Ximena Arteaga avec 2 soumissions
-    #621/#622) : regroupées par client et réduites à UNE soumission canonique
-    via choisir_soumission_canonique (déjà validée dans le sync Jobber->GHL),
-    jamais sommées ni comptées séparément — sinon le dénominateur du taux de
-    closing est gonflé par des renvois qui ne sont pas de vrais nouveaux leads.
-    """
+def _recuperer_quotes_brutes(client_jobber: ClientJobber, debut: date, fin: date) -> list[dict]:
     variables = {"debut": _vers_iso(debut), "fin": _vers_iso(fin, fin_de_journee=True)}
     nodes = _paginer(client_jobber, REQUETE_QUOTES_ENVOYEES_VENTES_GHL, variables)
+    return [n for n in nodes if (d := _vers_local(n["sentAt"])) is not None and debut <= d.date() <= fin]
 
-    dans_fenetre = [n for n in nodes if (d := _vers_local(n["sentAt"])) is not None and debut <= d.date() <= fin]
 
+def _dedupliquer_par_client(nodes: list[dict]) -> list[dict]:
+    """Même règle multi-soumissions que le sync Jobber->GHL : plusieurs
+    soumissions au même client dans la fenêtre sont réduites à une seule
+    (canonique), jamais sommées ni comptées séparément (voir Ximena Arteaga,
+    #621/#622, repéré le 2026-08-01)."""
     groupes: dict[str, list[dict]] = {}
-    for n in dans_fenetre:
+    for n in nodes:
         c = n.get("client") or {}
         cle = c.get("id") or f"{c.get('firstName', '')} {c.get('lastName', '')}".strip().lower()
         groupes.setdefault(cle, []).append(n)
+    return [choisir_soumission_canonique(g) for g in groupes.values()]
+
+
+def _index_opportunites(opportunites_brutes: list[dict]) -> tuple[dict, dict]:
+    par_email: dict[str, list[dict]] = {}
+    par_telephone: dict[str, list[dict]] = {}
+    for o in opportunites_brutes:
+        c = o.get("contact") or {}
+        email = normaliser_email(c.get("email") or "")
+        tel = normaliser_telephone(c.get("phone") or "")
+        if email:
+            par_email.setdefault(email, []).append(o)
+        if tel:
+            par_telephone.setdefault(tel, []).append(o)
+    return par_email, par_telephone
+
+
+def _matcher_opportunite(n: dict, par_email: dict, par_telephone: dict) -> dict | None:
+    c = n.get("client") or {}
+    email = _valeur_primaire(c.get("emails") or [], "address")
+    tel = _valeur_primaire(c.get("phones") or [], "normalizedPhoneNumber") or _valeur_primaire(c.get("phones") or [], "number")
+
+    candidats = par_email.get(normaliser_email(email)) if email else None
+    if candidats:
+        return max(candidats, key=lambda o: o["updatedAt"])
+    if tel:
+        candidats = par_telephone.get(normaliser_telephone(tel))
+        if candidats:
+            return max(candidats, key=lambda o: o["updatedAt"])
+    return None
+
+
+def obtenir_soumissions_jobber(
+    client_jobber: ClientJobber,
+    alias_vendeurs: dict,
+    debut: date,
+    fin: date,
+    opportunites_brutes_ghl: list[dict] | None = None,
+) -> list[SoumissionJobber]:
+    """Soumissions envoyées dans [debut, fin] (jours locaux MAG), dédupliquées
+    par client. Si `opportunites_brutes_ghl` est fourni, chaque soumission est
+    en plus matchée à son opportunité GHL d'origine (cascade email->téléphone)
+    pour calculer les délais lead->soumission et soumission->won ; sinon ces
+    deux champs restent à None (voir dashboard_ventes_ghl.py, "données
+    insuffisantes" si le matching est désactivé)."""
+    nodes = _dedupliquer_par_client(_recuperer_quotes_brutes(client_jobber, debut, fin))
+
+    par_email, par_telephone = ({}, {})
+    if opportunites_brutes_ghl is not None:
+        par_email, par_telephone = _index_opportunites(opportunites_brutes_ghl)
 
     resultats = []
-    for quotes_groupe in groupes.values():
-        n = choisir_soumission_canonique(quotes_groupe)
+    for n in nodes:
         c = n.get("client") or {}
         nom_client = f"{c.get('firstName', '')} {c.get('lastName', '')}".strip()
         nom_brut = (n.get("salesperson") or {}).get("name", {}).get("full", "")
         vendeur = alias_vendeurs.get(nom_brut, nom_brut) or "(non assigné)"
+        date_envoi = _vers_local(n["sentAt"])
+        transitions = n.get("lastTransitioned") or {}
+        date_gagnee = _vers_local(transitions.get("approvedAt")) or _vers_local(transitions.get("convertedAt"))
+
+        delai_lead_soumission = None
+        delai_lead_won = None
+        source_lead = None
+        if opportunites_brutes_ghl is not None:
+            opp = _matcher_opportunite(n, par_email, par_telephone)
+            if opp:
+                source_lead = opp.get("source") or "(inconnue)"
+                date_creation_lead = _vers_local(opp.get("createdAt"))
+                if date_creation_lead and date_envoi:
+                    delai_lead_soumission = (date_envoi - date_creation_lead).total_seconds() / 3600
+                if date_creation_lead and date_gagnee:
+                    delai_lead_won = (date_gagnee - date_creation_lead).total_seconds() / 3600
+        delai_soumission_won = None
+        if date_gagnee and date_envoi:
+            delai_soumission_won = (date_gagnee - date_envoi).total_seconds() / 3600
+
         resultats.append(
             SoumissionJobber(
                 numero=n["quoteNumber"],
                 client=nom_client,
                 vendeur=vendeur,
                 montant=n["amounts"]["subtotal"] or 0.0,
+                statut=n["quoteStatus"],
                 won=n["quoteStatus"] in STATUTS_VENDUS,
-                date_envoi=_vers_local(n["sentAt"]),
+                date_envoi=date_envoi,
+                date_gagnee=date_gagnee,
+                delai_lead_soumission_heures=delai_lead_soumission,
+                delai_soumission_won_heures=delai_soumission_won,
+                delai_lead_won_heures=delai_lead_won,
+                source_lead=source_lead,
             )
         )
     return resultats

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="refresh" content="600">
-<title>Dashboard Ventes MAG</title>
+<title>Dashboard Ventes — Dashboard Ventes MAG</title>
 <style>
   :root { color-scheme: light; }
   * { box-sizing: border-box; }
@@ -15,45 +15,31 @@
     background: #f7f7f8;
     color: #1a1a1a;
   }
-  header {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    margin-bottom: clamp(16px, 1.5vw, 24px);
-  }
-  h1 { font-size: clamp(22px, 2.4vw, 34px); margin: 0; }
+  header { margin-bottom: clamp(14px, 1.5vw, 20px); }
+  .entete-haut { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+  h1 { font-size: clamp(20px, 2.2vw, 30px); margin: 0; }
   h2 { font-size: clamp(17px, 1.6vw, 21px); margin: 0 0 14px; }
   .meta { color: #6b7280; font-size: clamp(12px, 0.9vw, 15px); margin-top: 4px; }
+  nav.principale { display: flex; gap: 4px; flex-wrap: wrap; margin: 12px 0 18px; border-bottom: 1px solid #e5e7eb; padding-bottom: 10px; }
+  nav.principale a {
+    text-decoration: none; color: #6b7280; font-size: 13px; padding: 6px 12px; border-radius: 8px;
+  }
+  nav.principale a.actif { background: #1f2937; color: #fff; }
   .presets { display: flex; gap: 6px; flex-wrap: wrap; }
   .presets button {
-    border: 1px solid #d1d5db;
-    background: #fff;
-    color: #374151;
-    border-radius: 999px;
-    padding: 7px 16px;
-    font-size: 13px;
-    cursor: pointer;
+    border: 1px solid #d1d5db; background: #fff; color: #374151; border-radius: 999px;
+    padding: 7px 16px; font-size: 13px; cursor: pointer;
   }
   .presets button.actif { background: #1f2937; color: #fff; border-color: #1f2937; }
   section { margin-bottom: clamp(20px, 2vw, 32px); }
+  .panneau { background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; padding: clamp(16px, 1.6vw, 24px); }
   .bandeau-equipe {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 12px;
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 14px;
-    padding: clamp(14px, 1.6vw, 24px);
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px;
+    background: #ffffff; border: 1px solid #e5e7eb; border-radius: 14px; padding: clamp(14px, 1.6vw, 24px);
   }
   .stat-equipe-label { font-size: clamp(12px, 0.9vw, 14px); color: #6b7280; margin-bottom: 4px; }
   .stat-equipe-valeur { font-size: clamp(20px, 2vw, 28px); font-weight: 600; }
-  .grille-vendeurs {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: clamp(14px, 1.6vw, 22px);
-  }
+  .grille-vendeurs { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(14px, 1.6vw, 22px); }
   .carte { background: #ffffff; border: 1px solid #e5e7eb; border-radius: 14px; padding: clamp(16px, 1.6vw, 24px); }
   .carte h2 { font-size: clamp(18px, 1.6vw, 22px); }
   .metrique { border-radius: 10px; padding: 10px 14px; margin-bottom: 10px; }
@@ -66,7 +52,6 @@
   .carte-fond-jaune { background: #fdf3e0; }
   .carte-fond-rouge { background: #fbe9e9; }
   .carte-fond-neutre { background: #f1f2f4; }
-  .panneau { background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; padding: clamp(16px, 1.6vw, 24px); }
   .grille-graphiques { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
   .graphique-titre { font-size: 13px; color: #6b7280; margin-bottom: 6px; }
   table { width: 100%; border-collapse: collapse; font-size: 13px; }
@@ -84,11 +69,23 @@
     width: 100%; max-width: 320px; padding: 7px 10px; margin-bottom: 10px;
     border: 1px solid #d1d5db; border-radius: 8px; font-size: 13px;
   }
-  .badge-couleur { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; }
+  a.lien-ghl { color: #2563eb; text-decoration: none; }
+  a.lien-ghl:hover { text-decoration: underline; }
+  .grisee { color: #9ca3af; font-style: italic; }
+  .badge-manquant { display: inline-block; font-size: 11px; color: #9ca3af; border: 1px dashed #d1d5db; border-radius: 6px; padding: 1px 6px; margin-left: 6px; }
+  .funnel-etape { display: flex; align-items: center; gap: 14px; padding: 10px 0; border-bottom: 1px solid #eee; }
+  .funnel-etape:last-child { border-bottom: none; }
+  .funnel-barre-fond { flex: 1; background: #eef0f2; border-radius: 8px; height: 30px; position: relative; overflow: hidden; }
+  .funnel-barre { background: #2563eb; height: 100%; border-radius: 8px; }
+  .funnel-nom { width: 150px; font-size: 13px; color: #374151; flex-shrink: 0; }
+  .funnel-chiffres { width: 190px; text-align: right; font-size: 13px; flex-shrink: 0; }
+  .heatmap-grille { display: grid; grid-template-columns: 50px repeat(24, 1fr); gap: 2px; font-size: 10px; }
+  .heatmap-cellule { aspect-ratio: 1; border-radius: 3px; }
+  .heatmap-label { display: flex; align-items: center; color: #6b7280; }
   @media (prefers-color-scheme: dark) {
     body { background: #111214; color: #e8e8ea; }
     .bandeau-equipe, .carte, .panneau { background: #1a1b1e; border-color: #2c2d31; }
-    .meta, .stat-equipe-label, .metrique-label, .conseil, .graphique-titre, th { color: #9aa0a6; }
+    .meta, .stat-equipe-label, .metrique-label, .conseil, .graphique-titre, th, .funnel-nom { color: #9aa0a6; }
     th { background: #1a1b1e; }
     .presets button, .tabs button { background: #1a1b1e; color: #e8e8ea; border-color: #2c2d31; }
     input[type="search"] { background: #1a1b1e; color: #e8e8ea; border-color: #2c2d31; }
@@ -98,22 +95,36 @@
     .carte-fond-jaune { background: #3a2f10; }
     .carte-fond-rouge { background: #3a1a1a; }
     .carte-fond-neutre { background: #24252a; }
+    nav.principale { border-color: #2c2d31; }
+    nav.principale a { color: #9aa0a6; }
+    .funnel-barre-fond { background: #24252a; }
   }
 </style>
 </head>
 <body>
 <header>
-  <div>
-    <h1>Dashboard Ventes — MAG</h1>
-    <div class="meta" id="meta">Chargement…</div>
+  <div class="entete-haut">
+    <div>
+      <h1>Dashboard Ventes — MAG</h1>
+      <div class="meta" id="meta">Chargement…</div>
+    </div>
   </div>
+  <nav class="principale"><a href="index.html" class="actif">Accueil</a><a href="activite.html" class="">Activité</a><a href="funnel.html" class="">Funnel</a><a href="pipeline.html" class="">Pipeline</a><a href="sources.html" class="">Sources</a><a href="temporel.html" class="">Temporel</a></nav>
+</header>
+
+<div class="entete-haut" style="margin-bottom:16px">
   <div class="presets" id="presets">
     <button data-preset="7">7 jours</button>
     <button data-preset="30" class="actif">30 jours</button>
     <button data-preset="90">90 jours</button>
     <button data-preset="mois">Ce mois</button>
   </div>
-</header>
+</div>
+
+<section class="panneau" id="section-podium">
+  <h2>Podium du mois — taux de closing</h2>
+  <div id="podium"></div>
+</section>
 
 <section class="bandeau-equipe" id="bandeau-equipe"></section>
 
@@ -144,6 +155,7 @@
   <div class="table-scroll" id="tableau-detail"></div>
 </section>
 
+<script src="commun.js"></script>
 <script src="dashboard.js"></script>
 </body>
 </html>

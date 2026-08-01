@@ -44,4 +44,9 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add cache_ventes_ghl.json docs/
           git diff --cached --quiet || git commit -m "Dashboard ventes GHL : maj $(date -u +%FT%TZ)"
+          # Rebase avant de pousser : ce repo a d'autres workflows qui committent
+          # aussi sur main (sync soumissions aux 15 min, rapport hebdo) — un commit
+          # concurrent entre le checkout et ce push fait sinon échouer le push
+          # (non-fast-forward), vu en vrai le 2026-08-01 sur sync_soumissions_ghl.yml.
+          git pull --rebase origin main
           git push

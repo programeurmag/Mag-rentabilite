@@ -54,8 +54,15 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add etat_sync_soumissions.json
-          git diff --cached --quiet || git commit -m "Sync soumissions : maj état $(date -u +%FT%TZ)"
+          # N'existe qu'en mode --live (jamais en dry-run, ex. un test manuel sans
+          # la case "live" cochée) — sinon "git add" échoue (fatal) sur un fichier
+          # inexistant, vu en vrai le 2026-08-01.
+          if [ -f etat_sync_soumissions.json ]; then
+            git add etat_sync_soumissions.json
+            git diff --cached --quiet || git commit -m "Sync soumissions : maj état $(date -u +%FT%TZ)"
+          else
+            echo "Pas de nouvel état à committer (dry-run ou aucun changement)."
+          fi
           # Rebase avant de pousser : ce cron tourne aux 15 minutes et partage le
           # dépôt avec d'autres workflows (dashboard ventes GHL, rapport hebdo) —
           # un commit concurrent entre le checkout et ce push fait sinon échouer

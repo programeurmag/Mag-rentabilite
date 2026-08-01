@@ -70,6 +70,7 @@ class OpportuniteVente:
     id: str
     nom: str
     vendeur: str
+    source: str  # source du lead (ex. Facebook) — champ GHL "source", vide si absent
     stage_nom: str
     statut: str  # open / won / lost / abandoned
     valeur: float | None
@@ -175,6 +176,7 @@ def obtenir_opportunites_ventes(
                 id=o["id"],
                 nom=o.get("name") or "(sans nom)",
                 vendeur=vendeurs_config.get(assigned, assigned or "(non assigné)"),
+                source=o.get("source") or "(inconnue)",
                 stage_nom=nom_stage,
                 statut=o.get("status", ""),
                 valeur=o.get("monetaryValue"),

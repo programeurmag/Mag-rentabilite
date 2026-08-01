@@ -18,13 +18,26 @@
   header {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
     gap: 12px;
-    margin-bottom: clamp(16px, 1.5vw, 28px);
+    margin-bottom: clamp(16px, 1.5vw, 24px);
   }
   h1 { font-size: clamp(22px, 2.4vw, 34px); margin: 0; }
-  .meta { color: #6b7280; font-size: clamp(13px, 1vw, 16px); }
+  h2 { font-size: clamp(17px, 1.6vw, 21px); margin: 0 0 14px; }
+  .meta { color: #6b7280; font-size: clamp(12px, 0.9vw, 15px); margin-top: 4px; }
+  .presets { display: flex; gap: 6px; flex-wrap: wrap; }
+  .presets button {
+    border: 1px solid #d1d5db;
+    background: #fff;
+    color: #374151;
+    border-radius: 999px;
+    padding: 7px 16px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .presets button.actif { background: #1f2937; color: #fff; border-color: #1f2937; }
+  section { margin-bottom: clamp(20px, 2vw, 32px); }
   .bandeau-equipe {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -33,7 +46,6 @@
     border: 1px solid #e5e7eb;
     border-radius: 14px;
     padding: clamp(14px, 1.6vw, 24px);
-    margin-bottom: clamp(20px, 2vw, 36px);
   }
   .stat-equipe-label { font-size: clamp(12px, 0.9vw, 14px); color: #6b7280; margin-bottom: 4px; }
   .stat-equipe-valeur { font-size: clamp(20px, 2vw, 28px); font-weight: 600; }
@@ -42,177 +54,96 @@
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: clamp(14px, 1.6vw, 22px);
   }
-  .carte {
-    background: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 14px;
-    padding: clamp(16px, 1.6vw, 24px);
-  }
-  .carte h2 { font-size: clamp(18px, 1.6vw, 22px); margin: 0 0 14px; }
+  .carte { background: #ffffff; border: 1px solid #e5e7eb; border-radius: 14px; padding: clamp(16px, 1.6vw, 24px); }
+  .carte h2 { font-size: clamp(18px, 1.6vw, 22px); }
   .metrique { border-radius: 10px; padding: 10px 14px; margin-bottom: 10px; }
   .metrique:last-child { margin-bottom: 0; }
   .metrique-tete { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
   .metrique-label { font-size: clamp(13px, 1vw, 15px); color: #374151; }
   .metrique-valeur { font-size: clamp(17px, 1.4vw, 21px); font-weight: 700; white-space: nowrap; }
   .conseil { font-size: clamp(12px, 0.9vw, 14px); color: #4b5563; margin-top: 4px; }
+  .carte-fond-vert { background: #eaf6ec; }
+  .carte-fond-jaune { background: #fdf3e0; }
+  .carte-fond-rouge { background: #fbe9e9; }
+  .carte-fond-neutre { background: #f1f2f4; }
+  .panneau { background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; padding: clamp(16px, 1.6vw, 24px); }
+  .grille-graphiques { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .graphique-titre { font-size: 13px; color: #6b7280; margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 7px 10px; border-bottom: 1px solid #eee; white-space: nowrap; }
+  th { color: #6b7280; font-weight: 600; cursor: pointer; user-select: none; position: sticky; top: 0; background: #fff; }
+  tbody tr:hover { background: #f9fafb; }
+  .table-scroll { overflow-x: auto; max-height: 480px; overflow-y: auto; }
+  .tabs { display: flex; gap: 6px; margin-bottom: 10px; }
+  .tabs button {
+    border: 1px solid #d1d5db; background: #fff; color: #374151; border-radius: 8px;
+    padding: 6px 14px; font-size: 13px; cursor: pointer;
+  }
+  .tabs button.actif { background: #1f2937; color: #fff; border-color: #1f2937; }
+  input[type="search"] {
+    width: 100%; max-width: 320px; padding: 7px 10px; margin-bottom: 10px;
+    border: 1px solid #d1d5db; border-radius: 8px; font-size: 13px;
+  }
+  .badge-couleur { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; }
   @media (prefers-color-scheme: dark) {
     body { background: #111214; color: #e8e8ea; }
-    .bandeau-equipe, .carte { background: #1a1b1e; border-color: #2c2d31; }
-    .meta, .stat-equipe-label, .metrique-label, .conseil { color: #9aa0a6; }
+    .bandeau-equipe, .carte, .panneau { background: #1a1b1e; border-color: #2c2d31; }
+    .meta, .stat-equipe-label, .metrique-label, .conseil, .graphique-titre, th { color: #9aa0a6; }
+    th { background: #1a1b1e; }
+    .presets button, .tabs button { background: #1a1b1e; color: #e8e8ea; border-color: #2c2d31; }
+    input[type="search"] { background: #1a1b1e; color: #e8e8ea; border-color: #2c2d31; }
+    tbody tr:hover { background: #202124; }
+    td, tbody tr { border-color: #2c2d31; }
+    .carte-fond-vert { background: #163a1e; }
+    .carte-fond-jaune { background: #3a2f10; }
+    .carte-fond-rouge { background: #3a1a1a; }
+    .carte-fond-neutre { background: #24252a; }
   }
 </style>
 </head>
 <body>
 <header>
-  <h1>Dashboard Ventes — MAG</h1>
-  <div class="meta">Fenêtre roulante : 2026-07-02 au 2026-08-01 (vs 2026-06-02 au 2026-07-02)<br>Mis à jour : Saturday 01 August 2026, 13:27</div>
+  <div>
+    <h1>Dashboard Ventes — MAG</h1>
+    <div class="meta" id="meta">Chargement…</div>
+  </div>
+  <div class="presets" id="presets">
+    <button data-preset="7">7 jours</button>
+    <button data-preset="30" class="actif">30 jours</button>
+    <button data-preset="90">90 jours</button>
+    <button data-preset="mois">Ce mois</button>
+  </div>
 </header>
-<section class="bandeau-equipe">
-  
-    <div class="stat-equipe">
-      <div class="stat-equipe-label">Leads (30j)</div>
-      <div class="stat-equipe-valeur">326<span style="color:#c22b2b"> ▼ 7%</span></div>
-    </div>
-    <div class="stat-equipe">
-      <div class="stat-equipe-label">Contact même jour</div>
-      <div class="stat-equipe-valeur">97 %<span style="color:#1e7a34"> ▲ 1 pts</span></div>
-    </div>
-    <div class="stat-equipe">
-      <div class="stat-equipe-label">Visite bookée</div>
-      <div class="stat-equipe-valeur">23 %<span style="color:#1e7a34"> ▲ 5 pts</span></div>
-    </div>
-    <div class="stat-equipe">
-      <div class="stat-equipe-label">Rappel 48h</div>
-      <div class="stat-equipe-valeur">7 %<span style="color:#1e7a34"> ▲ 4 pts</span></div>
-    </div>
-    <div class="stat-equipe">
-      <div class="stat-equipe-label">Taux de closing</div>
-      <div class="stat-equipe-valeur">34 %<span style="color:#c22b2b"> ▼ 18 pts</span></div>
-    </div>
-    <div class="stat-equipe">
-      <div class="stat-equipe-label">Valeur moyenne (won)</div>
-      <div class="stat-equipe-valeur">2 568 $<span style="color:#1e7a34"> ▲ 13%</span></div>
-    </div>
+
+<section class="bandeau-equipe" id="bandeau-equipe"></section>
+
+<section class="grille-vendeurs" id="grille-vendeurs"></section>
+
+<section class="panneau">
+  <h2>Tendance par semaine</h2>
+  <div class="grille-graphiques" id="graphiques-tendance"></div>
 </section>
-<section class="grille-vendeurs">
-  
-    <div class="carte">
-      <h2>Justin Blaquiere</h2>
-      
-    <div class="metrique" style="background:#eaf6ec">
-      <div class="metrique-tete">
-        <span class="metrique-label">Contact même jour</span>
-        <span class="metrique-valeur" style="color:#1e7a34">96 % (137/142)</span>
-      </div>
-      
-    </div>
-    <div class="metrique" style="background:#fbe9e9">
-      <div class="metrique-tete">
-        <span class="metrique-label">Visite bookée</span>
-        <span class="metrique-valeur" style="color:#c22b2b">27 % (39/142)</span>
-      </div>
-      <div class="conseil">103 lead(s) n'ont pas encore dépassé les tentatives d'appel — relancer en priorité.</div>
-    </div>
-    <div class="metrique" style="background:#fbe9e9">
-      <div class="metrique-tete">
-        <span class="metrique-label">Rappel 48h après soumission</span>
-        <span class="metrique-valeur" style="color:#c22b2b">8 % (3/38)</span>
-      </div>
-      <div class="conseil">10 soumission(s) sans rappel depuis 48h : Claudia Demers, Ian Mulcahy, Ximena Arteaga, Jason Caron, Didier Laforest, +5 autre(s)</div>
-    </div>
-    <div class="metrique" style="background:#eaf6ec">
-      <div class="metrique-tete">
-        <span class="metrique-label">Taux de closing</span>
-        <span class="metrique-valeur" style="color:#1e7a34">43 % (9/21)</span>
-      </div>
-      
-    </div>
-    <div class="metrique" style="background:#f1f2f4">
-      <div class="metrique-tete">
-        <span class="metrique-label">Valeur moyenne (won)</span>
-        <span class="metrique-valeur" style="color:#6b7280">2 083 $</span>
-      </div>
-      
-    </div>
-    </div>
-    <div class="carte">
-      <h2>Jeremy Dagenais</h2>
-      
-    <div class="metrique" style="background:#eaf6ec">
-      <div class="metrique-tete">
-        <span class="metrique-label">Contact même jour</span>
-        <span class="metrique-valeur" style="color:#1e7a34">98 % (53/54)</span>
-      </div>
-      
-    </div>
-    <div class="metrique" style="background:#fbe9e9">
-      <div class="metrique-tete">
-        <span class="metrique-label">Visite bookée</span>
-        <span class="metrique-valeur" style="color:#c22b2b">24 % (13/54)</span>
-      </div>
-      <div class="conseil">41 lead(s) n'ont pas encore dépassé les tentatives d'appel — relancer en priorité.</div>
-    </div>
-    <div class="metrique" style="background:#fbe9e9">
-      <div class="metrique-tete">
-        <span class="metrique-label">Rappel 48h après soumission</span>
-        <span class="metrique-valeur" style="color:#c22b2b">8 % (1/12)</span>
-      </div>
-      <div class="conseil">10 soumission(s) sans rappel depuis 48h : Zaf, Tommy Jfdg Vinet Berube, Khalid Douakha, Raymonde Monette, Aline Lemire, +5 autre(s)</div>
-    </div>
-    <div class="metrique" style="background:#f1f2f4">
-      <div class="metrique-tete">
-        <span class="metrique-label">Taux de closing</span>
-        <span class="metrique-valeur" style="color:#6b7280">s/o (0/0)</span>
-      </div>
-      
-    </div>
-    <div class="metrique" style="background:#f1f2f4">
-      <div class="metrique-tete">
-        <span class="metrique-label">Valeur moyenne (won)</span>
-        <span class="metrique-valeur" style="color:#6b7280">s/o</span>
-      </div>
-      
-    </div>
-    </div>
-    <div class="carte">
-      <h2>Justin Boivin</h2>
-      
-    <div class="metrique" style="background:#eaf6ec">
-      <div class="metrique-tete">
-        <span class="metrique-label">Contact même jour</span>
-        <span class="metrique-valeur" style="color:#1e7a34">96 % (125/130)</span>
-      </div>
-      
-    </div>
-    <div class="metrique" style="background:#fbe9e9">
-      <div class="metrique-tete">
-        <span class="metrique-label">Visite bookée</span>
-        <span class="metrique-valeur" style="color:#c22b2b">18 % (24/130)</span>
-      </div>
-      <div class="conseil">106 lead(s) n'ont pas encore dépassé les tentatives d'appel — relancer en priorité.</div>
-    </div>
-    <div class="metrique" style="background:#fbe9e9">
-      <div class="metrique-tete">
-        <span class="metrique-label">Rappel 48h après soumission</span>
-        <span class="metrique-valeur" style="color:#c22b2b">4 % (1/24)</span>
-      </div>
-      <div class="conseil">10 soumission(s) sans rappel depuis 48h : Iminja Ramampy, Pascale Gagnon BhéRer, José Luis PéRez, Jennifer Madar, Felisa. Romo, +5 autre(s)</div>
-    </div>
-    <div class="metrique" style="background:#fdf3e0">
-      <div class="metrique-tete">
-        <span class="metrique-label">Taux de closing</span>
-        <span class="metrique-valeur" style="color:#b8860b">25 % (5/20)</span>
-      </div>
-      <div class="conseil">5/20 soumissions gagnées — creuser les motifs de perte des autres.</div>
-    </div>
-    <div class="metrique" style="background:#f1f2f4">
-      <div class="metrique-tete">
-        <span class="metrique-label">Valeur moyenne (won)</span>
-        <span class="metrique-valeur" style="color:#6b7280">3 439 $</span>
-      </div>
-      
-    </div>
-    </div>
+
+<section class="panneau">
+  <h2>Répartition par source de lead</h2>
+  <div id="tableau-source"></div>
 </section>
+
+<section class="panneau">
+  <h2>Classement des vendeurs</h2>
+  <div id="leaderboard"></div>
+</section>
+
+<section class="panneau">
+  <h2>Détail</h2>
+  <div class="tabs" id="tabs-detail">
+    <button data-tab="leads" class="actif">Leads</button>
+    <button data-tab="soumissions">Soumissions</button>
+  </div>
+  <input type="search" id="recherche" placeholder="Rechercher un nom...">
+  <div class="table-scroll" id="tableau-detail"></div>
+</section>
+
+<script src="dashboard.js"></script>
 </body>
 </html>

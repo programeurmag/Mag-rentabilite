@@ -1,8 +1,11 @@
 """
-Script principal — Module Dashboard Ventes GHL. Calcule les 5 métriques par
-vendeur et pour l'équipe (fenêtre roulante de 30 jours vs les 30 jours
-précédents), écrit un JSON de stats (docs/stats_ventes_ghl.json) et une page
-HTML statique (docs/index.html) publiée via GitHub Pages.
+Script principal — Module Dashboard Ventes GHL. Récupère 180 jours
+d'opportunités GHL et de soumissions Jobber, calcule l'agrégat 30j/30j par
+défaut (pour le résumé Slack hebdo), et écrit un JSON (docs/stats_ventes_ghl.json)
+contenant à la fois cet agrégat ET les données brutes. La page HTML
+(docs/index.html) est un shell statique qui charge dashboard.js — TOUT le
+calcul par plage de dates choisie et le rendu se font côté navigateur à partir
+de ces données brutes (page interactive, voir dashboard.js).
 
 Exécuté par le GitHub Action toutes les heures, 7h-19h heure de Montréal, du
 lundi au vendredi (voir .github/workflows/dashboard_ventes_ghl.yml).
@@ -16,135 +19,29 @@ import dataclasses
 import json
 import os
 from datetime import datetime, timedelta
-from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import yaml
 from dotenv import dotenv_values
 
 from cache_ventes_ghl import charger_cache, sauvegarder_cache
-from dashboard_html_ventes import CarteVendeur, MetriqueAffichee, generer_page
+from dashboard_html_ventes import generer_page
 from env_utils import CHEMIN_ENV, RACINE, maj_env
 from jobber_client import ClientJobber
-from metriques_ventes_ghl import MetriquesVendeur, calculer_metriques_equipe_et_vendeurs
+from metriques_ventes_ghl import calculer_metriques_equipe_et_vendeurs
 from ventes_ghl_source import obtenir_opportunites_ventes
 from ventes_jobber_source import obtenir_soumissions_jobber
 
 FUSEAU_MAG = ZoneInfo("America/Montreal")
 FENETRE_JOURS = 30
+# Fenêtre des données brutes envoyées au navigateur (page interactive, 2026-08-01) :
+# doit couvrir au moins 2x le plus grand preset (90j) pour permettre le calcul de
+# tendance côté JS (période choisie vs période équivalente précédente), plus une
+# marge pour les graphiques historiques par semaine.
+FENETRE_DONNEES_BRUTES_JOURS = 180
 DOSSIER_PAGES = RACINE / "docs"
 CHEMIN_JSON = DOSSIER_PAGES / "stats_ventes_ghl.json"
 CHEMIN_HTML = DOSSIER_PAGES / "index.html"
-
-
-def _couleur(valeur: float | None, seuils: dict) -> str | None:
-    if valeur is None:
-        return None
-    if valeur >= seuils["vert"]:
-        return "vert"
-    if valeur >= seuils["rouge"]:
-        return "jaune"
-    return "rouge"
-
-
-def _fmt_pct(v: float | None) -> str:
-    return f"{v:.0f} %" if v is not None else "s/o"
-
-
-def _fmt_dollars(v: float | None) -> str:
-    return f"{v:,.0f} $".replace(",", " ") if v else "s/o"
-
-
-def _liste_avec_reste(noms: list[str], max_affiches: int = 5) -> str:
-    affiches = ", ".join(noms[:max_affiches])
-    reste = len(noms) - max_affiches
-    return f"{affiches}, +{reste} autre(s)" if reste > 0 else affiches
-
-
-def _conseil_contact(m: MetriquesVendeur, couleur: str | None) -> str | None:
-    if couleur not in ("rouge", "jaune") or not m.leads_non_contactes:
-        return None
-    return f"{len(m.leads_non_contactes)} lead(s) non contacté(s) le jour même : {_liste_avec_reste(m.leads_non_contactes)}"
-
-
-def _conseil_visite(m: MetriquesVendeur, couleur: str | None) -> str | None:
-    if couleur not in ("rouge", "jaune"):
-        return None
-    n = m.n_leads - m.n_visite_bookee
-    if n <= 0:
-        return None
-    return f"{n} lead(s) n'ont pas encore dépassé les tentatives d'appel — relancer en priorité."
-
-
-def _conseil_rappel(m: MetriquesVendeur, couleur: str | None) -> str | None:
-    if couleur not in ("rouge", "jaune") or not m.soumissions_sans_rappel:
-        return None
-    return f"{len(m.soumissions_sans_rappel)} soumission(s) sans rappel depuis 48h : {_liste_avec_reste(m.soumissions_sans_rappel)}"
-
-
-def _conseil_closing(m: MetriquesVendeur, couleur: str | None) -> str | None:
-    if couleur not in ("rouge", "jaune") or not m.n_soumissions_envoyees:
-        return None
-    return f"{m.n_won}/{m.n_soumissions_envoyees} soumissions gagnées — creuser les motifs de perte des autres."
-
-
-def _metriques_affichees(m: MetriquesVendeur, seuils: dict) -> list[MetriqueAffichee]:
-    c1 = _couleur(m.pct_contact_meme_jour, seuils["contact_meme_jour"])
-    c2 = _couleur(m.pct_visite_bookee, seuils["visite_bookee"])
-    c3 = _couleur(m.pct_rappel_48h, seuils["rappel_48h"])
-    c4 = _couleur(m.pct_closing, seuils["closing"])
-    return [
-        MetriqueAffichee(
-            "Contact même jour",
-            f"{_fmt_pct(m.pct_contact_meme_jour)} ({m.n_contactes_meme_jour}/{m.n_leads})",
-            c1,
-            _conseil_contact(m, c1),
-        ),
-        MetriqueAffichee(
-            "Visite bookée",
-            f"{_fmt_pct(m.pct_visite_bookee)} ({m.n_visite_bookee}/{m.n_leads})",
-            c2,
-            _conseil_visite(m, c2),
-        ),
-        MetriqueAffichee(
-            "Rappel 48h après soumission",
-            f"{_fmt_pct(m.pct_rappel_48h)} ({m.n_soumissions_avec_rappel}/{m.n_soumissions_ghl})",
-            c3,
-            _conseil_rappel(m, c3),
-        ),
-        MetriqueAffichee(
-            "Taux de closing",
-            f"{_fmt_pct(m.pct_closing)} ({m.n_won}/{m.n_soumissions_envoyees})",
-            c4,
-            _conseil_closing(m, c4),
-        ),
-        MetriqueAffichee("Valeur moyenne (won)", _fmt_dollars(m.valeur_moyenne_won), None, None),
-    ]
-
-
-def _delta_points(actuel: float | None, precedent: float | None) -> tuple[str | None, bool | None]:
-    if actuel is None or precedent is None:
-        return None, None
-    d = actuel - precedent
-    return f"{abs(d):.0f} pts", d >= 0
-
-
-def _delta_relatif(actuel: float, precedent: float) -> tuple[str | None, bool | None]:
-    if not precedent:
-        return None, None
-    d = (actuel - precedent) / precedent
-    return f"{abs(d):.0%}", d >= 0
-
-
-def _stats_equipe(actuelle: MetriquesVendeur, precedente: MetriquesVendeur) -> list[tuple]:
-    return [
-        ("Leads (30j)", str(actuelle.n_leads), *_delta_relatif(actuelle.n_leads, precedente.n_leads)),
-        ("Contact même jour", _fmt_pct(actuelle.pct_contact_meme_jour), *_delta_points(actuelle.pct_contact_meme_jour, precedente.pct_contact_meme_jour)),
-        ("Visite bookée", _fmt_pct(actuelle.pct_visite_bookee), *_delta_points(actuelle.pct_visite_bookee, precedente.pct_visite_bookee)),
-        ("Rappel 48h", _fmt_pct(actuelle.pct_rappel_48h), *_delta_points(actuelle.pct_rappel_48h, precedente.pct_rappel_48h)),
-        ("Taux de closing", _fmt_pct(actuelle.pct_closing), *_delta_points(actuelle.pct_closing, precedente.pct_closing)),
-        ("Valeur moyenne (won)", _fmt_dollars(actuelle.valeur_moyenne_won), *_delta_relatif(actuelle.valeur_moyenne_won or 0, precedente.valeur_moyenne_won or 0)),
-    ]
 
 
 def _sauvegarder_refresh_token_partout(nouveau_token: str):
@@ -164,18 +61,19 @@ def main():
     alias_jobber = config_yaml.get("ghl_vendeurs_alias_jobber", {})
 
     fin = datetime.now(FUSEAU_MAG)
+    debut_donnees = fin - timedelta(days=FENETRE_DONNEES_BRUTES_JOURS)
     debut_60j = fin - timedelta(days=2 * FENETRE_JOURS)
     milieu = fin - timedelta(days=FENETRE_JOURS)
 
     cache = charger_cache()
 
-    print(f"Récupération des opportunités GHL ({debut_60j.date()} -> {fin.date()})...")
-    toutes = obtenir_opportunites_ventes(config, debut_60j, fin, cache)
+    print(f"Récupération des opportunités GHL ({debut_donnees.date()} -> {fin.date()})...")
+    toutes = obtenir_opportunites_ventes(config, debut_donnees, fin, cache)
     toutes = [o for o in toutes if o.vendeur in set(noms_vendeurs)]
     print(f"  {len(toutes)} opportunité(s) retenues (vendeurs configurés seulement).")
 
     actuelle_opps = [o for o in toutes if o.date_creation > milieu]
-    precedente_opps = [o for o in toutes if o.date_creation <= milieu]
+    precedente_opps = [o for o in toutes if debut_60j < o.date_creation <= milieu]
 
     print("Récupération des soumissions Jobber (métriques closing/valeur moyenne)...")
     client_jobber = ClientJobber(
@@ -184,11 +82,11 @@ def main():
         env["JOBBER_REFRESH_TOKEN"],
         sur_nouveau_refresh_token=_sauvegarder_refresh_token_partout,
     )
-    soumissions_actuelle = obtenir_soumissions_jobber(client_jobber, alias_jobber, milieu.date(), fin.date())
-    soumissions_precedente = obtenir_soumissions_jobber(client_jobber, alias_jobber, debut_60j.date(), milieu.date())
-    soumissions_actuelle = [s for s in soumissions_actuelle if s.vendeur in set(noms_vendeurs)]
-    soumissions_precedente = [s for s in soumissions_precedente if s.vendeur in set(noms_vendeurs)]
-    print(f"  {len(soumissions_actuelle)} soumission(s) envoyée(s) (période actuelle, vendeurs configurés).")
+    toutes_soumissions = obtenir_soumissions_jobber(client_jobber, alias_jobber, debut_donnees.date(), fin.date())
+    toutes_soumissions = [s for s in toutes_soumissions if s.vendeur in set(noms_vendeurs)]
+    soumissions_actuelle = [s for s in toutes_soumissions if s.date_envoi > milieu]
+    soumissions_precedente = [s for s in toutes_soumissions if debut_60j < s.date_envoi <= milieu]
+    print(f"  {len(toutes_soumissions)} soumission(s) au total sur {FENETRE_DONNEES_BRUTES_JOURS}j (vendeurs configurés).")
 
     equipe_actuelle, vendeurs_actuelle = calculer_metriques_equipe_et_vendeurs(actuelle_opps, soumissions_actuelle, noms_vendeurs)
     equipe_precedente, vendeurs_precedente = calculer_metriques_equipe_et_vendeurs(precedente_opps, soumissions_precedente, noms_vendeurs)
@@ -200,13 +98,16 @@ def main():
     (DOSSIER_PAGES / ".nojekyll").touch()
 
     genere_le = datetime.now(FUSEAU_MAG)
-    genere_le_texte = genere_le.strftime("%A %d %B %Y, %H:%M")
-    periode_texte = f"Fenêtre roulante : {milieu.date()} au {fin.date()} (vs {debut_60j.date()} au {milieu.date()})"
 
     stats_json = {
         "genere_le": genere_le.isoformat(),
         "periode": {"debut": milieu.isoformat(), "fin": fin.isoformat()},
         "periode_precedente": {"debut": debut_60j.isoformat(), "fin": milieu.isoformat()},
+        "vendeurs_config": noms_vendeurs,
+        "seuils": seuils,
+        # Agrégat 30j/30j par défaut — utilisé par le résumé Slack hebdo (voir
+        # slack_hebdo_ventes_ghl.py) et comme vue initiale de la page avant que
+        # l'utilisateur choisisse une autre plage.
         "equipe": {
             "actuelle": dataclasses.asdict(equipe_actuelle),
             "precedente": dataclasses.asdict(equipe_precedente),
@@ -219,22 +120,45 @@ def main():
             }
             for nom in noms_vendeurs
         ],
+        # Données brutes (180j) — la page interactive recalcule tout côté navigateur
+        # à partir d'ici selon la plage choisie (7j/30j/90j/mois). Les booléens
+        # (contacte_meme_jour, visite_bookee, rappel_48h) sont déjà calculés côté
+        # serveur (dépendent de l'historique GHL des appels/SMS) ; seul le filtrage
+        # par date se fait côté client.
+        "opportunites_brutes": [
+            {
+                "id": o.id,
+                "nom": o.nom,
+                "vendeur": o.vendeur,
+                "source": o.source,
+                "statut": o.statut,
+                "valeur": o.valeur,
+                "date_creation": o.date_creation.isoformat(),
+                "visite_bookee": o.visite_bookee,
+                "soumission_envoyee": o.soumission_envoyee,
+                "contacte_meme_jour": o.contacte_meme_jour,
+                "rappel_48h": o.rappel_48h,
+            }
+            for o in toutes
+        ],
+        "soumissions_brutes": [
+            {
+                "numero": s.numero,
+                "client": s.client,
+                "vendeur": s.vendeur,
+                "montant": s.montant,
+                "won": s.won,
+                "date_envoi": s.date_envoi.isoformat(),
+            }
+            for s in toutes_soumissions
+        ],
     }
     CHEMIN_JSON.write_text(json.dumps(stats_json, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"JSON écrit : {CHEMIN_JSON.relative_to(RACINE)}")
 
-    cartes = [
-        CarteVendeur(nom, _metriques_affichees(next(v for v in vendeurs_actuelle if v.nom == nom), seuils))
-        for nom in noms_vendeurs
-    ]
-    html = generer_page(
-        genere_le_texte,
-        periode_texte,
-        _stats_equipe(equipe_actuelle, equipe_precedente),
-        cartes,
-    )
-    CHEMIN_HTML.write_text(html, encoding="utf-8")
-    print(f"HTML écrit : {CHEMIN_HTML.relative_to(RACINE)}")
+    if not CHEMIN_HTML.exists():
+        CHEMIN_HTML.write_text(generer_page(), encoding="utf-8")
+        print(f"HTML écrit : {CHEMIN_HTML.relative_to(RACINE)}")
 
 
 if __name__ == "__main__":

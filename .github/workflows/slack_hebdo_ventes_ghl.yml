@@ -1,0 +1,32 @@
+name: Résumé hebdo Slack — Dashboard Ventes GHL
+
+on:
+  schedule:
+    # 7h30 heure de Montréal en été (EDT, UTC-4) -> 11h30 UTC. Décaler à 12h30
+    # UTC au retour à l'heure normale (EST, UTC-5), début novembre (voir
+    # rapport_hebdomadaire.yml pour le même avertissement DST). Tourne après le
+    # run de 7h00 de dashboard_ventes_ghl.yml, qui a le temps de committer
+    # docs/stats_ventes_ghl.json avant ce déclenchement.
+    - cron: "30 11 * * 1"
+  workflow_dispatch: {} # permet de lancer le résumé manuellement depuis l'onglet Actions
+
+jobs:
+  resume:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Installer les dépendances
+        run: python -m pip install -r requirements.txt
+
+      - name: Envoyer le résumé hebdo
+        working-directory: .
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python src/slack_hebdo_ventes_ghl.py

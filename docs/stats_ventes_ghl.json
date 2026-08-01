@@ -1,0 +1,302 @@
+{
+  "genere_le": "2026-08-01T13:27:10.393413-04:00",
+  "periode": {
+    "debut": "2026-07-02T13:26:53.931347-04:00",
+    "fin": "2026-08-01T13:26:53.931347-04:00"
+  },
+  "periode_precedente": {
+    "debut": "2026-06-02T13:26:53.931347-04:00",
+    "fin": "2026-07-02T13:26:53.931347-04:00"
+  },
+  "equipe": {
+    "actuelle": {
+      "nom": "Équipe",
+      "n_leads": 326,
+      "n_contactes_meme_jour": 315,
+      "pct_contact_meme_jour": 96.62576687116564,
+      "n_visite_bookee": 76,
+      "pct_visite_bookee": 23.312883435582823,
+      "n_soumissions_ghl": 74,
+      "n_soumissions_avec_rappel": 5,
+      "pct_rappel_48h": 6.756756756756757,
+      "n_soumissions_envoyees": 41,
+      "n_won": 14,
+      "pct_closing": 34.146341463414636,
+      "valeur_moyenne_won": 2567.5,
+      "leads_non_contactes": [
+        "Marc Andre Tremblay",
+        "Dominique Choquette",
+        "Michel Milmore",
+        "Stéphane Turbide",
+        "Francis Langlais",
+        "Mariette St-Jacques",
+        "Florine",
+        "Luc Joannette",
+        "Tommy Jfdg Vinet Berube",
+        "Vince De Rose"
+      ],
+      "soumissions_sans_rappel": [
+        "Claudia Demers",
+        "Ian Mulcahy",
+        "Ximena Arteaga",
+        "Jason Caron",
+        "Didier Laforest",
+        "Charles David Jarvis",
+        "Nadia Brixi",
+        "Claude Levesque",
+        "Zaf",
+        "Karla Magallanes"
+      ]
+    },
+    "precedente": {
+      "nom": "Équipe",
+      "n_leads": 350,
+      "n_contactes_meme_jour": 335,
+      "pct_contact_meme_jour": 95.71428571428571,
+      "n_visite_bookee": 64,
+      "pct_visite_bookee": 18.285714285714285,
+      "n_soumissions_ghl": 64,
+      "n_soumissions_avec_rappel": 2,
+      "pct_rappel_48h": 3.125,
+      "n_soumissions_envoyees": 52,
+      "n_won": 27,
+      "pct_closing": 51.92307692307692,
+      "valeur_moyenne_won": 2281.1111111111113,
+      "leads_non_contactes": [
+        "Marie-Noële Pilon",
+        "Nicolas Deschenes",
+        "azadeh azad",
+        "Mariam Mohamed",
+        "Bien aime le grand",
+        "Denis Coulombe",
+        "Justin Boivin",
+        "Ryan Adamson",
+        "Shady Abid",
+        "Mouhamadou Makhfousse Diallo"
+      ],
+      "soumissions_sans_rappel": [
+        "Laura Di Costanzo",
+        "Laura",
+        "Caro Laverdure",
+        "Mahir Ozdilek",
+        "Mike Melatti",
+        "Brenda Plumb",
+        "Tony Kara Call After July 1st",
+        "Daniel Perel",
+        "Bruno Alary",
+        "Pierre-Pascal Theoret"
+      ]
+    }
+  },
+  "vendeurs": [
+    {
+      "nom": "Justin Blaquiere",
+      "actuelle": {
+        "nom": "Justin Blaquiere",
+        "n_leads": 142,
+        "n_contactes_meme_jour": 137,
+        "pct_contact_meme_jour": 96.47887323943662,
+        "n_visite_bookee": 39,
+        "pct_visite_bookee": 27.464788732394368,
+        "n_soumissions_ghl": 38,
+        "n_soumissions_avec_rappel": 3,
+        "pct_rappel_48h": 7.894736842105263,
+        "n_soumissions_envoyees": 21,
+        "n_won": 9,
+        "pct_closing": 42.857142857142854,
+        "valeur_moyenne_won": 2083.3333333333335,
+        "leads_non_contactes": [
+          "Marc Andre Tremblay",
+          "Francis Langlais",
+          "Mariette St-Jacques",
+          "Luc Joannette",
+          "Fedor Jila"
+        ],
+        "soumissions_sans_rappel": [
+          "Claudia Demers",
+          "Ian Mulcahy",
+          "Ximena Arteaga",
+          "Jason Caron",
+          "Didier Laforest",
+          "Charles David Jarvis",
+          "Nadia Brixi",
+          "Claude Levesque",
+          "Karla Magallanes",
+          "Robert"
+        ]
+      },
+      "precedente": {
+        "nom": "Justin Blaquiere",
+        "n_leads": 108,
+        "n_contactes_meme_jour": 102,
+        "pct_contact_meme_jour": 94.44444444444444,
+        "n_visite_bookee": 24,
+        "pct_visite_bookee": 22.22222222222222,
+        "n_soumissions_ghl": 24,
+        "n_soumissions_avec_rappel": 2,
+        "pct_rappel_48h": 8.333333333333334,
+        "n_soumissions_envoyees": 38,
+        "n_won": 22,
+        "pct_closing": 57.89473684210526,
+        "valeur_moyenne_won": 2104.090909090909,
+        "leads_non_contactes": [
+          "Nicolas Deschenes",
+          "Ryan Adamson",
+          "René St-Laurent",
+          "Ilona",
+          "Giuseppe Pietromonaco",
+          "Hervé"
+        ],
+        "soumissions_sans_rappel": [
+          "Laura Di Costanzo",
+          "Brenda Plumb",
+          "Daniel Perel",
+          "Bruno Alary",
+          "Pierre-Pascal Theoret",
+          "René St-Laurent",
+          "Peter Binetti",
+          "Jean Francois Brien",
+          "Ilona",
+          "Liora"
+        ]
+      }
+    },
+    {
+      "nom": "Jeremy Dagenais",
+      "actuelle": {
+        "nom": "Jeremy Dagenais",
+        "n_leads": 54,
+        "n_contactes_meme_jour": 53,
+        "pct_contact_meme_jour": 98.14814814814815,
+        "n_visite_bookee": 13,
+        "pct_visite_bookee": 24.074074074074073,
+        "n_soumissions_ghl": 12,
+        "n_soumissions_avec_rappel": 1,
+        "pct_rappel_48h": 8.333333333333334,
+        "n_soumissions_envoyees": 0,
+        "n_won": 0,
+        "pct_closing": null,
+        "valeur_moyenne_won": null,
+        "leads_non_contactes": [
+          "Tommy Jfdg Vinet Berube"
+        ],
+        "soumissions_sans_rappel": [
+          "Zaf",
+          "Tommy Jfdg Vinet Berube",
+          "Khalid Douakha",
+          "Raymonde Monette",
+          "Aline Lemire",
+          "Yves Goulet",
+          "Lucien Bohbot",
+          "Jean Marc",
+          "Tida Anacreon",
+          "Daphney RaphaëL"
+        ]
+      },
+      "precedente": {
+        "nom": "Jeremy Dagenais",
+        "n_leads": 208,
+        "n_contactes_meme_jour": 201,
+        "pct_contact_meme_jour": 96.63461538461539,
+        "n_visite_bookee": 28,
+        "pct_visite_bookee": 13.461538461538462,
+        "n_soumissions_ghl": 28,
+        "n_soumissions_avec_rappel": 0,
+        "pct_rappel_48h": 0.0,
+        "n_soumissions_envoyees": 0,
+        "n_won": 0,
+        "pct_closing": null,
+        "valeur_moyenne_won": null,
+        "leads_non_contactes": [
+          "azadeh azad",
+          "Mariam Mohamed",
+          "Bien aime le grand",
+          "Denis Coulombe",
+          "Justin Boivin",
+          "Shady Abid",
+          "Mouhamadou Makhfousse Diallo"
+        ],
+        "soumissions_sans_rappel": [
+          "Laura",
+          "Mahir Ozdilek",
+          "Tony Kara Call After July 1st",
+          "George Hkr",
+          "Tony Papag",
+          "Gilles Carpentier",
+          "Nathalie Lemon",
+          "Michel@Elvispassion.Com",
+          "Miche Miche St-Urbain",
+          "Guy Delcourt"
+        ]
+      }
+    },
+    {
+      "nom": "Justin Boivin",
+      "actuelle": {
+        "nom": "Justin Boivin",
+        "n_leads": 130,
+        "n_contactes_meme_jour": 125,
+        "pct_contact_meme_jour": 96.15384615384616,
+        "n_visite_bookee": 24,
+        "pct_visite_bookee": 18.46153846153846,
+        "n_soumissions_ghl": 24,
+        "n_soumissions_avec_rappel": 1,
+        "pct_rappel_48h": 4.166666666666667,
+        "n_soumissions_envoyees": 20,
+        "n_won": 5,
+        "pct_closing": 25.0,
+        "valeur_moyenne_won": 3439.0,
+        "leads_non_contactes": [
+          "Dominique Choquette",
+          "Michel Milmore",
+          "Stéphane Turbide",
+          "Florine",
+          "Vince De Rose"
+        ],
+        "soumissions_sans_rappel": [
+          "Iminja Ramampy",
+          "Pascale Gagnon BhéRer",
+          "José Luis PéRez",
+          "Jennifer Madar",
+          "Felisa. Romo",
+          "Pino Bocchino",
+          "Gerry Grenier",
+          "Vince De Rose",
+          "Mireille Lesuise",
+          "Rocco Zingaro"
+        ]
+      },
+      "precedente": {
+        "nom": "Justin Boivin",
+        "n_leads": 34,
+        "n_contactes_meme_jour": 32,
+        "pct_contact_meme_jour": 94.11764705882354,
+        "n_visite_bookee": 12,
+        "pct_visite_bookee": 35.294117647058826,
+        "n_soumissions_ghl": 12,
+        "n_soumissions_avec_rappel": 0,
+        "pct_rappel_48h": 0.0,
+        "n_soumissions_envoyees": 14,
+        "n_won": 5,
+        "pct_closing": 35.714285714285715,
+        "valeur_moyenne_won": 3060.0,
+        "leads_non_contactes": [
+          "Marie-Noële Pilon",
+          "Mike Valcourt"
+        ],
+        "soumissions_sans_rappel": [
+          "Caro Laverdure",
+          "Mike Melatti",
+          "Alain Tremblay",
+          "Michal Raczka",
+          "Archana Nair",
+          "Mike Valcourt",
+          "Jean-Francois Naud",
+          "Nader Bou Matar",
+          "Daphnee Calixte",
+          "Mojir Jojo"
+        ]
+      }
+    }
+  ]
+}

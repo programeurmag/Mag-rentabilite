@@ -9,6 +9,9 @@ data/*.csv
 data/*.xlsx
 !data/.gitkeep
 
+# Dumps bruts d'exploration GHL (module Dashboard Ventes) — données clients réelles
+data/exploration_ghl/
+
 # Python
 __pycache__/
 *.pyc

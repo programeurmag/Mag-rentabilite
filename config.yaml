@@ -86,3 +86,43 @@ google_sheet_id_dashboard: "1BKl80lMlnEZij2WV-Va6O0Hq445HsjyoDqLbiPrzqxM"
 camions_equipes: {}
   # "Truck Lavage 1": ["Prénom Nom", "Prénom Nom"]
   # "Truck Sable 1": ["Prénom Nom"]
+
+# Module Dashboard Ventes GHL — funnel SETTING -> CLOSING (distinct du module
+# Ventes Jobber ci-dessus, qui suit les $ de soumissions, pas le funnel de leads).
+# Décisions du 2026-08-01 (voir exploration src/explorer_ventes_ghl.py) :
+#   - Pas de pipeline "Ventes MAG 2026" sur le sub-account — funnel réel = SETTING + CLOSING.
+#   - "Visite bookée" = a atteint le stage RDV BOOKÉ (dans SETTING) OU est déjà dans CLOSING.
+#   - "Soumission envoyée" = l'opportunité est dans la pipeline CLOSING (n'importe quel stage).
+#   - "Rappel 48h" = appel/SMS SORTANT loggé dans les 48h suivant lastStageChangeAt (entrée
+#     dans CLOSING) — les Tasks GHL ne sont jamais utilisées (0 sur 324 contacts testés) et
+#     les Notes sont trop rares (39/324) pour servir de source à cette métrique.
+ghl_pipelines_ventes: ["SETTING", "CLOSING"]
+ghl_stage_visite_bookee: "RDV BOOKÉ"
+ghl_pipeline_soumission: "CLOSING"
+
+# Mapping userId GHL -> nom du vendeur. Le scope "Users" de l'API GHL n'est pas
+# accessible à un Private Integration Token (401 constant même avec le scope
+# coché côté GHL, voir échanges du 2026-08-01) — mapping fait manuellement en
+# comparant les compteurs d'opportunités filtrés par vendeur dans l'UI GHL
+# (Opportunities -> Advanced Filters -> Owner) contre les IDs bruts de l'API.
+ghl_vendeurs:
+  "ZWemJQJ7j4XuX3bzCDcj": "Justin Blaquiere"
+  "mQGiCVGATOaAwjGsinGL": "Jeremy Dagenais"
+  "KuFMSFLyeDp5WsQMk0z6": "Justin Boivin"
+
+# Métriques 4-5 (closing, valeur moyenne won) : basées sur les soumissions
+# Jobber (voir ventes_jobber_source.py), pas sur le passage en pipeline GHL
+# CLOSING (décision de Justin, 2026-08-01 — CLOSING ne veut pas dire qu'un prix
+# a été envoyé). Vendeur = champ salesperson de Jobber directement ; alias
+# nécessaire seulement pour Justin Blaquiere, dont les soumissions apparaissent
+# sous le nom du compte compagnie dans Jobber (voir SPEC_module_ventes_MAG.md).
+ghl_vendeurs_alias_jobber:
+  "MAG Lavage À Pression": "Justin Blaquiere"
+
+# Seuils de couleur du dashboard (vert si >= vert, rouge si < rouge, jaune entre
+# les deux). Départ fourni par Justin le 2026-08-01 — faciles à ajuster ici.
+seuils_dashboard_ventes:
+  contact_meme_jour: { vert: 80, rouge: 60 } # % leads contactés (appel/SMS sortant) le jour de création
+  visite_bookee: { vert: 50, rouge: 35 } # % leads atteignant RDV BOOKÉ ou CLOSING
+  rappel_48h: { vert: 90, rouge: 70 } # % soumissions avec appel/SMS sortant loggé <48h après entrée CLOSING
+  closing: { vert: 40, rouge: 25 } # % soumissions -> won

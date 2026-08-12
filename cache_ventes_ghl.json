@@ -17972,8 +17972,8 @@
       "n_appels_repondus": 3,
       "n_sms_sortants": 9,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T15:44:30.224000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:38:11.372000-04:00",
+      "activite_figee": true
     },
     "Z8lKoSt4ck9Tp30X33G1": {
       "date_entree_closing": "2026-07-29T20:33:58.077Z",
@@ -18544,8 +18544,8 @@
       "n_appels_repondus": 2,
       "n_sms_sortants": 5,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T15:44:29.825000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:38:21.026000-04:00",
+      "activite_figee": true
     },
     "aiMpS89VPzRbcxSmwALb": {
       "date_entree_closing": "2026-07-29T20:33:32.390Z",
@@ -18609,8 +18609,8 @@
       "n_appels_repondus": 1,
       "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T15:44:29.812000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:38:30.441000-04:00",
+      "activite_figee": true
     },
     "uajXaTKtBIWJfuBUDakH": {
       "date_entree_closing": "2026-07-29T20:33:58.180Z",
@@ -18700,8 +18700,8 @@
       "n_appels_repondus": 8,
       "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T15:44:30.368000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:38:37.707000-04:00",
+      "activite_figee": true
     },
     "sL6oL0USvqs5WXf7H997": {
       "date_entree_closing": "2026-07-29T20:33:32.390Z",
@@ -19595,10 +19595,10 @@
       "rappel_48h_fige": true,
       "n_appels_sortants": 3,
       "n_appels_repondus": 3,
-      "n_sms_sortants": 5,
+      "n_sms_sortants": 7,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T21:34:49.197000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T14:13:45.316000-04:00",
+      "activite_figee": true
     },
     "jqnvpCJO5F7D8qP13nsw": {
       "date_entree_closing": "2026-07-29T20:33:33.383Z",
@@ -19751,9 +19751,9 @@
       "rappel_48h_fige": true,
       "n_appels_sortants": 14,
       "n_appels_repondus": 14,
-      "n_sms_sortants": 7,
+      "n_sms_sortants": 15,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T17:29:26.071000-04:00",
+      "derniere_activite": "2026-08-12T17:25:40.908000-04:00",
       "activite_figee": false
     },
     "jFkh5zvumn5s0eEUDSCz": {
@@ -19844,8 +19844,8 @@
       "n_appels_repondus": 1,
       "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T15:44:32.186000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:37:59.083000-04:00",
+      "activite_figee": true
     },
     "4IyGyq3dR6KOPPPhXXT1": {
       "date_entree_closing": "2026-07-29T22:06:31.329Z",
@@ -20052,8 +20052,8 @@
       "n_appels_repondus": 5,
       "n_sms_sortants": 6,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T15:44:32.189000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:37:45.159000-04:00",
+      "activite_figee": true
     },
     "1vuQWqRzUAvvXOJdflEq": {
       "date_entree_closing": "2026-07-29T20:23:43.883Z",
@@ -20347,11 +20347,11 @@
       "contacte_meme_jour_fige": true,
       "rappel_48h": false,
       "rappel_48h_fige": true,
-      "n_appels_sortants": 6,
-      "n_appels_repondus": 6,
+      "n_appels_sortants": 7,
+      "n_appels_repondus": 7,
       "n_sms_sortants": 0,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T18:03:06.882000-04:00",
+      "derniere_activite": "2026-08-12T14:53:01.094000-04:00",
       "activite_figee": false
     },
     "hOpIIj4jCJzV6kOf26qn": {
@@ -20703,20 +20703,20 @@
       "contacte_meme_jour_fige": true,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 1,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-05T14:46:50.325000-04:00",
+      "derniere_activite": "2026-08-12T16:33:04.337000-04:00",
       "activite_figee": false
     },
     "q91Myq6NWxePTu4p8zqU": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 3,
-      "n_appels_repondus": 3,
+      "n_appels_sortants": 4,
+      "n_appels_repondus": 4,
       "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T13:00:01.783000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:11:16.444000-04:00",
+      "activite_figee": true
     },
     "s8baV0AS7FPHRs2IFK2M": {
       "contacte_meme_jour": true,
@@ -20794,11 +20794,11 @@
     "eF466gGv8KVJdt8sDYiZ": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 5,
-      "n_appels_repondus": 4,
+      "n_appels_sortants": 6,
+      "n_appels_repondus": 5,
       "n_sms_sortants": 5,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T12:56:31.256000-04:00",
+      "derniere_activite": "2026-08-12T15:07:32.906000-04:00",
       "activite_figee": false
     },
     "jh4UsmPQQVKGVLGszqcs": {
@@ -20830,22 +20830,22 @@
     "vO1LKroH5wvs6vAgialz": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
-      "n_sms_sortants": 1,
+      "n_appels_sortants": 2,
+      "n_appels_repondus": 2,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-05T15:41:39.423000-04:00",
+      "derniere_activite": "2026-08-12T12:40:04.460000-04:00",
       "activite_figee": false
     },
     "b4JdQ5TFoQEsizUSnCEY": {
       "contacte_meme_jour": false,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
-      "n_sms_sortants": 0,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 1,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-05T15:02:28.225000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T14:26:30.080000-04:00",
+      "activite_figee": true
     },
     "dU567XM6AFqyVYCGoYSm": {
       "contacte_meme_jour": true,
@@ -20860,11 +20860,11 @@
     "4xtOJbsewoviemCxPnF0": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
-      "n_sms_sortants": 1,
+      "n_appels_sortants": 2,
+      "n_appels_repondus": 2,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-05T11:57:06.880000-04:00",
+      "derniere_activite": "2026-08-12T12:38:32.616000-04:00",
       "activite_figee": false
     },
     "sSJsUbPuSsg7oMP91Emh": {
@@ -20874,28 +20874,28 @@
       "n_appels_repondus": 2,
       "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T12:58:53.743000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:09:48.443000-04:00",
+      "activite_figee": true
     },
     "h9IjmoMQT0hVgdFKUMlj": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-05T10:33:49.267000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T12:38:07.333000-04:00",
+      "activite_figee": true
     },
     "Qg2eonABPCI54eP8W6WG": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 4,
+      "n_appels_sortants": 5,
       "n_appels_repondus": 0,
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T12:58:59.550000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:10:07.899000-04:00",
+      "activite_figee": true
     },
     "CDsJIsdyYici7mNarj8A": {
       "contacte_meme_jour": true,
@@ -20914,17 +20914,17 @@
       "n_appels_repondus": 3,
       "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T12:59:12.659000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:10:14.401000-04:00",
+      "activite_figee": true
     },
     "bDpROXzyex3aXK4UE8v2": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 1,
-      "n_appels_repondus": 1,
-      "n_sms_sortants": 1,
+      "n_appels_sortants": 2,
+      "n_appels_repondus": 2,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-05T15:03:41.446000-04:00",
+      "derniere_activite": "2026-08-12T12:37:57.595000-04:00",
       "activite_figee": false
     },
     "QVbMHXfGk3sje0KGbxj1": {
@@ -20940,12 +20940,12 @@
     "BTshR1tHdxcXDl3DfvFk": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 4,
-      "n_appels_repondus": 3,
+      "n_appels_sortants": 5,
+      "n_appels_repondus": 4,
       "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T12:59:45.737000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:10:49.002000-04:00",
+      "activite_figee": true
     },
     "9YKQmBQxOqrvpMC8rgMM": {
       "contacte_meme_jour": true,
@@ -20963,42 +20963,42 @@
       "contacte_meme_jour_fige": true,
       "rappel_48h": true,
       "rappel_48h_fige": true,
-      "n_appels_sortants": 2,
-      "n_appels_repondus": 2,
+      "n_appels_sortants": 3,
+      "n_appels_repondus": 3,
       "n_sms_sortants": 5,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-12T10:51:35.529000-04:00",
+      "derniere_activite": "2026-08-12T15:13:01.461000-04:00",
       "activite_figee": false
     },
     "318gKOxfJD7VAugVxsbe": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-06T17:24:51.364000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T12:42:29.279000-04:00",
+      "activite_figee": true
     },
     "0csoDjnZ4MWWcz9d9WBK": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 2,
-      "n_appels_repondus": 2,
+      "n_appels_sortants": 3,
+      "n_appels_repondus": 3,
       "n_sms_sortants": 5,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T13:04:00.465000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:14:35.717000-04:00",
+      "activite_figee": true
     },
     "Klp4NHLcPEB5Ja4XLtIY": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
-      "n_sms_sortants": 1,
+      "n_appels_sortants": 2,
+      "n_appels_repondus": 2,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-12T10:29:07.107000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:30:28.535000-04:00",
+      "activite_figee": true
     },
     "mqobv0IHW273KE8pf8Ej": {
       "contacte_meme_jour": true,
@@ -21039,11 +21039,11 @@
     "IG7n28ZxzJ2CIkGxcWDD": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
-      "n_sms_sortants": 1,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-07T15:32:47.265000-04:00",
+      "derniere_activite": "2026-08-12T16:22:02.457000-04:00",
       "activite_figee": false
     },
     "uipS6vUZGxCRKutNhNLv": {
@@ -21059,22 +21059,22 @@
     "f2wJ0GxCgHZqlMMg6CPm": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 2,
-      "n_appels_repondus": 2,
-      "n_sms_sortants": 3,
+      "n_appels_sortants": 3,
+      "n_appels_repondus": 3,
+      "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T13:03:05.050000-04:00",
+      "derniere_activite": "2026-08-12T15:11:52.785000-04:00",
       "activite_figee": false
     },
     "Z1muOo5LXcZgZbXVw0Rm": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
       "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-07T14:33:20.427000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T16:21:25.638000-04:00",
+      "activite_figee": true
     },
     "gSQ9KEcFXXziptU1Tqp7": {
       "contacte_meme_jour": true,
@@ -21099,11 +21099,11 @@
     "busQl1KNRII8c05Iyru0": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
-      "n_sms_sortants": 1,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-06T21:57:53.004000-04:00",
+      "derniere_activite": "2026-08-12T12:43:11.025000-04:00",
       "activite_figee": false
     },
     "zz4G0Mg1rz1esu3EqlNx": {
@@ -21112,11 +21112,11 @@
       "contacte_meme_jour_fige": true,
       "rappel_48h": true,
       "rappel_48h_fige": true,
-      "n_appels_sortants": 1,
-      "n_appels_repondus": 1,
+      "n_appels_sortants": 2,
+      "n_appels_repondus": 2,
       "n_sms_sortants": 6,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T15:44:29.137000-04:00",
+      "derniere_activite": "2026-08-12T15:42:39.265000-04:00",
       "activite_figee": false
     },
     "8Gy3ssCgZJrZEZZZrELt": {
@@ -21132,11 +21132,11 @@
     "oIlZ1TpBKrePUqqrtQgT": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 1,
+      "n_appels_sortants": 2,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 2,
+      "n_sms_sortants": 3,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T13:04:59.040000-04:00",
+      "derniere_activite": "2026-08-12T15:30:22.457000-04:00",
       "activite_figee": false
     },
     "hZPGlQJ4IeaRM9L4dFpz": {
@@ -21172,11 +21172,11 @@
     "jZ7uZcrwpE0gGPShKPzv": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 2,
+      "n_appels_sortants": 3,
       "n_appels_repondus": 0,
-      "n_sms_sortants": 2,
+      "n_sms_sortants": 3,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T13:00:52.435000-04:00",
+      "derniere_activite": "2026-08-12T15:15:32.407000-04:00",
       "activite_figee": false
     },
     "aNhTQs6mqlCeZLaJ06Nz": {
@@ -21232,11 +21232,11 @@
     "FeKGErMRdvSvifWAshf3": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
-      "n_sms_sortants": 1,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-09T13:52:10.952000-04:00",
+      "derniere_activite": "2026-08-12T16:32:55.827000-04:00",
       "activite_figee": false
     },
     "dSInu0tZwrOGSFcvk1Ry": {
@@ -21252,21 +21252,21 @@
     "EYbGUgoWkyeueYlSi2Xx": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-09T06:51:59.554000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T16:32:10.238000-04:00",
+      "activite_figee": true
     },
     "U412sdCtYgSAz3HtzZAA": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 1,
-      "n_appels_repondus": 1,
-      "n_sms_sortants": 2,
+      "n_appels_sortants": 2,
+      "n_appels_repondus": 2,
+      "n_sms_sortants": 3,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-10T15:53:03.476000-04:00",
+      "derniere_activite": "2026-08-12T15:20:55.849000-04:00",
       "activite_figee": false
     },
     "F7NKJBM8rdzFx5rVL6KP": {
@@ -21282,12 +21282,12 @@
     "vFN13YiZLfRK3tWT1i6G": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-08T22:08:58.659000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T16:29:25.829000-04:00",
+      "activite_figee": true
     },
     "InShLaAcPT25NxX7L2P2": {
       "contacte_meme_jour": true,
@@ -21302,32 +21302,32 @@
     "yFhUv1M19bkT0eDNn9Qj": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-08T16:32:09.869000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T16:24:21.076000-04:00",
+      "activite_figee": true
     },
     "juo40ocA3uygQ5QgbaSJ": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 2,
-      "n_appels_repondus": 2,
-      "n_sms_sortants": 3,
+      "n_appels_sortants": 3,
+      "n_appels_repondus": 3,
+      "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T13:02:10.394000-04:00",
+      "derniere_activite": "2026-08-12T15:15:55.956000-04:00",
       "activite_figee": false
     },
     "YvuS0hFj0gDgqRWCW1VX": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-08T09:56:52.176000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T16:23:34.857000-04:00",
+      "activite_figee": true
     },
     "k51IeJGgkPvSgJ88NGN5": {
       "contacte_meme_jour": true,
@@ -21342,34 +21342,34 @@
     "uDiMqshanFiR5AKdDfph": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
-      "n_sms_sortants": 1,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-08T07:30:42.620000-04:00",
+      "derniere_activite": "2026-08-12T17:00:53.837000-04:00",
       "activite_figee": false
     },
     "xWIs82KJRr4Fto8TAuq6": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 2,
-      "n_appels_repondus": 2,
+      "n_appels_sortants": 3,
+      "n_appels_repondus": 3,
       "n_sms_sortants": 3,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T13:02:28.618000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:20:24.665000-04:00",
+      "activite_figee": true
     },
     "WQPpOEHl7aMSOjf9szh8": {
       "date_entree_closing": "2026-08-10T20:17:55.942Z",
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
       "rappel_48h": true,
-      "rappel_48h_fige": false,
-      "n_appels_sortants": 3,
-      "n_appels_repondus": 3,
+      "rappel_48h_fige": true,
+      "n_appels_sortants": 4,
+      "n_appels_repondus": 4,
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T18:01:38.146000-04:00",
+      "derniere_activite": "2026-08-12T14:53:33.732000-04:00",
       "activite_figee": false
     },
     "J8PHNjuQhRmv1BoyDe5M": {
@@ -21377,12 +21377,12 @@
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
       "rappel_48h": true,
-      "rappel_48h_fige": false,
-      "n_appels_sortants": 2,
-      "n_appels_repondus": 2,
+      "rappel_48h_fige": true,
+      "n_appels_sortants": 3,
+      "n_appels_repondus": 3,
       "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T19:15:57.184000-04:00",
+      "derniere_activite": "2026-08-12T14:55:23.432000-04:00",
       "activite_figee": false
     },
     "e8eiSUKQO7N6dtIaJeOy": {
@@ -21390,7 +21390,7 @@
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
       "rappel_48h": false,
-      "rappel_48h_fige": false,
+      "rappel_48h_fige": true,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
       "n_sms_sortants": 1,
@@ -21403,7 +21403,7 @@
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
       "rappel_48h": false,
-      "rappel_48h_fige": false,
+      "rappel_48h_fige": true,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
       "n_sms_sortants": 1,
@@ -21416,7 +21416,7 @@
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
       "rappel_48h": false,
-      "rappel_48h_fige": false,
+      "rappel_48h_fige": true,
       "n_appels_sortants": 2,
       "n_appels_repondus": 2,
       "n_sms_sortants": 2,
@@ -21428,26 +21428,26 @@
       "date_entree_closing": "2026-08-10T18:38:55.021Z",
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "rappel_48h": false,
-      "rappel_48h_fige": false,
+      "rappel_48h": true,
+      "rappel_48h_fige": true,
       "n_appels_sortants": 3,
       "n_appels_repondus": 2,
-      "n_sms_sortants": 5,
+      "n_sms_sortants": 6,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-10T14:38:58.193000-04:00",
+      "derniere_activite": "2026-08-12T13:03:06.058000-04:00",
       "activite_figee": false
     },
     "WDSwnD0RM9wEePmhsrEZ": {
       "date_entree_closing": "2026-08-10T17:14:10.697Z",
       "contacte_meme_jour": false,
       "contacte_meme_jour_fige": true,
-      "rappel_48h": false,
-      "rappel_48h_fige": false,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
-      "n_sms_sortants": 1,
+      "rappel_48h": true,
+      "rappel_48h_fige": true,
+      "n_appels_sortants": 2,
+      "n_appels_repondus": 2,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-12T10:26:23.394000-04:00",
+      "derniere_activite": "2026-08-12T15:30:28.535000-04:00",
       "activite_figee": false
     },
     "MaVGFTZBrVG8gT84aOhZ": {
@@ -21455,7 +21455,7 @@
       "contacte_meme_jour": false,
       "contacte_meme_jour_fige": true,
       "rappel_48h": false,
-      "rappel_48h_fige": false,
+      "rappel_48h_fige": true,
       "n_appels_sortants": 0,
       "n_appels_repondus": 0,
       "n_sms_sortants": 0,
@@ -21466,21 +21466,21 @@
     "OoRXzSKoLFpvuniSCawb": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 1,
-      "n_appels_repondus": 1,
-      "n_sms_sortants": 2,
+      "n_appels_sortants": 2,
+      "n_appels_repondus": 2,
+      "n_sms_sortants": 3,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T13:17:45.141000-04:00",
+      "derniere_activite": "2026-08-12T15:23:18.399000-04:00",
       "activite_figee": false
     },
     "FmeJDR8fzkSbUj9X773T": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 1,
+      "n_appels_sortants": 2,
       "n_appels_repondus": 0,
-      "n_sms_sortants": 2,
+      "n_sms_sortants": 3,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T13:17:16.738000-04:00",
+      "derniere_activite": "2026-08-12T15:23:01.077000-04:00",
       "activite_figee": false
     },
     "g4lemRZrqFaN2LibhWIf": {
@@ -21546,11 +21546,11 @@
     "YsdQyaIQ6ahjDwGjs3sd": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 1,
-      "n_appels_repondus": 1,
-      "n_sms_sortants": 2,
+      "n_appels_sortants": 2,
+      "n_appels_repondus": 2,
+      "n_sms_sortants": 3,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T17:09:34.748000-04:00",
+      "derniere_activite": "2026-08-12T15:21:26.810000-04:00",
       "activite_figee": false
     },
     "ViaSTxh3U9Sz6GH5foMl": {
@@ -21566,34 +21566,34 @@
     "TGKyZ6NpSl4hwqvU4Shm": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 1,
-      "n_appels_repondus": 0,
-      "n_sms_sortants": 2,
+      "n_appels_sortants": 3,
+      "n_appels_repondus": 2,
+      "n_sms_sortants": 3,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T13:18:31.722000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T16:08:07.901000-04:00",
+      "activite_figee": true
     },
     "n3tjCTNSjGC92oTzyAvZ": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 1,
-      "n_appels_repondus": 1,
+      "n_appels_sortants": 2,
+      "n_appels_repondus": 2,
       "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T13:18:09.219000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:27:58.685000-04:00",
+      "activite_figee": true
     },
     "rPFDR48uNOpWz2YvDouF": {
       "date_entree_closing": "2026-08-11T21:16:55.230Z",
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "rappel_48h": false,
+      "rappel_48h": true,
       "rappel_48h_fige": false,
-      "n_appels_sortants": 2,
-      "n_appels_repondus": 2,
+      "n_appels_sortants": 3,
+      "n_appels_repondus": 3,
       "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T18:12:42.252000-04:00",
+      "derniere_activite": "2026-08-12T17:25:41.443000-04:00",
       "activite_figee": false
     },
     "TgCMSdlBE8X7syNFYCAq": {
@@ -21613,13 +21613,13 @@
       "date_entree_closing": "2026-08-11T18:59:10.178Z",
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "rappel_48h": false,
+      "rappel_48h": true,
       "rappel_48h_fige": false,
-      "n_appels_sortants": 3,
-      "n_appels_repondus": 2,
-      "n_sms_sortants": 4,
+      "n_appels_sortants": 4,
+      "n_appels_repondus": 3,
+      "n_sms_sortants": 5,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T14:59:14.276000-04:00",
+      "derniere_activite": "2026-08-12T14:52:50.356000-04:00",
       "activite_figee": false
     },
     "mcIOSO31aLsqUJnlRYfh": {
@@ -21694,17 +21694,17 @@
       "n_appels_repondus": 0,
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T19:08:12.939000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:21:42.220000-04:00",
+      "activite_figee": true
     },
     "GcPdzwooTKE9YUJcpyXL": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": false,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
-      "n_sms_sortants": 1,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-12T10:25:39.653000-04:00",
+      "derniere_activite": "2026-08-12T15:35:02.809000-04:00",
       "activite_figee": false
     },
     "7mqGVbqBKmKtDRmnwo6C": {
@@ -21714,57 +21714,57 @@
       "n_appels_repondus": 0,
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-12T07:50:54.945000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:34:11.728000-04:00",
+      "activite_figee": true
     },
     "71fJ3aJ5VvJjjOviwybM": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": false,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
-      "n_sms_sortants": 1,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-12T03:34:04.090000-04:00",
+      "derniere_activite": "2026-08-12T15:31:03.760000-04:00",
       "activite_figee": false
     },
     "nuusc01DXcSJiaqTw1Fp": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": false,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
-      "n_sms_sortants": 1,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-12T02:38:26.007000-04:00",
+      "derniere_activite": "2026-08-12T15:31:26.973000-04:00",
       "activite_figee": false
     },
     "HLsToQFdgFErqT16xb87": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": false,
-      "n_appels_sortants": 0,
+      "n_appels_sortants": 1,
       "n_appels_repondus": 0,
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-12T00:38:26.689000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:34:36.445000-04:00",
+      "activite_figee": true
     },
     "0YqexdFmvctNUHY90xX4": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 0,
-      "n_appels_repondus": 0,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T23:13:49.283000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-12T15:33:52.971000-04:00",
+      "activite_figee": true
     },
     "SkwjLg0KakJOF91KbQvH": {
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "n_appels_sortants": 0,
+      "n_appels_sortants": 1,
       "n_appels_repondus": 0,
-      "n_sms_sortants": 1,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-11T22:28:17.469000-04:00",
+      "derniere_activite": "2026-08-12T15:31:51.911000-04:00",
       "activite_figee": false
     },
     "F1jl6lbyshuKuk5d3Nvr": {
@@ -21775,6 +21775,153 @@
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
       "derniere_activite": "2026-08-11T20:45:20.943000-04:00",
+      "activite_figee": false
+    },
+    "5lWCez15PKTMxT0uKzom": {
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-12T16:38:02.563000-04:00",
+      "activite_figee": false
+    },
+    "P5Yw6rLGhJAFCGIIzNyq": {
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-12T16:18:33.777000-04:00",
+      "activite_figee": true
+    },
+    "Z3kBLUlkw2bsg3FItj7G": {
+      "contacte_meme_jour": false,
+      "contacte_meme_jour_fige": false,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 0,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-12T15:35:35.225000-04:00",
+      "activite_figee": true
+    },
+    "1Nv2H8biEwuSezahKGqM": {
+      "date_entree_closing": "2026-08-12T20:32:07.485Z",
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "rappel_48h": false,
+      "rappel_48h_fige": false,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-12T16:32:10.238000-04:00",
+      "activite_figee": false
+    },
+    "0p5YikUgTUZWor9JH5ti": {
+      "date_entree_closing": "2026-08-12T20:29:21.721Z",
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "rappel_48h": false,
+      "rappel_48h_fige": false,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-12T16:29:25.829000-04:00",
+      "activite_figee": false
+    },
+    "DrK2YuXnZRKqURjeAage": {
+      "date_entree_closing": "2026-08-12T20:18:30.136Z",
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "rappel_48h": false,
+      "rappel_48h_fige": false,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-12T16:18:33.777000-04:00",
+      "activite_figee": false
+    },
+    "0h2iq7k4aDgzC51EBi3g": {
+      "date_entree_closing": "2026-08-12T20:08:04.378Z",
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "rappel_48h": false,
+      "rappel_48h_fige": false,
+      "n_appels_sortants": 3,
+      "n_appels_repondus": 2,
+      "n_sms_sortants": 3,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-12T16:08:07.901000-04:00",
+      "activite_figee": false
+    },
+    "gE9o8UBS2E9nucaI92QG": {
+      "date_entree_closing": "2026-08-12T19:27:55.029Z",
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "rappel_48h": false,
+      "rappel_48h_fige": false,
+      "n_appels_sortants": 2,
+      "n_appels_repondus": 2,
+      "n_sms_sortants": 2,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-12T15:27:58.685000-04:00",
+      "activite_figee": false
+    },
+    "8TVyqmzYcUPBH4W9alME": {
+      "date_entree_closing": "2026-08-12T19:20:20.463Z",
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "rappel_48h": false,
+      "rappel_48h_fige": false,
+      "n_appels_sortants": 3,
+      "n_appels_repondus": 3,
+      "n_sms_sortants": 3,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-12T15:20:24.665000-04:00",
+      "activite_figee": false
+    },
+    "jj8fsFCGjSsI6xPp4mcG": {
+      "date_entree_closing": "2026-08-12T19:14:32.794Z",
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "rappel_48h": false,
+      "rappel_48h_fige": false,
+      "n_appels_sortants": 3,
+      "n_appels_repondus": 3,
+      "n_sms_sortants": 5,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-12T15:14:35.717000-04:00",
+      "activite_figee": false
+    },
+    "xnEWKUNkSbfsDF4wVwSv": {
+      "date_entree_closing": "2026-08-12T18:12:33.196Z",
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "rappel_48h": true,
+      "rappel_48h_fige": false,
+      "n_appels_sortants": 3,
+      "n_appels_repondus": 3,
+      "n_sms_sortants": 7,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-12T14:13:45.316000-04:00",
+      "activite_figee": false
+    },
+    "aBvvhlqBbXSIFk0aKO8K": {
+      "date_entree_closing": "2026-08-12T16:38:03.805Z",
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "rappel_48h": false,
+      "rappel_48h_fige": false,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-12T12:38:07.333000-04:00",
       "activite_figee": false
     }
   }

@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-14T18:07:32.619607-04:00",
+  "genere_le": "2026-08-14T19:11:04.413177-04:00",
   "periode": {
-    "debut": "2026-07-15T17:52:51.773864-04:00",
-    "fin": "2026-08-14T17:52:51.773864-04:00"
+    "debut": "2026-07-15T18:53:58.140792-04:00",
+    "fin": "2026-08-14T18:53:58.140792-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-15T17:52:51.773864-04:00",
-    "fin": "2026-07-15T17:52:51.773864-04:00"
+    "debut": "2026-06-15T18:53:58.140792-04:00",
+    "fin": "2026-07-15T18:53:58.140792-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -43,9 +43,9 @@
       "n_soumissions_ghl": 73,
       "n_soumissions_avec_rappel": 26,
       "pct_rappel_48h": 35.61643835616438,
-      "n_soumissions_envoyees": 50,
+      "n_soumissions_envoyees": 51,
       "n_won": 16,
-      "pct_closing": 32.0,
+      "pct_closing": 31.372549019607842,
       "valeur_moyenne_won": 2682.5,
       "leads_non_contactes": [
         "Philippe",
@@ -82,9 +82,9 @@
       "n_soumissions_ghl": 72,
       "n_soumissions_avec_rappel": 2,
       "pct_rappel_48h": 2.7777777777777777,
-      "n_soumissions_envoyees": 41,
+      "n_soumissions_envoyees": 40,
       "n_won": 19,
-      "pct_closing": 46.34146341463415,
+      "pct_closing": 47.5,
       "valeur_moyenne_won": 1786.578947368421,
       "leads_non_contactes": [
         "Luc Joannette",
@@ -124,9 +124,9 @@
         "n_soumissions_ghl": 46,
         "n_soumissions_avec_rappel": 15,
         "pct_rappel_48h": 32.608695652173914,
-        "n_soumissions_envoyees": 26,
+        "n_soumissions_envoyees": 27,
         "n_won": 7,
-        "pct_closing": 26.923076923076923,
+        "pct_closing": 25.925925925925927,
         "valeur_moyenne_won": 2150.0,
         "leads_non_contactes": [
           "Philippe",
@@ -163,9 +163,9 @@
         "n_soumissions_ghl": 34,
         "n_soumissions_avec_rappel": 2,
         "pct_rappel_48h": 5.882352941176471,
-        "n_soumissions_envoyees": 32,
+        "n_soumissions_envoyees": 31,
         "n_won": 18,
-        "pct_closing": 56.25,
+        "pct_closing": 58.064516129032256,
         "valeur_moyenne_won": 1608.0555555555557,
         "leads_non_contactes": [
           "Luc Joannette",
@@ -26375,9 +26375,9 @@
       "rappel_48h": true,
       "n_appels_sortants": 2,
       "n_appels_repondus": 2,
-      "n_sms_sortants": 6,
+      "n_sms_sortants": 7,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-14T14:10:24.760000-04:00"
+      "derniere_activite": "2026-08-14T18:23:09.594000-04:00"
     },
     {
       "id": "DrK2YuXnZRKqURjeAage",
@@ -32781,6 +32781,20 @@
     }
   ],
   "soumissions_brutes": [
+    {
+      "numero": "665",
+      "client": "Mathieu Gariepy",
+      "vendeur": "Justin Blaquiere",
+      "montant": 7404.0,
+      "statut": "awaiting_response",
+      "won": false,
+      "date_envoi": "2026-08-14T18:15:10-04:00",
+      "date_gagnee": null,
+      "delai_lead_soumission_heures": null,
+      "delai_soumission_won_heures": null,
+      "delai_lead_won_heures": null,
+      "source_lead": null
+    },
     {
       "numero": "660",
       "client": "",
@@ -42357,9 +42371,9 @@
       "rappel_48h": true,
       "n_appels_sortants": 2,
       "n_appels_repondus": 2,
-      "n_sms_sortants": 6,
+      "n_sms_sortants": 7,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-14T14:10:24.760000-04:00"
+      "derniere_activite": "2026-08-14T18:23:09.594000-04:00"
     },
     {
       "id": "DrK2YuXnZRKqURjeAage",

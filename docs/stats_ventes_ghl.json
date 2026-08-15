@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-14T19:11:04.413177-04:00",
+  "genere_le": "2026-08-14T20:06:51.085266-04:00",
   "periode": {
-    "debut": "2026-07-15T18:53:58.140792-04:00",
-    "fin": "2026-08-14T18:53:58.140792-04:00"
+    "debut": "2026-07-15T19:50:32.553115-04:00",
+    "fin": "2026-08-14T19:50:32.553115-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-15T18:53:58.140792-04:00",
-    "fin": "2026-07-15T18:53:58.140792-04:00"
+    "debut": "2026-06-15T19:50:32.553115-04:00",
+    "fin": "2026-07-15T19:50:32.553115-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -74,11 +74,11 @@
     },
     "precedente": {
       "nom": "Équipe",
-      "n_leads": 295,
-      "n_contactes_meme_jour": 286,
-      "pct_contact_meme_jour": 96.94915254237289,
+      "n_leads": 294,
+      "n_contactes_meme_jour": 285,
+      "pct_contact_meme_jour": 96.93877551020408,
       "n_visite_bookee": 74,
-      "pct_visite_bookee": 25.084745762711865,
+      "pct_visite_bookee": 25.170068027210885,
       "n_soumissions_ghl": 72,
       "n_soumissions_avec_rappel": 2,
       "pct_rappel_48h": 2.7777777777777777,
@@ -217,11 +217,11 @@
       },
       "precedente": {
         "nom": "Jeremy Dagenais",
-        "n_leads": 127,
-        "n_contactes_meme_jour": 124,
-        "pct_contact_meme_jour": 97.63779527559055,
+        "n_leads": 126,
+        "n_contactes_meme_jour": 123,
+        "pct_contact_meme_jour": 97.61904761904762,
         "n_visite_bookee": 16,
-        "pct_visite_bookee": 12.598425196850394,
+        "pct_visite_bookee": 12.698412698412698,
         "n_soumissions_ghl": 16,
         "n_soumissions_avec_rappel": 0,
         "pct_rappel_48h": 0.0,

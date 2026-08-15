@@ -21350,7 +21350,7 @@
       "activite_figee": false,
       "date_entree_closing": "2026-08-12T23:24:48.421Z",
       "rappel_48h": false,
-      "rappel_48h_fige": false
+      "rappel_48h_fige": true
     },
     "xWIs82KJRr4Fto8TAuq6": {
       "contacte_meme_jour": true,

@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-17T17:14:07.069217-04:00",
+  "genere_le": "2026-08-17T18:09:32.801712-04:00",
   "periode": {
-    "debut": "2026-07-18T16:59:07.694363-04:00",
-    "fin": "2026-08-17T16:59:07.694363-04:00"
+    "debut": "2026-07-18T17:54:30.193795-04:00",
+    "fin": "2026-08-17T17:54:30.193795-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-18T16:59:07.694363-04:00",
-    "fin": "2026-07-18T16:59:07.694363-04:00"
+    "debut": "2026-06-18T17:54:30.193795-04:00",
+    "fin": "2026-07-18T17:54:30.193795-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -35,11 +35,11 @@
   "equipe": {
     "actuelle": {
       "nom": "Équipe",
-      "n_leads": 355,
+      "n_leads": 354,
       "n_contactes_meme_jour": 334,
-      "pct_contact_meme_jour": 94.08450704225352,
+      "pct_contact_meme_jour": 94.35028248587571,
       "n_visite_bookee": 129,
-      "pct_visite_bookee": 36.33802816901409,
+      "pct_visite_bookee": 36.440677966101696,
       "n_soumissions_ghl": 78,
       "n_soumissions_avec_rappel": 29,
       "pct_rappel_48h": 37.17948717948718,
@@ -74,11 +74,11 @@
     },
     "precedente": {
       "nom": "Équipe",
-      "n_leads": 290,
+      "n_leads": 291,
       "n_contactes_meme_jour": 279,
-      "pct_contact_meme_jour": 96.20689655172414,
+      "pct_contact_meme_jour": 95.87628865979381,
       "n_visite_bookee": 73,
-      "pct_visite_bookee": 25.17241379310345,
+      "pct_visite_bookee": 25.085910652920962,
       "n_soumissions_ghl": 71,
       "n_soumissions_avec_rappel": 2,
       "pct_rappel_48h": 2.816901408450704,
@@ -87,6 +87,7 @@
       "pct_closing": 46.15384615384615,
       "valeur_moyenne_won": 1824.7222222222222,
       "leads_non_contactes": [
+        "Francis Langlais",
         "Mariette St-Jacques",
         "Florine",
         "Luc Joannette",
@@ -95,8 +96,7 @@
         "azadeh azad",
         "Mariam Mohamed",
         "Bien aime le grand",
-        "Vince De Rose",
-        "Fedor Jila"
+        "Vince De Rose"
       ],
       "soumissions_sans_rappel": [
         "Fatima Abou-Khdoud",
@@ -117,11 +117,11 @@
       "nom": "Justin Blaquiere",
       "actuelle": {
         "nom": "Justin Blaquiere",
-        "n_leads": 227,
+        "n_leads": 226,
         "n_contactes_meme_jour": 212,
-        "pct_contact_meme_jour": 93.3920704845815,
+        "pct_contact_meme_jour": 93.80530973451327,
         "n_visite_bookee": 97,
-        "pct_visite_bookee": 42.731277533039645,
+        "pct_visite_bookee": 42.92035398230089,
         "n_soumissions_ghl": 55,
         "n_soumissions_avec_rappel": 18,
         "pct_rappel_48h": 32.72727272727273,
@@ -156,11 +156,11 @@
       },
       "precedente": {
         "nom": "Justin Blaquiere",
-        "n_leads": 109,
+        "n_leads": 110,
         "n_contactes_meme_jour": 104,
-        "pct_contact_meme_jour": 95.41284403669725,
+        "pct_contact_meme_jour": 94.54545454545455,
         "n_visite_bookee": 36,
-        "pct_visite_bookee": 33.027522935779814,
+        "pct_visite_bookee": 32.72727272727273,
         "n_soumissions_ghl": 34,
         "n_soumissions_avec_rappel": 2,
         "pct_rappel_48h": 5.882352941176471,
@@ -169,6 +169,7 @@
         "pct_closing": 60.714285714285715,
         "valeur_moyenne_won": 1637.9411764705883,
         "leads_non_contactes": [
+          "Francis Langlais",
           "Mariette St-Jacques",
           "Luc Joannette",
           "Nicolas Deschenes",

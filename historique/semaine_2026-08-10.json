@@ -1,0 +1,2807 @@
+{
+  "debut": "2026-08-10",
+  "fin": "2026-08-16",
+  "revenu_ferme_total": 49865.0,
+  "heures_fermes_total": 179.11,
+  "dollars_heure_global": 278.41,
+  "cout_mo_ferme_total": 4946.3,
+  "pct_main_doeuvre": 0.0992,
+  "heures_punchees_total": 287.85,
+  "heures_non_attribuees_total": 52.93,
+  "jobs_fermes": [
+    {
+      "numero": 293,
+      "client": "9260196 Canada Inc",
+      "ville": "Montréal",
+      "etape": "Nettoyage",
+      "date_debut": "2026-08-14",
+      "date_fin": "2026-08-14",
+      "revenu": 400.0,
+      "heures": 0.0,
+      "cout_mo": 0.0,
+      "dollars_heure": 0.0,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 400.0,
+      "marge": 400.0,
+      "marge_pct": 1.0,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 292,
+      "client": "9260196 Canada Inc",
+      "ville": "Montréal",
+      "etape": "Nettoyage",
+      "date_debut": "2026-08-14",
+      "date_fin": "2026-08-14",
+      "revenu": 400.0,
+      "heures": 0.0,
+      "cout_mo": 0.0,
+      "dollars_heure": 0.0,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 400.0,
+      "marge": 400.0,
+      "marge_pct": 1.0,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 266,
+      "client": "Farah Messekher",
+      "ville": "Montréal",
+      "etape": "Autre",
+      "date_debut": "2026-07-20",
+      "date_fin": "2026-08-16",
+      "revenu": 5000.0,
+      "heures": 0.0,
+      "cout_mo": 0.0,
+      "dollars_heure": 0.0,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 5000.0,
+      "marge": 5000.0,
+      "marge_pct": 1.0,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 190,
+      "client": "Peter Read",
+      "ville": "Montréal",
+      "etape": "Redressement",
+      "date_debut": null,
+      "date_fin": "2026-08-11",
+      "revenu": 550.0,
+      "heures": 0.0,
+      "cout_mo": 0.0,
+      "dollars_heure": 0.0,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 550.0,
+      "marge": 550.0,
+      "marge_pct": 1.0,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 289,
+      "client": "Watcherlie",
+      "ville": "Laval",
+      "etape": "Redressement",
+      "date_debut": "2026-08-11",
+      "date_fin": "2026-08-14",
+      "revenu": 2600.0,
+      "heures": 22.71,
+      "cout_mo": 623.93,
+      "dollars_heure": 114.49,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 1976.07,
+      "marge": 1976.07,
+      "marge_pct": 0.76,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 274,
+      "client": "Eva",
+      "ville": "Montréal",
+      "etape": "Redressement",
+      "date_debut": "2026-08-06",
+      "date_fin": "2026-08-12",
+      "revenu": 1450.0,
+      "heures": 12.04,
+      "cout_mo": 337.98,
+      "dollars_heure": 120.41,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 1112.02,
+      "marge": 1112.02,
+      "marge_pct": 0.7669,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 273,
+      "client": "Eric Couture",
+      "ville": "Vaudreuil-Dorion",
+      "etape": "Redressement",
+      "date_debut": "2026-08-06",
+      "date_fin": "2026-08-15",
+      "revenu": 5000.0,
+      "heures": 38.22,
+      "cout_mo": 1059.96,
+      "dollars_heure": 130.82,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 3940.04,
+      "marge": 3940.04,
+      "marge_pct": 0.788,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 271,
+      "client": "Julie Rouette",
+      "ville": "Saint-Constant",
+      "etape": "Redressement",
+      "date_debut": "2026-08-10",
+      "date_fin": "2026-08-14",
+      "revenu": 3200.0,
+      "heures": 23.82,
+      "cout_mo": 661.17,
+      "dollars_heure": 134.32,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 2538.83,
+      "marge": 2538.83,
+      "marge_pct": 0.7934,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 286,
+      "client": "Lili Ann",
+      "ville": "Saint-Lambert",
+      "etape": "Redressement",
+      "date_debut": "2026-08-11",
+      "date_fin": "2026-08-14",
+      "revenu": 3900.0,
+      "heures": 26.6,
+      "cout_mo": 736.9,
+      "dollars_heure": 146.6,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 3163.1,
+      "marge": 3163.1,
+      "marge_pct": 0.8111,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 276,
+      "client": "Yves Goulet",
+      "ville": "Blainville",
+      "etape": "Redressement",
+      "date_debut": "2026-08-10",
+      "date_fin": "2026-08-13",
+      "revenu": 2000.0,
+      "heures": 12.63,
+      "cout_mo": 340.89,
+      "dollars_heure": 158.41,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 1659.11,
+      "marge": 1659.11,
+      "marge_pct": 0.8296,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 285,
+      "client": "Michel Milmore",
+      "ville": "Montréal",
+      "etape": "Autre",
+      "date_debut": "2026-08-12",
+      "date_fin": "2026-08-14",
+      "revenu": 1000.0,
+      "heures": 3.59,
+      "cout_mo": 96.83,
+      "dollars_heure": 278.84,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 903.17,
+      "marge": 903.17,
+      "marge_pct": 0.9032,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 31,
+      "client": "Maroua Benzaid",
+      "ville": "Montréal",
+      "etape": "Autre",
+      "date_debut": "2026-06-10",
+      "date_fin": "2026-08-11",
+      "revenu": 500.0,
+      "heures": 1.59,
+      "cout_mo": 43.69,
+      "dollars_heure": 314.17,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 456.31,
+      "marge": 456.31,
+      "marge_pct": 0.9126,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 213,
+      "client": "Joseph Araj",
+      "ville": "Montréal",
+      "etape": "Redressement",
+      "date_debut": "2026-06-25",
+      "date_fin": "2026-08-11",
+      "revenu": 3600.0,
+      "heures": 7.82,
+      "cout_mo": 216.28,
+      "dollars_heure": 460.42,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 3383.72,
+      "marge": 3383.72,
+      "marge_pct": 0.9399,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 34,
+      "client": "Chantal Saylor",
+      "ville": "Beaconsfield",
+      "etape": "Redressement",
+      "date_debut": "2026-05-19",
+      "date_fin": "2026-08-11",
+      "revenu": 6470.0,
+      "heures": 12.72,
+      "cout_mo": 359.69,
+      "dollars_heure": 508.52,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 6110.31,
+      "marge": 6110.31,
+      "marge_pct": 0.9444,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 231,
+      "client": "Clarisse Boka",
+      "ville": "Saint-Eustache",
+      "etape": "Redressement",
+      "date_debut": "2026-07-23",
+      "date_fin": "2026-08-14",
+      "revenu": 3300.0,
+      "heures": 6.13,
+      "cout_mo": 158.7,
+      "dollars_heure": 538.04,
+      "materiaux": 0.0,
+      "overhead": 169.46,
+      "marge_avant_overhead": 3141.3,
+      "marge": 2971.84,
+      "marge_pct": 0.9006,
+      "source_heures": "Rapport chantier"
+    },
+    {
+      "numero": 275,
+      "client": "Mariette St-Jacques",
+      "ville": "Laval",
+      "etape": "Autre",
+      "date_debut": "2026-08-04",
+      "date_fin": "2026-08-12",
+      "revenu": 1900.0,
+      "heures": 3.01,
+      "cout_mo": 81.15,
+      "dollars_heure": 632.16,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 1818.85,
+      "marge": 1818.85,
+      "marge_pct": 0.9573,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 282,
+      "client": "Francis Lehoux",
+      "ville": "Montréal",
+      "etape": "Redressement",
+      "date_debut": "2026-08-04",
+      "date_fin": "2026-08-11",
+      "revenu": 2595.0,
+      "heures": 3.15,
+      "cout_mo": 85.13,
+      "dollars_heure": 823.03,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 2509.87,
+      "marge": 2509.87,
+      "marge_pct": 0.9672,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 253,
+      "client": "Shahir Guindi",
+      "ville": "Beaconsfield",
+      "etape": "Redressement",
+      "date_debut": "2026-07-15",
+      "date_fin": "2026-08-11",
+      "revenu": 5000.0,
+      "heures": 4.78,
+      "cout_mo": 136.36,
+      "dollars_heure": 1045.04,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 4863.64,
+      "marge": 4863.64,
+      "marge_pct": 0.9727,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 291,
+      "client": "Marie-Chantal Ledoux",
+      "ville": "Montréal",
+      "etape": "Autre",
+      "date_debut": "2026-08-14",
+      "date_fin": "2026-08-14",
+      "revenu": 1000.0,
+      "heures": 0.28,
+      "cout_mo": 7.64,
+      "dollars_heure": 3535.22,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 992.36,
+      "marge": 992.36,
+      "marge_pct": 0.9924,
+      "source_heures": "Ancienne logique (Form manquant)"
+    }
+  ],
+  "jobs_en_cours": [
+    {
+      "numero": 259,
+      "client": "Guillaume Coulombe Delisle",
+      "valeur": 0.0,
+      "couts_accumules": 54.4,
+      "pct_burn": 0.0,
+      "dernier_statut": "On revient"
+    }
+  ],
+  "alertes": [
+    {
+      "type": "timer_oublie",
+      "message": "⚠ Rafael, 11 Aug — job #289"
+    },
+    {
+      "type": "zero_punch_visite",
+      "message": "Rafael : 0% de punches sur visites cette semaine (44.1 h, toutes en General) — problème d'assignation ou de téléphone?"
+    },
+    {
+      "type": "job_zero_heure",
+      "message": "Job #293 (9260196 Canada Inc) : fermé, 0 heure attribuée"
+    },
+    {
+      "type": "job_zero_heure",
+      "message": "Job #292 (9260196 Canada Inc) : fermé, 0 heure attribuée"
+    },
+    {
+      "type": "job_zero_heure",
+      "message": "Job #266 (Farah Messekher) : fermé, 0 heure attribuée"
+    },
+    {
+      "type": "job_zero_heure",
+      "message": "Job #190 (Peter Read) : fermé, 0 heure attribuée"
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 2 : no de job \"201\" introuvable dans Jobber, client/adresse indiqué : \"312 Rue de Normandie\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 3 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"9201 Rue Lionel-Groulx Saint-Léonard Montréal, Québec H1R 3W3\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 4 : no de job \"226\" introuvable dans Jobber, client/adresse indiqué : \"890 Rue Etchemin, Lachenaie, Terrebonne, Québec, Canada\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 5 : no de job \"96\" introuvable dans Jobber, client/adresse indiqué : \"2199 Rue principale Ste-Julie\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 6 : no de job \"131\" introuvable dans Jobber, client/adresse indiqué : \"8976 rue Descartes\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 9 : no de job \"257\" introuvable dans Jobber, client/adresse indiqué : \"5679 15e Avenue, Rosemont - La Petite-Patrie, Montréal, Québec, Canada\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 10 : no de job \"475\" introuvable dans Jobber, client/adresse indiqué : \"36 Lakeshore\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 11 : no de job \"240\" introuvable dans Jobber, client/adresse indiqué : \"1856 Roosevelt\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 12 : no de job \"238\" introuvable dans Jobber, client/adresse indiqué : \"368 Rue Auriol Laval, Québec H7E 4J6\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 13 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"4 rue Roy, Mercier\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 14 : no de job \"264\" introuvable dans Jobber, client/adresse indiqué : \"1000 Boulevard Chomedey, Chomedey, Laval, Québec, Canada\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 15 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"355 rue du cresson\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 16 : no de job \"209\" introuvable dans Jobber, client/adresse indiqué : \"6000 Rue Pressault, Laval, Québec, Canada\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 17 : no de job \"284\" introuvable dans Jobber, client/adresse indiqué : \"3551 Rue de Budapest, Laval, Québec, Canada\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 18 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"621 Joseph Vaillancourt\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 19 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"621 Joseph Vaillancourt\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 20 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"1467 La Fontaine\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 21 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"5659 Esplanade\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 22 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"5659 l’esplanade\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 23 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"38 eme avenue St Eustache\" — suggestion : job #231 (Clarisse Boka Saint-Eustache) ?"
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 24 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"130 38eme avenue\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 25 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"3361 Pie 9 Laval\" — suggestion : job #289 (Watcherlie Laval) ?"
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 26 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"621 Joseph vaillancourt\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 27 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"Sté Anne des plaines\""
+    },
+    {
+      "type": "chantier_nom_non_reconnu",
+      "message": "\"Kevin M\" (rapporté présent, job #231) ne matche aucun nom connu (taux_horaires / employes_hors_jobber / alias_noms_form) — coûté au taux par défaut de 23 $/h en attendant"
+    },
+    {
+      "type": "chantier_ecart_heures",
+      "message": "Job #231, 23 Jul : écart heures Form (6.1 h) vs punchs Jobber (0.0 h) = 100%"
+    },
+    {
+      "type": "chantier_contradiction_statut",
+      "message": "Job #231 : Jobber montre le job fermé mais le dernier rapport de chantier dit « On revient »"
+    },
+    {
+      "type": "chantier_ecart_heures",
+      "message": "Job #259, 23 Jul : écart heures Form (1.0 h) vs punchs Jobber (0.0 h) = 100%"
+    },
+    {
+      "type": "chantier_rapport_manquant",
+      "message": "camion non identifié : 18 job(s) fermé(s) cette semaine sans rapport de chantier (#31, #34, #190, #213, #253, #266, #271, #273, #274, #275, #276, #282, #285, #286, #289, #291, #292, #293)"
+    }
+  ],
+  "attribution": [
+    {
+      "job_id": 231,
+      "date": "2026-07-23",
+      "employe": "Kevin M",
+      "truck": "Kevin M",
+      "heures": 6.1333,
+      "cout": 158.7,
+      "revenu_genere": 3300.0,
+      "source": "Rapport chantier (Form)"
+    },
+    {
+      "job_id": 259,
+      "date": "2026-07-23",
+      "employe": "Kevin M",
+      "truck": "Kevin M",
+      "heures": 1.0167,
+      "cout": 26.31,
+      "revenu_genere": 0.0,
+      "source": "Rapport chantier (Form)"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-10",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 1.8451,
+      "cout": 53.97,
+      "revenu_genere": 241.37,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-10",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 1.1809,
+      "cout": 34.54,
+      "revenu_genere": 158.61,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 31,
+      "date": "2026-08-10",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 0.1845,
+      "cout": 5.4,
+      "revenu_genere": 57.97,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 253,
+      "date": "2026-08-10",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 1.8451,
+      "cout": 53.97,
+      "revenu_genere": 1928.22,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 34,
+      "date": "2026-08-10",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 2.3876,
+      "cout": 69.84,
+      "revenu_genere": 1214.13,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 213,
+      "date": "2026-08-10",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 1.3285,
+      "cout": 38.86,
+      "revenu_genere": 611.66,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-10",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 2.3968,
+      "cout": 64.71,
+      "revenu_genere": 313.54,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-10",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 1.5339,
+      "cout": 41.42,
+      "revenu_genere": 206.03,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-10",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.9587,
+      "cout": 25.88,
+      "revenu_genere": 151.87,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 275,
+      "date": "2026-08-10",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.9108,
+      "cout": 24.59,
+      "revenu_genere": 575.75,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 282,
+      "date": "2026-08-10",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 1.2439,
+      "cout": 33.59,
+      "revenu_genere": 1023.78,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 213,
+      "date": "2026-08-10",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 1.7257,
+      "cout": 46.59,
+      "revenu_genere": 794.53,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-10",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 1.0768,
+      "cout": 30.29,
+      "revenu_genere": 129.65,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 34,
+      "date": "2026-08-10",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 4.8048,
+      "cout": 135.13,
+      "revenu_genere": 2443.32,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.2034,
+      "cout": 5.49,
+      "revenu_genere": 26.61,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1302,
+      "cout": 3.52,
+      "revenu_genere": 17.49,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0814,
+      "cout": 2.2,
+      "revenu_genere": 12.89,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.059,
+      "cout": 1.59,
+      "revenu_genere": 7.1,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 31,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0203,
+      "cout": 0.55,
+      "revenu_genere": 6.39,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 253,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.2034,
+      "cout": 5.49,
+      "revenu_genere": 212.6,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 34,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.2632,
+      "cout": 7.11,
+      "revenu_genere": 133.87,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 213,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1465,
+      "cout": 3.95,
+      "revenu_genere": 67.44,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 34,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.4214,
+      "cout": 11.38,
+      "revenu_genere": 214.28,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.8853,
+      "cout": 23.9,
+      "revenu_genere": 115.82,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.5666,
+      "cout": 15.3,
+      "revenu_genere": 76.11,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.3541,
+      "cout": 9.56,
+      "revenu_genere": 56.1,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.2567,
+      "cout": 6.93,
+      "revenu_genere": 30.91,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 31,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0885,
+      "cout": 2.39,
+      "revenu_genere": 27.81,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 253,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.8853,
+      "cout": 23.9,
+      "revenu_genere": 925.2,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 34,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 1.1456,
+      "cout": 30.93,
+      "revenu_genere": 582.57,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 213,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.6374,
+      "cout": 17.21,
+      "revenu_genere": 293.49,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 1.1617,
+      "cout": 31.36,
+      "revenu_genere": 184.02,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.108,
+      "cout": 2.92,
+      "revenu_genere": 14.12,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0691,
+      "cout": 1.87,
+      "revenu_genere": 9.28,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0432,
+      "cout": 1.17,
+      "revenu_genere": 6.84,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0313,
+      "cout": 0.85,
+      "revenu_genere": 3.77,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 31,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0108,
+      "cout": 0.29,
+      "revenu_genere": 3.39,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 253,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.108,
+      "cout": 2.92,
+      "revenu_genere": 112.83,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 34,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1397,
+      "cout": 3.77,
+      "revenu_genere": 71.05,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 213,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0777,
+      "cout": 2.1,
+      "revenu_genere": 35.79,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 31,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 1.1131,
+      "cout": 30.05,
+      "revenu_genere": 349.69,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0002,
+      "cout": 0.01,
+      "revenu_genere": 0.03,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0001,
+      "cout": 0.0,
+      "revenu_genere": 0.02,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0001,
+      "cout": 0.0,
+      "revenu_genere": 0.01,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0001,
+      "cout": 0.0,
+      "revenu_genere": 0.01,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 31,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0,
+      "cout": 0.0,
+      "revenu_genere": 0.01,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 253,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0002,
+      "cout": 0.01,
+      "revenu_genere": 0.21,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 34,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0003,
+      "cout": 0.01,
+      "revenu_genere": 0.13,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 213,
+      "date": "2026-08-10",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0001,
+      "cout": 0.0,
+      "revenu_genere": 0.07,
+      "source": "Réparti /8 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-11",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.2642,
+      "cout": 7.43,
+      "revenu_genere": 30.25,
+      "source": "Réparti /4 jobs"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-11",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.1473,
+      "cout": 4.14,
+      "revenu_genere": 17.74,
+      "source": "Réparti /4 jobs"
+    },
+    {
+      "job_id": 34,
+      "date": "2026-08-11",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.6574,
+      "cout": 18.49,
+      "revenu_genere": 334.29,
+      "source": "Réparti /4 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-11",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 2.4859,
+      "cout": 67.12,
+      "revenu_genere": 325.2,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-11",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 1.591,
+      "cout": 42.96,
+      "revenu_genere": 213.69,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-11",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.9944,
+      "cout": 26.85,
+      "revenu_genere": 157.51,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 275,
+      "date": "2026-08-11",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.9446,
+      "cout": 25.51,
+      "revenu_genere": 597.16,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 282,
+      "date": "2026-08-11",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 1.2902,
+      "cout": 34.83,
+      "revenu_genere": 1061.85,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 213,
+      "date": "2026-08-11",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 1.7898,
+      "cout": 48.33,
+      "revenu_genere": 824.08,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-11",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 1.3464,
+      "cout": 39.38,
+      "revenu_genere": 176.14,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-11",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 0.8617,
+      "cout": 25.21,
+      "revenu_genere": 115.74,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-11",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 1.0502,
+      "cout": 30.72,
+      "revenu_genere": 153.96,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 31,
+      "date": "2026-08-11",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 0.1346,
+      "cout": 3.94,
+      "revenu_genere": 42.3,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 253,
+      "date": "2026-08-11",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 1.3464,
+      "cout": 39.38,
+      "revenu_genere": 1407.07,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 34,
+      "date": "2026-08-11",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 1.7423,
+      "cout": 50.96,
+      "revenu_genere": 885.98,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 213,
+      "date": "2026-08-11",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 0.9694,
+      "cout": 28.36,
+      "revenu_genere": 446.34,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1683,
+      "cout": 4.54,
+      "revenu_genere": 22.01,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0875,
+      "cout": 2.36,
+      "revenu_genere": 10.02,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1077,
+      "cout": 2.91,
+      "revenu_genere": 14.46,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1312,
+      "cout": 3.54,
+      "revenu_genere": 19.24,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0673,
+      "cout": 1.82,
+      "revenu_genere": 10.66,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0488,
+      "cout": 1.32,
+      "revenu_genere": 5.88,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 31,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0168,
+      "cout": 0.45,
+      "revenu_genere": 5.29,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 253,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1683,
+      "cout": 4.54,
+      "revenu_genere": 175.83,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 34,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.2177,
+      "cout": 5.88,
+      "revenu_genere": 110.72,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 213,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1211,
+      "cout": 3.27,
+      "revenu_genere": 55.78,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-11",
+      "employe": "Rafael",
+      "truck": "",
+      "heures": 3.4045,
+      "cout": 91.92,
+      "revenu_genere": 389.79,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-11",
+      "employe": "Rafael",
+      "truck": "",
+      "heures": 5.1068,
+      "cout": 137.88,
+      "revenu_genere": 748.63,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 194,
+      "date": "2026-08-11",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 2.6167,
+      "cout": 73.59,
+      "revenu_genere": 0.0,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 1.985,
+      "cout": 53.59,
+      "revenu_genere": 290.99,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1434,
+      "cout": 3.87,
+      "revenu_genere": 18.76,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0746,
+      "cout": 2.01,
+      "revenu_genere": 8.54,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0918,
+      "cout": 2.48,
+      "revenu_genere": 12.33,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1119,
+      "cout": 3.02,
+      "revenu_genere": 16.4,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0574,
+      "cout": 1.55,
+      "revenu_genere": 9.09,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0416,
+      "cout": 1.12,
+      "revenu_genere": 5.01,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 31,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0143,
+      "cout": 0.39,
+      "revenu_genere": 4.51,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 253,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1434,
+      "cout": 3.87,
+      "revenu_genere": 149.88,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 34,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1856,
+      "cout": 5.01,
+      "revenu_genere": 94.37,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 213,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1033,
+      "cout": 2.79,
+      "revenu_genere": 47.54,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-11",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.0707,
+      "cout": 1.99,
+      "revenu_genere": 8.1,
+      "source": "Réparti /4 jobs"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-11",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.0394,
+      "cout": 1.11,
+      "revenu_genere": 4.75,
+      "source": "Réparti /4 jobs"
+    },
+    {
+      "job_id": 34,
+      "date": "2026-08-11",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.176,
+      "cout": 4.95,
+      "revenu_genere": 89.47,
+      "source": "Réparti /4 jobs"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-11",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 5.1447,
+      "cout": 144.7,
+      "revenu_genere": 619.45,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 2.2144,
+      "cout": 59.79,
+      "revenu_genere": 253.54,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0844,
+      "cout": 2.28,
+      "revenu_genere": 11.04,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0439,
+      "cout": 1.18,
+      "revenu_genere": 5.02,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.054,
+      "cout": 1.46,
+      "revenu_genere": 7.25,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0658,
+      "cout": 1.78,
+      "revenu_genere": 9.65,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0337,
+      "cout": 0.91,
+      "revenu_genere": 5.35,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0245,
+      "cout": 0.66,
+      "revenu_genere": 2.95,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 31,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0084,
+      "cout": 0.23,
+      "revenu_genere": 2.65,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 253,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0844,
+      "cout": 2.28,
+      "revenu_genere": 88.15,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 34,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1092,
+      "cout": 2.95,
+      "revenu_genere": 55.51,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 213,
+      "date": "2026-08-11",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0607,
+      "cout": 1.64,
+      "revenu_genere": 27.96,
+      "source": "Réparti /10 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-11",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 1.1925,
+      "cout": 32.2,
+      "revenu_genere": 156.0,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-11",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.7632,
+      "cout": 20.61,
+      "revenu_genere": 102.51,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-11",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.477,
+      "cout": 12.88,
+      "revenu_genere": 75.56,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 275,
+      "date": "2026-08-11",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.4531,
+      "cout": 12.23,
+      "revenu_genere": 286.46,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 282,
+      "date": "2026-08-11",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.6189,
+      "cout": 16.71,
+      "revenu_genere": 509.38,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 213,
+      "date": "2026-08-11",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.8586,
+      "cout": 23.18,
+      "revenu_genere": 395.32,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-11",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.1899,
+      "cout": 5.34,
+      "revenu_genere": 21.74,
+      "source": "Réparti /4 jobs"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-11",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.1059,
+      "cout": 2.98,
+      "revenu_genere": 12.75,
+      "source": "Réparti /4 jobs"
+    },
+    {
+      "job_id": 34,
+      "date": "2026-08-11",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.4726,
+      "cout": 13.29,
+      "revenu_genere": 240.32,
+      "source": "Réparti /4 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-12",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.5318,
+      "cout": 14.96,
+      "revenu_genere": 60.89,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-12",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.2966,
+      "cout": 8.34,
+      "revenu_genere": 35.71,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-12",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 1.7977,
+      "cout": 48.54,
+      "revenu_genere": 235.17,
+      "source": "Réparti /5 jobs"
+    },
+    {
+      "job_id": 285,
+      "date": "2026-08-12",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.3595,
+      "cout": 9.71,
+      "revenu_genere": 100.26,
+      "source": "Réparti /5 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-12",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 1.1505,
+      "cout": 31.06,
+      "revenu_genere": 154.54,
+      "source": "Réparti /5 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-12",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.7191,
+      "cout": 19.42,
+      "revenu_genere": 113.91,
+      "source": "Réparti /5 jobs"
+    },
+    {
+      "job_id": 275,
+      "date": "2026-08-12",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.6831,
+      "cout": 18.44,
+      "revenu_genere": 431.85,
+      "source": "Réparti /5 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-12",
+      "employe": "Rafael",
+      "truck": "",
+      "heures": 3.0865,
+      "cout": 83.33,
+      "revenu_genere": 353.38,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-12",
+      "employe": "Rafael",
+      "truck": "",
+      "heures": 4.6297,
+      "cout": 125.0,
+      "revenu_genere": 678.69,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1847,
+      "cout": 4.99,
+      "revenu_genere": 24.16,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 285,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0369,
+      "cout": 1.0,
+      "revenu_genere": 10.3,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.096,
+      "cout": 2.59,
+      "revenu_genere": 10.99,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1182,
+      "cout": 3.19,
+      "revenu_genere": 15.87,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.144,
+      "cout": 3.89,
+      "revenu_genere": 21.11,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0739,
+      "cout": 1.99,
+      "revenu_genere": 11.7,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0535,
+      "cout": 1.45,
+      "revenu_genere": 6.45,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 285,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 1.7489,
+      "cout": 47.22,
+      "revenu_genere": 487.67,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-12",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 4.5894,
+      "cout": 129.08,
+      "revenu_genere": 552.59,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.2278,
+      "cout": 6.15,
+      "revenu_genere": 29.8,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 285,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0456,
+      "cout": 1.23,
+      "revenu_genere": 12.7,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1185,
+      "cout": 3.2,
+      "revenu_genere": 13.56,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1458,
+      "cout": 3.94,
+      "revenu_genere": 19.58,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1777,
+      "cout": 4.8,
+      "revenu_genere": 26.05,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0911,
+      "cout": 2.46,
+      "revenu_genere": 14.43,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0661,
+      "cout": 1.78,
+      "revenu_genere": 7.95,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 124,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.5825,
+      "cout": 15.73,
+      "revenu_genere": 0.0,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.2092,
+      "cout": 5.65,
+      "revenu_genere": 27.36,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 285,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0418,
+      "cout": 1.13,
+      "revenu_genere": 11.67,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1088,
+      "cout": 2.94,
+      "revenu_genere": 12.45,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1339,
+      "cout": 3.61,
+      "revenu_genere": 17.98,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1632,
+      "cout": 4.41,
+      "revenu_genere": 23.92,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0837,
+      "cout": 2.26,
+      "revenu_genere": 13.25,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-12",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0607,
+      "cout": 1.64,
+      "revenu_genere": 7.3,
+      "source": "Réparti /7 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-12",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 5.0758,
+      "cout": 137.05,
+      "revenu_genere": 681.77,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-12",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.0004,
+      "cout": 0.01,
+      "revenu_genere": 0.05,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 274,
+      "date": "2026-08-12",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.0002,
+      "cout": 0.01,
+      "revenu_genere": 0.03,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-12",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.0366,
+      "cout": 0.99,
+      "revenu_genere": 4.78,
+      "source": "Réparti /5 jobs"
+    },
+    {
+      "job_id": 285,
+      "date": "2026-08-12",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.0073,
+      "cout": 0.2,
+      "revenu_genere": 2.04,
+      "source": "Réparti /5 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-12",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.0234,
+      "cout": 0.63,
+      "revenu_genere": 3.14,
+      "source": "Réparti /5 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-12",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.0146,
+      "cout": 0.4,
+      "revenu_genere": 2.32,
+      "source": "Réparti /5 jobs"
+    },
+    {
+      "job_id": 275,
+      "date": "2026-08-12",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.0139,
+      "cout": 0.38,
+      "revenu_genere": 8.79,
+      "source": "Réparti /5 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-13",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 4.9259,
+      "cout": 138.54,
+      "revenu_genere": 563.98,
+      "source": "Réparti /2 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-13",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 1.4536,
+      "cout": 39.25,
+      "revenu_genere": 190.16,
+      "source": "Réparti /4 jobs"
+    },
+    {
+      "job_id": 285,
+      "date": "2026-08-13",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.2907,
+      "cout": 7.85,
+      "revenu_genere": 81.07,
+      "source": "Réparti /4 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-13",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.9303,
+      "cout": 25.12,
+      "revenu_genere": 124.96,
+      "source": "Réparti /4 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-13",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.5814,
+      "cout": 15.7,
+      "revenu_genere": 92.11,
+      "source": "Réparti /4 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-13",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 4.7727,
+      "cout": 139.6,
+      "revenu_genere": 624.36,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-13",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 3.0545,
+      "cout": 89.35,
+      "revenu_genere": 410.28,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-13",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 3.7227,
+      "cout": 108.89,
+      "revenu_genere": 545.73,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.2338,
+      "cout": 6.31,
+      "revenu_genere": 30.59,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 285,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0468,
+      "cout": 1.26,
+      "revenu_genere": 13.04,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1216,
+      "cout": 3.28,
+      "revenu_genere": 13.92,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1497,
+      "cout": 4.04,
+      "revenu_genere": 20.1,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1824,
+      "cout": 4.92,
+      "revenu_genere": 26.74,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0935,
+      "cout": 2.53,
+      "revenu_genere": 14.82,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 215,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.6111,
+      "cout": 16.5,
+      "revenu_genere": 0.0,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.219,
+      "cout": 5.91,
+      "revenu_genere": 28.65,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 285,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0438,
+      "cout": 1.18,
+      "revenu_genere": 12.21,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1139,
+      "cout": 3.07,
+      "revenu_genere": 13.04,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1402,
+      "cout": 3.78,
+      "revenu_genere": 18.83,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1708,
+      "cout": 4.61,
+      "revenu_genere": 25.04,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0876,
+      "cout": 2.37,
+      "revenu_genere": 13.88,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 290,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 4.7178,
+      "cout": 127.38,
+      "revenu_genere": 0.0,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-13",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 6.3872,
+      "cout": 172.46,
+      "revenu_genere": 1011.79,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.2759,
+      "cout": 7.45,
+      "revenu_genere": 36.09,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 285,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.0552,
+      "cout": 1.49,
+      "revenu_genere": 15.39,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1435,
+      "cout": 3.87,
+      "revenu_genere": 16.43,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1766,
+      "cout": 4.77,
+      "revenu_genere": 23.72,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.2152,
+      "cout": 5.81,
+      "revenu_genere": 31.55,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-13",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.1104,
+      "cout": 2.98,
+      "revenu_genere": 17.48,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-13",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.3853,
+      "cout": 10.4,
+      "revenu_genere": 50.4,
+      "source": "Réparti /4 jobs"
+    },
+    {
+      "job_id": 285,
+      "date": "2026-08-13",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.0771,
+      "cout": 2.08,
+      "revenu_genere": 21.49,
+      "source": "Réparti /4 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-13",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.2466,
+      "cout": 6.66,
+      "revenu_genere": 33.12,
+      "source": "Réparti /4 jobs"
+    },
+    {
+      "job_id": 276,
+      "date": "2026-08-13",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.1541,
+      "cout": 4.16,
+      "revenu_genere": 24.41,
+      "source": "Réparti /4 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-14",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.8716,
+      "cout": 24.51,
+      "revenu_genere": 99.79,
+      "source": "Réparti /2 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-14",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 3.2241,
+      "cout": 94.3,
+      "revenu_genere": 421.76,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-14",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 2.0634,
+      "cout": 60.35,
+      "revenu_genere": 277.15,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-14",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 2.5148,
+      "cout": 73.56,
+      "revenu_genere": 368.65,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-14",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 1.0571,
+      "cout": 28.54,
+      "revenu_genere": 138.28,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 285,
+      "date": "2026-08-14",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.2114,
+      "cout": 5.71,
+      "revenu_genere": 58.95,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-14",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.6765,
+      "cout": 18.27,
+      "revenu_genere": 90.87,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 291,
+      "date": "2026-08-14",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.2829,
+      "cout": 7.64,
+      "revenu_genere": 1000.0,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-14",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 1.4143,
+      "cout": 38.19,
+      "revenu_genere": 185.02,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 285,
+      "date": "2026-08-14",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.2829,
+      "cout": 7.64,
+      "revenu_genere": 78.88,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-14",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.7355,
+      "cout": 19.86,
+      "revenu_genere": 84.2,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-14",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.9052,
+      "cout": 24.44,
+      "revenu_genere": 121.58,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-14",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 1.1032,
+      "cout": 29.79,
+      "revenu_genere": 161.72,
+      "source": "Réparti /6 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-14",
+      "employe": "Rafael",
+      "truck": "",
+      "heures": 2.7691,
+      "cout": 74.76,
+      "revenu_genere": 317.04,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-14",
+      "employe": "Rafael",
+      "truck": "",
+      "heures": 4.1536,
+      "cout": 112.15,
+      "revenu_genere": 608.9,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 290,
+      "date": "2026-08-14",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 5.5158,
+      "cout": 148.93,
+      "revenu_genere": 0.0,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-14",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 1.964,
+      "cout": 55.24,
+      "revenu_genere": 224.86,
+      "source": "Réparti /2 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-14",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 1.6917,
+      "cout": 45.68,
+      "revenu_genere": 221.31,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 285,
+      "date": "2026-08-14",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 0.3383,
+      "cout": 9.14,
+      "revenu_genere": 94.35,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-14",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 1.0827,
+      "cout": 29.23,
+      "revenu_genere": 145.43,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-14",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 0.0003,
+      "cout": 0.01,
+      "revenu_genere": 0.04,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-14",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 1.2509,
+      "cout": 36.59,
+      "revenu_genere": 163.64,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 271,
+      "date": "2026-08-14",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 0.8006,
+      "cout": 23.42,
+      "revenu_genere": 107.53,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 286,
+      "date": "2026-08-14",
+      "employe": "Gabriel Paquet",
+      "truck": "",
+      "heures": 0.9757,
+      "cout": 28.54,
+      "revenu_genere": 143.04,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-14",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.7536,
+      "cout": 21.2,
+      "revenu_genere": 86.28,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 289,
+      "date": "2026-08-14",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.0189,
+      "cout": 0.53,
+      "revenu_genere": 2.16,
+      "source": "Réparti /2 jobs"
+    },
+    {
+      "job_id": 273,
+      "date": "2026-08-15",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 8.9272,
+      "cout": 241.03,
+      "revenu_genere": 1167.83,
+      "source": "Réparti /1 jobs"
+    },
+    {
+      "job_id": 124,
+      "date": "2026-08-15",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.0011,
+      "cout": 0.03,
+      "revenu_genere": 0.0,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 279,
+      "date": "2026-08-15",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 7.275,
+      "cout": 204.61,
+      "revenu_genere": 0.0,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 290,
+      "date": "2026-08-15",
+      "employe": "Kevin Mailhot",
+      "truck": "",
+      "heures": 0.0322,
+      "cout": 0.87,
+      "revenu_genere": 0.0,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 60,
+      "date": "2026-08-15",
+      "employe": "Kevin Mailhot",
+      "truck": "",
+      "heures": 0.9283,
+      "cout": 25.07,
+      "revenu_genere": 0.0,
+      "source": "Punch direct"
+    }
+  ],
+  "quotidien": [
+    {
+      "date": "2026-08-10",
+      "truck": "Matis Rodrigue",
+      "revenu_complete": 0.0,
+      "heures": 7.67,
+      "cout_mo": 207.0,
+      "cout_materiaux": 200.5,
+      "overhead": 268.0,
+      "marge": -675.5
+    },
+    {
+      "date": "2026-08-11",
+      "truck": "Matis Rodrigue",
+      "revenu_complete": 0.0,
+      "heures": 4.83,
+      "cout_mo": 130.5,
+      "cout_materiaux": 126.0,
+      "overhead": 268.0,
+      "marge": -524.5
+    },
+    {
+      "date": "2026-08-12",
+      "truck": "Matis Rodrigue",
+      "revenu_complete": 0.0,
+      "heures": 8.33,
+      "cout_mo": 225.0,
+      "cout_materiaux": 165.0,
+      "overhead": 268.0,
+      "marge": -658.0
+    },
+    {
+      "date": "2026-08-13",
+      "truck": "Matis Rodrigue",
+      "revenu_complete": 0.0,
+      "heures": 17.0,
+      "cout_mo": 459.0,
+      "cout_materiaux": 33.0,
+      "overhead": 268.0,
+      "marge": -760.0
+    },
+    {
+      "date": "2026-08-14",
+      "truck": "Matis Rodrigue",
+      "revenu_complete": 0.0,
+      "heures": 6.0,
+      "cout_mo": 162.0,
+      "cout_materiaux": 1120.6,
+      "overhead": 268.0,
+      "marge": -1550.6
+    },
+    {
+      "date": "2026-08-15",
+      "truck": "Matis Rodrigue",
+      "revenu_complete": 0.0,
+      "heures": 15.33,
+      "cout_mo": 414.0,
+      "cout_materiaux": 62.0,
+      "overhead": 268.0,
+      "marge": -744.0
+    }
+  ],
+  "ventes": [
+    {
+      "semaine": "2026-W33",
+      "date_lundi_semaine": "2026-08-10",
+      "vendeur": "MAG Lavage À Pression",
+      "soumissions_envoyees": 19,
+      "montant_envoye": 79451.94,
+      "soumissions_approuvees": 5,
+      "montant_approuve": 9948.26,
+      "taux_closing_cohorte": 0.5
+    },
+    {
+      "semaine": "2026-W33",
+      "date_lundi_semaine": "2026-08-10",
+      "vendeur": "Justin Boivin",
+      "soumissions_envoyees": 4,
+      "montant_envoye": 8038.6,
+      "soumissions_approuvees": 2,
+      "montant_approuve": 5116.39,
+      "taux_closing_cohorte": 0.2609
+    },
+    {
+      "semaine": "2026-W33",
+      "date_lundi_semaine": "2026-08-10",
+      "vendeur": "Jeremy Dagenais",
+      "soumissions_envoyees": 0,
+      "montant_envoye": 0,
+      "soumissions_approuvees": 0,
+      "montant_approuve": 0,
+      "taux_closing_cohorte": null
+    }
+  ],
+  "projection_ventes": {
+    "projection_fin_mois": 73901.16,
+    "mois_precedent_total": 63851.12
+  }
+}

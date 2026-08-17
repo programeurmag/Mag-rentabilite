@@ -22227,7 +22227,7 @@
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
       "derniere_activite": "2026-08-17T15:56:42.303000-04:00",
-      "activite_figee": false
+      "activite_figee": true
     },
     "CNpbJ5kydYG2WGbgOPWS": {
       "contacte_meme_jour": true,
@@ -22394,9 +22394,9 @@
       "contacte_meme_jour_fige": true,
       "n_appels_sortants": 2,
       "n_appels_repondus": 2,
-      "n_sms_sortants": 3,
+      "n_sms_sortants": 5,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-17T14:42:13.311000-04:00",
+      "derniere_activite": "2026-08-17T16:41:36.493000-04:00",
       "activite_figee": false
     },
     "R0tdHpMwHBx93hA39ia9": {

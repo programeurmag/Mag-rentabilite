@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-17T18:09:32.801712-04:00",
+  "genere_le": "2026-08-17T19:09:30.266838-04:00",
   "periode": {
-    "debut": "2026-07-18T17:54:30.193795-04:00",
-    "fin": "2026-08-17T17:54:30.193795-04:00"
+    "debut": "2026-07-18T18:53:53.086466-04:00",
+    "fin": "2026-08-17T18:53:53.086466-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-18T17:54:30.193795-04:00",
-    "fin": "2026-07-18T17:54:30.193795-04:00"
+    "debut": "2026-06-18T18:53:53.086466-04:00",
+    "fin": "2026-07-18T18:53:53.086466-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -35,11 +35,11 @@
   "equipe": {
     "actuelle": {
       "nom": "Équipe",
-      "n_leads": 354,
-      "n_contactes_meme_jour": 334,
-      "pct_contact_meme_jour": 94.35028248587571,
+      "n_leads": 353,
+      "n_contactes_meme_jour": 333,
+      "pct_contact_meme_jour": 94.3342776203966,
       "n_visite_bookee": 129,
-      "pct_visite_bookee": 36.440677966101696,
+      "pct_visite_bookee": 36.54390934844193,
       "n_soumissions_ghl": 78,
       "n_soumissions_avec_rappel": 29,
       "pct_rappel_48h": 37.17948717948718,
@@ -74,11 +74,11 @@
     },
     "precedente": {
       "nom": "Équipe",
-      "n_leads": 291,
-      "n_contactes_meme_jour": 279,
-      "pct_contact_meme_jour": 95.87628865979381,
+      "n_leads": 292,
+      "n_contactes_meme_jour": 280,
+      "pct_contact_meme_jour": 95.89041095890411,
       "n_visite_bookee": 73,
-      "pct_visite_bookee": 25.085910652920962,
+      "pct_visite_bookee": 25.0,
       "n_soumissions_ghl": 71,
       "n_soumissions_avec_rappel": 2,
       "pct_rappel_48h": 2.816901408450704,
@@ -253,11 +253,11 @@
       "nom": "Justin Boivin",
       "actuelle": {
         "nom": "Justin Boivin",
-        "n_leads": 112,
-        "n_contactes_meme_jour": 107,
-        "pct_contact_meme_jour": 95.53571428571429,
+        "n_leads": 111,
+        "n_contactes_meme_jour": 106,
+        "pct_contact_meme_jour": 95.49549549549549,
         "n_visite_bookee": 26,
-        "pct_visite_bookee": 23.214285714285715,
+        "pct_visite_bookee": 23.423423423423422,
         "n_soumissions_ghl": 18,
         "n_soumissions_avec_rappel": 10,
         "pct_rappel_48h": 55.55555555555556,
@@ -285,11 +285,11 @@
       },
       "precedente": {
         "nom": "Justin Boivin",
-        "n_leads": 72,
-        "n_contactes_meme_jour": 69,
-        "pct_contact_meme_jour": 95.83333333333333,
+        "n_leads": 73,
+        "n_contactes_meme_jour": 70,
+        "pct_contact_meme_jour": 95.89041095890411,
         "n_visite_bookee": 23,
-        "pct_visite_bookee": 31.944444444444443,
+        "pct_visite_bookee": 31.506849315068493,
         "n_soumissions_ghl": 23,
         "n_soumissions_avec_rappel": 0,
         "pct_rappel_48h": 0.0,

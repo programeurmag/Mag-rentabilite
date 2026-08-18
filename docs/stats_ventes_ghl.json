@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-18T08:50:07.397659-04:00",
+  "genere_le": "2026-08-18T09:53:34.332775-04:00",
   "periode": {
-    "debut": "2026-07-19T08:33:35.764031-04:00",
-    "fin": "2026-08-18T08:33:35.764031-04:00"
+    "debut": "2026-07-19T09:37:12.199939-04:00",
+    "fin": "2026-08-18T09:37:12.199939-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-19T08:33:35.764031-04:00",
-    "fin": "2026-07-19T08:33:35.764031-04:00"
+    "debut": "2026-06-19T09:37:12.199939-04:00",
+    "fin": "2026-07-19T09:37:12.199939-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -82,9 +82,9 @@
       "n_soumissions_ghl": 71,
       "n_soumissions_avec_rappel": 2,
       "pct_rappel_48h": 2.816901408450704,
-      "n_soumissions_envoyees": 39,
+      "n_soumissions_envoyees": 38,
       "n_won": 18,
-      "pct_closing": 46.15384615384615,
+      "pct_closing": 47.36842105263158,
       "valeur_moyenne_won": 1824.7222222222222,
       "leads_non_contactes": [
         "Francis Langlais",
@@ -164,9 +164,9 @@
         "n_soumissions_ghl": 33,
         "n_soumissions_avec_rappel": 2,
         "pct_rappel_48h": 6.0606060606060606,
-        "n_soumissions_envoyees": 28,
+        "n_soumissions_envoyees": 27,
         "n_won": 17,
-        "pct_closing": 60.714285714285715,
+        "pct_closing": 62.96296296296296,
         "valeur_moyenne_won": 1637.9411764705883,
         "leads_non_contactes": [
           "Francis Langlais",

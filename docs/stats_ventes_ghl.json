@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-17T20:05:28.725881-04:00",
+  "genere_le": "2026-08-18T08:11:49.805990-04:00",
   "periode": {
-    "debut": "2026-07-18T19:49:03.078162-04:00",
-    "fin": "2026-08-17T19:49:03.078162-04:00"
+    "debut": "2026-07-19T07:55:31.189665-04:00",
+    "fin": "2026-08-18T07:55:31.189665-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-18T19:49:03.078162-04:00",
-    "fin": "2026-07-18T19:49:03.078162-04:00"
+    "debut": "2026-06-19T07:55:31.189665-04:00",
+    "fin": "2026-07-19T07:55:31.189665-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -35,14 +35,14 @@
   "equipe": {
     "actuelle": {
       "nom": "Équipe",
-      "n_leads": 353,
-      "n_contactes_meme_jour": 333,
-      "pct_contact_meme_jour": 94.3342776203966,
-      "n_visite_bookee": 129,
-      "pct_visite_bookee": 36.54390934844193,
-      "n_soumissions_ghl": 78,
+      "n_leads": 348,
+      "n_contactes_meme_jour": 328,
+      "pct_contact_meme_jour": 94.25287356321839,
+      "n_visite_bookee": 128,
+      "pct_visite_bookee": 36.7816091954023,
+      "n_soumissions_ghl": 77,
       "n_soumissions_avec_rappel": 29,
-      "pct_rappel_48h": 37.17948717948718,
+      "pct_rappel_48h": 37.66233766233766,
       "n_soumissions_envoyees": 55,
       "n_won": 18,
       "pct_closing": 32.72727272727273,
@@ -74,14 +74,14 @@
     },
     "precedente": {
       "nom": "Équipe",
-      "n_leads": 292,
-      "n_contactes_meme_jour": 280,
-      "pct_contact_meme_jour": 95.89041095890411,
-      "n_visite_bookee": 73,
-      "pct_visite_bookee": 25.0,
-      "n_soumissions_ghl": 71,
+      "n_leads": 299,
+      "n_contactes_meme_jour": 287,
+      "pct_contact_meme_jour": 95.9866220735786,
+      "n_visite_bookee": 74,
+      "pct_visite_bookee": 24.74916387959866,
+      "n_soumissions_ghl": 72,
       "n_soumissions_avec_rappel": 2,
-      "pct_rappel_48h": 2.816901408450704,
+      "pct_rappel_48h": 2.7777777777777777,
       "n_soumissions_envoyees": 39,
       "n_won": 18,
       "pct_closing": 46.15384615384615,
@@ -99,6 +99,7 @@
         "Vince De Rose"
       ],
       "soumissions_sans_rappel": [
+        "Iminja Ramampy",
         "Fatima Abou-Khdoud",
         "Aline Lemire",
         "Pascale Gagnon BhéRer",
@@ -107,8 +108,7 @@
         "Melanie Dorion",
         "Marie Mercie Joseph",
         "Jennifer Madar",
-        "Watcherlie",
-        "Felisa. Romo"
+        "Watcherlie"
       ]
     }
   },
@@ -156,11 +156,11 @@
       },
       "precedente": {
         "nom": "Justin Blaquiere",
-        "n_leads": 110,
-        "n_contactes_meme_jour": 104,
-        "pct_contact_meme_jour": 94.54545454545455,
+        "n_leads": 112,
+        "n_contactes_meme_jour": 106,
+        "pct_contact_meme_jour": 94.64285714285714,
         "n_visite_bookee": 36,
-        "pct_visite_bookee": 32.72727272727273,
+        "pct_visite_bookee": 32.142857142857146,
         "n_soumissions_ghl": 34,
         "n_soumissions_avec_rappel": 2,
         "pct_rappel_48h": 5.882352941176471,
@@ -194,11 +194,11 @@
       "nom": "Jeremy Dagenais",
       "actuelle": {
         "nom": "Jeremy Dagenais",
-        "n_leads": 16,
-        "n_contactes_meme_jour": 15,
-        "pct_contact_meme_jour": 93.75,
+        "n_leads": 13,
+        "n_contactes_meme_jour": 12,
+        "pct_contact_meme_jour": 92.3076923076923,
         "n_visite_bookee": 6,
-        "pct_visite_bookee": 37.5,
+        "pct_visite_bookee": 46.15384615384615,
         "n_soumissions_ghl": 5,
         "n_soumissions_avec_rappel": 1,
         "pct_rappel_48h": 20.0,
@@ -218,11 +218,11 @@
       },
       "precedente": {
         "nom": "Jeremy Dagenais",
-        "n_leads": 109,
-        "n_contactes_meme_jour": 106,
-        "pct_contact_meme_jour": 97.24770642201835,
+        "n_leads": 112,
+        "n_contactes_meme_jour": 109,
+        "pct_contact_meme_jour": 97.32142857142857,
         "n_visite_bookee": 14,
-        "pct_visite_bookee": 12.844036697247706,
+        "pct_visite_bookee": 12.5,
         "n_soumissions_ghl": 14,
         "n_soumissions_avec_rappel": 0,
         "pct_rappel_48h": 0.0,
@@ -253,14 +253,14 @@
       "nom": "Justin Boivin",
       "actuelle": {
         "nom": "Justin Boivin",
-        "n_leads": 111,
-        "n_contactes_meme_jour": 106,
-        "pct_contact_meme_jour": 95.49549549549549,
-        "n_visite_bookee": 26,
-        "pct_visite_bookee": 23.423423423423422,
-        "n_soumissions_ghl": 18,
+        "n_leads": 109,
+        "n_contactes_meme_jour": 104,
+        "pct_contact_meme_jour": 95.41284403669725,
+        "n_visite_bookee": 25,
+        "pct_visite_bookee": 22.93577981651376,
+        "n_soumissions_ghl": 17,
         "n_soumissions_avec_rappel": 10,
-        "pct_rappel_48h": 55.55555555555556,
+        "pct_rappel_48h": 58.8235294117647,
         "n_soumissions_envoyees": 23,
         "n_won": 9,
         "pct_closing": 39.130434782608695,
@@ -279,18 +279,17 @@
           "Simon Roy",
           "Marie-Claire Lachance",
           "Claudia Demers",
-          "Benoit Gauthier",
-          "Iminja Ramampy"
+          "Benoit Gauthier"
         ]
       },
       "precedente": {
         "nom": "Justin Boivin",
-        "n_leads": 73,
-        "n_contactes_meme_jour": 70,
-        "pct_contact_meme_jour": 95.89041095890411,
-        "n_visite_bookee": 23,
-        "pct_visite_bookee": 31.506849315068493,
-        "n_soumissions_ghl": 23,
+        "n_leads": 75,
+        "n_contactes_meme_jour": 72,
+        "pct_contact_meme_jour": 96.0,
+        "n_visite_bookee": 24,
+        "pct_visite_bookee": 32.0,
+        "n_soumissions_ghl": 24,
         "n_soumissions_avec_rappel": 0,
         "pct_rappel_48h": 0.0,
         "n_soumissions_envoyees": 11,
@@ -303,6 +302,7 @@
           "Vince De Rose"
         ],
         "soumissions_sans_rappel": [
+          "Iminja Ramampy",
           "Pascale Gagnon BhéRer",
           "José Luis PéRez",
           "Jennifer Madar",
@@ -311,13 +311,52 @@
           "Gerry Grenier",
           "Vince De Rose",
           "Mireille Lesuise",
-          "Rocco Zingaro",
-          "Pierrot Gilbert"
+          "Rocco Zingaro"
         ]
       }
     }
   ],
   "opportunites_brutes": [
+    {
+      "id": "9c1E5GULSzmHP2cXtKSP",
+      "nom": "Simon Savoie",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-17T21:20:35.505000-04:00",
+      "updated_at": "2026-08-17T21:22:38.256000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-17T21:22:40.054000-04:00"
+    },
+    {
+      "id": "v2mIcWsRzEbNC44fC0HZ",
+      "nom": "JoëL Deschamps",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-17T19:49:45.755000-04:00",
+      "updated_at": "2026-08-17T19:51:49.281000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-17T19:51:50.883000-04:00"
+    },
     {
       "id": "xdyDDSmHcSa6B5iuOBAn",
       "nom": "Gilles Vaillancourt Vaillancourt",
@@ -2874,9 +2913,9 @@
       "rappel_48h": null,
       "n_appels_sortants": 7,
       "n_appels_repondus": 6,
-      "n_sms_sortants": 5,
+      "n_sms_sortants": 6,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-15T14:56:52.302000-04:00"
+      "derniere_activite": "2026-08-17T22:31:02.429000-04:00"
     },
     {
       "id": "tf55pNGYEhzP0LTOMD4U",
@@ -40039,6 +40078,46 @@
   ],
   "pipeline_ouvert_brutes": [
     {
+      "id": "9c1E5GULSzmHP2cXtKSP",
+      "nom": "Simon Savoie",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-17T21:20:35.505000-04:00",
+      "updated_at": "2026-08-17T21:22:38.256000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-17T21:22:40.054000-04:00"
+    },
+    {
+      "id": "v2mIcWsRzEbNC44fC0HZ",
+      "nom": "JoëL Deschamps",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-17T19:49:45.755000-04:00",
+      "updated_at": "2026-08-17T19:51:49.281000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-17T19:51:50.883000-04:00"
+    },
+    {
       "id": "xdyDDSmHcSa6B5iuOBAn",
       "nom": "Gilles Vaillancourt Vaillancourt",
       "vendeur": "Justin Blaquiere",
@@ -40834,9 +40913,9 @@
       "rappel_48h": null,
       "n_appels_sortants": 7,
       "n_appels_repondus": 6,
-      "n_sms_sortants": 5,
+      "n_sms_sortants": 6,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-15T14:56:52.302000-04:00"
+      "derniere_activite": "2026-08-17T22:31:02.429000-04:00"
     },
     {
       "id": "tf55pNGYEhzP0LTOMD4U",

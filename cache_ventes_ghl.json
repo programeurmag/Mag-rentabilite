@@ -20796,9 +20796,9 @@
       "contacte_meme_jour_fige": true,
       "n_appels_sortants": 7,
       "n_appels_repondus": 6,
-      "n_sms_sortants": 5,
+      "n_sms_sortants": 6,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-15T14:56:52.302000-04:00",
+      "derniere_activite": "2026-08-17T22:31:02.429000-04:00",
       "activite_figee": false
     },
     "jh4UsmPQQVKGVLGszqcs": {
@@ -22181,7 +22181,7 @@
     },
     "BFVQ8Hf0tTm2kzza57f0": {
       "contacte_meme_jour": true,
-      "contacte_meme_jour_fige": false,
+      "contacte_meme_jour_fige": true,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
       "n_sms_sortants": 2,
@@ -22191,7 +22191,7 @@
     },
     "wD4Qdg4NiddCl9LxkKtP": {
       "contacte_meme_jour": true,
-      "contacte_meme_jour_fige": false,
+      "contacte_meme_jour_fige": true,
       "n_appels_sortants": 1,
       "n_appels_repondus": 0,
       "n_sms_sortants": 2,
@@ -22470,7 +22470,7 @@
     },
     "xdyDDSmHcSa6B5iuOBAn": {
       "contacte_meme_jour": true,
-      "contacte_meme_jour_fige": false,
+      "contacte_meme_jour_fige": true,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
       "n_sms_sortants": 2,
@@ -22480,7 +22480,7 @@
     },
     "tD9DvHFkr4FfZwhYGM5e": {
       "contacte_meme_jour": true,
-      "contacte_meme_jour_fige": false,
+      "contacte_meme_jour_fige": true,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
       "n_sms_sortants": 1,
@@ -22491,7 +22491,7 @@
     "wEjqVzPRrL0YKI1jhmHo": {
       "date_entree_closing": "2026-08-17T19:50:06.000Z",
       "contacte_meme_jour": true,
-      "contacte_meme_jour_fige": false,
+      "contacte_meme_jour_fige": true,
       "rappel_48h": true,
       "rappel_48h_fige": false,
       "n_appels_sortants": 1,
@@ -22504,7 +22504,7 @@
     "VbuX87LDafxoorQMzbQ8": {
       "date_entree_closing": "2026-08-17T19:22:54.622Z",
       "contacte_meme_jour": true,
-      "contacte_meme_jour_fige": false,
+      "contacte_meme_jour_fige": true,
       "rappel_48h": false,
       "rappel_48h_fige": false,
       "n_appels_sortants": 1,
@@ -22517,7 +22517,7 @@
     "TwcsFehZ9cVUhcVW6Njs": {
       "date_entree_closing": "2026-08-17T19:22:45.239Z",
       "contacte_meme_jour": true,
-      "contacte_meme_jour_fige": false,
+      "contacte_meme_jour_fige": true,
       "rappel_48h": false,
       "rappel_48h_fige": false,
       "n_appels_sortants": 1,
@@ -22530,7 +22530,7 @@
     "nnECWi0ixOn3WgBeCCx2": {
       "date_entree_closing": "2026-08-17T19:18:47.172Z",
       "contacte_meme_jour": true,
-      "contacte_meme_jour_fige": false,
+      "contacte_meme_jour_fige": true,
       "rappel_48h": false,
       "rappel_48h_fige": false,
       "n_appels_sortants": 1,
@@ -22543,7 +22543,7 @@
     "TXRXPcZw3CzGwKW17Iey": {
       "date_entree_closing": "2026-08-17T19:04:51.151Z",
       "contacte_meme_jour": true,
-      "contacte_meme_jour_fige": false,
+      "contacte_meme_jour_fige": true,
       "rappel_48h": false,
       "rappel_48h_fige": false,
       "n_appels_sortants": 1,
@@ -22556,7 +22556,7 @@
     "oCT0wx8vJi4bF6vfLfMa": {
       "date_entree_closing": "2026-08-17T18:51:10.662Z",
       "contacte_meme_jour": true,
-      "contacte_meme_jour_fige": false,
+      "contacte_meme_jour_fige": true,
       "rappel_48h": false,
       "rappel_48h_fige": false,
       "n_appels_sortants": 1,
@@ -22569,7 +22569,7 @@
     "nwdsuV39tA5YCEsIwrG5": {
       "date_entree_closing": "2026-08-17T18:48:02.002Z",
       "contacte_meme_jour": true,
-      "contacte_meme_jour_fige": false,
+      "contacte_meme_jour_fige": true,
       "rappel_48h": false,
       "rappel_48h_fige": false,
       "n_appels_sortants": 2,
@@ -22582,7 +22582,7 @@
     "lfQmXpPjIkczcdHbTx4R": {
       "date_entree_closing": "2026-08-17T15:49:50.316Z",
       "contacte_meme_jour": true,
-      "contacte_meme_jour_fige": false,
+      "contacte_meme_jour_fige": true,
       "rappel_48h": false,
       "rappel_48h_fige": false,
       "n_appels_sortants": 3,
@@ -22590,6 +22590,26 @@
       "n_sms_sortants": 3,
       "n_emails_sortants": 0,
       "derniere_activite": "2026-08-17T11:49:58.400000-04:00",
+      "activite_figee": false
+    },
+    "9c1E5GULSzmHP2cXtKSP": {
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": true,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-17T21:22:40.054000-04:00",
+      "activite_figee": false
+    },
+    "v2mIcWsRzEbNC44fC0HZ": {
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": true,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-17T19:51:50.883000-04:00",
       "activite_figee": false
     }
   }

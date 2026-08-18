@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-18T08:11:49.805990-04:00",
+  "genere_le": "2026-08-18T08:50:07.397659-04:00",
   "periode": {
-    "debut": "2026-07-19T07:55:31.189665-04:00",
-    "fin": "2026-08-18T07:55:31.189665-04:00"
+    "debut": "2026-07-19T08:33:35.764031-04:00",
+    "fin": "2026-08-18T08:33:35.764031-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-19T07:55:31.189665-04:00",
-    "fin": "2026-07-19T07:55:31.189665-04:00"
+    "debut": "2026-06-19T08:33:35.764031-04:00",
+    "fin": "2026-07-19T08:33:35.764031-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -35,14 +35,14 @@
   "equipe": {
     "actuelle": {
       "nom": "Équipe",
-      "n_leads": 348,
-      "n_contactes_meme_jour": 328,
-      "pct_contact_meme_jour": 94.25287356321839,
+      "n_leads": 350,
+      "n_contactes_meme_jour": 330,
+      "pct_contact_meme_jour": 94.28571428571429,
       "n_visite_bookee": 128,
-      "pct_visite_bookee": 36.7816091954023,
+      "pct_visite_bookee": 36.57142857142857,
       "n_soumissions_ghl": 77,
-      "n_soumissions_avec_rappel": 29,
-      "pct_rappel_48h": 37.66233766233766,
+      "n_soumissions_avec_rappel": 30,
+      "pct_rappel_48h": 38.96103896103896,
       "n_soumissions_envoyees": 55,
       "n_won": 18,
       "pct_closing": 32.72727272727273,
@@ -66,22 +66,22 @@
         "Nikolay Temelkov",
         "Christian",
         "Le Doujet",
-        "Suzanne Otis",
         "Georges Bendavid",
         "Philippe",
-        "jerry"
+        "jerry",
+        "Isaac Benzaquen"
       ]
     },
     "precedente": {
       "nom": "Équipe",
-      "n_leads": 299,
+      "n_leads": 298,
       "n_contactes_meme_jour": 287,
-      "pct_contact_meme_jour": 95.9866220735786,
-      "n_visite_bookee": 74,
-      "pct_visite_bookee": 24.74916387959866,
-      "n_soumissions_ghl": 72,
+      "pct_contact_meme_jour": 96.30872483221476,
+      "n_visite_bookee": 73,
+      "pct_visite_bookee": 24.496644295302012,
+      "n_soumissions_ghl": 71,
       "n_soumissions_avec_rappel": 2,
-      "pct_rappel_48h": 2.7777777777777777,
+      "pct_rappel_48h": 2.816901408450704,
       "n_soumissions_envoyees": 39,
       "n_won": 18,
       "pct_closing": 46.15384615384615,
@@ -117,14 +117,14 @@
       "nom": "Justin Blaquiere",
       "actuelle": {
         "nom": "Justin Blaquiere",
-        "n_leads": 226,
-        "n_contactes_meme_jour": 212,
-        "pct_contact_meme_jour": 93.80530973451327,
+        "n_leads": 228,
+        "n_contactes_meme_jour": 214,
+        "pct_contact_meme_jour": 93.85964912280701,
         "n_visite_bookee": 97,
-        "pct_visite_bookee": 42.92035398230089,
+        "pct_visite_bookee": 42.54385964912281,
         "n_soumissions_ghl": 55,
-        "n_soumissions_avec_rappel": 18,
-        "pct_rappel_48h": 32.72727272727273,
+        "n_soumissions_avec_rappel": 19,
+        "pct_rappel_48h": 34.54545454545455,
         "n_soumissions_envoyees": 32,
         "n_won": 9,
         "pct_closing": 28.125,
@@ -148,22 +148,22 @@
           "Nikolay Temelkov",
           "Christian",
           "Le Doujet",
-          "Suzanne Otis",
           "Georges Bendavid",
           "Philippe",
-          "jerry"
+          "jerry",
+          "Isaac Benzaquen"
         ]
       },
       "precedente": {
         "nom": "Justin Blaquiere",
-        "n_leads": 112,
+        "n_leads": 111,
         "n_contactes_meme_jour": 106,
-        "pct_contact_meme_jour": 94.64285714285714,
-        "n_visite_bookee": 36,
-        "pct_visite_bookee": 32.142857142857146,
-        "n_soumissions_ghl": 34,
+        "pct_contact_meme_jour": 95.49549549549549,
+        "n_visite_bookee": 35,
+        "pct_visite_bookee": 31.53153153153153,
+        "n_soumissions_ghl": 33,
         "n_soumissions_avec_rappel": 2,
-        "pct_rappel_48h": 5.882352941176471,
+        "pct_rappel_48h": 6.0606060606060606,
         "n_soumissions_envoyees": 28,
         "n_won": 17,
         "pct_closing": 60.714285714285715,
@@ -173,8 +173,7 @@
           "Mariette St-Jacques",
           "Luc Joannette",
           "Nicolas Deschenes",
-          "Fedor Jila",
-          "René St-Laurent"
+          "Fedor Jila"
         ],
         "soumissions_sans_rappel": [
           "Fatima Abou-Khdoud",
@@ -317,6 +316,46 @@
     }
   ],
   "opportunites_brutes": [
+    {
+      "id": "LT3pjatathMjgLMpLku3",
+      "nom": "Jackson Ryan",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-18T08:19:49.251000-04:00",
+      "updated_at": "2026-08-18T08:21:52.778000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-18T08:21:55.325000-04:00"
+    },
+    {
+      "id": "4Z5A1subvluv830foXka",
+      "nom": "Sam Leo",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-18T08:00:19.248000-04:00",
+      "updated_at": "2026-08-18T08:06:50.723000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-18T08:06:58.187000-04:00"
+    },
     {
       "id": "9c1E5GULSzmHP2cXtKSP",
       "nom": "Simon Savoie",
@@ -26990,12 +27029,12 @@
       "visite_bookee": true,
       "soumission_envoyee": true,
       "contacte_meme_jour": true,
-      "rappel_48h": false,
+      "rappel_48h": true,
       "n_appels_sortants": 3,
       "n_appels_repondus": 3,
-      "n_sms_sortants": 3,
+      "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-17T11:49:58.400000-04:00"
+      "derniere_activite": "2026-08-18T08:12:41.519000-04:00"
     },
     {
       "id": "oWGCvUA9foSiCAQeXPwq",
@@ -40078,6 +40117,46 @@
   ],
   "pipeline_ouvert_brutes": [
     {
+      "id": "LT3pjatathMjgLMpLku3",
+      "nom": "Jackson Ryan",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-18T08:19:49.251000-04:00",
+      "updated_at": "2026-08-18T08:21:52.778000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-18T08:21:55.325000-04:00"
+    },
+    {
+      "id": "4Z5A1subvluv830foXka",
+      "nom": "Sam Leo",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-18T08:00:19.248000-04:00",
+      "updated_at": "2026-08-18T08:06:50.723000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-18T08:06:58.187000-04:00"
+    },
+    {
       "id": "9c1E5GULSzmHP2cXtKSP",
       "nom": "Simon Savoie",
       "vendeur": "Justin Blaquiere",
@@ -43410,12 +43489,12 @@
       "visite_bookee": true,
       "soumission_envoyee": true,
       "contacte_meme_jour": true,
-      "rappel_48h": false,
+      "rappel_48h": true,
       "n_appels_sortants": 3,
       "n_appels_repondus": 3,
-      "n_sms_sortants": 3,
+      "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-17T11:49:58.400000-04:00"
+      "derniere_activite": "2026-08-18T08:12:41.519000-04:00"
     },
     {
       "id": "oWGCvUA9foSiCAQeXPwq",

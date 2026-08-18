@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-18T14:44:53.116815-04:00",
+  "genere_le": "2026-08-18T15:37:38.107485-04:00",
   "periode": {
-    "debut": "2026-07-19T14:28:48.895681-04:00",
-    "fin": "2026-08-18T14:28:48.895681-04:00"
+    "debut": "2026-07-19T15:22:41.018299-04:00",
+    "fin": "2026-08-18T15:22:41.018299-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-19T14:28:48.895681-04:00",
-    "fin": "2026-07-19T14:28:48.895681-04:00"
+    "debut": "2026-06-19T15:22:41.018299-04:00",
+    "fin": "2026-07-19T15:22:41.018299-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -43,9 +43,9 @@
       "n_soumissions_ghl": 77,
       "n_soumissions_avec_rappel": 30,
       "pct_rappel_48h": 38.96103896103896,
-      "n_soumissions_envoyees": 55,
+      "n_soumissions_envoyees": 56,
       "n_won": 18,
-      "pct_closing": 32.72727272727273,
+      "pct_closing": 32.142857142857146,
       "valeur_moyenne_won": 2762.222222222222,
       "leads_non_contactes": [
         "Matthew Gilbert",
@@ -123,9 +123,9 @@
         "n_soumissions_ghl": 55,
         "n_soumissions_avec_rappel": 19,
         "pct_rappel_48h": 34.54545454545455,
-        "n_soumissions_envoyees": 32,
+        "n_soumissions_envoyees": 33,
         "n_won": 9,
-        "pct_closing": 28.125,
+        "pct_closing": 27.272727272727273,
         "valeur_moyenne_won": 2427.777777777778,
         "leads_non_contactes": [
           "Matthew Gilbert",
@@ -27168,7 +27168,7 @@
       "n_appels_repondus": 3,
       "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-18T08:12:41.519000-04:00"
+      "derniere_activite": "2026-08-18T15:20:33.849000-04:00"
     },
     {
       "id": "oWGCvUA9foSiCAQeXPwq",
@@ -27428,7 +27428,7 @@
       "n_appels_repondus": 5,
       "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-18T13:47:20.690000-04:00"
+      "derniere_activite": "2026-08-18T15:20:57.932000-04:00"
     },
     {
       "id": "jj8fsFCGjSsI6xPp4mcG",
@@ -33752,6 +33752,20 @@
     }
   ],
   "soumissions_brutes": [
+    {
+      "numero": "672",
+      "client": "Mario",
+      "vendeur": "Justin Blaquiere",
+      "montant": 3000.0,
+      "statut": "awaiting_response",
+      "won": false,
+      "date_envoi": "2026-08-18T15:05:27-04:00",
+      "date_gagnee": null,
+      "delai_lead_soumission_heures": null,
+      "delai_soumission_won_heures": null,
+      "delai_lead_won_heures": null,
+      "source_lead": null
+    },
     {
       "numero": "658",
       "client": "Éric Paquet",
@@ -43768,7 +43782,7 @@
       "n_appels_repondus": 3,
       "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-18T08:12:41.519000-04:00"
+      "derniere_activite": "2026-08-18T15:20:33.849000-04:00"
     },
     {
       "id": "oWGCvUA9foSiCAQeXPwq",
@@ -43908,7 +43922,7 @@
       "n_appels_repondus": 5,
       "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-18T13:47:20.690000-04:00"
+      "derniere_activite": "2026-08-18T15:20:57.932000-04:00"
     },
     {
       "id": "aBvvhlqBbXSIFk0aKO8K",

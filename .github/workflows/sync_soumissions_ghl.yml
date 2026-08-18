@@ -63,9 +63,23 @@ jobs:
           else
             echo "Pas de nouvel état à committer (dry-run ou aucun changement)."
           fi
-          # Rebase avant de pousser : ce cron tourne aux 15 minutes et partage le
-          # dépôt avec d'autres workflows (dashboard ventes GHL, rapport hebdo) —
-          # un commit concurrent entre le checkout et ce push fait sinon échouer
-          # le push (non-fast-forward), vu en vrai le 2026-08-01.
-          git pull --rebase origin main
-          git push
+          # Rebase + retry avant de pousser : ce cron tourne aux 15 minutes et
+          # partage le dépôt avec d'autres workflows (dashboard ventes GHL,
+          # rapport hebdo) — un commit concurrent entre le checkout et ce push
+          # fait échouer le push (non-fast-forward) même après un rebase, si un
+          # AUTRE commit atterrit entre le rebase et le push lui-même (vu en
+          # vrai le 2026-08-01, puis encore le 2026-08-18 malgré le rebase seul
+          # : run #196, échec isolé sans perte de donnée, juste l'avancement de
+          # l'état raté — le run suivant s'est corrigé tout seul grâce à
+          # l'idempotence). Retry avec re-rebase à chaque tentative.
+          reussi=false
+          for tentative in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push; then
+              reussi=true
+              break
+            fi
+            echo "Push échoué (tentative $tentative/5), nouvel essai dans $((tentative * 3))s..."
+            git rebase --abort 2>/dev/null || true
+            sleep $((tentative * 3))
+          done
+          $reussi || { echo "Échec du push après 5 tentatives."; exit 1; }

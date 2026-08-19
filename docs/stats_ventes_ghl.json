@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-19T07:32:33.306037-04:00",
+  "genere_le": "2026-08-19T08:48:40.801870-04:00",
   "periode": {
-    "debut": "2026-07-20T07:19:28.487389-04:00",
-    "fin": "2026-08-19T07:19:28.487389-04:00"
+    "debut": "2026-07-20T08:33:36.300187-04:00",
+    "fin": "2026-08-19T08:33:36.300187-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-20T07:19:28.487389-04:00",
-    "fin": "2026-07-20T07:19:28.487389-04:00"
+    "debut": "2026-06-20T08:33:36.300187-04:00",
+    "fin": "2026-07-20T08:33:36.300187-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -27845,9 +27845,9 @@
       "rappel_48h": false,
       "n_appels_sortants": 2,
       "n_appels_repondus": 2,
-      "n_sms_sortants": 2,
+      "n_sms_sortants": 3,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-10T14:44:53.276000-04:00"
+      "derniere_activite": "2026-08-19T08:04:29.499000-04:00"
     },
     {
       "id": "gH4xKzleCqDe3M1EQgNF",
@@ -44265,9 +44265,9 @@
       "rappel_48h": false,
       "n_appels_sortants": 2,
       "n_appels_repondus": 2,
-      "n_sms_sortants": 2,
+      "n_sms_sortants": 3,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-10T14:44:53.276000-04:00"
+      "derniere_activite": "2026-08-19T08:04:29.499000-04:00"
     },
     {
       "id": "MaVGFTZBrVG8gT84aOhZ",

@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-19T08:48:40.801870-04:00",
+  "genere_le": "2026-08-19T09:56:57.409929-04:00",
   "periode": {
-    "debut": "2026-07-20T08:33:36.300187-04:00",
-    "fin": "2026-08-19T08:33:36.300187-04:00"
+    "debut": "2026-07-20T09:39:27.022407-04:00",
+    "fin": "2026-08-19T09:39:27.022407-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-20T08:33:36.300187-04:00",
-    "fin": "2026-07-20T08:33:36.300187-04:00"
+    "debut": "2026-06-20T09:39:27.022407-04:00",
+    "fin": "2026-07-20T09:39:27.022407-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -35,17 +35,17 @@
   "equipe": {
     "actuelle": {
       "nom": "Équipe",
-      "n_leads": 350,
-      "n_contactes_meme_jour": 328,
-      "pct_contact_meme_jour": 93.71428571428571,
+      "n_leads": 351,
+      "n_contactes_meme_jour": 329,
+      "pct_contact_meme_jour": 93.73219373219374,
       "n_visite_bookee": 129,
-      "pct_visite_bookee": 36.857142857142854,
+      "pct_visite_bookee": 36.75213675213675,
       "n_soumissions_ghl": 77,
       "n_soumissions_avec_rappel": 30,
       "pct_rappel_48h": 38.96103896103896,
-      "n_soumissions_envoyees": 56,
+      "n_soumissions_envoyees": 57,
       "n_won": 19,
-      "pct_closing": 33.92857142857143,
+      "pct_closing": 33.333333333333336,
       "valeur_moyenne_won": 2872.1052631578946,
       "leads_non_contactes": [
         "Mario",
@@ -115,17 +115,17 @@
       "nom": "Justin Blaquiere",
       "actuelle": {
         "nom": "Justin Blaquiere",
-        "n_leads": 244,
-        "n_contactes_meme_jour": 227,
-        "pct_contact_meme_jour": 93.0327868852459,
+        "n_leads": 245,
+        "n_contactes_meme_jour": 228,
+        "pct_contact_meme_jour": 93.06122448979592,
         "n_visite_bookee": 98,
-        "pct_visite_bookee": 40.16393442622951,
+        "pct_visite_bookee": 40.0,
         "n_soumissions_ghl": 55,
         "n_soumissions_avec_rappel": 19,
         "pct_rappel_48h": 34.54545454545455,
-        "n_soumissions_envoyees": 34,
+        "n_soumissions_envoyees": 35,
         "n_won": 10,
-        "pct_closing": 29.41176470588235,
+        "pct_closing": 28.571428571428573,
         "valeur_moyenne_won": 2670.0,
         "leads_non_contactes": [
           "Mario",
@@ -309,6 +309,26 @@
     }
   ],
   "opportunites_brutes": [
+    {
+      "id": "hDtktwUH6P4XNveETwni",
+      "nom": "Lima Sa Ba",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-19T08:34:34.883000-04:00",
+      "updated_at": "2026-08-19T08:36:37.921000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-19T08:36:39.593000-04:00"
+    },
     {
       "id": "7AnqJXQsQUbneSdQzKeU",
       "nom": "Alain Paquette",
@@ -27845,9 +27865,9 @@
       "rappel_48h": false,
       "n_appels_sortants": 2,
       "n_appels_repondus": 2,
-      "n_sms_sortants": 3,
+      "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-19T08:04:29.499000-04:00"
+      "derniere_activite": "2026-08-19T08:57:42.008000-04:00"
     },
     {
       "id": "gH4xKzleCqDe3M1EQgNF",
@@ -33871,6 +33891,20 @@
     }
   ],
   "soumissions_brutes": [
+    {
+      "numero": "674",
+      "client": "Quentin Gobert",
+      "vendeur": "Justin Blaquiere",
+      "montant": 4400.0,
+      "statut": "awaiting_response",
+      "won": false,
+      "date_envoi": "2026-08-19T09:27:29-04:00",
+      "date_gagnee": null,
+      "delai_lead_soumission_heures": 311.1356877777778,
+      "delai_soumission_won_heures": null,
+      "delai_lead_won_heures": null,
+      "source_lead": "Facebook"
+    },
     {
       "numero": "673",
       "client": "Hai may van",
@@ -40370,6 +40404,26 @@
   ],
   "pipeline_ouvert_brutes": [
     {
+      "id": "hDtktwUH6P4XNveETwni",
+      "nom": "Lima Sa Ba",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-19T08:34:34.883000-04:00",
+      "updated_at": "2026-08-19T08:36:37.921000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-19T08:36:39.593000-04:00"
+    },
+    {
       "id": "7AnqJXQsQUbneSdQzKeU",
       "nom": "Alain Paquette",
       "vendeur": "Justin Blaquiere",
@@ -44265,9 +44319,9 @@
       "rappel_48h": false,
       "n_appels_sortants": 2,
       "n_appels_repondus": 2,
-      "n_sms_sortants": 3,
+      "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-19T08:04:29.499000-04:00"
+      "derniere_activite": "2026-08-19T08:57:42.008000-04:00"
     },
     {
       "id": "MaVGFTZBrVG8gT84aOhZ",

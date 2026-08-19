@@ -22557,13 +22557,13 @@
       "date_entree_closing": "2026-08-17T18:51:10.662Z",
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "rappel_48h": false,
+      "rappel_48h": true,
       "rappel_48h_fige": false,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 1,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-17T14:51:15.470000-04:00",
+      "derniere_activite": "2026-08-19T13:19:46.796000-04:00",
       "activite_figee": false
     },
     "nwdsuV39tA5YCEsIwrG5": {

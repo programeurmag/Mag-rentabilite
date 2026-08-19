@@ -22584,7 +22584,7 @@
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
       "rappel_48h": true,
-      "rappel_48h_fige": false,
+      "rappel_48h_fige": true,
       "n_appels_sortants": 3,
       "n_appels_repondus": 3,
       "n_sms_sortants": 4,
@@ -22773,6 +22773,16 @@
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
       "derniere_activite": "2026-08-19T08:36:39.593000-04:00",
+      "activite_figee": false
+    },
+    "ZNTPDbG7xH3w0lXzNcGh": {
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-19T11:05:44.523000-04:00",
       "activite_figee": false
     }
   }

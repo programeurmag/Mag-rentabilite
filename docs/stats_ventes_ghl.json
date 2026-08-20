@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-20T16:39:37.622095-04:00",
+  "genere_le": "2026-08-20T17:37:32.218142-04:00",
   "periode": {
-    "debut": "2026-07-21T16:21:21.095604-04:00",
-    "fin": "2026-08-20T16:21:21.095604-04:00"
+    "debut": "2026-07-21T17:21:27.733742-04:00",
+    "fin": "2026-08-20T17:21:27.733742-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-21T16:21:21.095604-04:00",
-    "fin": "2026-07-21T16:21:21.095604-04:00"
+    "debut": "2026-06-21T17:21:27.733742-04:00",
+    "fin": "2026-07-21T17:21:27.733742-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -43,9 +43,9 @@
       "n_soumissions_ghl": 82,
       "n_soumissions_avec_rappel": 34,
       "pct_rappel_48h": 41.46341463414634,
-      "n_soumissions_envoyees": 57,
+      "n_soumissions_envoyees": 58,
       "n_won": 18,
-      "pct_closing": 31.57894736842105,
+      "pct_closing": 31.03448275862069,
       "valeur_moyenne_won": 2926.1111111111113,
       "leads_non_contactes": [
         "Mario",
@@ -74,11 +74,11 @@
     },
     "precedente": {
       "nom": "Équipe",
-      "n_leads": 305,
-      "n_contactes_meme_jour": 297,
-      "pct_contact_meme_jour": 97.37704918032787,
+      "n_leads": 304,
+      "n_contactes_meme_jour": 296,
+      "pct_contact_meme_jour": 97.36842105263158,
       "n_visite_bookee": 73,
-      "pct_visite_bookee": 23.934426229508198,
+      "pct_visite_bookee": 24.013157894736842,
       "n_soumissions_ghl": 71,
       "n_soumissions_avec_rappel": 2,
       "pct_rappel_48h": 2.816901408450704,
@@ -123,9 +123,9 @@
         "n_soumissions_ghl": 62,
         "n_soumissions_avec_rappel": 23,
         "pct_rappel_48h": 37.096774193548384,
-        "n_soumissions_envoyees": 36,
+        "n_soumissions_envoyees": 37,
         "n_won": 9,
-        "pct_closing": 25.0,
+        "pct_closing": 24.324324324324323,
         "valeur_moyenne_won": 2755.5555555555557,
         "leads_non_contactes": [
           "Mario",
@@ -215,11 +215,11 @@
       },
       "precedente": {
         "nom": "Jeremy Dagenais",
-        "n_leads": 99,
-        "n_contactes_meme_jour": 99,
+        "n_leads": 98,
+        "n_contactes_meme_jour": 98,
         "pct_contact_meme_jour": 100.0,
         "n_visite_bookee": 13,
-        "pct_visite_bookee": 13.131313131313131,
+        "pct_visite_bookee": 13.26530612244898,
         "n_soumissions_ghl": 13,
         "n_soumissions_avec_rappel": 0,
         "pct_rappel_48h": 0.0,
@@ -34289,6 +34289,20 @@
     }
   ],
   "soumissions_brutes": [
+    {
+      "numero": "677",
+      "client": "Georges Bendavid",
+      "vendeur": "Justin Blaquiere",
+      "montant": 1000.0,
+      "statut": "awaiting_response",
+      "won": false,
+      "date_envoi": "2026-08-20T17:31:52-04:00",
+      "date_gagnee": null,
+      "delai_lead_soumission_heures": 145.27628388888888,
+      "delai_soumission_won_heures": null,
+      "delai_lead_won_heures": null,
+      "source_lead": "Facebook"
+    },
     {
       "numero": "670",
       "client": "Elie Dagher",

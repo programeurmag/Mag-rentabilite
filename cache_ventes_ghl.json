@@ -22448,11 +22448,11 @@
       "contacte_meme_jour_fige": true,
       "rappel_48h": false,
       "rappel_48h_fige": true,
-      "n_appels_sortants": 1,
-      "n_appels_repondus": 1,
+      "n_appels_sortants": 2,
+      "n_appels_repondus": 2,
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-15T14:47:27.550000-04:00",
+      "derniere_activite": "2026-08-20T11:44:03.399000-04:00",
       "activite_figee": false
     },
     "K8Vy3XQL25lMxEVvs4Cj": {
@@ -22974,6 +22974,16 @@
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
       "derniere_activite": "2026-08-19T19:26:34.579000-04:00",
+      "activite_figee": false
+    },
+    "FwsbOcwhdsHBG0o0cLKy": {
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-20T12:18:36.359000-04:00",
       "activite_figee": false
     }
   }

@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-20T11:44:25.923400-04:00",
+  "genere_le": "2026-08-20T12:43:21.254521-04:00",
   "periode": {
-    "debut": "2026-07-21T11:27:17.920093-04:00",
-    "fin": "2026-08-20T11:27:17.920093-04:00"
+    "debut": "2026-07-21T12:27:15.079663-04:00",
+    "fin": "2026-08-20T12:27:15.079663-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-21T11:27:17.920093-04:00",
-    "fin": "2026-07-21T11:27:17.920093-04:00"
+    "debut": "2026-06-21T12:27:15.079663-04:00",
+    "fin": "2026-07-21T12:27:15.079663-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -154,11 +154,11 @@
       },
       "precedente": {
         "nom": "Justin Blaquiere",
-        "n_leads": 133,
-        "n_contactes_meme_jour": 126,
-        "pct_contact_meme_jour": 94.73684210526316,
+        "n_leads": 134,
+        "n_contactes_meme_jour": 127,
+        "pct_contact_meme_jour": 94.77611940298507,
         "n_visite_bookee": 36,
-        "pct_visite_bookee": 27.06766917293233,
+        "pct_visite_bookee": 26.865671641791046,
         "n_soumissions_ghl": 34,
         "n_soumissions_avec_rappel": 2,
         "pct_rappel_48h": 5.882352941176471,
@@ -215,11 +215,11 @@
       },
       "precedente": {
         "nom": "Jeremy Dagenais",
-        "n_leads": 102,
-        "n_contactes_meme_jour": 102,
+        "n_leads": 101,
+        "n_contactes_meme_jour": 101,
         "pct_contact_meme_jour": 100.0,
         "n_visite_bookee": 13,
-        "pct_visite_bookee": 12.745098039215685,
+        "pct_visite_bookee": 12.871287128712872,
         "n_soumissions_ghl": 13,
         "n_soumissions_avec_rappel": 0,
         "pct_rappel_48h": 0.0,
@@ -307,6 +307,26 @@
     }
   ],
   "opportunites_brutes": [
+    {
+      "id": "FwsbOcwhdsHBG0o0cLKy",
+      "nom": "Nadia Randja",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-20T12:16:26.343000-04:00",
+      "updated_at": "2026-08-20T12:18:34.486000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-20T12:18:36.359000-04:00"
+    },
     {
       "id": "TLYgp6E9iWMTJkEO8Oqf",
       "nom": "Noureddine Hannache",
@@ -27701,11 +27721,11 @@
       "soumission_envoyee": true,
       "contacte_meme_jour": true,
       "rappel_48h": false,
-      "n_appels_sortants": 1,
-      "n_appels_repondus": 1,
+      "n_appels_sortants": 2,
+      "n_appels_repondus": 2,
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-15T14:47:27.550000-04:00"
+      "derniere_activite": "2026-08-20T11:44:03.399000-04:00"
     },
     {
       "id": "K8Vy3XQL25lMxEVvs4Cj",
@@ -40790,6 +40810,26 @@
   ],
   "pipeline_ouvert_brutes": [
     {
+      "id": "FwsbOcwhdsHBG0o0cLKy",
+      "nom": "Nadia Randja",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-20T12:16:26.343000-04:00",
+      "updated_at": "2026-08-20T12:18:34.486000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-20T12:18:36.359000-04:00"
+    },
+    {
       "id": "TLYgp6E9iWMTJkEO8Oqf",
       "nom": "Noureddine Hannache",
       "vendeur": "Justin Blaquiere",
@@ -44563,11 +44603,11 @@
       "soumission_envoyee": true,
       "contacte_meme_jour": true,
       "rappel_48h": false,
-      "n_appels_sortants": 1,
-      "n_appels_repondus": 1,
+      "n_appels_sortants": 2,
+      "n_appels_repondus": 2,
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-15T14:47:27.550000-04:00"
+      "derniere_activite": "2026-08-20T11:44:03.399000-04:00"
     },
     {
       "id": "HRnJaGQy4CZvSV5CZkow",

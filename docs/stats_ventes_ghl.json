@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-20T15:42:17.860003-04:00",
+  "genere_le": "2026-08-20T16:39:37.622095-04:00",
   "periode": {
-    "debut": "2026-07-21T15:25:40.859222-04:00",
-    "fin": "2026-08-20T15:25:40.859222-04:00"
+    "debut": "2026-07-21T16:21:21.095604-04:00",
+    "fin": "2026-08-20T16:21:21.095604-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-21T15:25:40.859222-04:00",
-    "fin": "2026-07-21T15:25:40.859222-04:00"
+    "debut": "2026-06-21T16:21:21.095604-04:00",
+    "fin": "2026-07-21T16:21:21.095604-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -35,14 +35,14 @@
   "equipe": {
     "actuelle": {
       "nom": "Équipe",
-      "n_leads": 355,
-      "n_contactes_meme_jour": 333,
-      "pct_contact_meme_jour": 93.80281690140845,
+      "n_leads": 356,
+      "n_contactes_meme_jour": 334,
+      "pct_contact_meme_jour": 93.82022471910112,
       "n_visite_bookee": 142,
-      "pct_visite_bookee": 40.0,
+      "pct_visite_bookee": 39.8876404494382,
       "n_soumissions_ghl": 82,
-      "n_soumissions_avec_rappel": 33,
-      "pct_rappel_48h": 40.24390243902439,
+      "n_soumissions_avec_rappel": 34,
+      "pct_rappel_48h": 41.46341463414634,
       "n_soumissions_envoyees": 57,
       "n_won": 18,
       "pct_closing": 31.57894736842105,
@@ -60,7 +60,6 @@
         "Brian Sil"
       ],
       "soumissions_sans_rappel": [
-        "Domenic Alf",
         "Serge BéDard",
         "Sonya Boudreault",
         "Raynald Brosseau",
@@ -69,7 +68,8 @@
         "Matthieu Perpignani",
         "Arcangelo Evangelista",
         "Mike Taddeo",
-        "Nikolay Temelkov"
+        "Nikolay Temelkov",
+        "Le Doujet"
       ]
     },
     "precedente": {
@@ -115,14 +115,14 @@
       "nom": "Justin Blaquiere",
       "actuelle": {
         "nom": "Justin Blaquiere",
-        "n_leads": 256,
-        "n_contactes_meme_jour": 239,
-        "pct_contact_meme_jour": 93.359375,
+        "n_leads": 257,
+        "n_contactes_meme_jour": 240,
+        "pct_contact_meme_jour": 93.3852140077821,
         "n_visite_bookee": 113,
-        "pct_visite_bookee": 44.140625,
+        "pct_visite_bookee": 43.96887159533074,
         "n_soumissions_ghl": 62,
-        "n_soumissions_avec_rappel": 22,
-        "pct_rappel_48h": 35.483870967741936,
+        "n_soumissions_avec_rappel": 23,
+        "pct_rappel_48h": 37.096774193548384,
         "n_soumissions_envoyees": 36,
         "n_won": 9,
         "pct_closing": 25.0,
@@ -140,7 +140,6 @@
           "Lili Ann"
         ],
         "soumissions_sans_rappel": [
-          "Domenic Alf",
           "Serge BéDard",
           "Sonya Boudreault",
           "Raynald Brosseau",
@@ -149,7 +148,8 @@
           "Matthieu Perpignani",
           "Arcangelo Evangelista",
           "Mike Taddeo",
-          "Nikolay Temelkov"
+          "Nikolay Temelkov",
+          "Le Doujet"
         ]
       },
       "precedente": {
@@ -307,6 +307,26 @@
     }
   ],
   "opportunites_brutes": [
+    {
+      "id": "dgqrsmM3fbtlxcGp3JQk",
+      "nom": "Suzanne Pelletier",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-20T16:18:30.027000-04:00",
+      "updated_at": "2026-08-20T16:20:33.087000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-20T16:20:35.525000-04:00"
+    },
     {
       "id": "FwsbOcwhdsHBG0o0cLKy",
       "nom": "Nadia Randja",
@@ -27380,12 +27400,12 @@
       "visite_bookee": true,
       "soumission_envoyee": true,
       "contacte_meme_jour": true,
-      "rappel_48h": false,
-      "n_appels_sortants": 1,
-      "n_appels_repondus": 1,
+      "rappel_48h": true,
+      "n_appels_sortants": 2,
+      "n_appels_repondus": 2,
       "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-19T16:50:14.241000-04:00"
+      "derniere_activite": "2026-08-20T16:21:53.986000-04:00"
     },
     {
       "id": "IGZqbG5kbuI7XOA4RKOX",
@@ -40810,6 +40830,26 @@
   ],
   "pipeline_ouvert_brutes": [
     {
+      "id": "dgqrsmM3fbtlxcGp3JQk",
+      "nom": "Suzanne Pelletier",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-20T16:18:30.027000-04:00",
+      "updated_at": "2026-08-20T16:20:33.087000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-20T16:20:35.525000-04:00"
+    },
+    {
       "id": "FwsbOcwhdsHBG0o0cLKy",
       "nom": "Nadia Randja",
       "vendeur": "Justin Blaquiere",
@@ -44282,12 +44322,12 @@
       "visite_bookee": true,
       "soumission_envoyee": true,
       "contacte_meme_jour": true,
-      "rappel_48h": false,
-      "n_appels_sortants": 1,
-      "n_appels_repondus": 1,
+      "rappel_48h": true,
+      "n_appels_sortants": 2,
+      "n_appels_repondus": 2,
       "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-19T16:50:14.241000-04:00"
+      "derniere_activite": "2026-08-20T16:21:53.986000-04:00"
     },
     {
       "id": "IGZqbG5kbuI7XOA4RKOX",

@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-20T10:47:09.373263-04:00",
+  "genere_le": "2026-08-20T11:44:25.923400-04:00",
   "periode": {
-    "debut": "2026-07-21T10:29:50.029567-04:00",
-    "fin": "2026-08-20T10:29:50.029567-04:00"
+    "debut": "2026-07-21T11:27:17.920093-04:00",
+    "fin": "2026-08-20T11:27:17.920093-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-21T10:29:50.029567-04:00",
-    "fin": "2026-07-21T10:29:50.029567-04:00"
+    "debut": "2026-06-21T11:27:17.920093-04:00",
+    "fin": "2026-07-21T11:27:17.920093-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -28121,11 +28121,11 @@
       "soumission_envoyee": true,
       "contacte_meme_jour": true,
       "rappel_48h": false,
-      "n_appels_sortants": 4,
-      "n_appels_repondus": 4,
+      "n_appels_sortants": 5,
+      "n_appels_repondus": 5,
       "n_sms_sortants": 3,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-20T08:52:31.647000-04:00"
+      "derniere_activite": "2026-08-20T11:01:42.007000-04:00"
     },
     {
       "id": "WQPpOEHl7aMSOjf9szh8",
@@ -44743,11 +44743,11 @@
       "soumission_envoyee": true,
       "contacte_meme_jour": true,
       "rappel_48h": false,
-      "n_appels_sortants": 4,
-      "n_appels_repondus": 4,
+      "n_appels_sortants": 5,
+      "n_appels_repondus": 5,
       "n_sms_sortants": 3,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-20T08:52:31.647000-04:00"
+      "derniere_activite": "2026-08-20T11:01:42.007000-04:00"
     },
     {
       "id": "WQPpOEHl7aMSOjf9szh8",

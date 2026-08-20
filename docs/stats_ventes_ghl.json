@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-20T13:38:31.194571-04:00",
+  "genere_le": "2026-08-20T15:42:17.860003-04:00",
   "periode": {
-    "debut": "2026-07-21T13:22:47.644567-04:00",
-    "fin": "2026-08-20T13:22:47.644567-04:00"
+    "debut": "2026-07-21T15:25:40.859222-04:00",
+    "fin": "2026-08-20T15:25:40.859222-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-21T13:22:47.644567-04:00",
-    "fin": "2026-07-21T13:22:47.644567-04:00"
+    "debut": "2026-06-21T15:25:40.859222-04:00",
+    "fin": "2026-07-21T15:25:40.859222-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -35,11 +35,11 @@
   "equipe": {
     "actuelle": {
       "nom": "Équipe",
-      "n_leads": 358,
-      "n_contactes_meme_jour": 336,
-      "pct_contact_meme_jour": 93.85474860335195,
+      "n_leads": 355,
+      "n_contactes_meme_jour": 333,
+      "pct_contact_meme_jour": 93.80281690140845,
       "n_visite_bookee": 142,
-      "pct_visite_bookee": 39.66480446927374,
+      "pct_visite_bookee": 40.0,
       "n_soumissions_ghl": 82,
       "n_soumissions_avec_rappel": 33,
       "pct_rappel_48h": 40.24390243902439,
@@ -74,11 +74,11 @@
     },
     "precedente": {
       "nom": "Équipe",
-      "n_leads": 302,
-      "n_contactes_meme_jour": 294,
-      "pct_contact_meme_jour": 97.35099337748345,
+      "n_leads": 305,
+      "n_contactes_meme_jour": 297,
+      "pct_contact_meme_jour": 97.37704918032787,
       "n_visite_bookee": 73,
-      "pct_visite_bookee": 24.172185430463575,
+      "pct_visite_bookee": 23.934426229508198,
       "n_soumissions_ghl": 71,
       "n_soumissions_avec_rappel": 2,
       "pct_rappel_48h": 2.816901408450704,
@@ -115,11 +115,11 @@
       "nom": "Justin Blaquiere",
       "actuelle": {
         "nom": "Justin Blaquiere",
-        "n_leads": 257,
-        "n_contactes_meme_jour": 240,
-        "pct_contact_meme_jour": 93.3852140077821,
+        "n_leads": 256,
+        "n_contactes_meme_jour": 239,
+        "pct_contact_meme_jour": 93.359375,
         "n_visite_bookee": 113,
-        "pct_visite_bookee": 43.96887159533074,
+        "pct_visite_bookee": 44.140625,
         "n_soumissions_ghl": 62,
         "n_soumissions_avec_rappel": 22,
         "pct_rappel_48h": 35.483870967741936,
@@ -154,11 +154,11 @@
       },
       "precedente": {
         "nom": "Justin Blaquiere",
-        "n_leads": 133,
-        "n_contactes_meme_jour": 126,
-        "pct_contact_meme_jour": 94.73684210526316,
+        "n_leads": 134,
+        "n_contactes_meme_jour": 127,
+        "pct_contact_meme_jour": 94.77611940298507,
         "n_visite_bookee": 36,
-        "pct_visite_bookee": 27.06766917293233,
+        "pct_visite_bookee": 26.865671641791046,
         "n_soumissions_ghl": 34,
         "n_soumissions_avec_rappel": 2,
         "pct_rappel_48h": 5.882352941176471,
@@ -246,11 +246,11 @@
       "nom": "Justin Boivin",
       "actuelle": {
         "nom": "Justin Boivin",
-        "n_leads": 93,
-        "n_contactes_meme_jour": 89,
-        "pct_contact_meme_jour": 95.6989247311828,
+        "n_leads": 91,
+        "n_contactes_meme_jour": 87,
+        "pct_contact_meme_jour": 95.6043956043956,
         "n_visite_bookee": 25,
-        "pct_visite_bookee": 26.881720430107528,
+        "pct_visite_bookee": 27.47252747252747,
         "n_soumissions_ghl": 17,
         "n_soumissions_avec_rappel": 10,
         "pct_rappel_48h": 58.8235294117647,
@@ -276,11 +276,11 @@
       },
       "precedente": {
         "nom": "Justin Boivin",
-        "n_leads": 70,
-        "n_contactes_meme_jour": 69,
-        "pct_contact_meme_jour": 98.57142857142857,
+        "n_leads": 72,
+        "n_contactes_meme_jour": 71,
+        "pct_contact_meme_jour": 98.61111111111111,
         "n_visite_bookee": 24,
-        "pct_visite_bookee": 34.285714285714285,
+        "pct_visite_bookee": 33.333333333333336,
         "n_soumissions_ghl": 24,
         "n_soumissions_avec_rappel": 0,
         "pct_rappel_48h": 0.0,
@@ -423,9 +423,9 @@
       "rappel_48h": null,
       "n_appels_sortants": 0,
       "n_appels_repondus": 0,
-      "n_sms_sortants": 1,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-19T19:26:34.579000-04:00"
+      "derniere_activite": "2026-08-20T14:23:02.842000-04:00"
     },
     {
       "id": "Q6QatQhxMR8sy0x3W1XC",
@@ -40925,9 +40925,9 @@
       "rappel_48h": null,
       "n_appels_sortants": 0,
       "n_appels_repondus": 0,
-      "n_sms_sortants": 1,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-19T19:26:34.579000-04:00"
+      "derniere_activite": "2026-08-20T14:23:02.842000-04:00"
     },
     {
       "id": "Q6QatQhxMR8sy0x3W1XC",

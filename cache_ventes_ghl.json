@@ -22572,11 +22572,11 @@
       "contacte_meme_jour_fige": true,
       "rappel_48h": false,
       "rappel_48h_fige": true,
-      "n_appels_sortants": 2,
-      "n_appels_repondus": 2,
+      "n_appels_sortants": 3,
+      "n_appels_repondus": 3,
       "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-17T15:00:25.371000-04:00",
+      "derniere_activite": "2026-08-20T13:19:59.661000-04:00",
       "activite_figee": false
     },
     "lfQmXpPjIkczcdHbTx4R": {
@@ -22858,13 +22858,13 @@
       "date_entree_closing": "2026-08-19T19:49:05.879Z",
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
-      "rappel_48h": false,
+      "rappel_48h": true,
       "rappel_48h_fige": false,
-      "n_appels_sortants": 1,
-      "n_appels_repondus": 1,
+      "n_appels_sortants": 2,
+      "n_appels_repondus": 2,
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-19T15:49:09.097000-04:00",
+      "derniere_activite": "2026-08-20T13:03:23.335000-04:00",
       "activite_figee": false
     },
     "o4ztIAyev9cDq323W4JO": {

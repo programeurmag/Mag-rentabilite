@@ -21687,8 +21687,8 @@
       "n_appels_repondus": 5,
       "n_sms_sortants": 3,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-20T11:01:42.007000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-20T17:59:32.202000-04:00",
+      "activite_figee": true
     },
     "xi4XEFn4QLKbZQr9gBYe": {
       "contacte_meme_jour": true,
@@ -22439,7 +22439,7 @@
       "n_appels_repondus": 3,
       "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-19T17:03:51.743000-04:00",
+      "derniere_activite": "2026-08-20T17:41:30.774000-04:00",
       "activite_figee": false
     },
     "8Ftgt4JRdOhmXIilxrxh": {
@@ -22910,7 +22910,7 @@
       "n_appels_repondus": 2,
       "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-20T16:21:53.986000-04:00",
+      "derniere_activite": "2026-08-20T17:39:55.995000-04:00",
       "activite_figee": false
     },
     "IGZqbG5kbuI7XOA4RKOX": {
@@ -22928,7 +22928,7 @@
     },
     "TLYgp6E9iWMTJkEO8Oqf": {
       "contacte_meme_jour": true,
-      "contacte_meme_jour_fige": false,
+      "contacte_meme_jour_fige": true,
       "n_appels_sortants": 0,
       "n_appels_repondus": 0,
       "n_sms_sortants": 1,
@@ -22978,7 +22978,7 @@
     },
     "FwsbOcwhdsHBG0o0cLKy": {
       "contacte_meme_jour": true,
-      "contacte_meme_jour_fige": false,
+      "contacte_meme_jour_fige": true,
       "n_appels_sortants": 0,
       "n_appels_repondus": 0,
       "n_sms_sortants": 1,
@@ -22988,12 +22988,32 @@
     },
     "dgqrsmM3fbtlxcGp3JQk": {
       "contacte_meme_jour": true,
-      "contacte_meme_jour_fige": false,
+      "contacte_meme_jour_fige": true,
       "n_appels_sortants": 0,
       "n_appels_repondus": 0,
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
       "derniere_activite": "2026-08-20T16:20:35.525000-04:00",
+      "activite_figee": false
+    },
+    "6dGmPxwSkvqkwRzGB4xw": {
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": true,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-20T19:32:18.141000-04:00",
+      "activite_figee": false
+    },
+    "8R8a2dFMdH8HfaNWK27Z": {
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": true,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-20T19:17:52.316000-04:00",
       "activite_figee": false
     }
   }

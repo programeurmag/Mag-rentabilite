@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-21T14:43:41.618500-04:00",
+  "genere_le": "2026-08-21T15:36:58.350645-04:00",
   "periode": {
-    "debut": "2026-07-22T14:27:41.637727-04:00",
-    "fin": "2026-08-21T14:27:41.637727-04:00"
+    "debut": "2026-07-22T15:21:22.416886-04:00",
+    "fin": "2026-08-21T15:21:22.416886-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-22T14:27:41.637727-04:00",
-    "fin": "2026-07-22T14:27:41.637727-04:00"
+    "debut": "2026-06-22T15:21:22.416886-04:00",
+    "fin": "2026-07-22T15:21:22.416886-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -35,17 +35,17 @@
   "equipe": {
     "actuelle": {
       "nom": "Équipe",
-      "n_leads": 352,
-      "n_contactes_meme_jour": 331,
-      "pct_contact_meme_jour": 94.0340909090909,
-      "n_visite_bookee": 144,
-      "pct_visite_bookee": 40.90909090909091,
-      "n_soumissions_ghl": 82,
+      "n_leads": 351,
+      "n_contactes_meme_jour": 330,
+      "pct_contact_meme_jour": 94.01709401709402,
+      "n_visite_bookee": 143,
+      "pct_visite_bookee": 40.74074074074074,
+      "n_soumissions_ghl": 81,
       "n_soumissions_avec_rappel": 34,
-      "pct_rappel_48h": 41.46341463414634,
-      "n_soumissions_envoyees": 61,
+      "pct_rappel_48h": 41.97530864197531,
+      "n_soumissions_envoyees": 62,
       "n_won": 20,
-      "pct_closing": 32.78688524590164,
+      "pct_closing": 32.25806451612903,
       "valeur_moyenne_won": 2796.0,
       "leads_non_contactes": [
         "Mario",
@@ -74,14 +74,14 @@
     },
     "precedente": {
       "nom": "Équipe",
-      "n_leads": 306,
-      "n_contactes_meme_jour": 297,
-      "pct_contact_meme_jour": 97.05882352941177,
-      "n_visite_bookee": 74,
-      "pct_visite_bookee": 24.18300653594771,
-      "n_soumissions_ghl": 72,
+      "n_leads": 307,
+      "n_contactes_meme_jour": 298,
+      "pct_contact_meme_jour": 97.06840390879479,
+      "n_visite_bookee": 75,
+      "pct_visite_bookee": 24.429967426710096,
+      "n_soumissions_ghl": 73,
       "n_soumissions_avec_rappel": 2,
-      "pct_rappel_48h": 2.7777777777777777,
+      "pct_rappel_48h": 2.73972602739726,
       "n_soumissions_envoyees": 41,
       "n_won": 19,
       "pct_closing": 46.34146341463415,
@@ -98,6 +98,7 @@
         "Fedor Jila"
       ],
       "soumissions_sans_rappel": [
+        "Robert",
         "Tim Argento",
         "Tommy Jfdg Vinet Berube",
         "Khalid Douakha",
@@ -106,8 +107,7 @@
         "Iminja Ramampy",
         "Fatima Abou-Khdoud",
         "Aline Lemire",
-        "Pascale Gagnon BhéRer",
-        "Yves Goulet"
+        "Pascale Gagnon BhéRer"
       ]
     }
   },
@@ -116,17 +116,17 @@
       "nom": "Justin Blaquiere",
       "actuelle": {
         "nom": "Justin Blaquiere",
-        "n_leads": 259,
-        "n_contactes_meme_jour": 242,
-        "pct_contact_meme_jour": 93.43629343629344,
-        "n_visite_bookee": 116,
-        "pct_visite_bookee": 44.78764478764479,
-        "n_soumissions_ghl": 63,
+        "n_leads": 258,
+        "n_contactes_meme_jour": 241,
+        "pct_contact_meme_jour": 93.4108527131783,
+        "n_visite_bookee": 115,
+        "pct_visite_bookee": 44.57364341085271,
+        "n_soumissions_ghl": 62,
         "n_soumissions_avec_rappel": 23,
-        "pct_rappel_48h": 36.507936507936506,
-        "n_soumissions_envoyees": 41,
+        "pct_rappel_48h": 37.096774193548384,
+        "n_soumissions_envoyees": 42,
         "n_won": 11,
-        "pct_closing": 26.829268292682926,
+        "pct_closing": 26.19047619047619,
         "valeur_moyenne_won": 2550.0,
         "leads_non_contactes": [
           "Mario",
@@ -155,14 +155,14 @@
       },
       "precedente": {
         "nom": "Justin Blaquiere",
-        "n_leads": 135,
-        "n_contactes_meme_jour": 128,
-        "pct_contact_meme_jour": 94.81481481481481,
-        "n_visite_bookee": 37,
-        "pct_visite_bookee": 27.40740740740741,
-        "n_soumissions_ghl": 35,
+        "n_leads": 136,
+        "n_contactes_meme_jour": 129,
+        "pct_contact_meme_jour": 94.8529411764706,
+        "n_visite_bookee": 38,
+        "pct_visite_bookee": 27.941176470588236,
+        "n_soumissions_ghl": 36,
         "n_soumissions_avec_rappel": 2,
-        "pct_rappel_48h": 5.714285714285714,
+        "pct_rappel_48h": 5.555555555555555,
         "n_soumissions_envoyees": 28,
         "n_won": 18,
         "pct_closing": 64.28571428571429,
@@ -177,6 +177,7 @@
           "Fedor Jila"
         ],
         "soumissions_sans_rappel": [
+          "Robert",
           "Tim Argento",
           "Marie Maude",
           "Fatima Abou-Khdoud",
@@ -185,8 +186,7 @@
           "Watcherlie",
           "Jean Deziel",
           "Chantal Bellanger",
-          "Mike Sabbagh",
-          "Wilfried Boué"
+          "Mike Sabbagh"
         ]
       }
     },
@@ -441,11 +441,11 @@
       "soumission_envoyee": false,
       "contacte_meme_jour": true,
       "rappel_48h": null,
-      "n_appels_sortants": 1,
-      "n_appels_repondus": 0,
-      "n_sms_sortants": 3,
+      "n_appels_sortants": 3,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 7,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-21T14:22:23.250000-04:00"
+      "derniere_activite": "2026-08-21T15:18:01.851000-04:00"
     },
     {
       "id": "RlhWynss0T2e595JyNm1",
@@ -583,9 +583,9 @@
       "rappel_48h": null,
       "n_appels_sortants": 2,
       "n_appels_repondus": 2,
-      "n_sms_sortants": 3,
+      "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-21T13:46:12.383000-04:00"
+      "derniere_activite": "2026-08-21T14:41:31.782000-04:00"
     },
     {
       "id": "13nT7DHGX4hnXl8HR2Ob",
@@ -34390,6 +34390,20 @@
   ],
   "soumissions_brutes": [
     {
+      "numero": "682",
+      "client": "Phil  Bertrand",
+      "vendeur": "Justin Blaquiere",
+      "montant": 1000.0,
+      "statut": "awaiting_response",
+      "won": false,
+      "date_envoi": "2026-08-21T15:10:02-04:00",
+      "date_gagnee": null,
+      "delai_lead_soumission_heures": 41.205735833333335,
+      "delai_soumission_won_heures": null,
+      "delai_lead_won_heures": null,
+      "source_lead": "Facebook"
+    },
+    {
       "numero": "677",
       "client": "Georges Bendavid",
       "vendeur": "Justin Blaquiere",
@@ -41093,11 +41107,11 @@
       "soumission_envoyee": false,
       "contacte_meme_jour": true,
       "rappel_48h": null,
-      "n_appels_sortants": 1,
-      "n_appels_repondus": 0,
-      "n_sms_sortants": 3,
+      "n_appels_sortants": 3,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 7,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-21T14:22:23.250000-04:00"
+      "derniere_activite": "2026-08-21T15:18:01.851000-04:00"
     },
     {
       "id": "RlhWynss0T2e595JyNm1",
@@ -41215,9 +41229,9 @@
       "rappel_48h": null,
       "n_appels_sortants": 2,
       "n_appels_repondus": 2,
-      "n_sms_sortants": 3,
+      "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-21T13:46:12.383000-04:00"
+      "derniere_activite": "2026-08-21T14:41:31.782000-04:00"
     },
     {
       "id": "hDtktwUH6P4XNveETwni",

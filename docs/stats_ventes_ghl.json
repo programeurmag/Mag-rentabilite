@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-21T10:44:47.375153-04:00",
+  "genere_le": "2026-08-21T11:41:15.270365-04:00",
   "periode": {
-    "debut": "2026-07-22T10:28:22.400158-04:00",
-    "fin": "2026-08-21T10:28:22.400158-04:00"
+    "debut": "2026-07-22T11:26:17.702777-04:00",
+    "fin": "2026-08-21T11:26:17.702777-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-22T10:28:22.400158-04:00",
-    "fin": "2026-07-22T10:28:22.400158-04:00"
+    "debut": "2026-06-22T11:26:17.702777-04:00",
+    "fin": "2026-07-22T11:26:17.702777-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -43,9 +43,9 @@
       "n_soumissions_ghl": 80,
       "n_soumissions_avec_rappel": 34,
       "pct_rappel_48h": 42.5,
-      "n_soumissions_envoyees": 62,
+      "n_soumissions_envoyees": 61,
       "n_won": 19,
-      "pct_closing": 30.64516129032258,
+      "pct_closing": 31.147540983606557,
       "valeur_moyenne_won": 2890.5263157894738,
       "leads_non_contactes": [
         "Mario",
@@ -82,9 +82,9 @@
       "n_soumissions_ghl": 72,
       "n_soumissions_avec_rappel": 2,
       "pct_rappel_48h": 2.7777777777777777,
-      "n_soumissions_envoyees": 40,
+      "n_soumissions_envoyees": 41,
       "n_won": 19,
-      "pct_closing": 47.5,
+      "pct_closing": 46.34146341463415,
       "valeur_moyenne_won": 1828.6842105263158,
       "leads_non_contactes": [
         "Francis Langlais",
@@ -254,9 +254,9 @@
         "n_soumissions_ghl": 17,
         "n_soumissions_avec_rappel": 10,
         "pct_rappel_48h": 58.8235294117647,
-        "n_soumissions_envoyees": 21,
+        "n_soumissions_envoyees": 20,
         "n_won": 9,
-        "pct_closing": 42.857142857142854,
+        "pct_closing": 45.0,
         "valeur_moyenne_won": 3096.6666666666665,
         "leads_non_contactes": [
           "Brian Sil",
@@ -284,9 +284,9 @@
         "n_soumissions_ghl": 24,
         "n_soumissions_avec_rappel": 0,
         "pct_rappel_48h": 0.0,
-        "n_soumissions_envoyees": 12,
+        "n_soumissions_envoyees": 13,
         "n_won": 1,
-        "pct_closing": 8.333333333333334,
+        "pct_closing": 7.6923076923076925,
         "valeur_moyenne_won": 5000.0,
         "leads_non_contactes": [
           "Vince De Rose"
@@ -954,9 +954,9 @@
       "source": "Facebook",
       "stage_nom": "RDV BOOKÉ",
       "statut": "won",
-      "valeur": 0,
+      "valeur": 9350,
       "date_creation": "2026-08-17T19:49:45.755000-04:00",
-      "updated_at": "2026-08-19T15:49:08.321000-04:00",
+      "updated_at": "2026-08-21T10:51:19.886000-04:00",
       "visite_bookee": true,
       "soumission_envoyee": false,
       "contacte_meme_jour": true,
@@ -1534,9 +1534,9 @@
       "source": "Facebook",
       "stage_nom": "RDV BOOKÉ",
       "statut": "won",
-      "valeur": 0,
+      "valeur": 1500,
       "date_creation": "2026-08-14T16:19:35.233000-04:00",
-      "updated_at": "2026-08-17T14:48:05.180000-04:00",
+      "updated_at": "2026-08-21T10:51:20.402000-04:00",
       "visite_bookee": true,
       "soumission_envoyee": false,
       "contacte_meme_jour": true,

@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-21T09:56:25.161077-04:00",
+  "genere_le": "2026-08-21T10:44:47.375153-04:00",
   "periode": {
-    "debut": "2026-07-22T09:40:11.140118-04:00",
-    "fin": "2026-08-21T09:40:11.140118-04:00"
+    "debut": "2026-07-22T10:28:22.400158-04:00",
+    "fin": "2026-08-21T10:28:22.400158-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-22T09:40:11.140118-04:00",
-    "fin": "2026-07-22T09:40:11.140118-04:00"
+    "debut": "2026-06-22T10:28:22.400158-04:00",
+    "fin": "2026-07-22T10:28:22.400158-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -43,9 +43,9 @@
       "n_soumissions_ghl": 80,
       "n_soumissions_avec_rappel": 34,
       "pct_rappel_48h": 42.5,
-      "n_soumissions_envoyees": 60,
+      "n_soumissions_envoyees": 62,
       "n_won": 19,
-      "pct_closing": 31.666666666666668,
+      "pct_closing": 30.64516129032258,
       "valeur_moyenne_won": 2890.5263157894738,
       "leads_non_contactes": [
         "Mario",
@@ -124,9 +124,9 @@
         "n_soumissions_ghl": 61,
         "n_soumissions_avec_rappel": 23,
         "pct_rappel_48h": 37.704918032786885,
-        "n_soumissions_envoyees": 39,
+        "n_soumissions_envoyees": 41,
         "n_won": 10,
-        "pct_closing": 25.641025641025642,
+        "pct_closing": 24.390243902439025,
         "valeur_moyenne_won": 2705.0,
         "leads_non_contactes": [
           "Mario",
@@ -873,10 +873,10 @@
       "vendeur": "Justin Blaquiere",
       "source": "Facebook",
       "stage_nom": "Tentative 1",
-      "statut": "open",
+      "statut": "lost",
       "valeur": 0,
       "date_creation": "2026-08-18T10:17:29.221000-04:00",
-      "updated_at": "2026-08-19T16:29:33.291000-04:00",
+      "updated_at": "2026-08-21T10:09:25.185000-04:00",
       "visite_bookee": false,
       "soumission_envoyee": false,
       "contacte_meme_jour": true,
@@ -885,7 +885,7 @@
       "n_appels_repondus": 1,
       "n_sms_sortants": 3,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-19T16:29:34.869000-04:00"
+      "derniere_activite": "2026-08-21T10:09:27.704000-04:00"
     },
     {
       "id": "LT3pjatathMjgLMpLku3",
@@ -34350,6 +34350,34 @@
   ],
   "soumissions_brutes": [
     {
+      "numero": "681",
+      "client": "Joël Deschamps",
+      "vendeur": "Justin Blaquiere",
+      "montant": 9350.0,
+      "statut": "awaiting_response",
+      "won": false,
+      "date_envoi": "2026-08-21T10:40:45-04:00",
+      "date_gagnee": null,
+      "delai_lead_soumission_heures": 86.84979027777777,
+      "delai_soumission_won_heures": null,
+      "delai_lead_won_heures": null,
+      "source_lead": "Facebook"
+    },
+    {
+      "numero": "680",
+      "client": "Arthur Le Doujet",
+      "vendeur": "Justin Blaquiere",
+      "montant": 1500.0,
+      "statut": "awaiting_response",
+      "won": false,
+      "date_envoi": "2026-08-21T10:19:34-04:00",
+      "date_gagnee": null,
+      "delai_lead_soumission_heures": 161.9996575,
+      "delai_soumission_won_heures": null,
+      "delai_lead_won_heures": null,
+      "source_lead": "Facebook"
+    },
+    {
       "numero": "679",
       "client": "Matthieu Perpignani",
       "vendeur": "Justin Blaquiere",
@@ -41310,26 +41338,6 @@
       "n_sms_sortants": 3,
       "n_emails_sortants": 0,
       "derniere_activite": "2026-08-19T16:38:56.408000-04:00"
-    },
-    {
-      "id": "ltjrUhL1g0pPqJZz9Qzx",
-      "nom": "马强",
-      "vendeur": "Justin Blaquiere",
-      "source": "Facebook",
-      "stage_nom": "Tentative 1",
-      "statut": "open",
-      "valeur": 0,
-      "date_creation": "2026-08-18T10:17:29.221000-04:00",
-      "updated_at": "2026-08-19T16:29:33.291000-04:00",
-      "visite_bookee": false,
-      "soumission_envoyee": false,
-      "contacte_meme_jour": true,
-      "rappel_48h": null,
-      "n_appels_sortants": 1,
-      "n_appels_repondus": 1,
-      "n_sms_sortants": 3,
-      "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-19T16:29:34.869000-04:00"
     },
     {
       "id": "LT3pjatathMjgLMpLku3",

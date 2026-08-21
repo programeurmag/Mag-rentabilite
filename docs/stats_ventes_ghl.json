@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-21T07:37:27.865169-04:00",
+  "genere_le": "2026-08-21T08:51:55.176045-04:00",
   "periode": {
-    "debut": "2026-07-22T07:19:42.787727-04:00",
-    "fin": "2026-08-21T07:19:42.787727-04:00"
+    "debut": "2026-07-22T08:34:18.445450-04:00",
+    "fin": "2026-08-21T08:34:18.445450-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-22T07:19:42.787727-04:00",
-    "fin": "2026-07-22T07:19:42.787727-04:00"
+    "debut": "2026-06-22T08:34:18.445450-04:00",
+    "fin": "2026-07-22T08:34:18.445450-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -74,11 +74,11 @@
     },
     "precedente": {
       "nom": "Équipe",
-      "n_leads": 304,
-      "n_contactes_meme_jour": 295,
-      "pct_contact_meme_jour": 97.03947368421052,
+      "n_leads": 305,
+      "n_contactes_meme_jour": 296,
+      "pct_contact_meme_jour": 97.04918032786885,
       "n_visite_bookee": 74,
-      "pct_visite_bookee": 24.342105263157894,
+      "pct_visite_bookee": 24.262295081967213,
       "n_soumissions_ghl": 72,
       "n_soumissions_avec_rappel": 2,
       "pct_rappel_48h": 2.7777777777777777,
@@ -116,11 +116,11 @@
       "nom": "Justin Blaquiere",
       "actuelle": {
         "nom": "Justin Blaquiere",
-        "n_leads": 257,
-        "n_contactes_meme_jour": 240,
-        "pct_contact_meme_jour": 93.3852140077821,
+        "n_leads": 258,
+        "n_contactes_meme_jour": 241,
+        "pct_contact_meme_jour": 93.4108527131783,
         "n_visite_bookee": 112,
-        "pct_visite_bookee": 43.57976653696498,
+        "pct_visite_bookee": 43.41085271317829,
         "n_soumissions_ghl": 61,
         "n_soumissions_avec_rappel": 23,
         "pct_rappel_48h": 37.704918032786885,
@@ -194,11 +194,11 @@
       "nom": "Jeremy Dagenais",
       "actuelle": {
         "nom": "Jeremy Dagenais",
-        "n_leads": 7,
-        "n_contactes_meme_jour": 7,
+        "n_leads": 6,
+        "n_contactes_meme_jour": 6,
         "pct_contact_meme_jour": 100.0,
         "n_visite_bookee": 3,
-        "pct_visite_bookee": 42.857142857142854,
+        "pct_visite_bookee": 50.0,
         "n_soumissions_ghl": 2,
         "n_soumissions_avec_rappel": 1,
         "pct_rappel_48h": 50.0,
@@ -213,11 +213,11 @@
       },
       "precedente": {
         "nom": "Jeremy Dagenais",
-        "n_leads": 94,
-        "n_contactes_meme_jour": 93,
-        "pct_contact_meme_jour": 98.93617021276596,
+        "n_leads": 95,
+        "n_contactes_meme_jour": 94,
+        "pct_contact_meme_jour": 98.94736842105263,
         "n_visite_bookee": 13,
-        "pct_visite_bookee": 13.829787234042554,
+        "pct_visite_bookee": 13.68421052631579,
         "n_soumissions_ghl": 13,
         "n_soumissions_avec_rappel": 0,
         "pct_rappel_48h": 0.0,
@@ -307,6 +307,26 @@
     }
   ],
   "opportunites_brutes": [
+    {
+      "id": "abImCmGtfzYVSI3xuDS8",
+      "nom": "Iminja Ramampy",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-21T08:10:18.751000-04:00",
+      "updated_at": "2026-08-21T08:12:22.456000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 10,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-21T08:12:24.677000-04:00"
+    },
     {
       "id": "6dGmPxwSkvqkwRzGB4xw",
       "nom": "Touati Mohamed",
@@ -29136,16 +29156,16 @@
       "statut": "open",
       "valeur": 0,
       "date_creation": "2026-07-19T06:47:48.439000-04:00",
-      "updated_at": "2026-07-29T16:27:37.034000-04:00",
+      "updated_at": "2026-08-21T08:10:21.608000-04:00",
       "visite_bookee": true,
       "soumission_envoyee": true,
       "contacte_meme_jour": true,
       "rappel_48h": false,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 9,
+      "n_sms_sortants": 10,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-01T16:53:00.722000-04:00"
+      "derniere_activite": "2026-08-21T08:12:24.677000-04:00"
     },
     {
       "id": "RfNEIdcrf7fsQZqRrxBt",
@@ -40912,6 +40932,26 @@
   ],
   "pipeline_ouvert_brutes": [
     {
+      "id": "abImCmGtfzYVSI3xuDS8",
+      "nom": "Iminja Ramampy",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-21T08:10:18.751000-04:00",
+      "updated_at": "2026-08-21T08:12:22.456000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 10,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-21T08:12:24.677000-04:00"
+    },
+    {
       "id": "6dGmPxwSkvqkwRzGB4xw",
       "nom": "Touati Mohamed",
       "vendeur": "Justin Blaquiere",
@@ -45480,16 +45520,16 @@
       "statut": "open",
       "valeur": 0,
       "date_creation": "2026-07-19T06:47:48.439000-04:00",
-      "updated_at": "2026-07-29T16:27:37.034000-04:00",
+      "updated_at": "2026-08-21T08:10:21.608000-04:00",
       "visite_bookee": true,
       "soumission_envoyee": true,
       "contacte_meme_jour": true,
       "rappel_48h": false,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 9,
+      "n_sms_sortants": 10,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-01T16:53:00.722000-04:00"
+      "derniere_activite": "2026-08-21T08:12:24.677000-04:00"
     },
     {
       "id": "o2WbOJ981XLxLusp86IQ",

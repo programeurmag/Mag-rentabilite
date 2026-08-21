@@ -6273,9 +6273,9 @@
       "rappel_48h_fige": true,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 9,
+      "n_sms_sortants": 10,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-01T16:53:00.722000-04:00",
+      "derniere_activite": "2026-08-21T08:12:24.677000-04:00",
       "activite_figee": false
     },
     "RfNEIdcrf7fsQZqRrxBt": {
@@ -23014,6 +23014,16 @@
       "n_sms_sortants": 1,
       "n_emails_sortants": 0,
       "derniere_activite": "2026-08-20T19:17:52.316000-04:00",
+      "activite_figee": false
+    },
+    "abImCmGtfzYVSI3xuDS8": {
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "n_appels_sortants": 1,
+      "n_appels_repondus": 1,
+      "n_sms_sortants": 10,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-21T08:12:24.677000-04:00",
       "activite_figee": false
     }
   }

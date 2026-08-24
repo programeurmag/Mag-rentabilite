@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-24T07:35:14.912290-04:00",
+  "genere_le": "2026-08-24T08:52:55.397082-04:00",
   "periode": {
-    "debut": "2026-07-25T07:21:22.389247-04:00",
-    "fin": "2026-08-24T07:21:22.389247-04:00"
+    "debut": "2026-07-25T08:36:41.587123-04:00",
+    "fin": "2026-08-24T08:36:41.587123-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-25T07:21:22.389247-04:00",
-    "fin": "2026-07-25T07:21:22.389247-04:00"
+    "debut": "2026-06-25T08:36:41.587123-04:00",
+    "fin": "2026-07-25T08:36:41.587123-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -35,11 +35,11 @@
   "equipe": {
     "actuelle": {
       "nom": "Équipe",
-      "n_leads": 354,
-      "n_contactes_meme_jour": 334,
-      "pct_contact_meme_jour": 94.35028248587571,
-      "n_visite_bookee": 138,
-      "pct_visite_bookee": 38.983050847457626,
+      "n_leads": 352,
+      "n_contactes_meme_jour": 333,
+      "pct_contact_meme_jour": 94.60227272727273,
+      "n_visite_bookee": 137,
+      "pct_visite_bookee": 38.92045454545455,
       "n_soumissions_ghl": 76,
       "n_soumissions_avec_rappel": 31,
       "pct_rappel_48h": 40.78947368421053,
@@ -74,11 +74,11 @@
     },
     "precedente": {
       "nom": "Équipe",
-      "n_leads": 303,
-      "n_contactes_meme_jour": 293,
-      "pct_contact_meme_jour": 96.6996699669967,
-      "n_visite_bookee": 78,
-      "pct_visite_bookee": 25.742574257425744,
+      "n_leads": 305,
+      "n_contactes_meme_jour": 294,
+      "pct_contact_meme_jour": 96.39344262295081,
+      "n_visite_bookee": 79,
+      "pct_visite_bookee": 25.901639344262296,
       "n_soumissions_ghl": 76,
       "n_soumissions_avec_rappel": 5,
       "pct_rappel_48h": 6.578947368421052,
@@ -87,6 +87,7 @@
       "pct_closing": 43.90243902439025,
       "valeur_moyenne_won": 2316.3888888888887,
       "leads_non_contactes": [
+        "Dominique Choquette",
         "Stéphane Turbide",
         "Francis Langlais",
         "Mariette St-Jacques",
@@ -95,8 +96,7 @@
         "Marie-Noële Pilon",
         "Michel Milmore",
         "Tommy Jfdg Vinet Berube",
-        "Vince De Rose",
-        "Fedor Jila"
+        "Vince De Rose"
       ],
       "soumissions_sans_rappel": [
         "Benoit Gauthier",
@@ -195,10 +195,10 @@
       "nom": "Jeremy Dagenais",
       "actuelle": {
         "nom": "Jeremy Dagenais",
-        "n_leads": 2,
-        "n_contactes_meme_jour": 2,
+        "n_leads": 1,
+        "n_contactes_meme_jour": 1,
         "pct_contact_meme_jour": 100.0,
-        "n_visite_bookee": 2,
+        "n_visite_bookee": 1,
         "pct_visite_bookee": 100.0,
         "n_soumissions_ghl": 1,
         "n_soumissions_avec_rappel": 1,
@@ -212,11 +212,11 @@
       },
       "precedente": {
         "nom": "Jeremy Dagenais",
-        "n_leads": 92,
-        "n_contactes_meme_jour": 91,
-        "pct_contact_meme_jour": 98.91304347826087,
-        "n_visite_bookee": 14,
-        "pct_visite_bookee": 15.217391304347826,
+        "n_leads": 93,
+        "n_contactes_meme_jour": 92,
+        "pct_contact_meme_jour": 98.9247311827957,
+        "n_visite_bookee": 15,
+        "pct_visite_bookee": 16.129032258064516,
         "n_soumissions_ghl": 14,
         "n_soumissions_avec_rappel": 0,
         "pct_rappel_48h": 0.0,
@@ -245,11 +245,11 @@
       "nom": "Justin Boivin",
       "actuelle": {
         "nom": "Justin Boivin",
-        "n_leads": 80,
+        "n_leads": 79,
         "n_contactes_meme_jour": 77,
-        "pct_contact_meme_jour": 96.25,
+        "pct_contact_meme_jour": 97.46835443037975,
         "n_visite_bookee": 21,
-        "pct_visite_bookee": 26.25,
+        "pct_visite_bookee": 26.582278481012658,
         "n_soumissions_ghl": 13,
         "n_soumissions_avec_rappel": 7,
         "pct_rappel_48h": 53.84615384615385,
@@ -259,8 +259,7 @@
         "valeur_moyenne_won": 2978.3333333333335,
         "leads_non_contactes": [
           "Brian Sil",
-          "SDC Estuaire III",
-          "Dominique Choquette"
+          "SDC Estuaire III"
         ],
         "soumissions_sans_rappel": [
           "Janeth Paris",
@@ -273,11 +272,11 @@
       },
       "precedente": {
         "nom": "Justin Boivin",
-        "n_leads": 82,
+        "n_leads": 83,
         "n_contactes_meme_jour": 80,
-        "pct_contact_meme_jour": 97.5609756097561,
+        "pct_contact_meme_jour": 96.3855421686747,
         "n_visite_bookee": 28,
-        "pct_visite_bookee": 34.146341463414636,
+        "pct_visite_bookee": 33.734939759036145,
         "n_soumissions_ghl": 28,
         "n_soumissions_avec_rappel": 3,
         "pct_rappel_48h": 10.714285714285714,
@@ -286,6 +285,7 @@
         "pct_closing": 23.529411764705884,
         "valeur_moyenne_won": 3750.0,
         "leads_non_contactes": [
+          "Dominique Choquette",
           "Michel Milmore",
           "Vince De Rose"
         ],
@@ -28021,9 +28021,9 @@
       "rappel_48h": false,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 1,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-19T16:17:58.110000-04:00"
+      "derniere_activite": "2026-08-24T08:33:04.865000-04:00"
     },
     {
       "id": "JzGONUJ5Btsjy1zRGvVV",
@@ -45185,9 +45185,9 @@
       "rappel_48h": false,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 1,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-19T16:17:58.110000-04:00"
+      "derniere_activite": "2026-08-24T08:33:04.865000-04:00"
     },
     {
       "id": "JzGONUJ5Btsjy1zRGvVV",

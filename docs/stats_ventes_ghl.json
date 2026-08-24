@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-24T13:43:56.200075-04:00",
+  "genere_le": "2026-08-24T15:47:44.599377-04:00",
   "periode": {
-    "debut": "2026-07-25T13:25:16.317412-04:00",
-    "fin": "2026-08-24T13:25:16.317412-04:00"
+    "debut": "2026-07-25T15:23:59.500094-04:00",
+    "fin": "2026-08-24T15:23:59.500094-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-25T13:25:16.317412-04:00",
-    "fin": "2026-07-25T13:25:16.317412-04:00"
+    "debut": "2026-06-25T15:23:59.500094-04:00",
+    "fin": "2026-07-25T15:23:59.500094-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -38,11 +38,11 @@
       "n_leads": 357,
       "n_contactes_meme_jour": 338,
       "pct_contact_meme_jour": 94.67787114845939,
-      "n_visite_bookee": 147,
-      "pct_visite_bookee": 41.1764705882353,
-      "n_soumissions_ghl": 81,
+      "n_visite_bookee": 146,
+      "pct_visite_bookee": 40.896358543417364,
+      "n_soumissions_ghl": 80,
       "n_soumissions_avec_rappel": 31,
-      "pct_rappel_48h": 38.27160493827161,
+      "pct_rappel_48h": 38.75,
       "n_soumissions_envoyees": 68,
       "n_won": 18,
       "pct_closing": 26.470588235294116,
@@ -77,11 +77,11 @@
       "n_leads": 306,
       "n_contactes_meme_jour": 295,
       "pct_contact_meme_jour": 96.40522875816994,
-      "n_visite_bookee": 79,
-      "pct_visite_bookee": 25.81699346405229,
-      "n_soumissions_ghl": 76,
+      "n_visite_bookee": 80,
+      "pct_visite_bookee": 26.143790849673202,
+      "n_soumissions_ghl": 77,
       "n_soumissions_avec_rappel": 5,
-      "pct_rappel_48h": 6.578947368421052,
+      "pct_rappel_48h": 6.4935064935064934,
       "n_soumissions_envoyees": 41,
       "n_won": 18,
       "pct_closing": 43.90243902439025,
@@ -99,6 +99,7 @@
         "Vince De Rose"
       ],
       "soumissions_sans_rappel": [
+        "Nadia Brixi",
         "Benoit Gauthier",
         "Claude Levesque",
         "Zaf",
@@ -107,8 +108,7 @@
         "Tommy Jfdg Vinet Berube",
         "Khalid Douakha",
         "Raymonde Monette",
-        "Marie Maude",
-        "Iminja Ramampy"
+        "Marie Maude"
       ]
     }
   },
@@ -120,11 +120,11 @@
         "n_leads": 278,
         "n_contactes_meme_jour": 261,
         "pct_contact_meme_jour": 93.88489208633094,
-        "n_visite_bookee": 125,
-        "pct_visite_bookee": 44.96402877697842,
-        "n_soumissions_ghl": 67,
+        "n_visite_bookee": 124,
+        "pct_visite_bookee": 44.60431654676259,
+        "n_soumissions_ghl": 66,
         "n_soumissions_avec_rappel": 23,
-        "pct_rappel_48h": 34.32835820895522,
+        "pct_rappel_48h": 34.84848484848485,
         "n_soumissions_envoyees": 52,
         "n_won": 11,
         "pct_closing": 21.153846153846153,
@@ -159,11 +159,11 @@
         "n_leads": 129,
         "n_contactes_meme_jour": 122,
         "pct_contact_meme_jour": 94.57364341085271,
-        "n_visite_bookee": 36,
-        "pct_visite_bookee": 27.906976744186046,
-        "n_soumissions_ghl": 34,
+        "n_visite_bookee": 37,
+        "pct_visite_bookee": 28.68217054263566,
+        "n_soumissions_ghl": 35,
         "n_soumissions_avec_rappel": 2,
-        "pct_rappel_48h": 5.882352941176471,
+        "pct_rappel_48h": 5.714285714285714,
         "n_soumissions_envoyees": 24,
         "n_won": 14,
         "pct_closing": 58.333333333333336,
@@ -178,6 +178,7 @@
           "Fedor Jila"
         ],
         "soumissions_sans_rappel": [
+          "Nadia Brixi",
           "Claude Levesque",
           "Robert",
           "Tim Argento",
@@ -186,8 +187,7 @@
           "Melanie Dorion",
           "Marie Mercie Joseph",
           "Watcherlie",
-          "Jean Deziel",
-          "Chantal Bellanger"
+          "Jean Deziel"
         ]
       }
     },
@@ -306,6 +306,26 @@
   ],
   "opportunites_brutes": [
     {
+      "id": "VB20TrBdfZF3tedWAsrl",
+      "nom": "Glenda Torres",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-24T14:09:10.798000-04:00",
+      "updated_at": "2026-08-24T14:11:13.764000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-24T14:11:15.618000-04:00"
+    },
+    {
       "id": "9zuRbbNzWiCC9vAEO7NQ",
       "nom": "Joubert Jean",
       "vendeur": "Justin Blaquiere",
@@ -341,9 +361,9 @@
       "rappel_48h": null,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 2,
+      "n_sms_sortants": 5,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-24T11:49:19.605000-04:00"
+      "derniere_activite": "2026-08-24T15:14:10.873000-04:00"
     },
     {
       "id": "CaZ2RG99MN1Qfn6oK0dL",
@@ -1051,10 +1071,10 @@
       "vendeur": "Justin Blaquiere",
       "source": "Facebook",
       "stage_nom": "Tentative 3",
-      "statut": "open",
+      "statut": "lost",
       "valeur": 0,
       "date_creation": "2026-08-19T15:55:12.753000-04:00",
-      "updated_at": "2026-08-24T11:20:01.023000-04:00",
+      "updated_at": "2026-08-24T13:49:31.179000-04:00",
       "visite_bookee": false,
       "soumission_envoyee": false,
       "contacte_meme_jour": true,
@@ -1063,7 +1083,7 @@
       "n_appels_repondus": 3,
       "n_sms_sortants": 5,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-24T11:20:02.618000-04:00"
+      "derniere_activite": "2026-08-24T13:49:31.613000-04:00"
     },
     {
       "id": "13nT7DHGX4hnXl8HR2Ob",
@@ -28081,9 +28101,9 @@
       "rappel_48h": false,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 1,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-21T13:57:26.743000-04:00"
+      "derniere_activite": "2026-08-24T13:31:20.979000-04:00"
     },
     {
       "id": "idjGLSe0yEXupZnpY0lT",
@@ -41772,6 +41792,26 @@
   ],
   "pipeline_ouvert_brutes": [
     {
+      "id": "VB20TrBdfZF3tedWAsrl",
+      "nom": "Glenda Torres",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-24T14:09:10.798000-04:00",
+      "updated_at": "2026-08-24T14:11:13.764000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-24T14:11:15.618000-04:00"
+    },
+    {
       "id": "VXHpXPypCMI3R5qUBv0i",
       "nom": "Stephane. Salis. Mata Ntoya",
       "vendeur": "Justin Blaquiere",
@@ -41787,9 +41827,9 @@
       "rappel_48h": null,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 2,
+      "n_sms_sortants": 5,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-24T11:49:19.605000-04:00"
+      "derniere_activite": "2026-08-24T15:14:10.873000-04:00"
     },
     {
       "id": "CaZ2RG99MN1Qfn6oK0dL",
@@ -42130,26 +42170,6 @@
       "n_sms_sortants": 0,
       "n_emails_sortants": 0,
       "derniere_activite": "2026-08-19T16:06:17.559000-04:00"
-    },
-    {
-      "id": "Sbs6ZQ7RveIsTDQx1J5E",
-      "nom": "Anh Tou Le Le",
-      "vendeur": "Justin Blaquiere",
-      "source": "Facebook",
-      "stage_nom": "Tentative 3",
-      "statut": "open",
-      "valeur": 0,
-      "date_creation": "2026-08-19T15:55:12.753000-04:00",
-      "updated_at": "2026-08-24T11:20:01.023000-04:00",
-      "visite_bookee": false,
-      "soumission_envoyee": false,
-      "contacte_meme_jour": true,
-      "rappel_48h": null,
-      "n_appels_sortants": 3,
-      "n_appels_repondus": 3,
-      "n_sms_sortants": 5,
-      "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-24T11:20:02.618000-04:00"
     },
     {
       "id": "hDtktwUH6P4XNveETwni",

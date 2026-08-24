@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-24T15:47:44.599377-04:00",
+  "genere_le": "2026-08-24T16:40:35.897842-04:00",
   "periode": {
-    "debut": "2026-07-25T15:23:59.500094-04:00",
-    "fin": "2026-08-24T15:23:59.500094-04:00"
+    "debut": "2026-07-25T16:22:26.864975-04:00",
+    "fin": "2026-08-24T16:22:26.864975-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-25T15:23:59.500094-04:00",
-    "fin": "2026-07-25T15:23:59.500094-04:00"
+    "debut": "2026-06-25T16:22:26.864975-04:00",
+    "fin": "2026-07-25T16:22:26.864975-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -74,11 +74,11 @@
     },
     "precedente": {
       "nom": "Équipe",
-      "n_leads": 306,
-      "n_contactes_meme_jour": 295,
-      "pct_contact_meme_jour": 96.40522875816994,
+      "n_leads": 305,
+      "n_contactes_meme_jour": 294,
+      "pct_contact_meme_jour": 96.39344262295081,
       "n_visite_bookee": 80,
-      "pct_visite_bookee": 26.143790849673202,
+      "pct_visite_bookee": 26.229508196721312,
       "n_soumissions_ghl": 77,
       "n_soumissions_avec_rappel": 5,
       "pct_rappel_48h": 6.4935064935064934,
@@ -272,11 +272,11 @@
       },
       "precedente": {
         "nom": "Justin Boivin",
-        "n_leads": 84,
-        "n_contactes_meme_jour": 81,
-        "pct_contact_meme_jour": 96.42857142857143,
+        "n_leads": 83,
+        "n_contactes_meme_jour": 80,
+        "pct_contact_meme_jour": 96.3855421686747,
         "n_visite_bookee": 28,
-        "pct_visite_bookee": 33.333333333333336,
+        "pct_visite_bookee": 33.734939759036145,
         "n_soumissions_ghl": 28,
         "n_soumissions_avec_rappel": 3,
         "pct_rappel_48h": 10.714285714285714,

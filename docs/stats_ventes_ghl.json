@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-25T11:52:02.442865-04:00",
+  "genere_le": "2026-08-25T12:44:22.522117-04:00",
   "periode": {
-    "debut": "2026-07-26T11:36:27.456446-04:00",
-    "fin": "2026-08-25T11:36:27.456446-04:00"
+    "debut": "2026-07-26T12:29:14.044233-04:00",
+    "fin": "2026-08-25T12:29:14.044233-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-26T11:36:27.456446-04:00",
-    "fin": "2026-07-26T11:36:27.456446-04:00"
+    "debut": "2026-06-26T12:29:14.044233-04:00",
+    "fin": "2026-07-26T12:29:14.044233-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -35,17 +35,17 @@
   "equipe": {
     "actuelle": {
       "nom": "Équipe",
-      "n_leads": 353,
-      "n_contactes_meme_jour": 334,
-      "pct_contact_meme_jour": 94.61756373937678,
+      "n_leads": 352,
+      "n_contactes_meme_jour": 333,
+      "pct_contact_meme_jour": 94.60227272727273,
       "n_visite_bookee": 146,
-      "pct_visite_bookee": 41.359773371104815,
+      "pct_visite_bookee": 41.47727272727273,
       "n_soumissions_ghl": 80,
       "n_soumissions_avec_rappel": 32,
       "pct_rappel_48h": 40.0,
-      "n_soumissions_envoyees": 69,
+      "n_soumissions_envoyees": 70,
       "n_won": 18,
-      "pct_closing": 26.08695652173913,
+      "pct_closing": 25.714285714285715,
       "valeur_moyenne_won": 2606.6666666666665,
       "leads_non_contactes": [
         "Mario",
@@ -74,18 +74,18 @@
     },
     "precedente": {
       "nom": "Équipe",
-      "n_leads": 300,
-      "n_contactes_meme_jour": 289,
-      "pct_contact_meme_jour": 96.33333333333333,
+      "n_leads": 301,
+      "n_contactes_meme_jour": 290,
+      "pct_contact_meme_jour": 96.34551495016612,
       "n_visite_bookee": 79,
-      "pct_visite_bookee": 26.333333333333332,
+      "pct_visite_bookee": 26.245847176079735,
       "n_soumissions_ghl": 76,
       "n_soumissions_avec_rappel": 5,
       "pct_rappel_48h": 6.578947368421052,
-      "n_soumissions_envoyees": 40,
-      "n_won": 17,
-      "pct_closing": 42.5,
-      "valeur_moyenne_won": 2394.1176470588234,
+      "n_soumissions_envoyees": 39,
+      "n_won": 16,
+      "pct_closing": 41.02564102564103,
+      "valeur_moyenne_won": 2506.25,
       "leads_non_contactes": [
         "Dominique Choquette",
         "Stéphane Turbide",
@@ -117,17 +117,17 @@
       "nom": "Justin Blaquiere",
       "actuelle": {
         "nom": "Justin Blaquiere",
-        "n_leads": 278,
-        "n_contactes_meme_jour": 261,
-        "pct_contact_meme_jour": 93.88489208633094,
+        "n_leads": 277,
+        "n_contactes_meme_jour": 260,
+        "pct_contact_meme_jour": 93.86281588447653,
         "n_visite_bookee": 124,
-        "pct_visite_bookee": 44.60431654676259,
+        "pct_visite_bookee": 44.765342960288805,
         "n_soumissions_ghl": 66,
         "n_soumissions_avec_rappel": 24,
         "pct_rappel_48h": 36.36363636363637,
-        "n_soumissions_envoyees": 53,
+        "n_soumissions_envoyees": 54,
         "n_won": 11,
-        "pct_closing": 20.754716981132077,
+        "pct_closing": 20.37037037037037,
         "valeur_moyenne_won": 2550.0,
         "leads_non_contactes": [
           "Mario",
@@ -156,18 +156,18 @@
       },
       "precedente": {
         "nom": "Justin Blaquiere",
-        "n_leads": 125,
-        "n_contactes_meme_jour": 118,
-        "pct_contact_meme_jour": 94.4,
+        "n_leads": 126,
+        "n_contactes_meme_jour": 119,
+        "pct_contact_meme_jour": 94.44444444444444,
         "n_visite_bookee": 37,
-        "pct_visite_bookee": 29.6,
+        "pct_visite_bookee": 29.365079365079364,
         "n_soumissions_ghl": 35,
         "n_soumissions_avec_rappel": 2,
         "pct_rappel_48h": 5.714285714285714,
-        "n_soumissions_envoyees": 23,
-        "n_won": 13,
-        "pct_closing": 56.52173913043478,
-        "valeur_moyenne_won": 1976.923076923077,
+        "n_soumissions_envoyees": 22,
+        "n_won": 12,
+        "pct_closing": 54.54545454545455,
+        "valeur_moyenne_won": 2091.6666666666665,
         "leads_non_contactes": [
           "Stéphane Turbide",
           "Francis Langlais",
@@ -28201,9 +28201,9 @@
       "rappel_48h": false,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 3,
+      "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-24T19:44:13.434000-04:00"
+      "derniere_activite": "2026-08-25T12:31:21.012000-04:00"
     },
     {
       "id": "gx3sQbZwMdpZjgnSFDS9",
@@ -35068,6 +35068,34 @@
   ],
   "soumissions_brutes": [
     {
+      "numero": "656",
+      "client": "Claire",
+      "vendeur": "Justin Blaquiere",
+      "montant": 2100.0,
+      "statut": "awaiting_response",
+      "won": false,
+      "date_envoi": "2026-08-11T13:57:21-04:00",
+      "date_gagnee": null,
+      "delai_lead_soumission_heures": -0.04011138888888889,
+      "delai_soumission_won_heures": null,
+      "delai_lead_won_heures": null,
+      "source_lead": "Facebook"
+    },
+    {
+      "numero": "695",
+      "client": "Serge Bédard",
+      "vendeur": "Justin Blaquiere",
+      "montant": 2400.0,
+      "statut": "awaiting_response",
+      "won": false,
+      "date_envoi": "2026-08-25T12:29:03-04:00",
+      "date_gagnee": null,
+      "delai_lead_soumission_heures": 169.46790194444446,
+      "delai_soumission_won_heures": null,
+      "delai_lead_won_heures": null,
+      "source_lead": "Facebook"
+    },
+    {
       "numero": "693",
       "client": "Noureddine  Hannache",
       "vendeur": "Justin Blaquiere",
@@ -35595,20 +35623,6 @@
       "date_envoi": "2026-08-11T14:44:53-04:00",
       "date_gagnee": null,
       "delai_lead_soumission_heures": 332.64961277777775,
-      "delai_soumission_won_heures": null,
-      "delai_lead_won_heures": null,
-      "source_lead": "Facebook"
-    },
-    {
-      "numero": "656",
-      "client": "Claire",
-      "vendeur": "Justin Blaquiere",
-      "montant": 2200.0,
-      "statut": "awaiting_response",
-      "won": false,
-      "date_envoi": "2026-08-11T13:57:21-04:00",
-      "date_gagnee": null,
-      "delai_lead_soumission_heures": -0.04011138888888889,
       "delai_soumission_won_heures": null,
       "delai_lead_won_heures": null,
       "source_lead": "Facebook"
@@ -45121,9 +45135,9 @@
       "rappel_48h": false,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 3,
+      "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-24T19:44:13.434000-04:00"
+      "derniere_activite": "2026-08-25T12:31:21.012000-04:00"
     },
     {
       "id": "gx3sQbZwMdpZjgnSFDS9",

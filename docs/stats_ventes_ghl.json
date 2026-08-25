@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-25T15:41:43.845834-04:00",
+  "genere_le": "2026-08-25T16:36:07.495507-04:00",
   "periode": {
-    "debut": "2026-07-26T15:26:02.978990-04:00",
-    "fin": "2026-08-25T15:26:02.978990-04:00"
+    "debut": "2026-07-26T16:21:12.199575-04:00",
+    "fin": "2026-08-25T16:21:12.199575-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-26T15:26:02.978990-04:00",
-    "fin": "2026-07-26T15:26:02.978990-04:00"
+    "debut": "2026-06-26T16:21:12.199575-04:00",
+    "fin": "2026-07-26T16:21:12.199575-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -35,11 +35,11 @@
   "equipe": {
     "actuelle": {
       "nom": "Équipe",
-      "n_leads": 357,
-      "n_contactes_meme_jour": 336,
-      "pct_contact_meme_jour": 94.11764705882354,
+      "n_leads": 358,
+      "n_contactes_meme_jour": 337,
+      "pct_contact_meme_jour": 94.1340782122905,
       "n_visite_bookee": 150,
-      "pct_visite_bookee": 42.016806722689076,
+      "pct_visite_bookee": 41.899441340782126,
       "n_soumissions_ghl": 83,
       "n_soumissions_avec_rappel": 33,
       "pct_rappel_48h": 39.75903614457831,
@@ -117,11 +117,11 @@
       "nom": "Justin Blaquiere",
       "actuelle": {
         "nom": "Justin Blaquiere",
-        "n_leads": 282,
-        "n_contactes_meme_jour": 263,
-        "pct_contact_meme_jour": 93.26241134751773,
+        "n_leads": 283,
+        "n_contactes_meme_jour": 264,
+        "pct_contact_meme_jour": 93.28621908127208,
         "n_visite_bookee": 128,
-        "pct_visite_bookee": 45.39007092198582,
+        "pct_visite_bookee": 45.22968197879859,
         "n_soumissions_ghl": 69,
         "n_soumissions_avec_rappel": 25,
         "pct_rappel_48h": 36.231884057971016,
@@ -305,6 +305,26 @@
     }
   ],
   "opportunites_brutes": [
+    {
+      "id": "67eEMtrVe2SYSmqpzpJ9",
+      "nom": "Valentina",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-25T15:33:36.699000-04:00",
+      "updated_at": "2026-08-25T15:35:40.430000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-25T15:35:42.101000-04:00"
+    },
     {
       "id": "UFrFNiFSFpGfIcrbFXZj",
       "nom": "Mk Mk",
@@ -41973,6 +41993,26 @@
     }
   ],
   "pipeline_ouvert_brutes": [
+    {
+      "id": "67eEMtrVe2SYSmqpzpJ9",
+      "nom": "Valentina",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-25T15:33:36.699000-04:00",
+      "updated_at": "2026-08-25T15:35:40.430000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-25T15:35:42.101000-04:00"
+    },
     {
       "id": "UFrFNiFSFpGfIcrbFXZj",
       "nom": "Mk Mk",

@@ -23471,6 +23471,16 @@
       "n_emails_sortants": 0,
       "derniere_activite": "2026-08-25T13:40:18.684000-04:00",
       "activite_figee": false
+    },
+    "67eEMtrVe2SYSmqpzpJ9": {
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-25T15:35:42.101000-04:00",
+      "activite_figee": false
     }
   }
 }

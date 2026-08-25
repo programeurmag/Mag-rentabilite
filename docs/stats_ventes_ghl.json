@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-25T10:54:39.338400-04:00",
+  "genere_le": "2026-08-25T11:52:02.442865-04:00",
   "periode": {
-    "debut": "2026-07-26T10:38:18.841633-04:00",
-    "fin": "2026-08-25T10:38:18.841633-04:00"
+    "debut": "2026-07-26T11:36:27.456446-04:00",
+    "fin": "2026-08-25T11:36:27.456446-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-26T10:38:18.841633-04:00",
-    "fin": "2026-07-26T10:38:18.841633-04:00"
+    "debut": "2026-06-26T11:36:27.456446-04:00",
+    "fin": "2026-07-26T11:36:27.456446-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -74,14 +74,14 @@
     },
     "precedente": {
       "nom": "Équipe",
-      "n_leads": 302,
-      "n_contactes_meme_jour": 291,
-      "pct_contact_meme_jour": 96.35761589403974,
-      "n_visite_bookee": 80,
-      "pct_visite_bookee": 26.490066225165563,
-      "n_soumissions_ghl": 77,
+      "n_leads": 300,
+      "n_contactes_meme_jour": 289,
+      "pct_contact_meme_jour": 96.33333333333333,
+      "n_visite_bookee": 79,
+      "pct_visite_bookee": 26.333333333333332,
+      "n_soumissions_ghl": 76,
       "n_soumissions_avec_rappel": 5,
-      "pct_rappel_48h": 6.4935064935064934,
+      "pct_rappel_48h": 6.578947368421052,
       "n_soumissions_envoyees": 40,
       "n_won": 17,
       "pct_closing": 42.5,
@@ -156,11 +156,11 @@
       },
       "precedente": {
         "nom": "Justin Blaquiere",
-        "n_leads": 126,
-        "n_contactes_meme_jour": 119,
-        "pct_contact_meme_jour": 94.44444444444444,
+        "n_leads": 125,
+        "n_contactes_meme_jour": 118,
+        "pct_contact_meme_jour": 94.4,
         "n_visite_bookee": 37,
-        "pct_visite_bookee": 29.365079365079364,
+        "pct_visite_bookee": 29.6,
         "n_soumissions_ghl": 35,
         "n_soumissions_avec_rappel": 2,
         "pct_rappel_48h": 5.714285714285714,
@@ -212,12 +212,12 @@
       },
       "precedente": {
         "nom": "Jeremy Dagenais",
-        "n_leads": 89,
-        "n_contactes_meme_jour": 88,
-        "pct_contact_meme_jour": 98.87640449438203,
-        "n_visite_bookee": 15,
-        "pct_visite_bookee": 16.853932584269664,
-        "n_soumissions_ghl": 14,
+        "n_leads": 88,
+        "n_contactes_meme_jour": 87,
+        "pct_contact_meme_jour": 98.86363636363636,
+        "n_visite_bookee": 14,
+        "pct_visite_bookee": 15.909090909090908,
+        "n_soumissions_ghl": 13,
         "n_soumissions_avec_rappel": 0,
         "pct_rappel_48h": 0.0,
         "n_soumissions_envoyees": 0,

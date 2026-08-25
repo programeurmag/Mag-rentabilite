@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-24T19:32:14.130815-04:00",
+  "genere_le": "2026-08-25T07:37:47.255947-04:00",
   "periode": {
-    "debut": "2026-07-25T19:17:12.584374-04:00",
-    "fin": "2026-08-24T19:17:12.584374-04:00"
+    "debut": "2026-07-26T07:21:27.563466-04:00",
+    "fin": "2026-08-25T07:21:27.563466-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-25T19:17:12.584374-04:00",
-    "fin": "2026-07-25T19:17:12.584374-04:00"
+    "debut": "2026-06-26T07:21:27.563466-04:00",
+    "fin": "2026-07-26T07:21:27.563466-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -35,11 +35,11 @@
   "equipe": {
     "actuelle": {
       "nom": "Équipe",
-      "n_leads": 356,
-      "n_contactes_meme_jour": 337,
-      "pct_contact_meme_jour": 94.66292134831461,
+      "n_leads": 355,
+      "n_contactes_meme_jour": 336,
+      "pct_contact_meme_jour": 94.64788732394366,
       "n_visite_bookee": 146,
-      "pct_visite_bookee": 41.01123595505618,
+      "pct_visite_bookee": 41.12676056338028,
       "n_soumissions_ghl": 80,
       "n_soumissions_avec_rappel": 32,
       "pct_rappel_48h": 40.0,
@@ -74,11 +74,11 @@
     },
     "precedente": {
       "nom": "Équipe",
-      "n_leads": 305,
-      "n_contactes_meme_jour": 294,
-      "pct_contact_meme_jour": 96.39344262295081,
+      "n_leads": 301,
+      "n_contactes_meme_jour": 290,
+      "pct_contact_meme_jour": 96.34551495016612,
       "n_visite_bookee": 80,
-      "pct_visite_bookee": 26.229508196721312,
+      "pct_visite_bookee": 26.578073089700997,
       "n_soumissions_ghl": 77,
       "n_soumissions_avec_rappel": 5,
       "pct_rappel_48h": 6.4935064935064934,
@@ -117,11 +117,11 @@
       "nom": "Justin Blaquiere",
       "actuelle": {
         "nom": "Justin Blaquiere",
-        "n_leads": 277,
-        "n_contactes_meme_jour": 260,
-        "pct_contact_meme_jour": 93.86281588447653,
+        "n_leads": 278,
+        "n_contactes_meme_jour": 261,
+        "pct_contact_meme_jour": 93.88489208633094,
         "n_visite_bookee": 124,
-        "pct_visite_bookee": 44.765342960288805,
+        "pct_visite_bookee": 44.60431654676259,
         "n_soumissions_ghl": 66,
         "n_soumissions_avec_rappel": 24,
         "pct_rappel_48h": 36.36363636363637,
@@ -156,11 +156,11 @@
       },
       "precedente": {
         "nom": "Justin Blaquiere",
-        "n_leads": 130,
-        "n_contactes_meme_jour": 123,
-        "pct_contact_meme_jour": 94.61538461538461,
+        "n_leads": 126,
+        "n_contactes_meme_jour": 119,
+        "pct_contact_meme_jour": 94.44444444444444,
         "n_visite_bookee": 37,
-        "pct_visite_bookee": 28.46153846153846,
+        "pct_visite_bookee": 29.365079365079364,
         "n_soumissions_ghl": 35,
         "n_soumissions_avec_rappel": 2,
         "pct_rappel_48h": 5.714285714285714,
@@ -212,11 +212,11 @@
       },
       "precedente": {
         "nom": "Jeremy Dagenais",
-        "n_leads": 92,
-        "n_contactes_meme_jour": 91,
-        "pct_contact_meme_jour": 98.91304347826087,
+        "n_leads": 90,
+        "n_contactes_meme_jour": 89,
+        "pct_contact_meme_jour": 98.88888888888889,
         "n_visite_bookee": 15,
-        "pct_visite_bookee": 16.304347826086957,
+        "pct_visite_bookee": 16.666666666666668,
         "n_soumissions_ghl": 14,
         "n_soumissions_avec_rappel": 0,
         "pct_rappel_48h": 0.0,
@@ -245,11 +245,11 @@
       "nom": "Justin Boivin",
       "actuelle": {
         "nom": "Justin Boivin",
-        "n_leads": 78,
-        "n_contactes_meme_jour": 76,
-        "pct_contact_meme_jour": 97.43589743589743,
+        "n_leads": 76,
+        "n_contactes_meme_jour": 74,
+        "pct_contact_meme_jour": 97.36842105263158,
         "n_visite_bookee": 21,
-        "pct_visite_bookee": 26.923076923076923,
+        "pct_visite_bookee": 27.63157894736842,
         "n_soumissions_ghl": 13,
         "n_soumissions_avec_rappel": 7,
         "pct_rappel_48h": 53.84615384615385,
@@ -272,11 +272,11 @@
       },
       "precedente": {
         "nom": "Justin Boivin",
-        "n_leads": 83,
-        "n_contactes_meme_jour": 80,
-        "pct_contact_meme_jour": 96.3855421686747,
+        "n_leads": 85,
+        "n_contactes_meme_jour": 82,
+        "pct_contact_meme_jour": 96.47058823529412,
         "n_visite_bookee": 28,
-        "pct_visite_bookee": 33.734939759036145,
+        "pct_visite_bookee": 32.94117647058823,
         "n_soumissions_ghl": 28,
         "n_soumissions_avec_rappel": 3,
         "pct_rappel_48h": 10.714285714285714,
@@ -305,6 +305,26 @@
     }
   ],
   "opportunites_brutes": [
+    {
+      "id": "Oe6eHqjjuHBAJL1UchCR",
+      "nom": "Riaaaa",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-24T21:32:47.134000-04:00",
+      "updated_at": "2026-08-24T21:34:50.775000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-24T21:34:52.616000-04:00"
+    },
     {
       "id": "VB20TrBdfZF3tedWAsrl",
       "nom": "Glenda Torres",
@@ -28161,9 +28181,9 @@
       "rappel_48h": false,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 1,
+      "n_sms_sortants": 3,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-19T16:22:26.085000-04:00"
+      "derniere_activite": "2026-08-24T19:44:13.434000-04:00"
     },
     {
       "id": "gx3sQbZwMdpZjgnSFDS9",
@@ -41806,6 +41826,26 @@
   ],
   "pipeline_ouvert_brutes": [
     {
+      "id": "Oe6eHqjjuHBAJL1UchCR",
+      "nom": "Riaaaa",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-24T21:32:47.134000-04:00",
+      "updated_at": "2026-08-24T21:34:50.775000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-24T21:34:52.616000-04:00"
+    },
+    {
       "id": "VB20TrBdfZF3tedWAsrl",
       "nom": "Glenda Torres",
       "vendeur": "Justin Blaquiere",
@@ -45041,9 +45081,9 @@
       "rappel_48h": false,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 2,
+      "n_sms_sortants": 3,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-24T19:22:44.688000-04:00"
+      "derniere_activite": "2026-08-24T19:44:13.434000-04:00"
     },
     {
       "id": "gx3sQbZwMdpZjgnSFDS9",

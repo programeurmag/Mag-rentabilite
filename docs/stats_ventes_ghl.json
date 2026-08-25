@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-25T16:36:07.495507-04:00",
+  "genere_le": "2026-08-25T17:33:18.768966-04:00",
   "periode": {
-    "debut": "2026-07-26T16:21:12.199575-04:00",
-    "fin": "2026-08-25T16:21:12.199575-04:00"
+    "debut": "2026-07-26T17:20:50.328090-04:00",
+    "fin": "2026-08-25T17:20:50.328090-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-26T16:21:12.199575-04:00",
-    "fin": "2026-07-26T16:21:12.199575-04:00"
+    "debut": "2026-06-26T17:20:50.328090-04:00",
+    "fin": "2026-07-26T17:20:50.328090-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -35,17 +35,17 @@
   "equipe": {
     "actuelle": {
       "nom": "Équipe",
-      "n_leads": 358,
-      "n_contactes_meme_jour": 337,
-      "pct_contact_meme_jour": 94.1340782122905,
+      "n_leads": 357,
+      "n_contactes_meme_jour": 336,
+      "pct_contact_meme_jour": 94.11764705882354,
       "n_visite_bookee": 150,
-      "pct_visite_bookee": 41.899441340782126,
+      "pct_visite_bookee": 42.016806722689076,
       "n_soumissions_ghl": 83,
       "n_soumissions_avec_rappel": 33,
       "pct_rappel_48h": 39.75903614457831,
-      "n_soumissions_envoyees": 71,
+      "n_soumissions_envoyees": 72,
       "n_won": 18,
-      "pct_closing": 25.35211267605634,
+      "pct_closing": 25.0,
       "valeur_moyenne_won": 2606.6666666666665,
       "leads_non_contactes": [
         "Mario",
@@ -74,11 +74,11 @@
     },
     "precedente": {
       "nom": "Équipe",
-      "n_leads": 300,
-      "n_contactes_meme_jour": 289,
-      "pct_contact_meme_jour": 96.33333333333333,
+      "n_leads": 301,
+      "n_contactes_meme_jour": 290,
+      "pct_contact_meme_jour": 96.34551495016612,
       "n_visite_bookee": 79,
-      "pct_visite_bookee": 26.333333333333332,
+      "pct_visite_bookee": 26.245847176079735,
       "n_soumissions_ghl": 76,
       "n_soumissions_avec_rappel": 5,
       "pct_rappel_48h": 6.578947368421052,
@@ -117,17 +117,17 @@
       "nom": "Justin Blaquiere",
       "actuelle": {
         "nom": "Justin Blaquiere",
-        "n_leads": 283,
-        "n_contactes_meme_jour": 264,
-        "pct_contact_meme_jour": 93.28621908127208,
+        "n_leads": 282,
+        "n_contactes_meme_jour": 263,
+        "pct_contact_meme_jour": 93.26241134751773,
         "n_visite_bookee": 128,
-        "pct_visite_bookee": 45.22968197879859,
+        "pct_visite_bookee": 45.39007092198582,
         "n_soumissions_ghl": 69,
         "n_soumissions_avec_rappel": 25,
         "pct_rappel_48h": 36.231884057971016,
-        "n_soumissions_envoyees": 55,
+        "n_soumissions_envoyees": 56,
         "n_won": 11,
-        "pct_closing": 20.0,
+        "pct_closing": 19.642857142857142,
         "valeur_moyenne_won": 2550.0,
         "leads_non_contactes": [
           "Mario",
@@ -156,11 +156,11 @@
       },
       "precedente": {
         "nom": "Justin Blaquiere",
-        "n_leads": 126,
-        "n_contactes_meme_jour": 119,
-        "pct_contact_meme_jour": 94.44444444444444,
+        "n_leads": 127,
+        "n_contactes_meme_jour": 120,
+        "pct_contact_meme_jour": 94.48818897637796,
         "n_visite_bookee": 37,
-        "pct_visite_bookee": 29.365079365079364,
+        "pct_visite_bookee": 29.133858267716537,
         "n_soumissions_ghl": 35,
         "n_soumissions_avec_rappel": 2,
         "pct_rappel_48h": 5.714285714285714,
@@ -35187,6 +35187,20 @@
     }
   ],
   "soumissions_brutes": [
+    {
+      "numero": "697",
+      "client": "John",
+      "vendeur": "Justin Blaquiere",
+      "montant": 9950.0,
+      "statut": "awaiting_response",
+      "won": false,
+      "date_envoi": "2026-08-25T16:57:14-04:00",
+      "date_gagnee": null,
+      "delai_lead_soumission_heures": null,
+      "delai_soumission_won_heures": null,
+      "delai_lead_won_heures": null,
+      "source_lead": null
+    },
     {
       "numero": "695",
       "client": "Serge Bédard",

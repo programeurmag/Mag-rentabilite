@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-08-25T08:51:01.841763-04:00",
+  "genere_le": "2026-08-25T10:00:42.865109-04:00",
   "periode": {
-    "debut": "2026-07-26T08:35:38.494683-04:00",
-    "fin": "2026-08-25T08:35:38.494683-04:00"
+    "debut": "2026-07-26T09:43:26.909316-04:00",
+    "fin": "2026-08-25T09:43:26.909316-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-06-26T08:35:38.494683-04:00",
-    "fin": "2026-07-26T08:35:38.494683-04:00"
+    "debut": "2026-06-26T09:43:26.909316-04:00",
+    "fin": "2026-07-26T09:43:26.909316-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -35,11 +35,11 @@
   "equipe": {
     "actuelle": {
       "nom": "Équipe",
-      "n_leads": 354,
-      "n_contactes_meme_jour": 335,
-      "pct_contact_meme_jour": 94.63276836158192,
+      "n_leads": 355,
+      "n_contactes_meme_jour": 336,
+      "pct_contact_meme_jour": 94.64788732394366,
       "n_visite_bookee": 146,
-      "pct_visite_bookee": 41.24293785310734,
+      "pct_visite_bookee": 41.12676056338028,
       "n_soumissions_ghl": 80,
       "n_soumissions_avec_rappel": 32,
       "pct_rappel_48h": 40.0,
@@ -117,11 +117,11 @@
       "nom": "Justin Blaquiere",
       "actuelle": {
         "nom": "Justin Blaquiere",
-        "n_leads": 277,
-        "n_contactes_meme_jour": 260,
-        "pct_contact_meme_jour": 93.86281588447653,
+        "n_leads": 278,
+        "n_contactes_meme_jour": 261,
+        "pct_contact_meme_jour": 93.88489208633094,
         "n_visite_bookee": 124,
-        "pct_visite_bookee": 44.765342960288805,
+        "pct_visite_bookee": 44.60431654676259,
         "n_soumissions_ghl": 66,
         "n_soumissions_avec_rappel": 24,
         "pct_rappel_48h": 36.36363636363637,
@@ -305,6 +305,26 @@
     }
   ],
   "opportunites_brutes": [
+    {
+      "id": "XQqhNpEC8LiJ2a2g2gkS",
+      "nom": "Claude Desormeaux",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-25T09:02:33.667000-04:00",
+      "updated_at": "2026-08-25T09:10:07.294000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-25T09:10:10.575000-04:00"
+    },
     {
       "id": "Oe6eHqjjuHBAJL1UchCR",
       "nom": "Riaaaa",
@@ -41825,6 +41845,26 @@
     }
   ],
   "pipeline_ouvert_brutes": [
+    {
+      "id": "XQqhNpEC8LiJ2a2g2gkS",
+      "nom": "Claude Desormeaux",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-08-25T09:02:33.667000-04:00",
+      "updated_at": "2026-08-25T09:10:07.294000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-25T09:10:10.575000-04:00"
+    },
     {
       "id": "Oe6eHqjjuHBAJL1UchCR",
       "nom": "Riaaaa",

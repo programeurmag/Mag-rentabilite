@@ -23402,6 +23402,16 @@
       "n_emails_sortants": 0,
       "derniere_activite": "2026-08-24T21:34:52.616000-04:00",
       "activite_figee": false
+    },
+    "XQqhNpEC8LiJ2a2g2gkS": {
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-25T09:10:10.575000-04:00",
+      "activite_figee": false
     }
   }
 }

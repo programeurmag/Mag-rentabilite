@@ -23323,7 +23323,7 @@
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
       "rappel_48h": false,
-      "rappel_48h_fige": false,
+      "rappel_48h_fige": true,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
       "n_sms_sortants": 1,
@@ -23336,7 +23336,7 @@
       "contacte_meme_jour": true,
       "contacte_meme_jour_fige": true,
       "rappel_48h": false,
-      "rappel_48h_fige": false,
+      "rappel_48h_fige": true,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
       "n_sms_sortants": 1,
@@ -23456,7 +23456,7 @@
       "n_appels_repondus": 0,
       "n_sms_sortants": 0,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-25T14:11:04.198000-04:00",
+      "derniere_activite": "2026-08-26T14:25:19.021000-04:00",
       "activite_figee": false
     },
     "mebd4cKwG4jSoLHKQHWU": {

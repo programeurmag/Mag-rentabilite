@@ -23547,6 +23547,26 @@
       "n_emails_sortants": 0,
       "derniere_activite": "2026-08-26T16:21:06.270000-04:00",
       "activite_figee": false
+    },
+    "kqpILb620f8Zz4HEsR0m": {
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-26T21:26:49.794000-04:00",
+      "activite_figee": false
+    },
+    "o5AFbobdzZhNgSN9P3Kh": {
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-26T19:59:38.538000-04:00",
+      "activite_figee": false
     }
   }
 }

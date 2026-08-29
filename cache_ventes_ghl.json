@@ -6834,8 +6834,8 @@
       "n_appels_repondus": 3,
       "n_sms_sortants": 12,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-28T13:49:10.154000-04:00",
-      "activite_figee": false
+      "derniere_activite": "2026-08-28T18:47:24.623000-04:00",
+      "activite_figee": true
     },
     "YBlhaPT1nsi612HB1sa6": {
       "date_entree_closing": "2026-07-29T20:26:47.323Z",
@@ -23815,6 +23815,16 @@
       "n_sms_sortants": 2,
       "n_emails_sortants": 0,
       "derniere_activite": "2026-08-28T12:27:45.715000-04:00",
+      "activite_figee": false
+    },
+    "ph86lNvDRNzSkATfoQtd": {
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-28T17:37:11.704000-04:00",
       "activite_figee": false
     }
   }

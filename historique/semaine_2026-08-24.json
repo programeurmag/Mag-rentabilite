@@ -1,0 +1,596 @@
+{
+  "debut": "2026-08-24",
+  "fin": "2026-08-30",
+  "revenu_ferme_total": 15756.74,
+  "heures_fermes_total": 91.68,
+  "dollars_heure_global": 171.88,
+  "cout_mo_ferme_total": 2500.87,
+  "pct_main_doeuvre": 0.1587,
+  "heures_punchees_total": 193.85,
+  "heures_non_attribuees_total": 81.51,
+  "jobs_fermes": [
+    {
+      "numero": 298,
+      "client": "Daniel Lariviere",
+      "ville": "Longueuil",
+      "etape": "Redressement",
+      "date_debut": "2026-08-25",
+      "date_fin": "2026-08-26",
+      "revenu": 3300.0,
+      "heures": 33.47,
+      "cout_mo": 917.11,
+      "dollars_heure": 98.6,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 2382.89,
+      "marge": 2382.89,
+      "marge_pct": 0.7221,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 227,
+      "client": "Martine Lenclud",
+      "ville": "Montréal",
+      "etape": "Nettoyage",
+      "date_debut": "2026-07-17",
+      "date_fin": "2026-08-29",
+      "revenu": 2200.0,
+      "heures": 15.14,
+      "cout_mo": 408.77,
+      "dollars_heure": 145.32,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 1791.23,
+      "marge": 1791.23,
+      "marge_pct": 0.8142,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 296,
+      "client": "Metal Longueuil",
+      "ville": "Longueuil",
+      "etape": "Nettoyage",
+      "date_debut": "2026-08-19",
+      "date_fin": "2026-08-25",
+      "revenu": 3000.0,
+      "heures": 19.95,
+      "cout_mo": 550.94,
+      "dollars_heure": 150.34,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 2449.06,
+      "marge": 2449.06,
+      "marge_pct": 0.8164,
+      "source_heures": "Ancienne logique (Form manquant)"
+    },
+    {
+      "numero": 301,
+      "client": "Carole Leclerc",
+      "ville": "Montréal-Est",
+      "etape": "Redressement",
+      "date_debut": "2026-08-26",
+      "date_fin": "2026-08-28",
+      "revenu": 2250.0,
+      "heures": 10.17,
+      "cout_mo": 274.5,
+      "dollars_heure": 221.31,
+      "materiaux": 424.5,
+      "overhead": 179.65,
+      "marge_avant_overhead": 1551.0,
+      "marge": 1371.35,
+      "marge_pct": 0.6095,
+      "source_heures": "Rapport chantier"
+    },
+    {
+      "numero": 297,
+      "client": "Filipe",
+      "ville": "Laval",
+      "etape": "Autre",
+      "date_debut": "2026-08-27",
+      "date_fin": "2026-08-28",
+      "revenu": 1844.93,
+      "heures": 5.0,
+      "cout_mo": 135.0,
+      "dollars_heure": 368.99,
+      "materiaux": 112.0,
+      "overhead": 88.35,
+      "marge_avant_overhead": 1597.93,
+      "marge": 1509.58,
+      "marge_pct": 0.8182,
+      "source_heures": "Rapport chantier"
+    },
+    {
+      "numero": 310,
+      "client": "Theresa Pajares",
+      "ville": "Montréal",
+      "etape": "Nettoyage",
+      "date_debut": "2026-08-29",
+      "date_fin": "2026-08-29",
+      "revenu": 3161.81,
+      "heures": 7.95,
+      "cout_mo": 214.56,
+      "dollars_heure": 397.88,
+      "materiaux": 0.0,
+      "overhead": 0.0,
+      "marge_avant_overhead": 2947.25,
+      "marge": 2947.25,
+      "marge_pct": 0.9321,
+      "source_heures": "Ancienne logique (Form manquant)"
+    }
+  ],
+  "jobs_en_cours": [],
+  "alertes": [
+    {
+      "type": "timer_oublie",
+      "message": "⚠ Kevin Bierry, 29 Aug — job #310"
+    },
+    {
+      "type": "timer_oublie",
+      "message": "⚠ Theo Hennebert, 28 Aug — General"
+    },
+    {
+      "type": "timer_oublie",
+      "message": "⚠ Matis Rodrigue, 29 Aug — General"
+    },
+    {
+      "type": "zero_punch_visite",
+      "message": "Gabriel Paquet : 0% de punches sur visites cette semaine (44.6 h, toutes en General) — problème d'assignation ou de téléphone?"
+    },
+    {
+      "type": "non_attribue_eleve",
+      "message": "42% des heures de la semaine ne sont pas attribuées à un job (81.5 h sur 193.8 h)"
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 2 : no de job \"201\" introuvable dans Jobber, client/adresse indiqué : \"312 Rue de Normandie\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 3 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"9201 Rue Lionel-Groulx Saint-Léonard Montréal, Québec H1R 3W3\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 4 : no de job \"226\" introuvable dans Jobber, client/adresse indiqué : \"890 Rue Etchemin, Lachenaie, Terrebonne, Québec, Canada\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 5 : no de job \"96\" introuvable dans Jobber, client/adresse indiqué : \"2199 Rue principale Ste-Julie\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 6 : no de job \"131\" introuvable dans Jobber, client/adresse indiqué : \"8976 rue Descartes\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 7 : no de job \"231\" introuvable dans Jobber, client/adresse indiqué : \"130, 38e avenue, st-Eustache\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 8 : no de job \"259\" introuvable dans Jobber, client/adresse indiqué : \"119 Croissant du Cheneau, Terrebonne, QC, Canada\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 9 : no de job \"257\" introuvable dans Jobber, client/adresse indiqué : \"5679 15e Avenue, Rosemont - La Petite-Patrie, Montréal, Québec, Canada\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 10 : no de job \"475\" introuvable dans Jobber, client/adresse indiqué : \"36 Lakeshore\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 11 : no de job \"240\" introuvable dans Jobber, client/adresse indiqué : \"1856 Roosevelt\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 12 : no de job \"238\" introuvable dans Jobber, client/adresse indiqué : \"368 Rue Auriol Laval, Québec H7E 4J6\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 13 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"4 rue Roy, Mercier\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 14 : no de job \"264\" introuvable dans Jobber, client/adresse indiqué : \"1000 Boulevard Chomedey, Chomedey, Laval, Québec, Canada\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 15 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"355 rue du cresson\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 16 : no de job \"209\" introuvable dans Jobber, client/adresse indiqué : \"6000 Rue Pressault, Laval, Québec, Canada\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 17 : no de job \"284\" introuvable dans Jobber, client/adresse indiqué : \"3551 Rue de Budapest, Laval, Québec, Canada\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 18 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"621 Joseph Vaillancourt\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 19 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"621 Joseph Vaillancourt\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 20 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"1467 La Fontaine\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 21 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"5659 Esplanade\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 22 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"5659 l’esplanade\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 23 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"38 eme avenue St Eustache\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 24 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"130 38eme avenue\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 25 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"3361 Pie 9 Laval\" — suggestion : job #297 (Filipe Laval) ?"
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 26 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"621 Joseph vaillancourt\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 27 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"Sté Anne des plaines\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 28 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"35 Greystone\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 29 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"10850 St Laurent\""
+    },
+    {
+      "type": "chantier_job_introuvable",
+      "message": "Rapport de chantier ligne 30 : no de job \"(vide)\" introuvable dans Jobber, client/adresse indiqué : \"8365 place Fonteneau\""
+    },
+    {
+      "type": "chantier_nom_non_reconnu",
+      "message": "\"Hansley\" (rapporté présent, job #297) ne matche aucun nom connu (taux_horaires / employes_hors_jobber / alias_noms_form) — coûté au taux par défaut de 23 $/h en attendant"
+    },
+    {
+      "type": "chantier_ecart_heures",
+      "message": "Job #297, 28 Aug : écart heures Form (5.0 h) vs punchs Jobber (0.8 h) = 84%"
+    },
+    {
+      "type": "chantier_ecart_heures",
+      "message": "Job #301, 28 Aug : écart heures Form (10.2 h) vs punchs Jobber (4.8 h) = 53%"
+    },
+    {
+      "type": "chantier_rapport_manquant",
+      "message": "camion non identifié : 4 job(s) fermé(s) cette semaine sans rapport de chantier (#227, #296, #298, #310)"
+    }
+  ],
+  "attribution": [
+    {
+      "job_id": 297,
+      "date": "2026-08-28",
+      "employe": "Matis Rodrigue",
+      "truck": "Matis Rodrigue",
+      "heures": 2.5,
+      "cout": 70.31,
+      "revenu_genere": 922.46,
+      "source": "Rapport chantier (Form)"
+    },
+    {
+      "job_id": 297,
+      "date": "2026-08-28",
+      "employe": "Hansley",
+      "truck": "Matis Rodrigue",
+      "heures": 2.5,
+      "cout": 64.69,
+      "revenu_genere": 922.46,
+      "source": "Rapport chantier (Form)"
+    },
+    {
+      "job_id": 301,
+      "date": "2026-08-28",
+      "employe": "Matis Rodrigue",
+      "truck": "Matis Rodrigue",
+      "heures": 5.0833,
+      "cout": 142.97,
+      "revenu_genere": 1125.0,
+      "source": "Rapport chantier (Form)"
+    },
+    {
+      "job_id": 301,
+      "date": "2026-08-28",
+      "employe": "Hansley",
+      "truck": "Matis Rodrigue",
+      "heures": 5.0833,
+      "cout": 131.53,
+      "revenu_genere": 1125.0,
+      "source": "Rapport chantier (Form)"
+    },
+    {
+      "job_id": 296,
+      "date": "2026-08-24",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 10.8072,
+      "cout": 303.95,
+      "revenu_genere": 1624.75,
+      "source": "Réparti /1 jobs"
+    },
+    {
+      "job_id": 227,
+      "date": "2026-08-24",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 4.5843,
+      "cout": 123.78,
+      "revenu_genere": 666.16,
+      "source": "Réparti /2 jobs"
+    },
+    {
+      "job_id": 296,
+      "date": "2026-08-24",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 6.2513,
+      "cout": 168.78,
+      "revenu_genere": 939.81,
+      "source": "Réparti /2 jobs"
+    },
+    {
+      "job_id": 227,
+      "date": "2026-08-25",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 1.772,
+      "cout": 47.84,
+      "revenu_genere": 257.5,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 298,
+      "date": "2026-08-25",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 2.658,
+      "cout": 71.77,
+      "revenu_genere": 262.09,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 296,
+      "date": "2026-08-25",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 2.4164,
+      "cout": 65.24,
+      "revenu_genere": 363.28,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 298,
+      "date": "2026-08-25",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 4.3192,
+      "cout": 116.62,
+      "revenu_genere": 425.88,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 227,
+      "date": "2026-08-25",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.352,
+      "cout": 9.5,
+      "revenu_genere": 51.15,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 298,
+      "date": "2026-08-25",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.528,
+      "cout": 14.26,
+      "revenu_genere": 52.06,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 296,
+      "date": "2026-08-25",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.48,
+      "cout": 12.96,
+      "revenu_genere": 72.16,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 298,
+      "date": "2026-08-26",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 2.0728,
+      "cout": 58.3,
+      "revenu_genere": 204.39,
+      "source": "Réparti /2 jobs"
+    },
+    {
+      "job_id": 298,
+      "date": "2026-08-26",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 2.9114,
+      "cout": 78.61,
+      "revenu_genere": 287.07,
+      "source": "Réparti /1 jobs"
+    },
+    {
+      "job_id": 227,
+      "date": "2026-08-26",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.2992,
+      "cout": 8.08,
+      "revenu_genere": 43.49,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 298,
+      "date": "2026-08-26",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.4489,
+      "cout": 12.12,
+      "revenu_genere": 44.26,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 298,
+      "date": "2026-08-26",
+      "employe": "Theo Hennebert",
+      "truck": "",
+      "heures": 10.6183,
+      "cout": 286.7,
+      "revenu_genere": 1047.0,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 298,
+      "date": "2026-08-26",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 9.7006,
+      "cout": 272.83,
+      "revenu_genere": 956.5,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 298,
+      "date": "2026-08-26",
+      "employe": "Matis Rodrigue",
+      "truck": "",
+      "heures": 0.2104,
+      "cout": 5.92,
+      "revenu_genere": 20.75,
+      "source": "Réparti /2 jobs"
+    },
+    {
+      "job_id": 227,
+      "date": "2026-08-27",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 1.2232,
+      "cout": 33.03,
+      "revenu_genere": 177.75,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 227,
+      "date": "2026-08-28",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 0.3193,
+      "cout": 8.62,
+      "revenu_genere": 46.4,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 300,
+      "date": "2026-08-28",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 5.0247,
+      "cout": 135.67,
+      "revenu_genere": 0.0,
+      "source": "Punch direct"
+    },
+    {
+      "job_id": 227,
+      "date": "2026-08-28",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 1.0601,
+      "cout": 28.62,
+      "revenu_genere": 154.05,
+      "source": "Réparti /3 jobs"
+    },
+    {
+      "job_id": 310,
+      "date": "2026-08-29",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 7.9467,
+      "cout": 214.56,
+      "revenu_genere": 3161.81,
+      "source": "Réparti /2 jobs"
+    },
+    {
+      "job_id": 227,
+      "date": "2026-08-29",
+      "employe": "Kevin Bierry",
+      "truck": "",
+      "heures": 5.5294,
+      "cout": 149.29,
+      "revenu_genere": 803.5,
+      "source": "Réparti /2 jobs"
+    }
+  ],
+  "quotidien": [
+    {
+      "date": "2026-08-28",
+      "truck": "Matis Rodrigue",
+      "revenu_complete": 4094.93,
+      "heures": 15.17,
+      "cout_mo": 409.5,
+      "cout_materiaux": 536.5,
+      "overhead": 268.0,
+      "marge": 2880.93
+    }
+  ],
+  "ventes": [
+    {
+      "semaine": "2026-W35",
+      "date_lundi_semaine": "2026-08-24",
+      "vendeur": "MAG Lavage À Pression",
+      "soumissions_envoyees": 21,
+      "montant_envoye": 98907.27,
+      "soumissions_approuvees": 6,
+      "montant_approuve": 20063.15,
+      "taux_closing_cohorte": 0.2973
+    },
+    {
+      "semaine": "2026-W35",
+      "date_lundi_semaine": "2026-08-24",
+      "vendeur": "Justin Boivin",
+      "soumissions_envoyees": 0,
+      "montant_envoye": 0,
+      "soumissions_approuvees": 1,
+      "montant_approuve": 1149.75,
+      "taux_closing_cohorte": 0.3704
+    },
+    {
+      "semaine": "2026-W35",
+      "date_lundi_semaine": "2026-08-24",
+      "vendeur": "Jeremy Dagenais",
+      "soumissions_envoyees": 0,
+      "montant_envoye": 0,
+      "soumissions_approuvees": 0,
+      "montant_approuve": 0,
+      "taux_closing_cohorte": null
+    }
+  ],
+  "projection_ventes": {
+    "projection_fin_mois": 75763.29,
+    "mois_precedent_total": 50393.28
+  }
+}

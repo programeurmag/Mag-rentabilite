@@ -24140,6 +24140,16 @@
       "n_emails_sortants": 0,
       "derniere_activite": "2026-08-31T15:36:44.651000-04:00",
       "activite_figee": false
+    },
+    "SM7qgQXZcs6A2F3vZdyW": {
+      "contacte_meme_jour": true,
+      "contacte_meme_jour_fige": false,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 1,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-08-31T21:24:53.902000-04:00",
+      "activite_figee": false
     }
   }
 }

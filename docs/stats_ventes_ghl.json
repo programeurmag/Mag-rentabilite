@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-09-01T18:35:29.439576-04:00",
+  "genere_le": "2026-09-01T21:01:18.820313-04:00",
   "periode": {
-    "debut": "2026-08-02T18:18:06.085560-04:00",
-    "fin": "2026-09-01T18:18:06.085560-04:00"
+    "debut": "2026-08-02T20:45:30.176058-04:00",
+    "fin": "2026-09-01T20:45:30.176058-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-07-03T18:18:06.085560-04:00",
-    "fin": "2026-08-02T18:18:06.085560-04:00"
+    "debut": "2026-07-03T20:45:30.176058-04:00",
+    "fin": "2026-08-02T20:45:30.176058-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -35,14 +35,14 @@
   "equipe": {
     "actuelle": {
       "nom": "Équipe",
-      "n_leads": 346,
-      "n_contactes_meme_jour": 322,
-      "pct_contact_meme_jour": 93.0635838150289,
-      "n_visite_bookee": 152,
-      "pct_visite_bookee": 43.93063583815029,
+      "n_leads": 344,
+      "n_contactes_meme_jour": 320,
+      "pct_contact_meme_jour": 93.02325581395348,
+      "n_visite_bookee": 151,
+      "pct_visite_bookee": 43.895348837209305,
       "n_soumissions_ghl": 85,
-      "n_soumissions_avec_rappel": 30,
-      "pct_rappel_48h": 35.294117647058826,
+      "n_soumissions_avec_rappel": 31,
+      "pct_rappel_48h": 36.470588235294116,
       "n_soumissions_envoyees": 76,
       "n_won": 21,
       "pct_closing": 27.63157894736842,
@@ -60,7 +60,6 @@
         "Sathvik Pai ʕ•́ᴥ•̀ʔっ"
       ],
       "soumissions_sans_rappel": [
-        "Carole Gaudet",
         "Marc Lavoie",
         "Joseph Conte",
         "Myriam",
@@ -69,16 +68,17 @@
         "Mk Mk",
         "Mélanie Fauteux",
         "Vincent Garneau",
-        "FréDéRic MéGret"
+        "FréDéRic MéGret",
+        "Barry"
       ]
     },
     "precedente": {
       "nom": "Équipe",
-      "n_leads": 321,
-      "n_contactes_meme_jour": 310,
-      "pct_contact_meme_jour": 96.57320872274143,
-      "n_visite_bookee": 86,
-      "pct_visite_bookee": 26.79127725856698,
+      "n_leads": 322,
+      "n_contactes_meme_jour": 311,
+      "pct_contact_meme_jour": 96.58385093167702,
+      "n_visite_bookee": 87,
+      "pct_visite_bookee": 27.018633540372672,
       "n_soumissions_ghl": 73,
       "n_soumissions_avec_rappel": 10,
       "pct_rappel_48h": 13.698630136986301,
@@ -117,14 +117,14 @@
       "nom": "Justin Blaquiere",
       "actuelle": {
         "nom": "Justin Blaquiere",
-        "n_leads": 309,
-        "n_contactes_meme_jour": 287,
-        "pct_contact_meme_jour": 92.88025889967638,
-        "n_visite_bookee": 136,
-        "pct_visite_bookee": 44.01294498381877,
+        "n_leads": 308,
+        "n_contactes_meme_jour": 286,
+        "pct_contact_meme_jour": 92.85714285714286,
+        "n_visite_bookee": 135,
+        "pct_visite_bookee": 43.83116883116883,
         "n_soumissions_ghl": 74,
-        "n_soumissions_avec_rappel": 24,
-        "pct_rappel_48h": 32.432432432432435,
+        "n_soumissions_avec_rappel": 25,
+        "pct_rappel_48h": 33.78378378378378,
         "n_soumissions_envoyees": 66,
         "n_won": 16,
         "pct_closing": 24.242424242424242,
@@ -142,7 +142,6 @@
           "Sathvik Pai ʕ•́ᴥ•̀ʔっ"
         ],
         "soumissions_sans_rappel": [
-          "Carole Gaudet",
           "Marc Lavoie",
           "Joseph Conte",
           "Myriam",
@@ -151,16 +150,17 @@
           "Mk Mk",
           "Mélanie Fauteux",
           "Vincent Garneau",
-          "FréDéRic MéGret"
+          "FréDéRic MéGret",
+          "Barry"
         ]
       },
       "precedente": {
         "nom": "Justin Blaquiere",
-        "n_leads": 154,
-        "n_contactes_meme_jour": 147,
-        "pct_contact_meme_jour": 95.45454545454545,
-        "n_visite_bookee": 46,
-        "pct_visite_bookee": 29.87012987012987,
+        "n_leads": 155,
+        "n_contactes_meme_jour": 148,
+        "pct_contact_meme_jour": 95.48387096774194,
+        "n_visite_bookee": 47,
+        "pct_visite_bookee": 30.322580645161292,
         "n_soumissions_ghl": 37,
         "n_soumissions_avec_rappel": 5,
         "pct_rappel_48h": 13.513513513513514,
@@ -244,11 +244,11 @@
       "nom": "Justin Boivin",
       "actuelle": {
         "nom": "Justin Boivin",
-        "n_leads": 37,
-        "n_contactes_meme_jour": 35,
-        "pct_contact_meme_jour": 94.5945945945946,
+        "n_leads": 36,
+        "n_contactes_meme_jour": 34,
+        "pct_contact_meme_jour": 94.44444444444444,
         "n_visite_bookee": 16,
-        "pct_visite_bookee": 43.24324324324324,
+        "pct_visite_bookee": 44.44444444444444,
         "n_soumissions_ghl": 11,
         "n_soumissions_avec_rappel": 6,
         "pct_rappel_48h": 54.54545454545455,
@@ -29256,12 +29256,12 @@
       "visite_bookee": true,
       "soumission_envoyee": true,
       "contacte_meme_jour": true,
-      "rappel_48h": false,
+      "rappel_48h": true,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 1,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-09-01T15:38:39.938000-04:00"
+      "derniere_activite": "2026-09-01T20:06:16.683000-04:00"
     },
     {
       "id": "knCMSsgUdqBpbvY2rBNB",
@@ -30619,9 +30619,9 @@
       "rappel_48h": false,
       "n_appels_sortants": 3,
       "n_appels_repondus": 3,
-      "n_sms_sortants": 6,
+      "n_sms_sortants": 8,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-09-01T15:02:57.030000-04:00"
+      "derniere_activite": "2026-09-01T18:35:20.204000-04:00"
     },
     {
       "id": "gH4xKzleCqDe3M1EQgNF",
@@ -47076,12 +47076,12 @@
       "visite_bookee": true,
       "soumission_envoyee": true,
       "contacte_meme_jour": true,
-      "rappel_48h": false,
+      "rappel_48h": true,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 1,
+      "n_sms_sortants": 2,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-09-01T15:38:39.938000-04:00"
+      "derniere_activite": "2026-09-01T20:06:16.683000-04:00"
     },
     {
       "id": "knCMSsgUdqBpbvY2rBNB",
@@ -47839,9 +47839,9 @@
       "rappel_48h": false,
       "n_appels_sortants": 3,
       "n_appels_repondus": 3,
-      "n_sms_sortants": 6,
+      "n_sms_sortants": 8,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-09-01T15:02:57.030000-04:00"
+      "derniere_activite": "2026-09-01T18:35:20.204000-04:00"
     },
     {
       "id": "MaVGFTZBrVG8gT84aOhZ",

@@ -21424,7 +21424,7 @@
       "n_appels_repondus": 3,
       "n_sms_sortants": 8,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-09-01T18:35:20.204000-04:00",
+      "derniere_activite": "2026-09-03T11:31:00.465000-04:00",
       "activite_figee": false
     },
     "gH4xKzleCqDe3M1EQgNF": {
@@ -23352,9 +23352,9 @@
       "rappel_48h_fige": true,
       "n_appels_sortants": 4,
       "n_appels_repondus": 4,
-      "n_sms_sortants": 13,
+      "n_sms_sortants": 15,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-09-01T15:40:15.999000-04:00",
+      "derniere_activite": "2026-09-03T08:37:42.779000-04:00",
       "activite_figee": false
     },
     "s9cDBqJXofrYjtfIR9Lb": {
@@ -23784,11 +23784,11 @@
       "contacte_meme_jour_fige": true,
       "rappel_48h": false,
       "rappel_48h_fige": true,
-      "n_appels_sortants": 1,
-      "n_appels_repondus": 1,
+      "n_appels_sortants": 3,
+      "n_appels_repondus": 3,
       "n_sms_sortants": 0,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-08-28T13:00:21.913000-04:00",
+      "derniere_activite": "2026-09-03T10:31:41.838000-04:00",
       "activite_figee": false
     },
     "1qtH9q1jPbZusN4qRbFh": {
@@ -24058,9 +24058,9 @@
       "rappel_48h_fige": true,
       "n_appels_sortants": 5,
       "n_appels_repondus": 5,
-      "n_sms_sortants": 3,
+      "n_sms_sortants": 4,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-09-02T19:36:26.049000-04:00",
+      "derniere_activite": "2026-09-03T08:23:26.756000-04:00",
       "activite_figee": false
     },
     "fdidc8hQcs5vbzMN1XOf": {
@@ -24266,7 +24266,7 @@
     },
     "BMK1ISGY7LCJfVU5pgNP": {
       "contacte_meme_jour": false,
-      "contacte_meme_jour_fige": false,
+      "contacte_meme_jour_fige": true,
       "n_appels_sortants": 0,
       "n_appels_repondus": 0,
       "n_sms_sortants": 0,
@@ -24286,7 +24286,7 @@
     },
     "qGYEethb6oKw1wUus6an": {
       "contacte_meme_jour": false,
-      "contacte_meme_jour_fige": false,
+      "contacte_meme_jour_fige": true,
       "n_appels_sortants": 0,
       "n_appels_repondus": 0,
       "n_sms_sortants": 0,

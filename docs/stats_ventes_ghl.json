@@ -1,12 +1,12 @@
 {
-  "genere_le": "2026-09-03T20:01:16.005670-04:00",
+  "genere_le": "2026-09-04T11:00:57.103297-04:00",
   "periode": {
-    "debut": "2026-08-04T19:44:12.521246-04:00",
-    "fin": "2026-09-03T19:44:12.521246-04:00"
+    "debut": "2026-08-05T10:41:43.515161-04:00",
+    "fin": "2026-09-04T10:41:43.515161-04:00"
   },
   "periode_precedente": {
-    "debut": "2026-07-05T19:44:12.521246-04:00",
-    "fin": "2026-08-04T19:44:12.521246-04:00"
+    "debut": "2026-07-06T10:41:43.515161-04:00",
+    "fin": "2026-08-05T10:41:43.515161-04:00"
   },
   "vendeurs_config": [
     "Justin Blaquiere",
@@ -35,18 +35,18 @@
   "equipe": {
     "actuelle": {
       "nom": "Équipe",
-      "n_leads": 320,
-      "n_contactes_meme_jour": 294,
-      "pct_contact_meme_jour": 91.875,
-      "n_visite_bookee": 139,
-      "pct_visite_bookee": 43.4375,
+      "n_leads": 313,
+      "n_contactes_meme_jour": 287,
+      "pct_contact_meme_jour": 91.69329073482429,
+      "n_visite_bookee": 137,
+      "pct_visite_bookee": 43.76996805111821,
       "n_soumissions_ghl": 77,
       "n_soumissions_avec_rappel": 27,
       "pct_rappel_48h": 35.064935064935064,
-      "n_soumissions_envoyees": 76,
-      "n_won": 23,
-      "pct_closing": 30.263157894736842,
-      "valeur_moyenne_won": 2703.2608695652175,
+      "n_soumissions_envoyees": 77,
+      "n_won": 24,
+      "pct_closing": 31.16883116883117,
+      "valeur_moyenne_won": 2669.7916666666665,
       "leads_non_contactes": [
         "Shakur Gahia",
         "Marwan El-Sayegh",
@@ -74,14 +74,14 @@
     },
     "precedente": {
       "nom": "Équipe",
-      "n_leads": 328,
-      "n_contactes_meme_jour": 317,
-      "pct_contact_meme_jour": 96.64634146341463,
-      "n_visite_bookee": 89,
-      "pct_visite_bookee": 27.134146341463413,
-      "n_soumissions_ghl": 72,
+      "n_leads": 331,
+      "n_contactes_meme_jour": 320,
+      "pct_contact_meme_jour": 96.67673716012085,
+      "n_visite_bookee": 90,
+      "pct_visite_bookee": 27.190332326283986,
+      "n_soumissions_ghl": 71,
       "n_soumissions_avec_rappel": 14,
-      "pct_rappel_48h": 19.444444444444443,
+      "pct_rappel_48h": 19.718309859154928,
       "n_soumissions_envoyees": 48,
       "n_won": 17,
       "pct_closing": 35.416666666666664,
@@ -117,18 +117,18 @@
       "nom": "Justin Blaquiere",
       "actuelle": {
         "nom": "Justin Blaquiere",
-        "n_leads": 298,
-        "n_contactes_meme_jour": 273,
-        "pct_contact_meme_jour": 91.61073825503355,
-        "n_visite_bookee": 130,
-        "pct_visite_bookee": 43.624161073825505,
+        "n_leads": 294,
+        "n_contactes_meme_jour": 269,
+        "pct_contact_meme_jour": 91.49659863945578,
+        "n_visite_bookee": 129,
+        "pct_visite_bookee": 43.87755102040816,
         "n_soumissions_ghl": 71,
         "n_soumissions_avec_rappel": 23,
         "pct_rappel_48h": 32.394366197183096,
-        "n_soumissions_envoyees": 68,
-        "n_won": 19,
-        "pct_closing": 27.941176470588236,
-        "valeur_moyenne_won": 2744.7368421052633,
+        "n_soumissions_envoyees": 69,
+        "n_won": 20,
+        "pct_closing": 28.985507246376812,
+        "valeur_moyenne_won": 2702.5,
         "leads_non_contactes": [
           "Shakur Gahia",
           "Marwan El-Sayegh",
@@ -156,11 +156,11 @@
       },
       "precedente": {
         "nom": "Justin Blaquiere",
-        "n_leads": 156,
-        "n_contactes_meme_jour": 150,
-        "pct_contact_meme_jour": 96.15384615384616,
-        "n_visite_bookee": 45,
-        "pct_visite_bookee": 28.846153846153847,
+        "n_leads": 159,
+        "n_contactes_meme_jour": 153,
+        "pct_contact_meme_jour": 96.22641509433963,
+        "n_visite_bookee": 46,
+        "pct_visite_bookee": 28.930817610062892,
         "n_soumissions_ghl": 34,
         "n_soumissions_avec_rappel": 7,
         "pct_rappel_48h": 20.58823529411765,
@@ -211,14 +211,14 @@
       },
       "precedente": {
         "nom": "Jeremy Dagenais",
-        "n_leads": 48,
-        "n_contactes_meme_jour": 47,
-        "pct_contact_meme_jour": 97.91666666666667,
-        "n_visite_bookee": 11,
-        "pct_visite_bookee": 22.916666666666668,
-        "n_soumissions_ghl": 10,
+        "n_leads": 47,
+        "n_contactes_meme_jour": 46,
+        "pct_contact_meme_jour": 97.87234042553192,
+        "n_visite_bookee": 10,
+        "pct_visite_bookee": 21.27659574468085,
+        "n_soumissions_ghl": 9,
         "n_soumissions_avec_rappel": 1,
-        "pct_rappel_48h": 10.0,
+        "pct_rappel_48h": 11.11111111111111,
         "n_soumissions_envoyees": 0,
         "n_won": 0,
         "pct_closing": null,
@@ -234,8 +234,7 @@
           "Aline Lemire",
           "Yves Goulet",
           "Lucien Bohbot",
-          "Jean Marc",
-          "Tida Anacreon"
+          "Jean Marc"
         ]
       }
     },
@@ -243,11 +242,11 @@
       "nom": "Justin Boivin",
       "actuelle": {
         "nom": "Justin Boivin",
-        "n_leads": 22,
-        "n_contactes_meme_jour": 21,
-        "pct_contact_meme_jour": 95.45454545454545,
-        "n_visite_bookee": 9,
-        "pct_visite_bookee": 40.90909090909091,
+        "n_leads": 19,
+        "n_contactes_meme_jour": 18,
+        "pct_contact_meme_jour": 94.73684210526316,
+        "n_visite_bookee": 8,
+        "pct_visite_bookee": 42.10526315789474,
         "n_soumissions_ghl": 6,
         "n_soumissions_avec_rappel": 4,
         "pct_rappel_48h": 66.66666666666667,
@@ -265,11 +264,11 @@
       },
       "precedente": {
         "nom": "Justin Boivin",
-        "n_leads": 124,
-        "n_contactes_meme_jour": 120,
-        "pct_contact_meme_jour": 96.7741935483871,
-        "n_visite_bookee": 33,
-        "pct_visite_bookee": 26.612903225806452,
+        "n_leads": 125,
+        "n_contactes_meme_jour": 121,
+        "pct_contact_meme_jour": 96.8,
+        "n_visite_bookee": 34,
+        "pct_visite_bookee": 27.2,
         "n_soumissions_ghl": 28,
         "n_soumissions_avec_rappel": 6,
         "pct_rappel_48h": 21.428571428571427,
@@ -299,6 +298,26 @@
     }
   ],
   "opportunites_brutes": [
+    {
+      "id": "uxKoHgUmcajSJJBZHgAT",
+      "nom": "Maxime-Gabriel Roy-Bilodeau",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-09-03T19:47:03.876000-04:00",
+      "updated_at": "2026-09-03T19:49:07.362000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 2,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-09-03T19:50:15.409000-04:00"
+    },
     {
       "id": "tvw5vHRNhZNyALPYQM0Y",
       "nom": "Olga Figaro",
@@ -29415,9 +29434,9 @@
       "rappel_48h": false,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 4,
+      "n_sms_sortants": 7,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-09-03T16:42:23.202000-04:00"
+      "derniere_activite": "2026-09-04T09:33:45.319000-04:00"
     },
     {
       "id": "QYMXZ2k5ulne5vqB86V0",
@@ -36722,6 +36741,20 @@
   ],
   "soumissions_brutes": [
     {
+      "numero": "724",
+      "client": "Myriam",
+      "vendeur": "Justin Blaquiere",
+      "montant": 1900.0,
+      "statut": "converted",
+      "won": true,
+      "date_envoi": "2026-09-04T10:46:06-04:00",
+      "date_gagnee": "2026-09-04T10:49:22-04:00",
+      "delai_lead_soumission_heures": 147.52793111111112,
+      "delai_soumission_won_heures": 0.05444444444444444,
+      "delai_lead_won_heures": 147.58237555555556,
+      "source_lead": "Facebook"
+    },
+    {
       "numero": "723",
       "client": "France Vermette",
       "vendeur": "Justin Blaquiere",
@@ -43260,20 +43293,6 @@
       "source_lead": "(inconnue)"
     },
     {
-      "numero": "13",
-      "client": "Éric Mantha",
-      "vendeur": "Justin Blaquiere",
-      "montant": 3550.0,
-      "statut": "awaiting_response",
-      "won": false,
-      "date_envoi": "2026-03-07T14:58:54-05:00",
-      "date_gagnee": null,
-      "delai_lead_soumission_heures": -408.20534777777783,
-      "delai_soumission_won_heures": null,
-      "delai_lead_won_heures": null,
-      "source_lead": "(inconnue)"
-    },
-    {
       "numero": "70",
       "client": "Caroline Beaudin",
       "vendeur": "Justin Blaquiere",
@@ -43790,37 +43809,29 @@
       "delai_soumission_won_heures": 1.3913888888888888,
       "delai_lead_won_heures": null,
       "source_lead": null
-    },
-    {
-      "numero": "15",
-      "client": "Marc Dame",
-      "vendeur": "Justin Blaquiere",
-      "montant": 2500.0,
-      "statut": "awaiting_response",
-      "won": false,
-      "date_envoi": "2026-03-07T17:13:02-05:00",
-      "date_gagnee": null,
-      "delai_lead_soumission_heures": -405.99267972222225,
-      "delai_soumission_won_heures": null,
-      "delai_lead_won_heures": null,
-      "source_lead": "(inconnue)"
-    },
-    {
-      "numero": "14",
-      "client": "Michel",
-      "vendeur": "Justin Blaquiere",
-      "montant": 1500.0,
-      "statut": "awaiting_response",
-      "won": false,
-      "date_envoi": "2026-03-07T15:07:01-05:00",
-      "date_gagnee": null,
-      "delai_lead_soumission_heures": -408.0931277777778,
-      "delai_soumission_won_heures": null,
-      "delai_lead_won_heures": null,
-      "source_lead": "(inconnue)"
     }
   ],
   "pipeline_ouvert_brutes": [
+    {
+      "id": "uxKoHgUmcajSJJBZHgAT",
+      "nom": "Maxime-Gabriel Roy-Bilodeau",
+      "vendeur": "Justin Blaquiere",
+      "source": "Facebook",
+      "stage_nom": "Nouveau lead",
+      "statut": "open",
+      "valeur": 0,
+      "date_creation": "2026-09-03T19:47:03.876000-04:00",
+      "updated_at": "2026-09-03T19:49:07.362000-04:00",
+      "visite_bookee": false,
+      "soumission_envoyee": false,
+      "contacte_meme_jour": true,
+      "rappel_48h": null,
+      "n_appels_sortants": 0,
+      "n_appels_repondus": 0,
+      "n_sms_sortants": 2,
+      "n_emails_sortants": 0,
+      "derniere_activite": "2026-09-03T19:50:15.409000-04:00"
+    },
     {
       "id": "tvw5vHRNhZNyALPYQM0Y",
       "nom": "Olga Figaro",
@@ -47357,9 +47368,9 @@
       "rappel_48h": false,
       "n_appels_sortants": 1,
       "n_appels_repondus": 1,
-      "n_sms_sortants": 4,
+      "n_sms_sortants": 7,
       "n_emails_sortants": 0,
-      "derniere_activite": "2026-09-03T16:42:23.202000-04:00"
+      "derniere_activite": "2026-09-04T09:33:45.319000-04:00"
     },
     {
       "id": "QYMXZ2k5ulne5vqB86V0",
